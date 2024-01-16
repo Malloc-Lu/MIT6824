@@ -1,0 +1,605 @@
+2024-01-03T08:57:57.695+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T08:57:57.695+0800	INFO	raft/raft.go:279	The electionTimeout is 344
+2024-01-03T08:57:57.695+0800	INFO	raft/raft.go:281	&{AjRDJeGAWh7Bvk_D0Xv2 0xc00010e2a0 0xc00010e300}
+2024-01-03T08:58:04.621+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T08:58:04.621+0800	INFO	raft/raft.go:279	The electionTimeout is 307
+2024-01-03T08:58:04.621+0800	INFO	raft/raft.go:281	&{DUUelHXvAf3RfiY3mjNH 0xc00010e2a0 0xc00010e300}
+2024-01-03T08:58:08.484+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T08:58:08.484+0800	INFO	raft/raft.go:279	The electionTimeout is 363
+2024-01-03T08:58:08.484+0800	INFO	raft/raft.go:281	&{xLl-BiHzjVhdUZQqPjYF 0xc00010e2a0 0xc00010e300}
+2024-01-03T08:58:14.428+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T08:58:14.428+0800	INFO	raft/raft.go:279	The electionTimeout is 421
+2024-01-03T08:58:14.428+0800	INFO	raft/raft.go:281	&{n4Net0-R4_4Flu-PMJ5v 0xc00010e780 0xc00010e7e0}
+2024-01-03T08:58:20.770+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T08:58:20.770+0800	INFO	raft/raft.go:279	The electionTimeout is 323
+2024-01-03T08:58:20.770+0800	INFO	raft/raft.go:281	&{bVpfkMPLj6eib0oDfElM 0xc00010e780 0xc00010e7e0}
+2024-01-03T08:58:20.999+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T08:58:20.999+0800	INFO	raft/raft.go:279	The electionTimeout is 344
+2024-01-03T08:58:20.999+0800	INFO	raft/raft.go:281	&{k29Sd9RwdzUz8K1MU_XH 0xc00010e780 0xc00010e7e0}
+2024-01-03T09:00:26.195+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:00:26.195+0800	INFO	raft/raft.go:279	The electionTimeout is 354
+2024-01-03T09:00:26.195+0800	INFO	raft/raft.go:281	&{-JCosCJpKxLjNTsMlSTo 0xc0001a4240 0xc0001a42a0}
+2024-01-03T09:00:31.837+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:00:31.837+0800	INFO	raft/raft.go:279	The electionTimeout is 428
+2024-01-03T09:00:31.837+0800	INFO	raft/raft.go:281	&{uODubBr_8wrqyTcgnA0P 0xc0001a4240 0xc0001a42a0}
+2024-01-03T09:00:34.554+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:00:34.555+0800	INFO	raft/raft.go:279	The electionTimeout is 311
+2024-01-03T09:00:34.555+0800	INFO	raft/raft.go:281	&{5P4CcWZWA5pnjf4tvBfP 0xc0001a4240 0xc0001a42a0}
+2024-01-03T09:00:41.805+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:00:41.805+0800	INFO	raft/raft.go:279	The electionTimeout is 380
+2024-01-03T09:00:41.805+0800	INFO	raft/raft.go:281	&{n1UgMLtxd-admv0a2srV 0xc0001a45a0 0xc0001a4600}
+2024-01-03T09:00:46.060+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:00:46.060+0800	INFO	raft/raft.go:279	The electionTimeout is 324
+2024-01-03T09:00:46.060+0800	INFO	raft/raft.go:281	&{8BzjKbiqwT5hYb0VapCp 0xc0001a45a0 0xc0001a4600}
+2024-01-03T09:00:48.838+0800	INFO	raft/raft.go:273	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:00:48.838+0800	INFO	raft/raft.go:279	The electionTimeout is 301
+2024-01-03T09:00:48.838+0800	INFO	raft/raft.go:281	&{wn1R7n43yMI3THQmyXkX 0xc0001a45a0 0xc0001a4600}
+2024-01-03T09:03:38.456+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:03:38.456+0800	INFO	raft/raft.go:280	The electionTimeout is 412
+2024-01-03T09:03:38.456+0800	INFO	raft/raft.go:282	&{btkIB5bZqyGnF9sjIz-A 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:03:40.122+0800	INFO	raft/raft.go:203	after rf.peers[server].Call()
+2024-01-03T09:03:40.167+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:03:40.167+0800	INFO	raft/raft.go:280	The electionTimeout is 334
+2024-01-03T09:03:40.167+0800	INFO	raft/raft.go:282	&{yzOKP7PxhEOSzJIV4n8y 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:03:46.628+0800	INFO	raft/raft.go:203	after rf.peers[server].Call()
+2024-01-03T09:03:46.668+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:03:46.668+0800	INFO	raft/raft.go:280	The electionTimeout is 403
+2024-01-03T09:03:46.668+0800	INFO	raft/raft.go:282	&{drAuZ0u-Dg0Il_NklfvF 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:03:48.951+0800	INFO	raft/raft.go:203	after rf.peers[server].Call()
+2024-01-03T09:03:54.060+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:03:54.060+0800	INFO	raft/raft.go:280	The electionTimeout is 449
+2024-01-03T09:03:54.061+0800	INFO	raft/raft.go:282	&{HdZRyeXu716PXLsFxsdr 0xc00022e1e0 0xc00022e240}
+2024-01-03T09:04:00.532+0800	INFO	raft/raft.go:203	after rf.peers[server].Call()
+2024-01-03T09:04:00.570+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:04:00.570+0800	INFO	raft/raft.go:280	The electionTimeout is 392
+2024-01-03T09:04:00.570+0800	INFO	raft/raft.go:282	&{UV7NsFVC6i1Vbf_Pvr7i 0xc00022e1e0 0xc00022e240}
+2024-01-03T09:04:01.718+0800	INFO	raft/raft.go:203	after rf.peers[server].Call()
+2024-01-03T09:04:01.759+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:04:01.759+0800	INFO	raft/raft.go:280	The electionTimeout is 437
+2024-01-03T09:04:01.759+0800	INFO	raft/raft.go:282	&{r9eczAVkNA4hN08RB3QN 0xc00022e1e0 0xc00022e240}
+2024-01-03T09:04:02.755+0800	INFO	raft/raft.go:203	after rf.peers[server].Call()
+2024-01-03T09:05:03.522+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:05:03.522+0800	INFO	raft/raft.go:280	The electionTimeout is 381
+2024-01-03T09:05:03.522+0800	INFO	raft/raft.go:282	&{f5aUoaO-8BSbPwyhlC3F 0xc00010e2a0 0xc00010e300}
+2024-01-03T09:05:08.508+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:05:08.551+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:05:08.551+0800	INFO	raft/raft.go:280	The electionTimeout is 315
+2024-01-03T09:05:08.551+0800	INFO	raft/raft.go:282	&{u43EBs3_8XbL0dV95q1k 0xc00010e2a0 0xc00010e300}
+2024-01-03T09:05:12.344+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:05:12.385+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:05:12.385+0800	INFO	raft/raft.go:280	The electionTimeout is 305
+2024-01-03T09:05:12.385+0800	INFO	raft/raft.go:282	&{a7SoRc1ncJadmrASlmUh 0xc00010e2a0 0xc00010e300}
+2024-01-03T09:05:17.734+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:05:22.779+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:05:22.779+0800	INFO	raft/raft.go:280	The electionTimeout is 363
+2024-01-03T09:05:22.779+0800	INFO	raft/raft.go:282	&{uncpID8cayajGmYOjBdN 0xc0001b0240 0xc0001b02a0}
+2024-01-03T09:05:27.560+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:05:27.610+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:05:27.610+0800	INFO	raft/raft.go:280	The electionTimeout is 343
+2024-01-03T09:05:27.610+0800	INFO	raft/raft.go:282	&{N2J3uoqDac8vBcii8jjC 0xc0001b0240 0xc0001b02a0}
+2024-01-03T09:05:33.825+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:05:33.867+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:05:33.867+0800	INFO	raft/raft.go:280	The electionTimeout is 348
+2024-01-03T09:05:33.867+0800	INFO	raft/raft.go:282	&{m3ziVR-TXA4-ZRcu8Cg1 0xc0001b0240 0xc0001b02a0}
+2024-01-03T09:05:35.408+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:43:25.443+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:43:25.443+0800	INFO	raft/raft.go:280	The electionTimeout is 308
+2024-01-03T09:43:25.443+0800	INFO	raft/raft.go:282	&{6ZNGbG1UqPQQ1mZZXZ64 0xc0001802a0 0xc000180300}
+2024-01-03T09:43:26.245+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:43:26.299+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:43:26.299+0800	INFO	raft/raft.go:280	The electionTimeout is 323
+2024-01-03T09:43:26.299+0800	INFO	raft/raft.go:282	&{d02cEmosLGLDePiQ57X5 0xc0001802a0 0xc000180300}
+2024-01-03T09:43:31.924+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:43:31.970+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:43:31.970+0800	INFO	raft/raft.go:280	The electionTimeout is 362
+2024-01-03T09:43:31.970+0800	INFO	raft/raft.go:282	&{G5LhJYcU11RfEPwuuRVr 0xc0001802a0 0xc000180300}
+2024-01-03T09:43:35.384+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:43:40.519+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:43:40.519+0800	INFO	raft/raft.go:280	The electionTimeout is 384
+2024-01-03T09:43:40.519+0800	INFO	raft/raft.go:282	&{Y0nTukgoo6UuKSK_FsV3 0xc00002c180 0xc00002c1e0}
+2024-01-03T09:43:42.962+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:43:43.018+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:43:43.018+0800	INFO	raft/raft.go:280	The electionTimeout is 308
+2024-01-03T09:43:43.018+0800	INFO	raft/raft.go:282	&{EvPtBvwxdMok22kKzbiO 0xc00002c180 0xc00002c1e0}
+2024-01-03T09:43:48.718+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:43:48.774+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:43:48.774+0800	INFO	raft/raft.go:280	The electionTimeout is 383
+2024-01-03T09:43:48.775+0800	INFO	raft/raft.go:282	&{4dRlFwGDvO8tRhB6rUAZ 0xc00002c180 0xc00002c1e0}
+2024-01-03T09:43:55.644+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:00.711+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:00.711+0800	INFO	raft/raft.go:280	The electionTimeout is 326
+2024-01-03T09:44:00.711+0800	INFO	raft/raft.go:282	&{qbrz3pW0bjGqf6PqYndk 0xc00002c480 0xc00002c4e0}
+2024-01-03T09:44:06.820+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:06.866+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:06.866+0800	INFO	raft/raft.go:280	The electionTimeout is 383
+2024-01-03T09:44:06.866+0800	INFO	raft/raft.go:282	&{XpiiWRTgIy8aWY-VidOj 0xc00002c480 0xc00002c4e0}
+2024-01-03T09:44:07.722+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:07.766+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:07.766+0800	INFO	raft/raft.go:280	The electionTimeout is 406
+2024-01-03T09:44:07.766+0800	INFO	raft/raft.go:282	&{VlBXzpiCx74VJ11NLkDS 0xc00002c480 0xc00002c4e0}
+2024-01-03T09:44:08.934+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:19.035+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:19.035+0800	INFO	raft/raft.go:280	The electionTimeout is 370
+2024-01-03T09:44:19.036+0800	INFO	raft/raft.go:282	&{D-2s4vn6pPTHFL5wtZLW 0xc000180720 0xc000180780}
+2024-01-03T09:44:24.021+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:24.058+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:24.058+0800	INFO	raft/raft.go:280	The electionTimeout is 407
+2024-01-03T09:44:24.058+0800	INFO	raft/raft.go:282	&{7doVvS0eLsQXHAESXnoe 0xc000180720 0xc000180780}
+2024-01-03T09:44:28.553+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:28.593+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:28.593+0800	INFO	raft/raft.go:280	The electionTimeout is 300
+2024-01-03T09:44:28.593+0800	INFO	raft/raft.go:282	&{jhAaYSxV7HidE7hOthWf 0xc000180720 0xc000180780}
+2024-01-03T09:44:29.811+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:39.906+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:39.906+0800	INFO	raft/raft.go:280	The electionTimeout is 414
+2024-01-03T09:44:39.906+0800	INFO	raft/raft.go:282	&{784cJ7XirN2ZCjL_ilaI 0xc00002c7e0 0xc00002c840}
+2024-01-03T09:44:43.190+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:43.239+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:43.239+0800	INFO	raft/raft.go:280	The electionTimeout is 423
+2024-01-03T09:44:43.240+0800	INFO	raft/raft.go:282	&{ncj3S5HpBGMHIkUIwsbW 0xc00002c7e0 0xc00002c840}
+2024-01-03T09:44:46.176+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:46.218+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:46.218+0800	INFO	raft/raft.go:280	The electionTimeout is 318
+2024-01-03T09:44:46.218+0800	INFO	raft/raft.go:282	&{jw_igDty_yEND5hZA7Tm 0xc00002c7e0 0xc00002c840}
+2024-01-03T09:44:47.234+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:57.332+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:57.332+0800	INFO	raft/raft.go:280	The electionTimeout is 350
+2024-01-03T09:44:57.332+0800	INFO	raft/raft.go:282	&{uIB6Zj9CJzDyMprIzqKY 0xc0002ae5a0 0xc0002ae600}
+2024-01-03T09:44:57.891+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:57.921+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:57.921+0800	INFO	raft/raft.go:280	The electionTimeout is 443
+2024-01-03T09:44:57.921+0800	INFO	raft/raft.go:282	&{0imgAxVJOhBekRZ7ID-d 0xc0002ae5a0 0xc0002ae600}
+2024-01-03T09:44:58.215+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:44:58.254+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:44:58.254+0800	INFO	raft/raft.go:280	The electionTimeout is 331
+2024-01-03T09:44:58.254+0800	INFO	raft/raft.go:282	&{mqlhx8ywXDtc1Tc3MaL2 0xc0002ae5a0 0xc0002ae600}
+2024-01-03T09:45:04.298+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:04.344+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:04.344+0800	INFO	raft/raft.go:280	The electionTimeout is 386
+2024-01-03T09:45:04.344+0800	INFO	raft/raft.go:282	&{XKbR8BMec1W_SQv1iR4V 0xc0002ae5a0 0xc0002ae600}
+2024-01-03T09:45:06.781+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:06.822+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:06.822+0800	INFO	raft/raft.go:280	The electionTimeout is 301
+2024-01-03T09:45:06.822+0800	INFO	raft/raft.go:282	&{orwxfMAGKx9ZilQT6KcC 0xc0002ae5a0 0xc0002ae600}
+2024-01-03T09:45:07.046+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:17.133+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:17.133+0800	INFO	raft/raft.go:280	The electionTimeout is 347
+2024-01-03T09:45:17.133+0800	INFO	raft/raft.go:282	&{L_e5e5CkQCaw0s2qe6W8 0xc0002ae900 0xc0002ae960}
+2024-01-03T09:45:17.467+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:17.501+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:17.502+0800	INFO	raft/raft.go:280	The electionTimeout is 445
+2024-01-03T09:45:17.502+0800	INFO	raft/raft.go:282	&{4yNrqktLaAuSqoP4h1U4 0xc0002ae900 0xc0002ae960}
+2024-01-03T09:45:23.893+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:23.936+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:23.936+0800	INFO	raft/raft.go:280	The electionTimeout is 315
+2024-01-03T09:45:23.936+0800	INFO	raft/raft.go:282	&{cclIJctj0R8AVTEcQBPw 0xc0002ae900 0xc0002ae960}
+2024-01-03T09:45:27.745+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:32.869+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:32.869+0800	INFO	raft/raft.go:280	The electionTimeout is 333
+2024-01-03T09:45:32.869+0800	INFO	raft/raft.go:282	&{oXUTFvNWMQr4Ogb4A53O 0xc00002cfc0 0xc00002d020}
+2024-01-03T09:45:38.576+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:38.627+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:38.628+0800	INFO	raft/raft.go:280	The electionTimeout is 375
+2024-01-03T09:45:38.628+0800	INFO	raft/raft.go:282	&{3v5bxWGy8tEsKEl-3U02 0xc00002cfc0 0xc00002d020}
+2024-01-03T09:45:39.902+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:39.950+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:39.950+0800	INFO	raft/raft.go:280	The electionTimeout is 350
+2024-01-03T09:45:39.950+0800	INFO	raft/raft.go:282	&{gzdVhsiZp1EG_tTIbGaK 0xc00002cfc0 0xc00002d020}
+2024-01-03T09:45:41.729+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:51.828+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:51.828+0800	INFO	raft/raft.go:280	The electionTimeout is 315
+2024-01-03T09:45:51.828+0800	INFO	raft/raft.go:282	&{gEJ3cKTThANmU-dOUGf_ 0xc00002d380 0xc00002d3e0}
+2024-01-03T09:45:57.774+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:45:57.819+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:45:57.819+0800	INFO	raft/raft.go:280	The electionTimeout is 447
+2024-01-03T09:45:57.819+0800	INFO	raft/raft.go:282	&{lC4wZ67PgL9MBSUTN4x3 0xc00002d380 0xc00002d3e0}
+2024-01-03T09:46:04.476+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:04.521+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:04.521+0800	INFO	raft/raft.go:280	The electionTimeout is 324
+2024-01-03T09:46:04.521+0800	INFO	raft/raft.go:282	&{z2CM9Uk6Wtv0zaJzQadY 0xc00002d380 0xc00002d3e0}
+2024-01-03T09:46:10.292+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:10.322+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:10.322+0800	INFO	raft/raft.go:280	The electionTimeout is 424
+2024-01-03T09:46:10.322+0800	INFO	raft/raft.go:282	&{0rp40DtXOFxMPknFN9rn 0xc00002d380 0xc00002d3e0}
+2024-01-03T09:46:16.567+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:16.612+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:16.612+0800	INFO	raft/raft.go:280	The electionTimeout is 363
+2024-01-03T09:46:16.612+0800	INFO	raft/raft.go:282	&{aB3fSKWzMkbyvRzL6Z6f 0xc00002d380 0xc00002d3e0}
+2024-01-03T09:46:22.344+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:32.449+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:32.449+0800	INFO	raft/raft.go:280	The electionTimeout is 311
+2024-01-03T09:46:32.449+0800	INFO	raft/raft.go:282	&{WJgCJUfymZehYaaQa1QZ 0xc0002aed80 0xc0002aede0}
+2024-01-03T09:46:33.735+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:33.770+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:33.771+0800	INFO	raft/raft.go:280	The electionTimeout is 431
+2024-01-03T09:46:33.771+0800	INFO	raft/raft.go:282	&{qakS1U9l-gkVn7Qxc7bw 0xc0002aed80 0xc0002aede0}
+2024-01-03T09:46:39.864+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:39.905+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:39.905+0800	INFO	raft/raft.go:280	The electionTimeout is 437
+2024-01-03T09:46:39.905+0800	INFO	raft/raft.go:282	&{XgNR51FMsAVa5LijNBae 0xc0002aed80 0xc0002aede0}
+2024-01-03T09:46:40.543+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:45.634+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:45.634+0800	INFO	raft/raft.go:280	The electionTimeout is 389
+2024-01-03T09:46:45.634+0800	INFO	raft/raft.go:282	&{bcRZ8Na8UOyjShZMlm_p 0xc00002dbc0 0xc00002dc20}
+2024-01-03T09:46:46.682+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:46.728+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:46.728+0800	INFO	raft/raft.go:280	The electionTimeout is 418
+2024-01-03T09:46:46.728+0800	INFO	raft/raft.go:282	&{z-Azzf1fGFflQ9zp1Z3- 0xc00002dbc0 0xc00002dc20}
+2024-01-03T09:46:53.527+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:46:53.573+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:46:53.573+0800	INFO	raft/raft.go:280	The electionTimeout is 326
+2024-01-03T09:46:53.574+0800	INFO	raft/raft.go:282	&{5PPysxUYxc4DPZDObvZU 0xc00002dbc0 0xc00002dc20}
+2024-01-03T09:46:57.632+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:07.714+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:07.714+0800	INFO	raft/raft.go:280	The electionTimeout is 342
+2024-01-03T09:47:07.714+0800	INFO	raft/raft.go:282	&{5F2JL4h7QAF-S_tulfwT 0xc0002af140 0xc0002af1a0}
+2024-01-03T09:47:10.456+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:10.497+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:10.497+0800	INFO	raft/raft.go:280	The electionTimeout is 377
+2024-01-03T09:47:10.497+0800	INFO	raft/raft.go:282	&{nciTgQiDEwUgkk8jjdvc 0xc0002af140 0xc0002af1a0}
+2024-01-03T09:47:16.633+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:16.687+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:16.688+0800	INFO	raft/raft.go:280	The electionTimeout is 429
+2024-01-03T09:47:16.688+0800	INFO	raft/raft.go:282	&{x4WI-v2x_ZKe7oKSFo4P 0xc0002af140 0xc0002af1a0}
+2024-01-03T09:47:19.007+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:19.043+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:19.044+0800	INFO	raft/raft.go:280	The electionTimeout is 332
+2024-01-03T09:47:19.044+0800	INFO	raft/raft.go:282	&{ZlawfOXcYXEs76zaoQve 0xc0002af140 0xc0002af1a0}
+2024-01-03T09:47:26.018+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:26.058+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:26.058+0800	INFO	raft/raft.go:280	The electionTimeout is 358
+2024-01-03T09:47:26.058+0800	INFO	raft/raft.go:282	&{MQtKtU46NbcSVSyn60OZ 0xc0002af140 0xc0002af1a0}
+2024-01-03T09:47:29.712+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:39.793+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:39.793+0800	INFO	raft/raft.go:280	The electionTimeout is 304
+2024-01-03T09:47:39.793+0800	INFO	raft/raft.go:282	&{RcDI6bdKTb5iJDcPzmAn 0xc0000ee300 0xc0000ee360}
+2024-01-03T09:47:41.350+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:41.395+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:41.395+0800	INFO	raft/raft.go:280	The electionTimeout is 444
+2024-01-03T09:47:41.395+0800	INFO	raft/raft.go:282	&{VqerEeuXnUHnqBsaD_MC 0xc0000ee300 0xc0000ee360}
+2024-01-03T09:47:42.341+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:42.385+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:42.385+0800	INFO	raft/raft.go:280	The electionTimeout is 411
+2024-01-03T09:47:42.385+0800	INFO	raft/raft.go:282	&{-KbI68r0NLMdmWeMhQdn 0xc0000ee300 0xc0000ee360}
+2024-01-03T09:47:44.452+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:54.532+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:54.532+0800	INFO	raft/raft.go:280	The electionTimeout is 374
+2024-01-03T09:47:54.532+0800	INFO	raft/raft.go:282	&{X8-zbwf8dIRWIo4cymil 0xc0000ee540 0xc0000ee5a0}
+2024-01-03T09:47:58.416+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:47:58.453+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:47:58.453+0800	INFO	raft/raft.go:280	The electionTimeout is 403
+2024-01-03T09:47:58.453+0800	INFO	raft/raft.go:282	&{swoii7MZn5JQ2Nl2HB1J 0xc0000ee540 0xc0000ee5a0}
+2024-01-03T09:48:02.065+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:02.110+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:02.110+0800	INFO	raft/raft.go:280	The electionTimeout is 311
+2024-01-03T09:48:02.110+0800	INFO	raft/raft.go:282	&{0suiupZKx92VgdqIUx6q 0xc0000ee540 0xc0000ee5a0}
+2024-01-03T09:48:03.752+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:03.799+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:03.799+0800	INFO	raft/raft.go:280	The electionTimeout is 447
+2024-01-03T09:48:03.799+0800	INFO	raft/raft.go:282	&{SH6etFQYLqvhUDXRaCxy 0xc0000ee540 0xc0000ee5a0}
+2024-01-03T09:48:06.025+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:06.077+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:06.078+0800	INFO	raft/raft.go:280	The electionTimeout is 342
+2024-01-03T09:48:06.078+0800	INFO	raft/raft.go:282	&{9uUbg-MsodfWIxNmDVVR 0xc0000ee540 0xc0000ee5a0}
+2024-01-03T09:48:08.672+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:18.759+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:18.759+0800	INFO	raft/raft.go:280	The electionTimeout is 317
+2024-01-03T09:48:18.759+0800	INFO	raft/raft.go:282	&{w-5j5tmLSJaqlOZqeIEK 0xc000181140 0xc0001811a0}
+2024-01-03T09:48:22.566+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:22.604+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:22.604+0800	INFO	raft/raft.go:280	The electionTimeout is 426
+2024-01-03T09:48:22.604+0800	INFO	raft/raft.go:282	&{SaVcPt-ZrYXDBiZ7zsi1 0xc000181140 0xc0001811a0}
+2024-01-03T09:48:26.640+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:26.683+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:26.683+0800	INFO	raft/raft.go:280	The electionTimeout is 370
+2024-01-03T09:48:26.683+0800	INFO	raft/raft.go:282	&{kGfa5uHgon2lkuihcU6a 0xc000181140 0xc0001811a0}
+2024-01-03T09:48:30.860+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:30.895+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:30.895+0800	INFO	raft/raft.go:280	The electionTimeout is 367
+2024-01-03T09:48:30.895+0800	INFO	raft/raft.go:282	&{au8uRwfaXfTTYomL-J5i 0xc000181140 0xc0001811a0}
+2024-01-03T09:48:35.584+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:48:35.629+0800	INFO	raft/raft.go:274	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:48:35.629+0800	INFO	raft/raft.go:280	The electionTimeout is 365
+2024-01-03T09:48:35.629+0800	INFO	raft/raft.go:282	&{fIyEXo-iwz31oGKPB9EO 0xc000181140 0xc0001811a0}
+2024-01-03T09:48:38.688+0800	INFO	raft/raft.go:203	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:56:28.689+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:56:28.689+0800	INFO	raft/raft.go:281	The electionTimeout is 383
+2024-01-03T09:56:28.689+0800	INFO	raft/raft.go:283	&{GAnCy9e68HY__7HWapPQ 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:56:35.188+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:56:35.234+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:56:35.234+0800	INFO	raft/raft.go:281	The electionTimeout is 388
+2024-01-03T09:56:35.234+0800	INFO	raft/raft.go:283	&{eUwpimt9CMfW4Je-32k- 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:56:38.273+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:56:38.324+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:56:38.324+0800	INFO	raft/raft.go:281	The electionTimeout is 353
+2024-01-03T09:56:38.324+0800	INFO	raft/raft.go:283	&{lA_DvuugF0gQgujz4ARF 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:56:43.936+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:56:49.122+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:56:49.122+0800	INFO	raft/raft.go:281	The electionTimeout is 377
+2024-01-03T09:56:49.122+0800	INFO	raft/raft.go:283	&{O2sFxGhD0qUNS8ZyIhYx 0xc00002c720 0xc00002c780}
+2024-01-03T09:56:54.950+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:56:54.994+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:56:54.994+0800	INFO	raft/raft.go:281	The electionTimeout is 325
+2024-01-03T09:56:54.994+0800	INFO	raft/raft.go:283	&{M_nEb03oBtdSdD-sIK7Z 0xc00002c720 0xc00002c780}
+2024-01-03T09:56:56.223+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:56:56.260+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:56:56.260+0800	INFO	raft/raft.go:281	The electionTimeout is 342
+2024-01-03T09:56:56.260+0800	INFO	raft/raft.go:283	&{cbtH1ccUHaHo_i_V4Hsh 0xc00002c720 0xc00002c780}
+2024-01-03T09:56:57.838+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:59:51.924+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:59:51.924+0800	INFO	raft/raft.go:281	The electionTimeout is 359
+2024-01-03T09:59:51.924+0800	INFO	raft/raft.go:283	&{exHMpl3KGpNjsrwSmWd- 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:59:57.300+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:59:57.354+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:59:57.354+0800	INFO	raft/raft.go:281	The electionTimeout is 343
+2024-01-03T09:59:57.354+0800	INFO	raft/raft.go:283	&{S4b8YHzh6-_gCIK9D1As 0xc00002c360 0xc00002c3c0}
+2024-01-03T09:59:59.676+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T09:59:59.721+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T09:59:59.721+0800	INFO	raft/raft.go:281	The electionTimeout is 433
+2024-01-03T09:59:59.722+0800	INFO	raft/raft.go:283	&{sH0trF50LjLiwpUa3Hq8 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:00:00.975+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:00:06.045+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:00:06.045+0800	INFO	raft/raft.go:281	The electionTimeout is 396
+2024-01-03T10:00:06.045+0800	INFO	raft/raft.go:283	&{nRZ51gftcPNI7xJ6ivax 0xc000230240 0xc0002302a0}
+2024-01-03T10:00:07.335+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:00:07.379+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:00:07.379+0800	INFO	raft/raft.go:281	The electionTimeout is 377
+2024-01-03T10:00:07.379+0800	INFO	raft/raft.go:283	&{t-Rff4Kqx17qI44pbXBh 0xc000230240 0xc0002302a0}
+2024-01-03T10:00:08.724+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:00:08.770+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:00:08.770+0800	INFO	raft/raft.go:281	The electionTimeout is 362
+2024-01-03T10:00:08.770+0800	INFO	raft/raft.go:283	&{5PNPbfOhxDOLqMmZm0Ka 0xc000230240 0xc0002302a0}
+2024-01-03T10:00:09.587+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:00:57.073+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:00:57.073+0800	INFO	raft/raft.go:281	The electionTimeout is 411
+2024-01-03T10:00:57.073+0800	INFO	raft/raft.go:283	&{C4uVW9bMVmqFWVJ9aWhj 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:01:03.960+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:01:04.010+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:01:04.010+0800	INFO	raft/raft.go:281	The electionTimeout is 414
+2024-01-03T10:01:04.010+0800	INFO	raft/raft.go:283	&{TvaRMBo_eBFEvf30faJ3 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:01:06.120+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:01:06.166+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:01:06.166+0800	INFO	raft/raft.go:281	The electionTimeout is 379
+2024-01-03T10:01:06.166+0800	INFO	raft/raft.go:283	&{48pdWxSUq0BL6TyUpMFi 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:01:11.874+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:01:17.008+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:01:17.008+0800	INFO	raft/raft.go:281	The electionTimeout is 442
+2024-01-03T10:01:17.008+0800	INFO	raft/raft.go:283	&{1VmbzORLZcn9X_qwF-dK 0xc00002c720 0xc00002c780}
+2024-01-03T10:01:20.348+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:01:20.390+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:01:20.390+0800	INFO	raft/raft.go:281	The electionTimeout is 315
+2024-01-03T10:01:20.390+0800	INFO	raft/raft.go:283	&{8y_RaHalQYr-ZuCRMUWy 0xc00002c720 0xc00002c780}
+2024-01-03T10:01:20.578+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:01:20.624+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:01:20.624+0800	INFO	raft/raft.go:281	The electionTimeout is 304
+2024-01-03T10:01:20.624+0800	INFO	raft/raft.go:283	&{JS-O611ydNnWNIr-rd8v 0xc00002c720 0xc00002c780}
+2024-01-03T10:01:24.205+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:37:14.232+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:37:14.233+0800	INFO	raft/raft.go:281	The electionTimeout is 317
+2024-01-03T10:37:14.233+0800	INFO	raft/raft.go:283	&{9PO7xNf2BN_Bz_8ylMk5 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:37:18.125+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:37:18.158+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:37:18.158+0800	INFO	raft/raft.go:281	The electionTimeout is 448
+2024-01-03T10:37:18.158+0800	INFO	raft/raft.go:283	&{5Pf_ax9Iov0xBW1DHCkA 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:37:21.303+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:37:21.347+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:37:21.347+0800	INFO	raft/raft.go:281	The electionTimeout is 383
+2024-01-03T10:37:21.347+0800	INFO	raft/raft.go:283	&{zQDgqHOfMInWCpKkXaFR 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:38:40.361+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:38:40.361+0800	INFO	raft/raft.go:281	The electionTimeout is 310
+2024-01-03T10:38:40.361+0800	INFO	raft/raft.go:283	&{Bvce-S_SO7WGTPa2rofR 0xc00010e2a0 0xc00010e300}
+2024-01-03T10:38:41.663+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:38:41.708+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:38:41.708+0800	INFO	raft/raft.go:281	The electionTimeout is 381
+2024-01-03T10:38:41.708+0800	INFO	raft/raft.go:283	&{neS_WsoIruCeQaDd7_HE 0xc00010e2a0 0xc00010e300}
+2024-01-03T10:38:43.169+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:38:43.220+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:38:43.220+0800	INFO	raft/raft.go:281	The electionTimeout is 394
+2024-01-03T10:38:43.220+0800	INFO	raft/raft.go:283	&{9Ef-VxZ0Dl9kJKIBSyUT 0xc00010e2a0 0xc00010e300}
+2024-01-03T10:49:23.950+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:49:23.950+0800	INFO	raft/raft.go:288	The electionTimeout is 316
+2024-01-03T10:49:23.950+0800	INFO	raft/raft.go:290	&{yjPUqJ4IjqBdGmdVpvtu 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:49:24.285+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:49:24.285+0800	INFO	raft/raft.go:288	The electionTimeout is 303
+2024-01-03T10:49:24.285+0800	INFO	raft/raft.go:290	&{hArRR-zTWpkIsB2Jqt48 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:49:24.352+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:49:24.352+0800	INFO	raft/raft.go:288	The electionTimeout is 308
+2024-01-03T10:49:24.352+0800	INFO	raft/raft.go:290	&{0xDOS5Ob39c_uVrxA8ri 0xc00002c360 0xc00002c3c0}
+2024-01-03T10:49:27.718+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:49:28.348+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:49:29.426+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:49:29.426+0800	INFO	raft/raft.go:288	The electionTimeout is 408
+2024-01-03T10:49:29.426+0800	INFO	raft/raft.go:290	&{HWqlbdU2EsNvwG2Zhdnz 0xc00021c1e0 0xc00021c240}
+2024-01-03T10:49:29.474+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:49:29.474+0800	INFO	raft/raft.go:288	The electionTimeout is 321
+2024-01-03T10:49:29.474+0800	INFO	raft/raft.go:290	&{IMP1XLPK1LcOqomofmCk 0xc00021c1e0 0xc00021c240}
+2024-01-03T10:49:29.519+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T10:49:29.519+0800	INFO	raft/raft.go:288	The electionTimeout is 403
+2024-01-03T10:49:29.519+0800	INFO	raft/raft.go:290	&{1i9iwRcJg4R9MjcRXqcX 0xc00021c1e0 0xc00021c240}
+2024-01-03T10:49:29.556+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:49:31.335+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:49:32.087+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T10:49:33.732+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:05.350+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:05.350+0800	INFO	raft/raft.go:288	The electionTimeout is 390
+2024-01-03T11:04:05.350+0800	INFO	raft/raft.go:290	&{gu_wzNntkjshofSFqk8Q 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:04:05.386+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:05.386+0800	INFO	raft/raft.go:288	The electionTimeout is 445
+2024-01-03T11:04:05.386+0800	INFO	raft/raft.go:290	&{sjdZTLTHiFWkc6C-khBM 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:04:05.430+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:05.430+0800	INFO	raft/raft.go:288	The electionTimeout is 357
+2024-01-03T11:04:05.430+0800	INFO	raft/raft.go:290	&{xb_LSzvZ31Iyl9Vh9OW4 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:04:07.013+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:10.483+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:10.483+0800	INFO	raft/raft.go:288	The electionTimeout is 382
+2024-01-03T11:04:10.483+0800	INFO	raft/raft.go:290	&{1GtEYLbL7yGpVfrjhDz4 0xc0001b6120 0xc0001b6180}
+2024-01-03T11:04:10.520+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:10.520+0800	INFO	raft/raft.go:288	The electionTimeout is 411
+2024-01-03T11:04:10.520+0800	INFO	raft/raft.go:290	&{72v5dld6lpvk2un4dThv 0xc0001b6120 0xc0001b6180}
+2024-01-03T11:04:10.565+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:10.565+0800	INFO	raft/raft.go:288	The electionTimeout is 374
+2024-01-03T11:04:10.565+0800	INFO	raft/raft.go:290	&{YopWnRh75VzSBOe6-E-I 0xc0001b6120 0xc0001b6180}
+2024-01-03T11:04:10.686+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:10.715+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:10.909+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:14.017+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:15.532+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:31.039+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:31.039+0800	INFO	raft/raft.go:288	The electionTimeout is 311
+2024-01-03T11:04:31.039+0800	INFO	raft/raft.go:290	&{bMAfaaXS444Bp20k2gPW 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:04:31.074+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:31.074+0800	INFO	raft/raft.go:288	The electionTimeout is 325
+2024-01-03T11:04:31.074+0800	INFO	raft/raft.go:290	&{Nibip_ERL_CQPz8SZuT4 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:04:31.119+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:31.119+0800	INFO	raft/raft.go:288	The electionTimeout is 361
+2024-01-03T11:04:31.119+0800	INFO	raft/raft.go:290	&{63UWVVg_fS4rqTgPt646 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:04:35.660+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:35.752+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:36.081+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:04:36.263+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:36.263+0800	INFO	raft/raft.go:288	The electionTimeout is 382
+2024-01-03T11:04:36.263+0800	INFO	raft/raft.go:290	&{E9Iz3VX43Bl3ZFZTQA5d 0xc000292120 0xc000292180}
+2024-01-03T11:04:36.309+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:36.309+0800	INFO	raft/raft.go:288	The electionTimeout is 352
+2024-01-03T11:04:36.309+0800	INFO	raft/raft.go:290	&{70NLJcMz4dJq6CPZ7wiA 0xc000292120 0xc000292180}
+2024-01-03T11:04:36.353+0800	INFO	raft/raft.go:275	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:04:36.353+0800	INFO	raft/raft.go:288	The electionTimeout is 353
+2024-01-03T11:04:36.353+0800	INFO	raft/raft.go:290	&{YE2_U0Hr0Qs6q5PpmMH5 0xc000292120 0xc000292180}
+2024-01-03T11:04:41.195+0800	INFO	raft/raft.go:204	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:14:17.455+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:14:17.455+0800	INFO	raft/raft.go:293	The electionTimeout is 424
+2024-01-03T11:14:17.455+0800	INFO	raft/raft.go:295	&{1hZEkw9Uu5ikyxNXyBtF 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:14:17.495+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:14:17.495+0800	INFO	raft/raft.go:293	The electionTimeout is 376
+2024-01-03T11:14:17.495+0800	INFO	raft/raft.go:295	&{1DT-6jwWzSmbQIZeru2v 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:14:17.540+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:14:17.540+0800	INFO	raft/raft.go:293	The electionTimeout is 402
+2024-01-03T11:14:17.540+0800	INFO	raft/raft.go:295	&{uAGEHpT9dfopnBmDYcCl 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:14:19.163+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:14:21.275+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:14:22.582+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:14:22.582+0800	INFO	raft/raft.go:293	The electionTimeout is 303
+2024-01-03T11:14:22.582+0800	INFO	raft/raft.go:295	&{MxoQovsUYCW5Q2SIwVNB 0xc00020e240 0xc00020e2a0}
+2024-01-03T11:14:22.631+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:14:22.631+0800	INFO	raft/raft.go:293	The electionTimeout is 334
+2024-01-03T11:14:22.631+0800	INFO	raft/raft.go:295	&{0O2uyYnLblordCXQPqw2 0xc00020e240 0xc00020e2a0}
+2024-01-03T11:14:22.675+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:14:22.675+0800	INFO	raft/raft.go:293	The electionTimeout is 343
+2024-01-03T11:14:22.675+0800	INFO	raft/raft.go:295	&{UrFEWKpKTiTYxS6vOBgm 0xc00020e240 0xc00020e2a0}
+2024-01-03T11:14:23.708+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:14:25.669+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:14:26.733+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:27:19.374+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:27:19.374+0800	INFO	raft/raft.go:293	The electionTimeout is 379
+2024-01-03T11:27:19.374+0800	INFO	raft/raft.go:295	&{LO5XGjniC_geOMBMEs1s 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:27:19.411+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:27:19.411+0800	INFO	raft/raft.go:293	The electionTimeout is 321
+2024-01-03T11:27:19.411+0800	INFO	raft/raft.go:295	&{9v_p2fG2NNQy3QAeo1Nl 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:27:19.444+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:27:19.444+0800	INFO	raft/raft.go:293	The electionTimeout is 362
+2024-01-03T11:27:19.444+0800	INFO	raft/raft.go:295	&{s_hMH2hTCDk8YDab1csm 0xc00002c360 0xc00002c3c0}
+2024-01-03T11:27:21.565+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:27:24.512+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:27:24.512+0800	INFO	raft/raft.go:293	The electionTimeout is 352
+2024-01-03T11:27:24.512+0800	INFO	raft/raft.go:295	&{6WzmQneLhkhpKixJoppf 0xc000288120 0xc000288180}
+2024-01-03T11:27:24.524+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:27:24.546+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:27:24.546+0800	INFO	raft/raft.go:293	The electionTimeout is 442
+2024-01-03T11:27:24.546+0800	INFO	raft/raft.go:295	&{CN_rQRAOU1-axHQmE1Z4 0xc000288120 0xc000288180}
+2024-01-03T11:27:24.590+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T11:27:24.590+0800	INFO	raft/raft.go:293	The electionTimeout is 320
+2024-01-03T11:27:24.590+0800	INFO	raft/raft.go:295	&{m7ov0THf4frKS1aNObXG 0xc000288120 0xc000288180}
+2024-01-03T11:27:26.224+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:27:26.275+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T11:27:29.321+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:33:08.860+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:33:08.873+0800	INFO	raft/raft.go:293	The electionTimeout is 416
+2024-01-03T21:33:08.873+0800	INFO	raft/raft.go:295	&{JlTKd1M1nE4ivVXtEIOG 0xc00010e2a0 0xc00010e300}
+2024-01-03T21:33:08.921+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:33:08.921+0800	INFO	raft/raft.go:293	The electionTimeout is 402
+2024-01-03T21:33:08.921+0800	INFO	raft/raft.go:295	&{oqnNnmJ3iEAbphEQh756 0xc00010e2a0 0xc00010e300}
+2024-01-03T21:33:08.965+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:33:08.965+0800	INFO	raft/raft.go:293	The electionTimeout is 381
+2024-01-03T21:33:08.965+0800	INFO	raft/raft.go:295	&{fPNtTSKTQDS8W7rpMeE- 0xc00010e2a0 0xc00010e300}
+2024-01-03T21:33:09.085+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:33:12.158+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:33:13.115+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:33:13.832+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:33:13.832+0800	INFO	raft/raft.go:293	The electionTimeout is 372
+2024-01-03T21:33:13.832+0800	INFO	raft/raft.go:295	&{w9uLsjGhTdBQgIy5GDh3 0xc00010e540 0xc00010e5a0}
+2024-01-03T21:33:13.866+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:33:13.866+0800	INFO	raft/raft.go:293	The electionTimeout is 360
+2024-01-03T21:33:13.866+0800	INFO	raft/raft.go:295	&{HeflNPSsPm9c_VtGVcYH 0xc00010e540 0xc00010e5a0}
+2024-01-03T21:33:13.911+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:33:13.911+0800	INFO	raft/raft.go:293	The electionTimeout is 372
+2024-01-03T21:33:13.911+0800	INFO	raft/raft.go:295	&{B1OWwZosyE08Y29C3aIY 0xc00010e540 0xc00010e5a0}
+2024-01-03T21:33:17.821+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:40:00.089+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:40:00.089+0800	INFO	raft/raft.go:293	The electionTimeout is 387
+2024-01-03T21:40:00.089+0800	INFO	raft/raft.go:295	&{CvIqnsE0-4tAmXiOqztg 0xc00002c360 0xc00002c3c0}
+2024-01-03T21:40:00.139+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:40:00.139+0800	INFO	raft/raft.go:293	The electionTimeout is 362
+2024-01-03T21:40:00.139+0800	INFO	raft/raft.go:295	&{txaIBQxHI2wKHNP_J0Sj 0xc00002c360 0xc00002c3c0}
+2024-01-03T21:40:00.184+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:40:00.184+0800	INFO	raft/raft.go:293	The electionTimeout is 437
+2024-01-03T21:40:00.184+0800	INFO	raft/raft.go:295	&{GE61z_pUPmy6HPrJwzrb 0xc00002c360 0xc00002c3c0}
+2024-01-03T21:40:00.539+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:40:05.166+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:40:05.166+0800	INFO	raft/raft.go:293	The electionTimeout is 406
+2024-01-03T21:40:05.166+0800	INFO	raft/raft.go:295	&{MKgA55KucyiXsRCJ9vj6 0xc00020e180 0xc00020e1e0}
+2024-01-03T21:40:05.207+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:40:05.207+0800	INFO	raft/raft.go:293	The electionTimeout is 311
+2024-01-03T21:40:05.207+0800	INFO	raft/raft.go:295	&{dMZLq9Lm6G1dHicYIh5s 0xc00020e180 0xc00020e1e0}
+2024-01-03T21:40:05.252+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T21:40:05.252+0800	INFO	raft/raft.go:293	The electionTimeout is 331
+2024-01-03T21:40:05.252+0800	INFO	raft/raft.go:295	&{ONomwO45QSQjFiHluZeC 0xc00020e180 0xc00020e1e0}
+2024-01-03T21:40:06.285+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:40:06.450+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:40:07.261+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:40:09.045+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T21:40:09.630+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:21:26.562+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:21:26.562+0800	INFO	raft/raft.go:293	The electionTimeout is 441
+2024-01-03T22:21:26.562+0800	INFO	raft/raft.go:295	peers is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-03T22:21:26.634+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:21:26.634+0800	INFO	raft/raft.go:293	The electionTimeout is 439
+2024-01-03T22:21:26.634+0800	INFO	raft/raft.go:295	peers is [0xc00007e3a0 0xc00007e3c0 0xc00007e3e0]
+2024-01-03T22:21:26.678+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:21:26.678+0800	INFO	raft/raft.go:293	The electionTimeout is 347
+2024-01-03T22:21:26.678+0800	INFO	raft/raft.go:295	peers is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-03T22:21:26.846+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:21:29.516+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:21:31.755+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:21:31.755+0800	INFO	raft/raft.go:293	The electionTimeout is 403
+2024-01-03T22:21:31.755+0800	INFO	raft/raft.go:295	peers is [0xc00021c100 0xc00021c120 0xc00021c140]
+2024-01-03T22:21:31.791+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:21:31.791+0800	INFO	raft/raft.go:293	The electionTimeout is 338
+2024-01-03T22:21:31.791+0800	INFO	raft/raft.go:295	peers is [0xc00021c1e0 0xc00021c200 0xc00021c220]
+2024-01-03T22:21:31.836+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:21:31.836+0800	INFO	raft/raft.go:293	The electionTimeout is 396
+2024-01-03T22:21:31.836+0800	INFO	raft/raft.go:295	peers is [0xc00021c2c0 0xc00021c2e0 0xc00021c300]
+2024-01-03T22:21:32.721+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:21:33.606+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:21:35.528+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:26:06.959+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:26:06.959+0800	INFO	raft/raft.go:293	The electionTimeout is 376
+2024-01-03T22:26:06.959+0800	INFO	raft/raft.go:295	peers is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-03T22:26:07.005+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:26:07.005+0800	INFO	raft/raft.go:293	The electionTimeout is 426
+2024-01-03T22:26:07.005+0800	INFO	raft/raft.go:295	peers is [0xc00007e3a0 0xc00007e3c0 0xc00007e3e0]
+2024-01-03T22:26:07.050+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:26:07.050+0800	INFO	raft/raft.go:293	The electionTimeout is 413
+2024-01-03T22:26:07.050+0800	INFO	raft/raft.go:295	peers is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-03T22:26:09.249+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:26:10.813+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:26:11.422+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse
+2024-01-03T22:26:12.157+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:26:12.157+0800	INFO	raft/raft.go:293	The electionTimeout is 448
+2024-01-03T22:26:12.157+0800	INFO	raft/raft.go:295	peers is [0xc00007e600 0xc00007e620 0xc00007e640]
+2024-01-03T22:26:12.218+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:26:12.218+0800	INFO	raft/raft.go:293	The electionTimeout is 377
+2024-01-03T22:26:12.218+0800	INFO	raft/raft.go:295	peers is [0xc00007e6e0 0xc00007e700 0xc00007e720]
+2024-01-03T22:26:12.262+0800	INFO	raft/raft.go:280	--------------------------------------Start a new server init------------------------------------
+2024-01-03T22:26:12.262+0800	INFO	raft/raft.go:293	The electionTimeout is 363
+2024-01-03T22:26:12.262+0800	INFO	raft/raft.go:295	peers is [0xc00007e7c0 0xc00007e7e0 0xc00007e800]
+2024-01-03T22:26:12.443+0800	INFO	raft/raft.go:207	after rf.peers[server].Call() ok is %vfalse

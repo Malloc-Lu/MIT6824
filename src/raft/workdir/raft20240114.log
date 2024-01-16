@@ -1,0 +1,268 @@
+2024-01-14T14:41:38.974+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:41:39.029+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:41:39.073+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:41:39.345+0800	INFO	raft/raft.go:422	the election timeout is 369
+															the distance between now and last time from leader is 371ms
+															rf.state.isleader is false
+															leader election's me is 0
+															begin to elect
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:441	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 1
+															rf.voteFor is 0
+															args.CandiateId is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 1
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:480	the leader is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 1
+															rf.currentTerm is 1
+															rf.voteFor is 0
+															args.CandiateId is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 0
+2024-01-14T14:41:39.346+0800	INFO	raft/raft.go:480	the leader is 0
+2024-01-14T14:41:42.216+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:41:42.263+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:41:42.310+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:41:42.553+0800	INFO	raft/raft.go:422	the election timeout is 335
+															the distance between now and last time from leader is 336ms
+															rf.state.isleader is false
+															leader election's me is 1
+															begin to elect
+2024-01-14T14:41:42.553+0800	INFO	raft/raft.go:441	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 1
+2024-01-14T14:41:42.583+0800	INFO	raft/raft.go:422	the election timeout is 365
+															the distance between now and last time from leader is 366ms
+															rf.state.isleader is false
+															leader election's me is 0
+															begin to elect
+2024-01-14T14:41:42.583+0800	INFO	raft/raft.go:441	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:422	the election timeout is 373
+															the distance between now and last time from leader is 383ms
+															rf.state.isleader is false
+															leader election's me is 2
+															begin to elect
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:441	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 2
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:422	the election timeout is 319
+															the distance between now and last time from leader is 336ms
+															rf.state.isleader is false
+															leader election's me is 1
+															begin to elect
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:441	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 1
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 1
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:480	the leader is 1
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 0
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 1
+															rf.voteFor is 0
+															args.CandiateId is 0
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 0
+2024-01-14T14:41:42.600+0800	INFO	raft/raft.go:480	the leader is 0
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 0
+															args.CandiateId is 1
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 1
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:480	the leader is 1
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:525	server 0 come back to follower from leader
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:525	server 1 come back to follower from leader
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:525	server 0 come back to follower from leader
+2024-01-14T14:41:42.606+0800	INFO	raft/raft.go:525	server 1 come back to follower from leader
+2024-01-14T14:41:42.620+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 1
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 0
+2024-01-14T14:41:42.620+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 1
+															rf.currentTerm is 1
+															rf.voteFor is 0
+															args.CandiateId is 0
+2024-01-14T14:41:42.620+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 0
+2024-01-14T14:41:42.620+0800	INFO	raft/raft.go:480	the leader is 0
+2024-01-14T14:41:43.280+0800	INFO	raft/raft.go:422	the election timeout is 381
+															the distance between now and last time from leader is 396ms
+															rf.state.isleader is false
+															leader election's me is 2
+															begin to elect
+2024-01-14T14:41:43.280+0800	INFO	raft/raft.go:441	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 2
+2024-01-14T14:41:43.283+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 1
+															rf.currentTerm is 1
+															rf.voteFor is 0
+															args.CandiateId is 2
+2024-01-14T14:41:43.283+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 1
+															rf.currentTerm is 2
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-14T14:41:43.283+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 2
+2024-01-14T14:41:43.283+0800	INFO	raft/raft.go:480	the leader is 2
+2024-01-14T14:58:17.643+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:58:17.686+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:58:17.730+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:422	the election timeout is 307
+															the distance between now and last time from leader is 309ms
+															rf.state.isleader is false
+															leader election's me is 1
+															begin to elect
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:441	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:480	the leader is 1
+2024-01-14T14:58:17.996+0800	INFO	raft/raft.go:480	the leader is 1
+2024-01-14T14:58:20.761+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:58:20.800+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:58:20.845+0800	INFO	raft/raft.go:386	
+
+---------------------------------------------Start a new server init-------------------------------------------
+2024-01-14T14:58:21.106+0800	INFO	raft/raft.go:422	the election timeout is 303
+															the distance between now and last time from leader is 306ms
+															rf.state.isleader is false
+															leader election's me is 1
+															begin to elect
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:441	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:480	the leader is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 1
+2024-01-14T14:58:21.110+0800	INFO	raft/raft.go:480	the leader is 1
+2024-01-14T14:58:21.175+0800	INFO	raft/raft.go:422	the election timeout is 412
+															the distance between now and last time from leader is 413ms
+															rf.state.isleader is false
+															leader election's me is 2
+															begin to elect
+2024-01-14T14:58:21.175+0800	INFO	raft/raft.go:441	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 2
+2024-01-14T14:58:21.218+0800	INFO	raft/raft.go:422	the election timeout is 426
+															the distance between now and last time from leader is 435ms
+															rf.state.isleader is false
+															leader election's me is 0
+															begin to elect
+2024-01-14T14:58:21.218+0800	INFO	raft/raft.go:441	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-14T14:58:21.777+0800	INFO	raft/raft.go:422	the election timeout is 384
+															the distance between now and last time from leader is 387ms
+															rf.state.isleader is false
+															leader election's me is 0
+															begin to elect
+2024-01-14T14:58:21.777+0800	INFO	raft/raft.go:441	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-14T14:58:21.780+0800	INFO	raft/raft.go:422	the election timeout is 412
+															the distance between now and last time from leader is 415ms
+															rf.state.isleader is false
+															leader election's me is 2
+															begin to elect
+2024-01-14T14:58:21.780+0800	INFO	raft/raft.go:441	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 2
+2024-01-14T14:58:21.780+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 2
+															rf.voteFor is 2
+															args.CandiateId is 0
+2024-01-14T14:58:21.780+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 2
+															rf.currentTerm is 2
+															rf.voteFor is 0
+															args.CandiateId is 0
+2024-01-14T14:58:21.781+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 0
+2024-01-14T14:58:21.781+0800	INFO	raft/raft.go:480	the leader is 0
+2024-01-14T14:58:21.781+0800	INFO	raft/raft.go:211	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 2
+															rf.voteFor is 0
+															args.CandiateId is 2
+2024-01-14T14:58:21.781+0800	INFO	raft/raft.go:249	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 2
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-14T14:58:21.781+0800	INFO	raft/raft.go:455	Convert2Candidate.me is 2
+2024-01-14T14:58:21.781+0800	INFO	raft/raft.go:480	the leader is 2

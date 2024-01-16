@@ -8,17 +8,23 @@ package raft
 // test with the original before submitting.
 //
 
-import "../labrpc"
-import "log"
-import "sync"
-import "testing"
-import "runtime"
-import "math/rand"
-import crand "crypto/rand"
-import "math/big"
-import "encoding/base64"
-import "time"
-import "fmt"
+import (
+	"log"
+	"math/rand"
+	"runtime"
+	"sync"
+	"testing"
+
+	"6.824/src/labrpc"
+
+	crand "crypto/rand"
+	"encoding/base64"
+	"fmt"
+	"math/big"
+	"time"
+
+	"go.uber.org/zap"
+)
 
 func randstring(n int) string {
 	b := make([]byte, 2*n)
@@ -53,6 +59,9 @@ type config struct {
 	bytes0    int64
 	maxIndex  int
 	maxIndex0 int
+
+
+	logger *zap.SugaredLogger
 }
 
 var ncpu_once sync.Once
@@ -81,16 +90,20 @@ func make_config(t *testing.T, n int, unreliable bool) *config {
 
 	cfg.net.LongDelays(true)
 
+
+	cfg.logger = InitLogger("./workdir/config")
+
 	// create a full set of Rafts.
 	for i := 0; i < cfg.n; i++ {
 		cfg.logs[i] = map[int]interface{}{}
 		cfg.start1(i)
 	}
-
+	cfg.logger.Infof("\n\n\n\n")
 	// connect everyone
 	for i := 0; i < cfg.n; i++ {
 		cfg.connect(i)
 	}
+
 
 	return cfg
 }
@@ -135,6 +148,8 @@ func (cfg *config) crash1(i int) {
 //
 func (cfg *config) start1(i int) {
 	cfg.crash1(i)
+	cfg.logger.Infof("\n\n")
+	cfg.logger.Infof("----------------------------------------------call the start1------------------------------------")
 
 	// a fresh set of outgoing ClientEnd names.
 	// so that old crashed instance's ClientEnds can't send.
@@ -142,13 +157,15 @@ func (cfg *config) start1(i int) {
 	for j := 0; j < cfg.n; j++ {
 		cfg.endnames[i][j] = randstring(20)
 	}
+	cfg.logger.Infof("endnames is %v", cfg.endnames)
 
 	// a fresh set of ClientEnds.
-	ends := make([]*labrpc.ClientEnd, cfg.n)
+	ends := make([]*labrpc.ClientEnd, cfg.n)			// * cfg.n = 3, ends 是存放客户端的数组
 	for j := 0; j < cfg.n; j++ {
 		ends[j] = cfg.net.MakeEnd(cfg.endnames[i][j])
 		cfg.net.Connect(cfg.endnames[i][j], j)
 	}
+	cfg.logger.Infof("ends is %v", ends)
 
 	cfg.mu.Lock()
 
@@ -156,6 +173,8 @@ func (cfg *config) start1(i int) {
 	// new instance's persisted state.
 	// but copy old persister's content so that we always
 	// pass Make() the last persisted state.
+
+	cfg.logger.Infof("cfg.saved is %v", cfg.saved)
 	if cfg.saved[i] != nil {
 		cfg.saved[i] = cfg.saved[i].Copy()
 	} else {
@@ -167,7 +186,7 @@ func (cfg *config) start1(i int) {
 	// listen to messages from Raft indicating newly committed messages.
 	applyCh := make(chan ApplyMsg)
 	go func() {
-		for m := range applyCh {
+		for m := range applyCh {								// * 不断地从通道`applyCh`接收消息
 			err_msg := ""
 			if m.CommandValid == false {
 				// ignore other types of ApplyMsg
@@ -202,13 +221,15 @@ func (cfg *config) start1(i int) {
 		}
 	}()
 
+	cfg.logger.Infof("ends is %v, cfg.saved[i] is %v, applyCh is %v", ends, cfg.saved[i], applyCh)
 	rf := Make(ends, i, cfg.saved[i], applyCh)
 
 	cfg.mu.Lock()
 	cfg.rafts[i] = rf
+	cfg.logger.Infof("cfg.rafts is %v", cfg.rafts)
 	cfg.mu.Unlock()
 
-	svc := labrpc.MakeService(rf)
+	svc := labrpc.MakeService(rf)						// * one is `svc`, and the other is `srv`
 	srv := labrpc.MakeServer()
 	srv.AddService(svc)
 	cfg.net.AddServer(i, srv)
@@ -237,6 +258,7 @@ func (cfg *config) connect(i int) {
 
 	cfg.connected[i] = true
 
+	cfg.logger.Infof("cfg.endnames is %v", cfg.endnames)
 	// outgoing ClientEnds
 	for j := 0; j < cfg.n; j++ {
 		if cfg.connected[j] {
@@ -314,6 +336,7 @@ func (cfg *config) checkOneLeader() int {
 		}
 
 		lastTermWithLeader := -1
+		cfg.logger.Infof("checkOneLeader().leaders is %v", leaders)
 		for term, leaders := range leaders {
 			if len(leaders) > 1 {
 				cfg.t.Fatalf("term %d has %d (>1) leaders", term, len(leaders))
@@ -507,3 +530,7 @@ func (cfg *config) end() {
 		fmt.Printf("  %4.1f  %d %4d %7d %4d\n", t, npeers, nrpc, nbytes, ncmds)
 	}
 }
+
+
+
+

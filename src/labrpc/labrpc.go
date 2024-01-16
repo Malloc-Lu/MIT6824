@@ -49,15 +49,22 @@ package labrpc
 //   pass svc to srv.AddService()
 //
 
-import "../labgob"
-import "bytes"
-import "reflect"
-import "sync"
-import "log"
-import "strings"
-import "math/rand"
-import "time"
-import "sync/atomic"
+import (
+	"bytes"
+	"fmt"
+	"log"
+	"math/rand"
+	"reflect"
+	"strings"
+	"sync"
+	"sync/atomic"
+	"time"
+
+	"6.824/src/labgob"
+	"os"
+	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
+)
 
 type reqMsg struct {
 	endname  interface{} // name of sending ClientEnd
@@ -88,9 +95,9 @@ func (e *ClientEnd) Call(svcMeth string, args interface{}, reply interface{}) bo
 	req.argsType = reflect.TypeOf(args)
 	req.replyCh = make(chan replyMsg)
 
-	qb := new(bytes.Buffer)
+	qb := new(bytes.Buffer)						// * create a buffer
 	qe := labgob.NewEncoder(qb)
-	qe.Encode(args)
+	qe.Encode(args)								// * 将`args`编码为字节流
 	req.args = qb.Bytes()
 
 	//
@@ -99,6 +106,7 @@ func (e *ClientEnd) Call(svcMeth string, args interface{}, reply interface{}) bo
 	select {
 	case e.ch <- req:
 		// the request has been sent.
+		// fmt.Printf("execute here: labrpc.go:106\n")
 	case <-e.done:
 		// entire Network has been destroyed.
 		return false
@@ -108,10 +116,11 @@ func (e *ClientEnd) Call(svcMeth string, args interface{}, reply interface{}) bo
 	// wait for the reply.
 	//
 	rep := <-req.replyCh
+	// fmt.Printf("labrpc.go:115, rep is %v", rep)
 	if rep.ok {
 		rb := bytes.NewBuffer(rep.reply)
 		rd := labgob.NewDecoder(rb)
-		if err := rd.Decode(reply); err != nil {
+		if err := rd.Decode(reply); err != nil {					// * 把`Decoder`的内容写入`reply`
 			log.Fatalf("ClientEnd.Call(): decode reply: %v\n", err)
 		}
 		return true
@@ -133,6 +142,8 @@ type Network struct {
 	done           chan struct{} // closed when Network is cleaned up
 	count          int32         // total RPC count, for statistics
 	bytes          int64         // total bytes send, for statistics
+
+	logger *zap.SugaredLogger
 }
 
 func MakeNetwork() *Network {
@@ -145,14 +156,18 @@ func MakeNetwork() *Network {
 	rn.endCh = make(chan reqMsg)
 	rn.done = make(chan struct{})
 
+	rn.logger = InitLogger("./workdir/config")
+
 	// single goroutine to handle all ClientEnd.Call()s
 	go func() {
 		for {
-			select {
+			select {									// * select 语句：专用于通道操作
 			case xreq := <-rn.endCh:
+				// fmt.Printf("labrpc.go:166, excute to here\n")
 				atomic.AddInt32(&rn.count, 1)
 				atomic.AddInt64(&rn.bytes, int64(len(xreq.args)))
-				go rn.processReq(xreq)
+				// rn.logger.Infof("rn.count is %v, rn.bytes is %v", rn.count, rn.bytes)
+				go rn.processReq(xreq)					// * 开始一个新的线程，异步处理，避免阻塞当前Goroutine
 			case <-rn.done:
 				return
 			}
@@ -193,10 +208,16 @@ func (rn *Network) readEndnameInfo(endname interface{}) (enabled bool,
 	rn.mu.Lock()
 	defer rn.mu.Unlock()
 
+	// rn.logger.Infof("endname is %v", endname)
+	// rn.logger.Infof("rn.enabled is %v", rn.enabled)
+	// rn.logger.Infof("rn.connections is %v", rn.connections)
+	// rn.logger.Infof("rn.servers is %v", rn.servers)
 	enabled = rn.enabled[endname]
 	servername = rn.connections[endname]
 	if servername != nil {
 		server = rn.servers[servername]
+		// rn.logger.Infof("servername is %v", servername)
+		// rn.logger.Infof("server is %v", server)
 	}
 	reliable = rn.reliable
 	longreordering = rn.longReordering
@@ -216,6 +237,7 @@ func (rn *Network) isServerDead(endname interface{}, servername interface{}, ser
 func (rn *Network) processReq(req reqMsg) {
 	enabled, servername, server, reliable, longreordering := rn.readEndnameInfo(req.endname)
 
+	// rn.logger.Infof("excute here, enabled is %v, servername is %v, server is %v", enabled, servername, server)
 	if enabled && servername != nil && server != nil {
 		if reliable == false {
 			// short delay
@@ -318,7 +340,7 @@ func (rn *Network) MakeEnd(endname interface{}) *ClientEnd {
 
 	e := &ClientEnd{}
 	e.endname = endname
-	e.ch = rn.endCh
+	e.ch = rn.endCh							// ! 这里将e.ch 赋值为 rn.endCh
 	e.done = rn.done
 	rn.ends[endname] = e
 	rn.enabled[endname] = false
@@ -332,6 +354,7 @@ func (rn *Network) AddServer(servername interface{}, rs *Server) {
 	defer rn.mu.Unlock()
 
 	rn.servers[servername] = rs
+	// rn.logger.Infof("rn.servers is %v, servername is %v, rs is %v", rn.servers, servername, rs)
 }
 
 func (rn *Network) DeleteServer(servername interface{}) {
@@ -346,8 +369,10 @@ func (rn *Network) DeleteServer(servername interface{}) {
 func (rn *Network) Connect(endname interface{}, servername interface{}) {
 	rn.mu.Lock()
 	defer rn.mu.Unlock()
-
+	
 	rn.connections[endname] = servername
+
+	// rn.logger.Infof("rn.connections is %v", rn.connections)
 }
 
 // enable/disable a ClientEnd.
@@ -386,17 +411,22 @@ type Server struct {
 	mu       sync.Mutex
 	services map[string]*Service
 	count    int // incoming RPCs
+
+	logger *zap.SugaredLogger
 }
 
 func MakeServer() *Server {
 	rs := &Server{}
 	rs.services = map[string]*Service{}
+
+	rs.logger = InitLogger("./workdir/config")
 	return rs
 }
 
 func (rs *Server) AddService(svc *Service) {
 	rs.mu.Lock()
 	defer rs.mu.Unlock()
+	// rs.logger.Infof("svc.name is %v", svc.name)
 	rs.services[svc.name] = svc
 }
 
@@ -409,8 +439,12 @@ func (rs *Server) dispatch(req reqMsg) replyMsg {
 	dot := strings.LastIndex(req.svcMeth, ".")
 	serviceName := req.svcMeth[:dot]
 	methodName := req.svcMeth[dot+1:]
+	// rs.logger.Infof("req.svcMeth is %v", req.svcMeth)
 
 	service, ok := rs.services[serviceName]
+	// rs.logger.Infof("rs.services is %v", rs.services)
+
+	// rs.logger.Infof("dispatch.serviceName is %v, dispatch.methodName is %v, dispatch.service is %v, dispatch.ok is %v", serviceName, methodName, service, ok)
 
 	rs.mu.Unlock()
 
@@ -449,14 +483,19 @@ func MakeService(rcvr interface{}) *Service {
 	svc.name = reflect.Indirect(svc.rcvr).Type().Name()
 	svc.methods = map[string]reflect.Method{}
 
+	// fmt.Printf("labrpc.go:473, svc.typ is %v, svc.rcvr is %v, svc.name is %v\n",
+									// svc.typ, svc.rcvr, svc.name)
+
 	for m := 0; m < svc.typ.NumMethod(); m++ {
 		method := svc.typ.Method(m)
 		mtype := method.Type
 		mname := method.Name
+		// fmt.Printf("mtype is %v, mname is %v\n", mtype, mname)
 
 		//fmt.Printf("%v pp %v ni %v 1k %v 2k %v no %v\n",
 		//	mname, method.PkgPath, mtype.NumIn(), mtype.In(1).Kind(), mtype.In(2).Kind(), mtype.NumOut())
-
+		
+		// * check whether the method is suitable to be a handler(if it is exported)
 		if method.PkgPath != "" || // capitalized?
 			mtype.NumIn() != 3 ||
 			//mtype.In(1).Kind() != reflect.Ptr ||
@@ -478,11 +517,14 @@ func (svc *Service) dispatch(methname string, req reqMsg) replyMsg {
 		// prepare space into which to read the argument.
 		// the Value's type will be a pointer to req.argsType.
 		args := reflect.New(req.argsType)
+		// fmt.Printf("args is %v\n", args)
 
 		// decode the argument.
-		ab := bytes.NewBuffer(req.args)
+		ab := bytes.NewBuffer(req.args)						// * initiate a new buffer using the `req.args` as the initial content
 		ad := labgob.NewDecoder(ab)
 		ad.Decode(args.Interface())
+		// fmt.Printf("args.Interface is %v\n", args.Interface())
+		// fmt.Printf("req.args is %v, ab.buffer is %v\n", req.args, ab.Bytes())
 
 		// allocate space for the reply.
 		replyType := method.Type.In(2)
@@ -494,10 +536,11 @@ func (svc *Service) dispatch(methname string, req reqMsg) replyMsg {
 		function.Call([]reflect.Value{svc.rcvr, args.Elem(), replyv})
 
 		// encode the reply.
-		rb := new(bytes.Buffer)
+		rb := new(bytes.Buffer)				// * encoder read the date from `rb`
 		re := labgob.NewEncoder(rb)
-		re.EncodeValue(replyv)
+		re.EncodeValue(replyv)				// * 这里再对handler处理得到的reply进行编码
 
+		// fmt.Printf("rb.Bytes() is %v\n", rb.Bytes())
 		return replyMsg{true, rb.Bytes()}
 	} else {
 		choices := []string{}
@@ -508,4 +551,27 @@ func (svc *Service) dispatch(methname string, req reqMsg) replyMsg {
 			methname, req.svcMeth, choices)
 		return replyMsg{false, nil}
 	}
+}
+
+
+
+func InitLogger(prefix string) *zap.SugaredLogger {
+	// get the current date
+	currentTime := time.Now()
+	date := fmt.Sprintf("%v%v%v", currentTime.Year(), currentTime.Format("01"), currentTime.Format("02"))
+	// logName = fmt.Sprintf("./workdir/raft%v.log", date)
+	file, _ := os.OpenFile(prefix + date + ".log", os.O_RDWR | os.O_CREATE | os.O_APPEND, 0755)
+	writeSyncer := zapcore.AddSync(file)
+	// encoder := zapcore.NewJSONEncoder(zap.NewProductionEncoderConfig())
+	// encoder := zapcore.NewConsoleEncoder(zap.NewProductionEncoderConfig())
+	encoderConfig := zap.NewProductionEncoderConfig()
+	encoderConfig.EncodeTime = zapcore.ISO8601TimeEncoder
+	encoderConfig.EncodeLevel = zapcore.CapitalLevelEncoder
+	encoder := zapcore.NewConsoleEncoder(encoderConfig)
+
+	core := zapcore.NewCore(encoder, writeSyncer, zapcore.DebugLevel)
+
+	logger := zap.New(core, zap.AddCaller())
+	sugarLogger := logger.Sugar()
+	return sugarLogger
 }

@@ -6,7 +6,7 @@ package main
 // go build -buildmode=plugin wc.go
 //
 
-import "../mr"
+import "6.824/src/mr"
 import "unicode"
 import "strings"
 import "strconv"
@@ -20,10 +20,11 @@ import "strconv"
 //
 func Map(filename string, contents string) []mr.KeyValue {
 	// function to detect word separators.
-	ff := func(r rune) bool { return !unicode.IsLetter(r) }
+	ff := func(r rune) bool { return !unicode.IsLetter(r) }			// * 这里应该定义了一个匿名函数
 
 	// split contents into an array of words.
-	words := strings.FieldsFunc(contents, ff)
+	words := strings.FieldsFunc(contents, ff)						// * func FieldsFunc(s string, f func(rune) bool) []string
+																	// * 每当s中的字符满足f就做一次分割，返回s的切片数组
 
 	kva := []mr.KeyValue{}
 	for _, w := range words {

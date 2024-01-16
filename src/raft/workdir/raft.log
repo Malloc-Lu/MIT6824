@@ -1,0 +1,48 @@
+{"level":"info","ts":1704160636.763232,"msg":"use zap log\n"}
+{"level":"info","ts":1704160636.8224247,"msg":"use zap log\n"}
+{"level":"info","ts":1704160636.8671873,"msg":"use zap log\n"}
+{"level":"info","ts":1704160641.9567814,"msg":"use zap log\n"}
+{"level":"info","ts":1704160642.0023732,"msg":"use zap log\n"}
+{"level":"info","ts":1704160642.0468793,"msg":"use zap log\n"}
+1.7041608489895327e+09	info	use zap log
+
+1.704160849030821e+09	info	use zap log
+
+1.7041608490753622e+09	info	use zap log
+
+1.7041608539660146e+09	info	use zap log
+
+1.7041608540101624e+09	info	use zap log
+
+1.7041608540547156e+09	info	use zap log
+
+2024-01-02T10:04:23.613+0800	INFO	use zap log
+
+2024-01-02T10:04:23.651+0800	INFO	use zap log
+
+2024-01-02T10:04:23.695+0800	INFO	use zap log
+
+2024-01-02T10:04:28.553+0800	INFO	use zap log
+
+2024-01-02T10:04:28.585+0800	INFO	use zap log
+
+2024-01-02T10:04:28.629+0800	INFO	use zap log
+
+2024-01-02T10:17:10.677+0800	INFO	raft/raft.go:267	use zap log
+
+2024-01-02T10:17:10.754+0800	INFO	raft/raft.go:267	use zap log
+
+2024-01-02T10:17:10.798+0800	INFO	raft/raft.go:267	use zap log
+
+2024-01-02T10:17:15.883+0800	INFO	raft/raft.go:267	use zap log
+
+2024-01-02T10:17:15.956+0800	INFO	raft/raft.go:267	use zap log
+
+2024-01-02T10:17:16.000+0800	INFO	raft/raft.go:267	use zap log
+
+2024-01-02T10:17:42.777+0800	INFO	raft/raft.go:267	use zap log
+2024-01-02T10:17:42.820+0800	INFO	raft/raft.go:267	use zap log
+2024-01-02T10:17:42.865+0800	INFO	raft/raft.go:267	use zap log
+2024-01-02T10:17:47.835+0800	INFO	raft/raft.go:267	use zap log
+2024-01-02T10:17:47.878+0800	INFO	raft/raft.go:267	use zap log
+2024-01-02T10:17:47.923+0800	INFO	raft/raft.go:267	use zap log

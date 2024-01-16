@@ -1,0 +1,1458 @@
+2024-01-15T21:04:27.362+0800	INFO	raft/raft.go:442	the election timeout is 407
+															the distance between now and last time from leader is 409ms
+															rf.state.isleader is false
+															rf.state.currTerm is 0
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:27.362+0800	INFO	raft/raft.go:465	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:27.362+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:04:27.362+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:04:27.362+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:04:27.362+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:04:27.362+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:30.335+0800	INFO	raft/raft.go:574	fail to receive reply from majority servers, rf.me is 0, sendFaults is 2
+2024-01-15T21:04:30.337+0800	INFO	raft/raft.go:442	the election timeout is 401
+															the distance between now and last time from leader is 2975ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:30.337+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:30.338+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:30.338+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:30.338+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:30.653+0800	INFO	raft/raft.go:442	the election timeout is 314
+															the distance between now and last time from leader is 315ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:30.653+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:30.653+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:30.653+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:30.653+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:30.681+0800	INFO	raft/raft.go:442	the election timeout is 359
+															the distance between now and last time from leader is 361ms
+															rf.state.isleader is false
+															rf.state.currTerm is 0
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:30.681+0800	INFO	raft/raft.go:465	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:30.681+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:04:30.681+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:04:30.681+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:04:30.681+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:04:30.681+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:31.026+0800	INFO	raft/raft.go:442	the election timeout is 371
+															the distance between now and last time from leader is 373ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:31.026+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:31.026+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:31.026+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:31.026+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:31.462+0800	INFO	raft/raft.go:442	the election timeout is 435
+															the distance between now and last time from leader is 436ms
+															rf.state.isleader is false
+															rf.state.currTerm is 4
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:31.462+0800	INFO	raft/raft.go:465	rf.currenTerm is 5, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:31.462+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:31.462+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:31.462+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:31.705+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 0
+															args.CandiateId is 2
+2024-01-15T21:04:31.705+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 3
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-15T21:04:31.815+0800	INFO	raft/raft.go:442	the election timeout is 351
+															the distance between now and last time from leader is 352ms
+															rf.state.isleader is false
+															rf.state.currTerm is 5
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:31.815+0800	INFO	raft/raft.go:465	rf.currenTerm is 6, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:31.815+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:31.815+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:31.815+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:32.168+0800	INFO	raft/raft.go:442	the election timeout is 352
+															the distance between now and last time from leader is 353ms
+															rf.state.isleader is false
+															rf.state.currTerm is 6
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:32.168+0800	INFO	raft/raft.go:465	rf.currenTerm is 7, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:32.168+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:32.168+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:32.168+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:32.245+0800	INFO	raft/raft.go:442	the election timeout is 352
+															the distance between now and last time from leader is 354ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:32.245+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:32.616+0800	INFO	raft/raft.go:442	the election timeout is 446
+															the distance between now and last time from leader is 447ms
+															rf.state.isleader is false
+															rf.state.currTerm is 7
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:32.616+0800	INFO	raft/raft.go:465	rf.currenTerm is 8, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:32.616+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:32.616+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:32.616+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:33.037+0800	INFO	raft/raft.go:442	the election timeout is 419
+															the distance between now and last time from leader is 421ms
+															rf.state.isleader is false
+															rf.state.currTerm is 8
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:33.038+0800	INFO	raft/raft.go:465	rf.currenTerm is 9, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:33.038+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:33.038+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:33.038+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:33.485+0800	INFO	raft/raft.go:442	the election timeout is 445
+															the distance between now and last time from leader is 447ms
+															rf.state.isleader is false
+															rf.state.currTerm is 9
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:33.485+0800	INFO	raft/raft.go:465	rf.currenTerm is 10, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:33.485+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:33.485+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:33.485+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:33.889+0800	INFO	raft/raft.go:442	the election timeout is 403
+															the distance between now and last time from leader is 404ms
+															rf.state.isleader is false
+															rf.state.currTerm is 10
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:33.889+0800	INFO	raft/raft.go:465	rf.currenTerm is 11, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:33.889+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:33.889+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:33.889+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:34.324+0800	INFO	raft/raft.go:442	the election timeout is 432
+															the distance between now and last time from leader is 434ms
+															rf.state.isleader is false
+															rf.state.currTerm is 11
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:34.324+0800	INFO	raft/raft.go:465	rf.currenTerm is 12, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:34.324+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:34.324+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:34.324+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:34.733+0800	INFO	raft/raft.go:442	the election timeout is 407
+															the distance between now and last time from leader is 409ms
+															rf.state.isleader is false
+															rf.state.currTerm is 12
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:34.733+0800	INFO	raft/raft.go:465	rf.currenTerm is 13, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:34.733+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:34.733+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:34.733+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:35.069+0800	INFO	raft/raft.go:442	the election timeout is 334
+															the distance between now and last time from leader is 335ms
+															rf.state.isleader is false
+															rf.state.currTerm is 13
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:35.069+0800	INFO	raft/raft.go:465	rf.currenTerm is 14, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:35.069+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:35.069+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:35.069+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:35.230+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:35.275+0800	INFO	raft/raft.go:574	fail to receive reply from majority servers, rf.me is 0, sendFaults is 2
+2024-01-15T21:04:35.493+0800	INFO	raft/raft.go:442	the election timeout is 422
+															the distance between now and last time from leader is 424ms
+															rf.state.isleader is false
+															rf.state.currTerm is 14
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:35.494+0800	INFO	raft/raft.go:465	rf.currenTerm is 15, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:35.494+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:35.494+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:35.494+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:35.851+0800	INFO	raft/raft.go:442	the election timeout is 355
+															the distance between now and last time from leader is 357ms
+															rf.state.isleader is false
+															rf.state.currTerm is 15
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:35.851+0800	INFO	raft/raft.go:465	rf.currenTerm is 16, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:35.851+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:35.851+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:35.851+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:36.193+0800	INFO	raft/raft.go:442	the election timeout is 341
+															the distance between now and last time from leader is 342ms
+															rf.state.isleader is false
+															rf.state.currTerm is 16
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:36.193+0800	INFO	raft/raft.go:465	rf.currenTerm is 17, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:36.193+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:36.193+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:36.193+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:36.271+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 4
+															rf.voteFor is 0
+															args.CandiateId is 1
+2024-01-15T21:04:36.271+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 4
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:04:36.516+0800	INFO	raft/raft.go:442	the election timeout is 321
+															the distance between now and last time from leader is 322ms
+															rf.state.isleader is false
+															rf.state.currTerm is 17
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:36.516+0800	INFO	raft/raft.go:465	rf.currenTerm is 18, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:36.516+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:36.516+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:36.516+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:04:36.883+0800	INFO	raft/raft.go:442	the election timeout is 364
+															the distance between now and last time from leader is 366ms
+															rf.state.isleader is false
+															rf.state.currTerm is 18
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:04:36.883+0800	INFO	raft/raft.go:465	rf.currenTerm is 19, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:04:36.883+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:04:36.883+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:04:36.883+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:16.653+0800	INFO	raft/raft.go:442	the election timeout is 355
+															the distance between now and last time from leader is 358ms
+															rf.state.isleader is false
+															rf.state.currTerm is 0
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:16.653+0800	INFO	raft/raft.go:465	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:16.653+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:05:16.653+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:05:16.653+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:05:16.653+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:05:16.653+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:19.556+0800	INFO	raft/raft.go:574	fail to receive reply from majority servers, rf.me is 0, sendFaults is 2
+2024-01-15T21:05:19.558+0800	INFO	raft/raft.go:442	the election timeout is 345
+															the distance between now and last time from leader is 2905ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:19.558+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:19.558+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:19.558+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:19.558+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:19.918+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 2
+2024-01-15T21:05:19.918+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-15T21:05:19.945+0800	INFO	raft/raft.go:442	the election timeout is 386
+															the distance between now and last time from leader is 387ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:19.945+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:19.945+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:19.945+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:19.945+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:20.332+0800	INFO	raft/raft.go:442	the election timeout is 385
+															the distance between now and last time from leader is 386ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:20.332+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:20.332+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:20.332+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:20.332+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:20.435+0800	INFO	raft/raft.go:442	the election timeout is 350
+															the distance between now and last time from leader is 352ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:20.435+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:20.435+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:05:20.435+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:05:20.680+0800	INFO	raft/raft.go:442	the election timeout is 345
+															the distance between now and last time from leader is 347ms
+															rf.state.isleader is false
+															rf.state.currTerm is 4
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:20.680+0800	INFO	raft/raft.go:465	rf.currenTerm is 5, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:20.680+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:20.680+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:20.680+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:20.926+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 2
+															rf.voteFor is 0
+															args.CandiateId is 1
+2024-01-15T21:05:20.926+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 3
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:05:21.066+0800	INFO	raft/raft.go:442	the election timeout is 385
+															the distance between now and last time from leader is 386ms
+															rf.state.isleader is false
+															rf.state.currTerm is 5
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:21.066+0800	INFO	raft/raft.go:465	rf.currenTerm is 6, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:21.066+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:21.066+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:21.066+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:21.468+0800	INFO	raft/raft.go:442	the election timeout is 400
+															the distance between now and last time from leader is 402ms
+															rf.state.isleader is false
+															rf.state.currTerm is 6
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:21.468+0800	INFO	raft/raft.go:465	rf.currenTerm is 7, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:21.468+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:21.468+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:21.468+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:21.881+0800	INFO	raft/raft.go:442	the election timeout is 411
+															the distance between now and last time from leader is 412ms
+															rf.state.isleader is false
+															rf.state.currTerm is 7
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:21.881+0800	INFO	raft/raft.go:465	rf.currenTerm is 8, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:21.881+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:21.881+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:21.881+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:22.328+0800	INFO	raft/raft.go:442	the election timeout is 444
+															the distance between now and last time from leader is 446ms
+															rf.state.isleader is false
+															rf.state.currTerm is 8
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:22.328+0800	INFO	raft/raft.go:465	rf.currenTerm is 9, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:22.328+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:22.328+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:22.328+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:22.660+0800	INFO	raft/raft.go:442	the election timeout is 329
+															the distance between now and last time from leader is 331ms
+															rf.state.isleader is false
+															rf.state.currTerm is 9
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:22.660+0800	INFO	raft/raft.go:465	rf.currenTerm is 10, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:22.660+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:22.660+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:22.660+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:23.096+0800	INFO	raft/raft.go:442	the election timeout is 435
+															the distance between now and last time from leader is 436ms
+															rf.state.isleader is false
+															rf.state.currTerm is 10
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:23.096+0800	INFO	raft/raft.go:465	rf.currenTerm is 11, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:23.096+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:23.096+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:23.096+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:23.454+0800	INFO	raft/raft.go:442	the election timeout is 355
+															the distance between now and last time from leader is 358ms
+															rf.state.isleader is false
+															rf.state.currTerm is 11
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:23.454+0800	INFO	raft/raft.go:465	rf.currenTerm is 12, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:23.454+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:23.454+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:23.454+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:23.848+0800	INFO	raft/raft.go:442	the election timeout is 391
+															the distance between now and last time from leader is 393ms
+															rf.state.isleader is false
+															rf.state.currTerm is 12
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:23.848+0800	INFO	raft/raft.go:465	rf.currenTerm is 13, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:23.848+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:23.848+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:23.848+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:24.214+0800	INFO	raft/raft.go:442	the election timeout is 365
+															the distance between now and last time from leader is 366ms
+															rf.state.isleader is false
+															rf.state.currTerm is 13
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:24.214+0800	INFO	raft/raft.go:465	rf.currenTerm is 14, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:24.214+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:24.214+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:24.214+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:24.575+0800	INFO	raft/raft.go:442	the election timeout is 360
+															the distance between now and last time from leader is 361ms
+															rf.state.isleader is false
+															rf.state.currTerm is 14
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:24.575+0800	INFO	raft/raft.go:465	rf.currenTerm is 15, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:24.575+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:24.575+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:24.575+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:24.588+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:24.588+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:24.590+0800	INFO	raft/raft.go:442	the election timeout is 427
+															the distance between now and last time from leader is 3464ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:24.590+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:24.590+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:05:24.590+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:05:24.893+0800	INFO	raft/raft.go:442	the election timeout is 315
+															the distance between now and last time from leader is 317ms
+															rf.state.isleader is false
+															rf.state.currTerm is 15
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:24.893+0800	INFO	raft/raft.go:465	rf.currenTerm is 16, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:24.893+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:24.893+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:05:24.893+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:25.214+0800	INFO	raft/raft.go:442	the election timeout is 320
+															the distance between now and last time from leader is 321ms
+															rf.state.isleader is false
+															rf.state.currTerm is 16
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:05:25.214+0800	INFO	raft/raft.go:465	rf.currenTerm is 17, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:05:25.214+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:05:25.215+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:05:25.215+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:25.805+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-15T21:07:25.805+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:07:28.948+0800	INFO	raft/raft.go:442	the election timeout is 338
+															the distance between now and last time from leader is 339ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:28.948+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:28.948+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:28.948+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:28.948+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:29.067+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-15T21:07:29.067+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:07:29.282+0800	INFO	raft/raft.go:442	the election timeout is 331
+															the distance between now and last time from leader is 333ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:29.282+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:29.282+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:29.282+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:29.282+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:29.682+0800	INFO	raft/raft.go:442	the election timeout is 397
+															the distance between now and last time from leader is 400ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:29.682+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:29.682+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:29.682+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:29.682+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:29.730+0800	INFO	raft/raft.go:442	the election timeout is 376
+															the distance between now and last time from leader is 378ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:29.730+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:29.731+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:07:29.731+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:07:30.040+0800	INFO	raft/raft.go:442	the election timeout is 356
+															the distance between now and last time from leader is 358ms
+															rf.state.isleader is false
+															rf.state.currTerm is 4
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:30.040+0800	INFO	raft/raft.go:465	rf.currenTerm is 5, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:30.040+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:30.040+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:30.040+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:30.101+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 2
+															rf.voteFor is 0
+															args.CandiateId is 2
+2024-01-15T21:07:30.101+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 3
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-15T21:07:30.352+0800	INFO	raft/raft.go:442	the election timeout is 309
+															the distance between now and last time from leader is 311ms
+															rf.state.isleader is false
+															rf.state.currTerm is 5
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:30.352+0800	INFO	raft/raft.go:465	rf.currenTerm is 6, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:30.352+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:30.352+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:30.352+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:30.445+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:30.445+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:30.643+0800	INFO	raft/raft.go:442	the election timeout is 369
+															the distance between now and last time from leader is 370ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:30.643+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:30.733+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:30.780+0800	INFO	raft/raft.go:442	the election timeout is 427
+															the distance between now and last time from leader is 428ms
+															rf.state.isleader is false
+															rf.state.currTerm is 6
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:30.780+0800	INFO	raft/raft.go:465	rf.currenTerm is 7, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:30.780+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:30.780+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:30.780+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:31.122+0800	INFO	raft/raft.go:442	the election timeout is 340
+															the distance between now and last time from leader is 341ms
+															rf.state.isleader is false
+															rf.state.currTerm is 7
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:31.122+0800	INFO	raft/raft.go:465	rf.currenTerm is 8, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:31.122+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:31.122+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:31.122+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:31.473+0800	INFO	raft/raft.go:442	the election timeout is 349
+															the distance between now and last time from leader is 351ms
+															rf.state.isleader is false
+															rf.state.currTerm is 8
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:31.473+0800	INFO	raft/raft.go:465	rf.currenTerm is 9, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:31.473+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:31.473+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:31.473+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:31.851+0800	INFO	raft/raft.go:442	the election timeout is 375
+															the distance between now and last time from leader is 377ms
+															rf.state.isleader is false
+															rf.state.currTerm is 9
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:31.851+0800	INFO	raft/raft.go:465	rf.currenTerm is 10, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:31.851+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:31.851+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:31.851+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:32.260+0800	INFO	raft/raft.go:442	the election timeout is 407
+															the distance between now and last time from leader is 409ms
+															rf.state.isleader is false
+															rf.state.currTerm is 10
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:32.260+0800	INFO	raft/raft.go:465	rf.currenTerm is 11, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:32.261+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:32.261+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:32.261+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:32.672+0800	INFO	raft/raft.go:442	the election timeout is 409
+															the distance between now and last time from leader is 411ms
+															rf.state.isleader is false
+															rf.state.currTerm is 11
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:32.672+0800	INFO	raft/raft.go:465	rf.currenTerm is 12, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:32.672+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:32.672+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:32.672+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:33.116+0800	INFO	raft/raft.go:442	the election timeout is 443
+															the distance between now and last time from leader is 444ms
+															rf.state.isleader is false
+															rf.state.currTerm is 12
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:33.116+0800	INFO	raft/raft.go:465	rf.currenTerm is 13, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:33.116+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:33.116+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:33.116+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:33.432+0800	INFO	raft/raft.go:442	the election timeout is 313
+															the distance between now and last time from leader is 315ms
+															rf.state.isleader is false
+															rf.state.currTerm is 13
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:33.432+0800	INFO	raft/raft.go:465	rf.currenTerm is 14, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:33.432+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:33.432+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:33.432+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:33.855+0800	INFO	raft/raft.go:442	the election timeout is 420
+															the distance between now and last time from leader is 422ms
+															rf.state.isleader is false
+															rf.state.currTerm is 14
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:33.855+0800	INFO	raft/raft.go:465	rf.currenTerm is 15, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:33.855+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:33.855+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:33.855+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:34.157+0800	INFO	raft/raft.go:442	the election timeout is 300
+															the distance between now and last time from leader is 302ms
+															rf.state.isleader is false
+															rf.state.currTerm is 15
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:34.157+0800	INFO	raft/raft.go:465	rf.currenTerm is 16, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:34.157+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:34.157+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:34.157+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:34.410+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:34.410+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:34.412+0800	INFO	raft/raft.go:442	the election timeout is 334
+															the distance between now and last time from leader is 3768ms
+															rf.state.isleader is false
+															rf.state.currTerm is 4
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:34.412+0800	INFO	raft/raft.go:465	rf.currenTerm is 5, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:34.412+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:07:34.412+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:07:34.489+0800	INFO	raft/raft.go:442	the election timeout is 330
+															the distance between now and last time from leader is 332ms
+															rf.state.isleader is false
+															rf.state.currTerm is 16
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:34.489+0800	INFO	raft/raft.go:465	rf.currenTerm is 17, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:34.489+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:34.489+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:34.489+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:34.889+0800	INFO	raft/raft.go:442	the election timeout is 397
+															the distance between now and last time from leader is 399ms
+															rf.state.isleader is false
+															rf.state.currTerm is 17
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:34.889+0800	INFO	raft/raft.go:465	rf.currenTerm is 18, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:34.889+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:34.889+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:34.889+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:35.234+0800	INFO	raft/raft.go:442	the election timeout is 342
+															the distance between now and last time from leader is 344ms
+															rf.state.isleader is false
+															rf.state.currTerm is 18
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:35.234+0800	INFO	raft/raft.go:465	rf.currenTerm is 19, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:35.234+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:35.234+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:35.234+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:45.630+0800	INFO	raft/raft.go:442	the election timeout is 369
+															the distance between now and last time from leader is 371ms
+															rf.state.isleader is false
+															rf.state.currTerm is 0
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:45.630+0800	INFO	raft/raft.go:465	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:45.630+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:07:45.630+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:07:45.630+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:07:45.630+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:07:45.630+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:48.520+0800	INFO	raft/raft.go:574	fail to receive reply from majority servers, rf.me is 0, sendFaults is 2
+2024-01-15T21:07:48.522+0800	INFO	raft/raft.go:442	the election timeout is 388
+															the distance between now and last time from leader is 2891ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:48.522+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:48.522+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:48.522+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:48.522+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:48.780+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-15T21:07:48.780+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:07:48.923+0800	INFO	raft/raft.go:442	the election timeout is 399
+															the distance between now and last time from leader is 400ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:48.923+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:48.923+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:48.923+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:48.923+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:49.324+0800	INFO	raft/raft.go:442	the election timeout is 400
+															the distance between now and last time from leader is 401ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:49.324+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:49.324+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:49.324+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:49.324+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:49.332+0800	INFO	raft/raft.go:442	the election timeout is 384
+															the distance between now and last time from leader is 385ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:49.332+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:49.332+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:07:49.332+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:07:49.715+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 2
+															rf.voteFor is 0
+															args.CandiateId is 2
+2024-01-15T21:07:49.715+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 3
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-15T21:07:49.766+0800	INFO	raft/raft.go:442	the election timeout is 439
+															the distance between now and last time from leader is 442ms
+															rf.state.isleader is false
+															rf.state.currTerm is 4
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:49.766+0800	INFO	raft/raft.go:465	rf.currenTerm is 5, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:49.766+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:49.766+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:49.766+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:50.136+0800	INFO	raft/raft.go:442	the election timeout is 369
+															the distance between now and last time from leader is 370ms
+															rf.state.isleader is false
+															rf.state.currTerm is 5
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:50.136+0800	INFO	raft/raft.go:465	rf.currenTerm is 6, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:50.136+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:50.136+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:50.136+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:50.540+0800	INFO	raft/raft.go:442	the election timeout is 401
+															the distance between now and last time from leader is 403ms
+															rf.state.isleader is false
+															rf.state.currTerm is 6
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:50.540+0800	INFO	raft/raft.go:465	rf.currenTerm is 7, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:50.540+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:50.540+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:50.540+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:50.901+0800	INFO	raft/raft.go:442	the election timeout is 360
+															the distance between now and last time from leader is 361ms
+															rf.state.isleader is false
+															rf.state.currTerm is 7
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:50.901+0800	INFO	raft/raft.go:465	rf.currenTerm is 8, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:50.901+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:50.901+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:50.901+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:51.346+0800	INFO	raft/raft.go:442	the election timeout is 444
+															the distance between now and last time from leader is 445ms
+															rf.state.isleader is false
+															rf.state.currTerm is 8
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:51.346+0800	INFO	raft/raft.go:465	rf.currenTerm is 9, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:51.346+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:51.346+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:51.346+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:51.749+0800	INFO	raft/raft.go:442	the election timeout is 401
+															the distance between now and last time from leader is 402ms
+															rf.state.isleader is false
+															rf.state.currTerm is 9
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:51.749+0800	INFO	raft/raft.go:465	rf.currenTerm is 10, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:51.749+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:51.749+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:51.749+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:52.168+0800	INFO	raft/raft.go:442	the election timeout is 417
+															the distance between now and last time from leader is 419ms
+															rf.state.isleader is false
+															rf.state.currTerm is 10
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:52.168+0800	INFO	raft/raft.go:465	rf.currenTerm is 11, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:52.168+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:52.168+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:52.168+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:52.587+0800	INFO	raft/raft.go:442	the election timeout is 416
+															the distance between now and last time from leader is 418ms
+															rf.state.isleader is false
+															rf.state.currTerm is 11
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:52.587+0800	INFO	raft/raft.go:465	rf.currenTerm is 12, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:52.587+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:52.587+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:52.587+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:52.955+0800	INFO	raft/raft.go:442	the election timeout is 365
+															the distance between now and last time from leader is 367ms
+															rf.state.isleader is false
+															rf.state.currTerm is 12
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:52.955+0800	INFO	raft/raft.go:465	rf.currenTerm is 13, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:52.955+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:52.955+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:52.955+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:53.281+0800	INFO	raft/raft.go:442	the election timeout is 323
+															the distance between now and last time from leader is 325ms
+															rf.state.isleader is false
+															rf.state.currTerm is 13
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:53.281+0800	INFO	raft/raft.go:465	rf.currenTerm is 14, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:53.281+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:53.281+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:53.281+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:53.604+0800	INFO	raft/raft.go:442	the election timeout is 322
+															the distance between now and last time from leader is 323ms
+															rf.state.isleader is false
+															rf.state.currTerm is 14
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:53.604+0800	INFO	raft/raft.go:465	rf.currenTerm is 15, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:53.604+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:53.604+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:53.604+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:54.045+0800	INFO	raft/raft.go:442	the election timeout is 439
+															the distance between now and last time from leader is 441ms
+															rf.state.isleader is false
+															rf.state.currTerm is 15
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:54.045+0800	INFO	raft/raft.go:465	rf.currenTerm is 16, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:54.045+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:54.045+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:54.045+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:54.290+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:54.290+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:54.292+0800	INFO	raft/raft.go:442	the election timeout is 432
+															the distance between now and last time from leader is 4337ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:54.292+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:54.293+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:07:54.293+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:07:54.400+0800	INFO	raft/raft.go:442	the election timeout is 353
+															the distance between now and last time from leader is 354ms
+															rf.state.isleader is false
+															rf.state.currTerm is 16
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:54.400+0800	INFO	raft/raft.go:465	rf.currenTerm is 17, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:54.400+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:54.400+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:54.400+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:54.423+0800	INFO	raft/raft.go:574	fail to receive reply from majority servers, rf.me is 0, sendFaults is 2
+2024-01-15T21:07:54.831+0800	INFO	raft/raft.go:442	the election timeout is 429
+															the distance between now and last time from leader is 430ms
+															rf.state.isleader is false
+															rf.state.currTerm is 17
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:54.831+0800	INFO	raft/raft.go:465	rf.currenTerm is 18, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:54.831+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:54.831+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:54.831+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:55.158+0800	INFO	raft/raft.go:442	the election timeout is 326
+															the distance between now and last time from leader is 327ms
+															rf.state.isleader is false
+															rf.state.currTerm is 18
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:55.158+0800	INFO	raft/raft.go:465	rf.currenTerm is 19, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:55.158+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:55.158+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:55.159+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:55.493+0800	INFO	raft/raft.go:442	the election timeout is 333
+															the distance between now and last time from leader is 334ms
+															rf.state.isleader is false
+															rf.state.currTerm is 19
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:55.493+0800	INFO	raft/raft.go:465	rf.currenTerm is 20, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:55.493+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:55.493+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:55.493+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:55.926+0800	INFO	raft/raft.go:442	the election timeout is 430
+															the distance between now and last time from leader is 432ms
+															rf.state.isleader is false
+															rf.state.currTerm is 20
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:55.926+0800	INFO	raft/raft.go:465	rf.currenTerm is 21, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:55.926+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:55.926+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:55.926+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:56.279+0800	INFO	raft/raft.go:442	the election timeout is 350
+															the distance between now and last time from leader is 352ms
+															rf.state.isleader is false
+															rf.state.currTerm is 21
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:56.279+0800	INFO	raft/raft.go:465	rf.currenTerm is 22, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:56.279+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:56.279+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:56.279+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:56.512+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 4
+															rf.voteFor is 0
+															args.CandiateId is 1
+2024-01-15T21:07:56.512+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 5
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:07:56.594+0800	INFO	raft/raft.go:442	the election timeout is 312
+															the distance between now and last time from leader is 314ms
+															rf.state.isleader is false
+															rf.state.currTerm is 22
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:56.594+0800	INFO	raft/raft.go:465	rf.currenTerm is 23, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:56.594+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:56.594+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:56.594+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:56.940+0800	INFO	raft/raft.go:442	the election timeout is 344
+															the distance between now and last time from leader is 346ms
+															rf.state.isleader is false
+															rf.state.currTerm is 23
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:56.940+0800	INFO	raft/raft.go:465	rf.currenTerm is 24, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:56.940+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:56.940+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:07:56.940+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:57.311+0800	INFO	raft/raft.go:442	the election timeout is 368
+															the distance between now and last time from leader is 370ms
+															rf.state.isleader is false
+															rf.state.currTerm is 24
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:07:57.311+0800	INFO	raft/raft.go:465	rf.currenTerm is 25, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:07:57.311+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:07:57.311+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:07:57.311+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:28.629+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-15T21:11:28.629+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:11:31.873+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-15T21:11:31.874+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:11:31.885+0800	INFO	raft/raft.go:442	the election timeout is 424
+															the distance between now and last time from leader is 425ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:31.885+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:31.885+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:31.885+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:31.885+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:32.191+0800	INFO	raft/raft.go:442	the election timeout is 303
+															the distance between now and last time from leader is 305ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:32.191+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:32.191+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:32.191+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:32.191+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:32.360+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 2
+2024-01-15T21:11:32.360+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 2
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-15T21:11:32.544+0800	INFO	raft/raft.go:442	the election timeout is 350
+															the distance between now and last time from leader is 352ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:32.544+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:32.544+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:32.544+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:32.544+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:32.782+0800	INFO	raft/raft.go:442	the election timeout is 331
+															the distance between now and last time from leader is 333ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:32.782+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:32.783+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:11:32.783+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:11:32.783+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:11:32.783+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:11:32.783+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:32.970+0800	INFO	raft/raft.go:442	the election timeout is 424
+															the distance between now and last time from leader is 426ms
+															rf.state.isleader is false
+															rf.state.currTerm is 4
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:32.970+0800	INFO	raft/raft.go:465	rf.currenTerm is 5, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:32.970+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:32.970+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:32.970+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:33.384+0800	INFO	raft/raft.go:442	the election timeout is 412
+															the distance between now and last time from leader is 413ms
+															rf.state.isleader is false
+															rf.state.currTerm is 5
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:33.384+0800	INFO	raft/raft.go:465	rf.currenTerm is 6, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:33.384+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:33.384+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:33.384+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:33.711+0800	INFO	raft/raft.go:442	the election timeout is 324
+															the distance between now and last time from leader is 326ms
+															rf.state.isleader is false
+															rf.state.currTerm is 6
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:33.711+0800	INFO	raft/raft.go:465	rf.currenTerm is 7, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:33.711+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:33.711+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:33.711+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:34.069+0800	INFO	raft/raft.go:442	the election timeout is 355
+															the distance between now and last time from leader is 358ms
+															rf.state.isleader is false
+															rf.state.currTerm is 7
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:34.069+0800	INFO	raft/raft.go:465	rf.currenTerm is 8, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:34.069+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:34.069+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:34.069+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:34.420+0800	INFO	raft/raft.go:442	the election timeout is 348
+															the distance between now and last time from leader is 350ms
+															rf.state.isleader is false
+															rf.state.currTerm is 8
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:34.420+0800	INFO	raft/raft.go:465	rf.currenTerm is 9, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:34.420+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:34.420+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:34.420+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:34.849+0800	INFO	raft/raft.go:442	the election timeout is 426
+															the distance between now and last time from leader is 429ms
+															rf.state.isleader is false
+															rf.state.currTerm is 9
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:34.849+0800	INFO	raft/raft.go:465	rf.currenTerm is 10, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:34.849+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:34.849+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:34.849+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:35.224+0800	INFO	raft/raft.go:442	the election timeout is 373
+															the distance between now and last time from leader is 374ms
+															rf.state.isleader is false
+															rf.state.currTerm is 10
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:35.224+0800	INFO	raft/raft.go:465	rf.currenTerm is 11, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:35.224+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:35.224+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:35.224+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:35.624+0800	INFO	raft/raft.go:442	the election timeout is 398
+															the distance between now and last time from leader is 400ms
+															rf.state.isleader is false
+															rf.state.currTerm is 11
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:35.624+0800	INFO	raft/raft.go:465	rf.currenTerm is 12, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:35.624+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:35.624+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:35.624+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:35.946+0800	INFO	raft/raft.go:442	the election timeout is 319
+															the distance between now and last time from leader is 321ms
+															rf.state.isleader is false
+															rf.state.currTerm is 12
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:35.946+0800	INFO	raft/raft.go:465	rf.currenTerm is 13, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:35.946+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:35.946+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:35.946+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:36.379+0800	INFO	raft/raft.go:442	the election timeout is 431
+															the distance between now and last time from leader is 433ms
+															rf.state.isleader is false
+															rf.state.currTerm is 13
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:36.379+0800	INFO	raft/raft.go:465	rf.currenTerm is 14, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:36.379+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:36.379+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:36.379+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:36.681+0800	INFO	raft/raft.go:442	the election timeout is 301
+															the distance between now and last time from leader is 302ms
+															rf.state.isleader is false
+															rf.state.currTerm is 14
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:36.681+0800	INFO	raft/raft.go:465	rf.currenTerm is 15, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:36.682+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:36.682+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:36.682+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:37.047+0800	INFO	raft/raft.go:442	the election timeout is 364
+															the distance between now and last time from leader is 365ms
+															rf.state.isleader is false
+															rf.state.currTerm is 15
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:37.047+0800	INFO	raft/raft.go:465	rf.currenTerm is 16, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:37.047+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:37.047+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:11:37.047+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:37.406+0800	INFO	raft/raft.go:442	the election timeout is 357
+															the distance between now and last time from leader is 358ms
+															rf.state.isleader is false
+															rf.state.currTerm is 16
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:11:37.406+0800	INFO	raft/raft.go:465	rf.currenTerm is 17, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:11:37.406+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:11:37.406+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:11:37.406+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:31.064+0800	INFO	raft/raft.go:442	the election timeout is 427
+															the distance between now and last time from leader is 429ms
+															rf.state.isleader is false
+															rf.state.currTerm is 0
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:31.064+0800	INFO	raft/raft.go:465	rf.currenTerm is 1, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:31.064+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:20:31.064+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:20:31.064+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:20:31.064+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:20:31.064+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:33.896+0800	INFO	raft/raft.go:574	fail to receive reply from majority servers, rf.me is 0, sendFaults is 2
+2024-01-15T21:20:33.898+0800	INFO	raft/raft.go:442	the election timeout is 402
+															the distance between now and last time from leader is 2834ms
+															rf.state.isleader is false
+															rf.state.currTerm is 1
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:33.898+0800	INFO	raft/raft.go:465	rf.currenTerm is 2, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:33.898+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:33.898+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:33.898+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:34.230+0800	INFO	raft/raft.go:442	the election timeout is 330
+															the distance between now and last time from leader is 331ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:34.230+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:34.230+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:34.230+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:34.230+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:34.232+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 0
+															rf.voteFor is -1
+															args.CandiateId is 1
+2024-01-15T21:20:34.232+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 1
+2024-01-15T21:20:34.631+0800	INFO	raft/raft.go:217	enter the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 1
+															rf.voteFor is 1
+															args.CandiateId is 2
+2024-01-15T21:20:34.631+0800	INFO	raft/raft.go:260	before exiting the `rf.Requestvote()` handler
+															rf.me is 0
+															rf.currentTerm is 2
+															rf.voteFor is 2
+															args.CandiateId is 2
+2024-01-15T21:20:34.670+0800	INFO	raft/raft.go:442	the election timeout is 439
+															the distance between now and last time from leader is 440ms
+															rf.state.isleader is false
+															rf.state.currTerm is 3
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:34.670+0800	INFO	raft/raft.go:465	rf.currenTerm is 4, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:34.670+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:34.670+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:34.670+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:35.022+0800	INFO	raft/raft.go:442	the election timeout is 350
+															the distance between now and last time from leader is 351ms
+															rf.state.isleader is false
+															rf.state.currTerm is 4
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:35.022+0800	INFO	raft/raft.go:465	rf.currenTerm is 5, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:35.022+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:35.022+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:35.022+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:35.131+0800	INFO	raft/raft.go:442	the election timeout is 404
+															the distance between now and last time from leader is 406ms
+															rf.state.isleader is false
+															rf.state.currTerm is 2
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:35.131+0800	INFO	raft/raft.go:465	rf.currenTerm is 3, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:35.131+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:20:35.131+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:20:35.131+0800	INFO	raft/raft.go:480	Convert2Candidate.me is 0
+2024-01-15T21:20:35.131+0800	INFO	raft/raft.go:510	the leader is 0
+2024-01-15T21:20:35.131+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:35.446+0800	INFO	raft/raft.go:442	the election timeout is 422
+															the distance between now and last time from leader is 424ms
+															rf.state.isleader is false
+															rf.state.currTerm is 5
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:35.446+0800	INFO	raft/raft.go:465	rf.currenTerm is 6, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:35.446+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:35.446+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:35.446+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:35.849+0800	INFO	raft/raft.go:442	the election timeout is 400
+															the distance between now and last time from leader is 402ms
+															rf.state.isleader is false
+															rf.state.currTerm is 6
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:35.849+0800	INFO	raft/raft.go:465	rf.currenTerm is 7, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:35.849+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:35.849+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:35.849+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:36.228+0800	INFO	raft/raft.go:442	the election timeout is 377
+															the distance between now and last time from leader is 378ms
+															rf.state.isleader is false
+															rf.state.currTerm is 7
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:36.228+0800	INFO	raft/raft.go:465	rf.currenTerm is 8, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:36.228+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:36.228+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:36.228+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:36.635+0800	INFO	raft/raft.go:442	the election timeout is 405
+															the distance between now and last time from leader is 407ms
+															rf.state.isleader is false
+															rf.state.currTerm is 8
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:36.635+0800	INFO	raft/raft.go:465	rf.currenTerm is 9, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:36.635+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:36.636+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:36.636+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:37.048+0800	INFO	raft/raft.go:442	the election timeout is 410
+															the distance between now and last time from leader is 412ms
+															rf.state.isleader is false
+															rf.state.currTerm is 9
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:37.048+0800	INFO	raft/raft.go:465	rf.currenTerm is 10, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:37.048+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:37.048+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:37.048+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:37.430+0800	INFO	raft/raft.go:442	the election timeout is 381
+															the distance between now and last time from leader is 382ms
+															rf.state.isleader is false
+															rf.state.currTerm is 10
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:37.430+0800	INFO	raft/raft.go:465	rf.currenTerm is 11, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:37.431+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:37.431+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:37.431+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:37.786+0800	INFO	raft/raft.go:442	the election timeout is 353
+															the distance between now and last time from leader is 355ms
+															rf.state.isleader is false
+															rf.state.currTerm is 11
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:37.786+0800	INFO	raft/raft.go:465	rf.currenTerm is 12, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:37.786+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:37.786+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:37.786+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:38.184+0800	INFO	raft/raft.go:442	the election timeout is 396
+															the distance between now and last time from leader is 397ms
+															rf.state.isleader is false
+															rf.state.currTerm is 12
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:38.184+0800	INFO	raft/raft.go:465	rf.currenTerm is 13, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:38.184+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:38.184+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:38.184+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:38.593+0800	INFO	raft/raft.go:442	the election timeout is 407
+															the distance between now and last time from leader is 409ms
+															rf.state.isleader is false
+															rf.state.currTerm is 13
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:38.593+0800	INFO	raft/raft.go:465	rf.currenTerm is 14, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:38.593+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:38.594+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:38.594+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:39.003+0800	INFO	raft/raft.go:442	the election timeout is 407
+															the distance between now and last time from leader is 409ms
+															rf.state.isleader is false
+															rf.state.currTerm is 14
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:39.003+0800	INFO	raft/raft.go:465	rf.currenTerm is 15, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:39.003+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:39.003+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:39.003+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:39.453+0800	INFO	raft/raft.go:442	the election timeout is 448
+															the distance between now and last time from leader is 450ms
+															rf.state.isleader is false
+															rf.state.currTerm is 15
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:39.453+0800	INFO	raft/raft.go:465	rf.currenTerm is 16, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:39.453+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:39.453+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:39.453+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:39.812+0800	INFO	raft/raft.go:442	the election timeout is 357
+															the distance between now and last time from leader is 358ms
+															rf.state.isleader is false
+															rf.state.currTerm is 16
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:39.812+0800	INFO	raft/raft.go:465	rf.currenTerm is 17, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:39.812+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:39.812+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:39.812+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:40.149+0800	INFO	raft/raft.go:442	the election timeout is 334
+															the distance between now and last time from leader is 336ms
+															rf.state.isleader is false
+															rf.state.currTerm is 17
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:40.149+0800	INFO	raft/raft.go:465	rf.currenTerm is 18, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:40.149+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:40.149+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:40.149+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:40.532+0800	INFO	raft/raft.go:442	the election timeout is 381
+															the distance between now and last time from leader is 383ms
+															rf.state.isleader is false
+															rf.state.currTerm is 18
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:40.532+0800	INFO	raft/raft.go:465	rf.currenTerm is 19, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:40.533+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:40.533+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:40.533+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:40.856+0800	INFO	raft/raft.go:442	the election timeout is 321
+															the distance between now and last time from leader is 323ms
+															rf.state.isleader is false
+															rf.state.currTerm is 19
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:40.856+0800	INFO	raft/raft.go:465	rf.currenTerm is 20, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:40.856+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:40.856+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:40.856+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:41.184+0800	INFO	raft/raft.go:442	the election timeout is 325
+															the distance between now and last time from leader is 327ms
+															rf.state.isleader is false
+															rf.state.currTerm is 20
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:41.184+0800	INFO	raft/raft.go:465	rf.currenTerm is 21, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:41.184+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:41.184+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:41.184+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:41.588+0800	INFO	raft/raft.go:442	the election timeout is 402
+															the distance between now and last time from leader is 404ms
+															rf.state.isleader is false
+															rf.state.currTerm is 21
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:41.588+0800	INFO	raft/raft.go:465	rf.currenTerm is 22, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:41.588+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1
+2024-01-15T21:20:41.588+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:41.588+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:41.905+0800	INFO	raft/raft.go:442	the election timeout is 314
+															the distance between now and last time from leader is 316ms
+															rf.state.isleader is false
+															rf.state.currTerm is 22
+															leader election's me is 0
+															begin to elect
+2024-01-15T21:20:41.905+0800	INFO	raft/raft.go:465	rf.currenTerm is 23, rf.lastLogIndex is 0, rf.lastLogTerm is 0, me is 0
+2024-01-15T21:20:41.905+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 2
+2024-01-15T21:20:41.905+0800	INFO	raft/raft.go:524	------a new leaderElection() call-------
+2024-01-15T21:20:41.905+0800	INFO	raft/raft.go:488	rf.sendRequestVote failed when send from server 0 to server 1

@@ -8,7 +8,7 @@ package main
 // go build -buildmode=plugin crash.go
 //
 
-import "../mr"
+import "6.824/src/mr"
 import crand "crypto/rand"
 import "math/big"
 import "strings"
@@ -19,7 +19,7 @@ import "time"
 
 func maybeCrash() {
 	max := big.NewInt(1000)
-	rr, _ := crand.Int(crand.Reader, max)
+	rr, _ := crand.Int(crand.Reader, max)			// * return a uniform random value in [0, max)
 	if rr.Int64() < 330 {
 		// crash!
 		os.Exit(1)

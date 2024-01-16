@@ -1,0 +1,790 @@
+2024-01-06T14:56:23.789+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T14:56:23.789+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T14:56:23.789+0800	INFO	raft/config.go:160	endnames is [[jjVLndRpezcnasxdG9UE wT-xRTcaxPgjhddMoQpL PywKIfVRDQzE62wZweYj] [] []]
+2024-01-06T14:56:23.789+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[jjVLndRpezcnasxdG9UE:0]
+2024-01-06T14:56:23.789+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[jjVLndRpezcnasxdG9UE:0 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.789+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[PywKIfVRDQzE62wZweYj:2 jjVLndRpezcnasxdG9UE:0 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.790+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-06T14:56:23.790+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T14:56:23.790+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c4e0
+2024-01-06T14:56:23.842+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 <nil> <nil>]
+2024-01-06T14:56:23.842+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T14:56:23.842+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0], servername is 0, rs is &{{0 0} map[Raft:0xc000198140] 0 0xc000010630}
+2024-01-06T14:56:23.842+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T14:56:23.842+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T14:56:23.842+0800	INFO	raft/config.go:160	endnames is [[jjVLndRpezcnasxdG9UE wT-xRTcaxPgjhddMoQpL PywKIfVRDQzE62wZweYj] [TcyfiFVI0DMCy05yT3ZZ TXseSXLwiUZ3SmWeQfll -OCO9A7JUMXKOiytlIfT] []]
+2024-01-06T14:56:23.842+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[PywKIfVRDQzE62wZweYj:2 TcyfiFVI0DMCy05yT3ZZ:0 jjVLndRpezcnasxdG9UE:0 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.842+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 jjVLndRpezcnasxdG9UE:0 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.842+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-OCO9A7JUMXKOiytlIfT:2 PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 jjVLndRpezcnasxdG9UE:0 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.842+0800	INFO	raft/config.go:168	ends is [0xc00007e400 0xc00007e420 0xc00007e440]
+2024-01-06T14:56:23.842+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-06T14:56:23.842+0800	INFO	raft/config.go:224	ends is [0xc00007e400 0xc00007e420 0xc00007e440], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-06T14:56:23.897+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc0000887e0 <nil>]
+2024-01-06T14:56:23.897+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T14:56:23.897+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0], servername is 1, rs is &{{0 0} map[Raft:0xc000198280] 0 0xc000010670}
+2024-01-06T14:56:23.898+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T14:56:23.898+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T14:56:23.898+0800	INFO	raft/config.go:160	endnames is [[jjVLndRpezcnasxdG9UE wT-xRTcaxPgjhddMoQpL PywKIfVRDQzE62wZweYj] [TcyfiFVI0DMCy05yT3ZZ TXseSXLwiUZ3SmWeQfll -OCO9A7JUMXKOiytlIfT] [cyXIzWTxLclMRfQ14UYQ pBmx_ZbLf7p4PqbiJLQ9 3bp6HaEG4BgT3hSaupMP]]
+2024-01-06T14:56:23.898+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-OCO9A7JUMXKOiytlIfT:2 PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 cyXIzWTxLclMRfQ14UYQ:0 jjVLndRpezcnasxdG9UE:0 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.898+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-OCO9A7JUMXKOiytlIfT:2 PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 cyXIzWTxLclMRfQ14UYQ:0 jjVLndRpezcnasxdG9UE:0 pBmx_ZbLf7p4PqbiJLQ9:1 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.898+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-OCO9A7JUMXKOiytlIfT:2 3bp6HaEG4BgT3hSaupMP:2 PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 cyXIzWTxLclMRfQ14UYQ:0 jjVLndRpezcnasxdG9UE:0 pBmx_ZbLf7p4PqbiJLQ9:1 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.898+0800	INFO	raft/config.go:168	ends is [0xc00007e540 0xc00007e560 0xc00007e580]
+2024-01-06T14:56:23.898+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc0001981c0 <nil>]
+2024-01-06T14:56:23.898+0800	INFO	raft/config.go:224	ends is [0xc00007e540 0xc00007e560 0xc00007e580], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c5a0
+2024-01-06T14:56:23.953+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc0000887e0 0xc000088a80]
+2024-01-06T14:56:23.953+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T14:56:23.953+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc00007e620], servername is 2, rs is &{{0 0} map[Raft:0xc0001983c0] 0 0xc0000106b0}
+2024-01-06T14:56:23.953+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T14:56:23.953+0800	INFO	raft/config.go:261	cfg.endnames is [[jjVLndRpezcnasxdG9UE wT-xRTcaxPgjhddMoQpL PywKIfVRDQzE62wZweYj] [TcyfiFVI0DMCy05yT3ZZ TXseSXLwiUZ3SmWeQfll -OCO9A7JUMXKOiytlIfT] [cyXIzWTxLclMRfQ14UYQ pBmx_ZbLf7p4PqbiJLQ9 3bp6HaEG4BgT3hSaupMP]]
+2024-01-06T14:56:23.953+0800	INFO	raft/config.go:261	cfg.endnames is [[jjVLndRpezcnasxdG9UE wT-xRTcaxPgjhddMoQpL PywKIfVRDQzE62wZweYj] [TcyfiFVI0DMCy05yT3ZZ TXseSXLwiUZ3SmWeQfll -OCO9A7JUMXKOiytlIfT] [cyXIzWTxLclMRfQ14UYQ pBmx_ZbLf7p4PqbiJLQ9 3bp6HaEG4BgT3hSaupMP]]
+2024-01-06T14:56:23.953+0800	INFO	raft/config.go:261	cfg.endnames is [[jjVLndRpezcnasxdG9UE wT-xRTcaxPgjhddMoQpL PywKIfVRDQzE62wZweYj] [TcyfiFVI0DMCy05yT3ZZ TXseSXLwiUZ3SmWeQfll -OCO9A7JUMXKOiytlIfT] [cyXIzWTxLclMRfQ14UYQ pBmx_ZbLf7p4PqbiJLQ9 3bp6HaEG4BgT3hSaupMP]]
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:211	endname is jjVLndRpezcnasxdG9UE
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[-OCO9A7JUMXKOiytlIfT:true 3bp6HaEG4BgT3hSaupMP:true PywKIfVRDQzE62wZweYj:true TXseSXLwiUZ3SmWeQfll:true TcyfiFVI0DMCy05yT3ZZ:true cyXIzWTxLclMRfQ14UYQ:true jjVLndRpezcnasxdG9UE:true pBmx_ZbLf7p4PqbiJLQ9:true wT-xRTcaxPgjhddMoQpL:true]
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[-OCO9A7JUMXKOiytlIfT:2 3bp6HaEG4BgT3hSaupMP:2 PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 cyXIzWTxLclMRfQ14UYQ:0 jjVLndRpezcnasxdG9UE:0 pBmx_ZbLf7p4PqbiJLQ9:1 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc00007e620]
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198140] 0 0xc000010630}
+2024-01-06T14:56:23.990+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198140] 0 0xc000010630}
+2024-01-06T14:56:24.042+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 250
+2024-01-06T14:56:24.042+0800	INFO	labrpc/labrpc.go:211	endname is TcyfiFVI0DMCy05yT3ZZ
+2024-01-06T14:56:24.042+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[-OCO9A7JUMXKOiytlIfT:true 3bp6HaEG4BgT3hSaupMP:true PywKIfVRDQzE62wZweYj:true TXseSXLwiUZ3SmWeQfll:true TcyfiFVI0DMCy05yT3ZZ:true cyXIzWTxLclMRfQ14UYQ:true jjVLndRpezcnasxdG9UE:true pBmx_ZbLf7p4PqbiJLQ9:true wT-xRTcaxPgjhddMoQpL:true]
+2024-01-06T14:56:24.042+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[-OCO9A7JUMXKOiytlIfT:2 3bp6HaEG4BgT3hSaupMP:2 PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 cyXIzWTxLclMRfQ14UYQ:0 jjVLndRpezcnasxdG9UE:0 pBmx_ZbLf7p4PqbiJLQ9:1 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:24.043+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc00007e620]
+2024-01-06T14:56:24.043+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T14:56:24.043+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198140] 1 0xc000010630}
+2024-01-06T14:56:24.043+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198140] 1 0xc000010630}
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 408
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:211	endname is cyXIzWTxLclMRfQ14UYQ
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[-OCO9A7JUMXKOiytlIfT:true 3bp6HaEG4BgT3hSaupMP:true PywKIfVRDQzE62wZweYj:true TXseSXLwiUZ3SmWeQfll:true TcyfiFVI0DMCy05yT3ZZ:true cyXIzWTxLclMRfQ14UYQ:true jjVLndRpezcnasxdG9UE:true pBmx_ZbLf7p4PqbiJLQ9:true wT-xRTcaxPgjhddMoQpL:true]
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[-OCO9A7JUMXKOiytlIfT:2 3bp6HaEG4BgT3hSaupMP:2 PywKIfVRDQzE62wZweYj:2 TXseSXLwiUZ3SmWeQfll:1 TcyfiFVI0DMCy05yT3ZZ:0 cyXIzWTxLclMRfQ14UYQ:0 jjVLndRpezcnasxdG9UE:0 pBmx_ZbLf7p4PqbiJLQ9:1 wT-xRTcaxPgjhddMoQpL:1]
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc00007e620]
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198140] 2 0xc000010630}
+2024-01-06T14:56:24.098+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198140] 2 0xc000010630}
+2024-01-06T14:56:28.915+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T14:56:28.915+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T14:56:28.916+0800	INFO	raft/config.go:160	endnames is [[jczpplbrJFTJ6SG-DtZ1 AcqqschTplU0fV9XUGhn SiGHpqXfHvWczliJPTyq] [] []]
+2024-01-06T14:56:28.916+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[jczpplbrJFTJ6SG-DtZ1:0]
+2024-01-06T14:56:28.916+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[AcqqschTplU0fV9XUGhn:1 jczpplbrJFTJ6SG-DtZ1:0]
+2024-01-06T14:56:28.916+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[AcqqschTplU0fV9XUGhn:1 SiGHpqXfHvWczliJPTyq:2 jczpplbrJFTJ6SG-DtZ1:0]
+2024-01-06T14:56:28.916+0800	INFO	raft/config.go:168	ends is [0xc00011e0a0 0xc00011e0c0 0xc00011e0e0]
+2024-01-06T14:56:28.916+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T14:56:28.916+0800	INFO	raft/config.go:224	ends is [0xc00011e0a0 0xc00011e0c0 0xc00011e0e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001322a0
+2024-01-06T14:56:28.965+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e2a0 <nil> <nil>]
+2024-01-06T14:56:28.965+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T14:56:28.965+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00011e180], servername is 0, rs is &{{0 0} map[Raft:0xc00011a280] 0 0xc000138060}
+2024-01-06T14:56:28.965+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T14:56:28.965+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T14:56:28.965+0800	INFO	raft/config.go:160	endnames is [[jczpplbrJFTJ6SG-DtZ1 AcqqschTplU0fV9XUGhn SiGHpqXfHvWczliJPTyq] [m9HH-sYGUhKvQsAXjEZ3 QeXaJ8ffBXdb-KKUgP0G cwqzRB-sLCN5oxNiCd5x] []]
+2024-01-06T14:56:28.965+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[AcqqschTplU0fV9XUGhn:1 SiGHpqXfHvWczliJPTyq:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0]
+2024-01-06T14:56:28.965+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0]
+2024-01-06T14:56:28.965+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 cwqzRB-sLCN5oxNiCd5x:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0]
+2024-01-06T14:56:28.965+0800	INFO	raft/config.go:168	ends is [0xc00011e1e0 0xc00011e200 0xc00011e220]
+2024-01-06T14:56:28.965+0800	INFO	raft/config.go:177	cfg.saved is [0xc00011a1c0 <nil> <nil>]
+2024-01-06T14:56:28.965+0800	INFO	raft/config.go:224	ends is [0xc00011e1e0 0xc00011e200 0xc00011e220], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000132300
+2024-01-06T14:56:29.020+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e2a0 0xc00010e600 <nil>]
+2024-01-06T14:56:29.020+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T14:56:29.020+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00011e180 1:0xc00011e2c0], servername is 1, rs is &{{0 0} map[Raft:0xc00011a3c0] 0 0xc0001380a0}
+2024-01-06T14:56:29.020+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T14:56:29.020+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T14:56:29.020+0800	INFO	raft/config.go:160	endnames is [[jczpplbrJFTJ6SG-DtZ1 AcqqschTplU0fV9XUGhn SiGHpqXfHvWczliJPTyq] [m9HH-sYGUhKvQsAXjEZ3 QeXaJ8ffBXdb-KKUgP0G cwqzRB-sLCN5oxNiCd5x] [axmBWhSKFoa7FR9qd6vg vrRlexudkAhBG8ShRx4- 6LL5vw-Qp24uQXzueRZv]]
+2024-01-06T14:56:29.020+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 axmBWhSKFoa7FR9qd6vg:0 cwqzRB-sLCN5oxNiCd5x:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0]
+2024-01-06T14:56:29.020+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 axmBWhSKFoa7FR9qd6vg:0 cwqzRB-sLCN5oxNiCd5x:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0 vrRlexudkAhBG8ShRx4-:1]
+2024-01-06T14:56:29.020+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6LL5vw-Qp24uQXzueRZv:2 AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 axmBWhSKFoa7FR9qd6vg:0 cwqzRB-sLCN5oxNiCd5x:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0 vrRlexudkAhBG8ShRx4-:1]
+2024-01-06T14:56:29.020+0800	INFO	raft/config.go:168	ends is [0xc00011e320 0xc00011e340 0xc00011e360]
+2024-01-06T14:56:29.020+0800	INFO	raft/config.go:177	cfg.saved is [0xc00011a1c0 0xc00011a300 <nil>]
+2024-01-06T14:56:29.020+0800	INFO	raft/config.go:224	ends is [0xc00011e320 0xc00011e340 0xc00011e360], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000132360
+2024-01-06T14:56:29.076+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e2a0 0xc00010e600 0xc00010e8a0]
+2024-01-06T14:56:29.076+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T14:56:29.076+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00011e180 1:0xc00011e2c0 2:0xc00011e400], servername is 2, rs is &{{0 0} map[Raft:0xc00011a500] 0 0xc0001380e0}
+2024-01-06T14:56:29.076+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T14:56:29.076+0800	INFO	raft/config.go:261	cfg.endnames is [[jczpplbrJFTJ6SG-DtZ1 AcqqschTplU0fV9XUGhn SiGHpqXfHvWczliJPTyq] [m9HH-sYGUhKvQsAXjEZ3 QeXaJ8ffBXdb-KKUgP0G cwqzRB-sLCN5oxNiCd5x] [axmBWhSKFoa7FR9qd6vg vrRlexudkAhBG8ShRx4- 6LL5vw-Qp24uQXzueRZv]]
+2024-01-06T14:56:29.076+0800	INFO	raft/config.go:261	cfg.endnames is [[jczpplbrJFTJ6SG-DtZ1 AcqqschTplU0fV9XUGhn SiGHpqXfHvWczliJPTyq] [m9HH-sYGUhKvQsAXjEZ3 QeXaJ8ffBXdb-KKUgP0G cwqzRB-sLCN5oxNiCd5x] [axmBWhSKFoa7FR9qd6vg vrRlexudkAhBG8ShRx4- 6LL5vw-Qp24uQXzueRZv]]
+2024-01-06T14:56:29.076+0800	INFO	raft/config.go:261	cfg.endnames is [[jczpplbrJFTJ6SG-DtZ1 AcqqschTplU0fV9XUGhn SiGHpqXfHvWczliJPTyq] [m9HH-sYGUhKvQsAXjEZ3 QeXaJ8ffBXdb-KKUgP0G cwqzRB-sLCN5oxNiCd5x] [axmBWhSKFoa7FR9qd6vg vrRlexudkAhBG8ShRx4- 6LL5vw-Qp24uQXzueRZv]]
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:211	endname is jczpplbrJFTJ6SG-DtZ1
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[6LL5vw-Qp24uQXzueRZv:true AcqqschTplU0fV9XUGhn:true QeXaJ8ffBXdb-KKUgP0G:true SiGHpqXfHvWczliJPTyq:true axmBWhSKFoa7FR9qd6vg:true cwqzRB-sLCN5oxNiCd5x:true jczpplbrJFTJ6SG-DtZ1:true m9HH-sYGUhKvQsAXjEZ3:true vrRlexudkAhBG8ShRx4-:true]
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[6LL5vw-Qp24uQXzueRZv:2 AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 axmBWhSKFoa7FR9qd6vg:0 cwqzRB-sLCN5oxNiCd5x:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0 vrRlexudkAhBG8ShRx4-:1]
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00011e180 1:0xc00011e2c0 2:0xc00011e400]
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00011a280] 0 0xc000138060}
+2024-01-06T14:56:29.116+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00011a280] 0 0xc000138060}
+2024-01-06T14:56:29.165+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 250
+2024-01-06T14:56:29.165+0800	INFO	labrpc/labrpc.go:211	endname is m9HH-sYGUhKvQsAXjEZ3
+2024-01-06T14:56:29.165+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[6LL5vw-Qp24uQXzueRZv:true AcqqschTplU0fV9XUGhn:true QeXaJ8ffBXdb-KKUgP0G:true SiGHpqXfHvWczliJPTyq:true axmBWhSKFoa7FR9qd6vg:true cwqzRB-sLCN5oxNiCd5x:true jczpplbrJFTJ6SG-DtZ1:true m9HH-sYGUhKvQsAXjEZ3:true vrRlexudkAhBG8ShRx4-:true]
+2024-01-06T14:56:29.165+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[6LL5vw-Qp24uQXzueRZv:2 AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 axmBWhSKFoa7FR9qd6vg:0 cwqzRB-sLCN5oxNiCd5x:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0 vrRlexudkAhBG8ShRx4-:1]
+2024-01-06T14:56:29.165+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00011e180 1:0xc00011e2c0 2:0xc00011e400]
+2024-01-06T14:56:29.166+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T14:56:29.166+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00011a280] 1 0xc000138060}
+2024-01-06T14:56:29.166+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00011a280] 1 0xc000138060}
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 408
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:211	endname is axmBWhSKFoa7FR9qd6vg
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[6LL5vw-Qp24uQXzueRZv:true AcqqschTplU0fV9XUGhn:true QeXaJ8ffBXdb-KKUgP0G:true SiGHpqXfHvWczliJPTyq:true axmBWhSKFoa7FR9qd6vg:true cwqzRB-sLCN5oxNiCd5x:true jczpplbrJFTJ6SG-DtZ1:true m9HH-sYGUhKvQsAXjEZ3:true vrRlexudkAhBG8ShRx4-:true]
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[6LL5vw-Qp24uQXzueRZv:2 AcqqschTplU0fV9XUGhn:1 QeXaJ8ffBXdb-KKUgP0G:1 SiGHpqXfHvWczliJPTyq:2 axmBWhSKFoa7FR9qd6vg:0 cwqzRB-sLCN5oxNiCd5x:2 jczpplbrJFTJ6SG-DtZ1:0 m9HH-sYGUhKvQsAXjEZ3:0 vrRlexudkAhBG8ShRx4-:1]
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00011e180 1:0xc00011e2c0 2:0xc00011e400]
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00011a280] 2 0xc000138060}
+2024-01-06T14:56:29.221+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00011a280] 2 0xc000138060}
+2024-01-06T15:21:24.446+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:21:24.446+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:21:24.446+0800	INFO	raft/config.go:160	endnames is [[h2wB-nmZ6Wh46t5vFbZI GEMgycN95heDl098N2NW 82tcEs7zyYAW6o3k5oLX] [] []]
+2024-01-06T15:21:24.446+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[h2wB-nmZ6Wh46t5vFbZI:0]
+2024-01-06T15:21:24.446+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[GEMgycN95heDl098N2NW:1 h2wB-nmZ6Wh46t5vFbZI:0]
+2024-01-06T15:21:24.446+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 GEMgycN95heDl098N2NW:1 h2wB-nmZ6Wh46t5vFbZI:0]
+2024-01-06T15:21:24.446+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-06T15:21:24.446+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:21:24.446+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c4e0
+2024-01-06T15:21:24.490+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 <nil> <nil>]
+2024-01-06T15:21:24.490+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:21:24.490+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0], servername is 0, rs is &{{0 0} map[Raft:0xc000198140] 0 0xc000010630}
+2024-01-06T15:21:24.490+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:21:24.490+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:21:24.490+0800	INFO	raft/config.go:160	endnames is [[h2wB-nmZ6Wh46t5vFbZI GEMgycN95heDl098N2NW 82tcEs7zyYAW6o3k5oLX] [m_7n2xgD7QGRvu-8zA2T 9FLPR1eeQ8LbJlrowcUI FjrRmKXynpuRMvHJl0PA] []]
+2024-01-06T15:21:24.490+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 GEMgycN95heDl098N2NW:1 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.490+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 GEMgycN95heDl098N2NW:1 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.490+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 FjrRmKXynpuRMvHJl0PA:2 GEMgycN95heDl098N2NW:1 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.490+0800	INFO	raft/config.go:168	ends is [0xc00007e400 0xc00007e420 0xc00007e440]
+2024-01-06T15:21:24.490+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-06T15:21:24.490+0800	INFO	raft/config.go:224	ends is [0xc00007e400 0xc00007e420 0xc00007e440], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-06T15:21:24.535+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc0000887e0 <nil>]
+2024-01-06T15:21:24.535+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:21:24.535+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0], servername is 1, rs is &{{0 0} map[Raft:0xc000198280] 0 0xc000010670}
+2024-01-06T15:21:24.535+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:21:24.535+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:21:24.535+0800	INFO	raft/config.go:160	endnames is [[h2wB-nmZ6Wh46t5vFbZI GEMgycN95heDl098N2NW 82tcEs7zyYAW6o3k5oLX] [m_7n2xgD7QGRvu-8zA2T 9FLPR1eeQ8LbJlrowcUI FjrRmKXynpuRMvHJl0PA] [fGwSrvmanqHUBNmFRjgq MbuDC_ybhgd7VGfQIGrR gPlOPUR4Qk1uZq3ypXOH]]
+2024-01-06T15:21:24.535+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 FjrRmKXynpuRMvHJl0PA:2 GEMgycN95heDl098N2NW:1 fGwSrvmanqHUBNmFRjgq:0 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.535+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 FjrRmKXynpuRMvHJl0PA:2 GEMgycN95heDl098N2NW:1 MbuDC_ybhgd7VGfQIGrR:1 fGwSrvmanqHUBNmFRjgq:0 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.535+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 FjrRmKXynpuRMvHJl0PA:2 GEMgycN95heDl098N2NW:1 MbuDC_ybhgd7VGfQIGrR:1 fGwSrvmanqHUBNmFRjgq:0 gPlOPUR4Qk1uZq3ypXOH:2 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.535+0800	INFO	raft/config.go:168	ends is [0xc00007e540 0xc00007e560 0xc00007e580]
+2024-01-06T15:21:24.535+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc0001981c0 <nil>]
+2024-01-06T15:21:24.535+0800	INFO	raft/config.go:224	ends is [0xc00007e540 0xc00007e560 0xc00007e580], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c5a0
+2024-01-06T15:21:24.579+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc0000887e0 0xc000088a80]
+2024-01-06T15:21:24.579+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:21:24.579+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc000218080], servername is 2, rs is &{{0 0} map[Raft:0xc000214100] 0 0xc00022a030}
+2024-01-06T15:21:24.579+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:21:24.579+0800	INFO	raft/config.go:261	cfg.endnames is [[h2wB-nmZ6Wh46t5vFbZI GEMgycN95heDl098N2NW 82tcEs7zyYAW6o3k5oLX] [m_7n2xgD7QGRvu-8zA2T 9FLPR1eeQ8LbJlrowcUI FjrRmKXynpuRMvHJl0PA] [fGwSrvmanqHUBNmFRjgq MbuDC_ybhgd7VGfQIGrR gPlOPUR4Qk1uZq3ypXOH]]
+2024-01-06T15:21:24.579+0800	INFO	raft/config.go:261	cfg.endnames is [[h2wB-nmZ6Wh46t5vFbZI GEMgycN95heDl098N2NW 82tcEs7zyYAW6o3k5oLX] [m_7n2xgD7QGRvu-8zA2T 9FLPR1eeQ8LbJlrowcUI FjrRmKXynpuRMvHJl0PA] [fGwSrvmanqHUBNmFRjgq MbuDC_ybhgd7VGfQIGrR gPlOPUR4Qk1uZq3ypXOH]]
+2024-01-06T15:21:24.579+0800	INFO	raft/config.go:261	cfg.endnames is [[h2wB-nmZ6Wh46t5vFbZI GEMgycN95heDl098N2NW 82tcEs7zyYAW6o3k5oLX] [m_7n2xgD7QGRvu-8zA2T 9FLPR1eeQ8LbJlrowcUI FjrRmKXynpuRMvHJl0PA] [fGwSrvmanqHUBNmFRjgq MbuDC_ybhgd7VGfQIGrR gPlOPUR4Qk1uZq3ypXOH]]
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:211	endname is h2wB-nmZ6Wh46t5vFbZI
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[82tcEs7zyYAW6o3k5oLX:true 9FLPR1eeQ8LbJlrowcUI:true FjrRmKXynpuRMvHJl0PA:true GEMgycN95heDl098N2NW:true MbuDC_ybhgd7VGfQIGrR:true fGwSrvmanqHUBNmFRjgq:true gPlOPUR4Qk1uZq3ypXOH:true h2wB-nmZ6Wh46t5vFbZI:true m_7n2xgD7QGRvu-8zA2T:true]
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 FjrRmKXynpuRMvHJl0PA:2 GEMgycN95heDl098N2NW:1 MbuDC_ybhgd7VGfQIGrR:1 fGwSrvmanqHUBNmFRjgq:0 gPlOPUR4Qk1uZq3ypXOH:2 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc000218080]
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198140] 0 0xc000010630}
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198140] 0 0xc000010630}
+2024-01-06T15:21:24.646+0800	INFO	labrpc/labrpc.go:445	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc000010600 19} 2}]}
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 250
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:211	endname is m_7n2xgD7QGRvu-8zA2T
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[82tcEs7zyYAW6o3k5oLX:true 9FLPR1eeQ8LbJlrowcUI:true FjrRmKXynpuRMvHJl0PA:true GEMgycN95heDl098N2NW:true MbuDC_ybhgd7VGfQIGrR:true fGwSrvmanqHUBNmFRjgq:true gPlOPUR4Qk1uZq3ypXOH:true h2wB-nmZ6Wh46t5vFbZI:true m_7n2xgD7QGRvu-8zA2T:true]
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 FjrRmKXynpuRMvHJl0PA:2 GEMgycN95heDl098N2NW:1 MbuDC_ybhgd7VGfQIGrR:1 fGwSrvmanqHUBNmFRjgq:0 gPlOPUR4Qk1uZq3ypXOH:2 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc000218080]
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198140] 1 0xc000010630}
+2024-01-06T15:21:24.690+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198140] 1 0xc000010630}
+2024-01-06T15:21:24.691+0800	INFO	labrpc/labrpc.go:445	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc000010600 19} 2}]}
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 408
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:211	endname is fGwSrvmanqHUBNmFRjgq
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[82tcEs7zyYAW6o3k5oLX:true 9FLPR1eeQ8LbJlrowcUI:true FjrRmKXynpuRMvHJl0PA:true GEMgycN95heDl098N2NW:true MbuDC_ybhgd7VGfQIGrR:true fGwSrvmanqHUBNmFRjgq:true gPlOPUR4Qk1uZq3ypXOH:true h2wB-nmZ6Wh46t5vFbZI:true m_7n2xgD7QGRvu-8zA2T:true]
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[82tcEs7zyYAW6o3k5oLX:2 9FLPR1eeQ8LbJlrowcUI:1 FjrRmKXynpuRMvHJl0PA:2 GEMgycN95heDl098N2NW:1 MbuDC_ybhgd7VGfQIGrR:1 fGwSrvmanqHUBNmFRjgq:0 gPlOPUR4Qk1uZq3ypXOH:2 h2wB-nmZ6Wh46t5vFbZI:0 m_7n2xgD7QGRvu-8zA2T:0]
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc000218080]
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198140] 2 0xc000010630}
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198140] 2 0xc000010630}
+2024-01-06T15:21:24.736+0800	INFO	labrpc/labrpc.go:445	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc000010600 19} 2}]}
+2024-01-06T15:21:29.460+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:21:29.460+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:21:29.460+0800	INFO	raft/config.go:160	endnames is [[M7rz2yoCyc1ffcF1ZlNa Yr6d0t6Q8yIZnMFfgWS- HO_SucQ5o7OhJXGoSJAt] [] []]
+2024-01-06T15:21:29.460+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[M7rz2yoCyc1ffcF1ZlNa:0]
+2024-01-06T15:21:29.460+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[M7rz2yoCyc1ffcF1ZlNa:0 Yr6d0t6Q8yIZnMFfgWS-:1]
+2024-01-06T15:21:29.460+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[HO_SucQ5o7OhJXGoSJAt:2 M7rz2yoCyc1ffcF1ZlNa:0 Yr6d0t6Q8yIZnMFfgWS-:1]
+2024-01-06T15:21:29.460+0800	INFO	raft/config.go:168	ends is [0xc000218540 0xc000218560 0xc000218580]
+2024-01-06T15:21:29.460+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:21:29.460+0800	INFO	raft/config.go:224	ends is [0xc000218540 0xc000218560 0xc000218580], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000224540
+2024-01-06T15:21:29.530+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000200a80 <nil> <nil>]
+2024-01-06T15:21:29.530+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:21:29.530+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc000218620], servername is 0, rs is &{{0 0} map[Raft:0xc000214b80] 0 0xc00022a3f0}
+2024-01-06T15:21:29.530+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:21:29.530+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:21:29.530+0800	INFO	raft/config.go:160	endnames is [[M7rz2yoCyc1ffcF1ZlNa Yr6d0t6Q8yIZnMFfgWS- HO_SucQ5o7OhJXGoSJAt] [JK7EGogYRY9t6B0TwpdF 3rKREBsN20VTC7-P18k- 7jYMhnvkHupvxYAilY4x] []]
+2024-01-06T15:21:29.530+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Yr6d0t6Q8yIZnMFfgWS-:1]
+2024-01-06T15:21:29.530+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[3rKREBsN20VTC7-P18k-:1 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Yr6d0t6Q8yIZnMFfgWS-:1]
+2024-01-06T15:21:29.530+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[3rKREBsN20VTC7-P18k-:1 7jYMhnvkHupvxYAilY4x:2 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Yr6d0t6Q8yIZnMFfgWS-:1]
+2024-01-06T15:21:29.530+0800	INFO	raft/config.go:168	ends is [0xc000218680 0xc0002186a0 0xc0002186c0]
+2024-01-06T15:21:29.530+0800	INFO	raft/config.go:177	cfg.saved is [0xc000214ac0 <nil> <nil>]
+2024-01-06T15:21:29.530+0800	INFO	raft/config.go:224	ends is [0xc000218680 0xc0002186a0 0xc0002186c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002245a0
+2024-01-06T15:21:29.616+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000200a80 0xc000200de0 <nil>]
+2024-01-06T15:21:29.616+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:21:29.616+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc000218620 1:0xc000218760], servername is 1, rs is &{{0 0} map[Raft:0xc000214cc0] 0 0xc00022a430}
+2024-01-06T15:21:29.616+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:21:29.616+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:21:29.616+0800	INFO	raft/config.go:160	endnames is [[M7rz2yoCyc1ffcF1ZlNa Yr6d0t6Q8yIZnMFfgWS- HO_SucQ5o7OhJXGoSJAt] [JK7EGogYRY9t6B0TwpdF 3rKREBsN20VTC7-P18k- 7jYMhnvkHupvxYAilY4x] [Rl91Z6p4pJivTpyDOJdc oiNzx607HAHwNQdQliNW 8fD84Mu5Stm5pVGQnJjw]]
+2024-01-06T15:21:29.616+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[3rKREBsN20VTC7-P18k-:1 7jYMhnvkHupvxYAilY4x:2 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Rl91Z6p4pJivTpyDOJdc:0 Yr6d0t6Q8yIZnMFfgWS-:1]
+2024-01-06T15:21:29.616+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[3rKREBsN20VTC7-P18k-:1 7jYMhnvkHupvxYAilY4x:2 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Rl91Z6p4pJivTpyDOJdc:0 Yr6d0t6Q8yIZnMFfgWS-:1 oiNzx607HAHwNQdQliNW:1]
+2024-01-06T15:21:29.616+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[3rKREBsN20VTC7-P18k-:1 7jYMhnvkHupvxYAilY4x:2 8fD84Mu5Stm5pVGQnJjw:2 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Rl91Z6p4pJivTpyDOJdc:0 Yr6d0t6Q8yIZnMFfgWS-:1 oiNzx607HAHwNQdQliNW:1]
+2024-01-06T15:21:29.616+0800	INFO	raft/config.go:168	ends is [0xc0002187c0 0xc0002187e0 0xc000218800]
+2024-01-06T15:21:29.616+0800	INFO	raft/config.go:177	cfg.saved is [0xc000214ac0 0xc000214c00 <nil>]
+2024-01-06T15:21:29.616+0800	INFO	raft/config.go:224	ends is [0xc0002187c0 0xc0002187e0 0xc000218800], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000224600
+2024-01-06T15:21:29.660+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:21:29.660+0800	INFO	labrpc/labrpc.go:211	endname is M7rz2yoCyc1ffcF1ZlNa
+2024-01-06T15:21:29.661+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[3rKREBsN20VTC7-P18k-:false 7jYMhnvkHupvxYAilY4x:false 8fD84Mu5Stm5pVGQnJjw:false HO_SucQ5o7OhJXGoSJAt:false JK7EGogYRY9t6B0TwpdF:false M7rz2yoCyc1ffcF1ZlNa:false Rl91Z6p4pJivTpyDOJdc:false Yr6d0t6Q8yIZnMFfgWS-:false oiNzx607HAHwNQdQliNW:false]
+2024-01-06T15:21:29.661+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[3rKREBsN20VTC7-P18k-:1 7jYMhnvkHupvxYAilY4x:2 8fD84Mu5Stm5pVGQnJjw:2 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Rl91Z6p4pJivTpyDOJdc:0 Yr6d0t6Q8yIZnMFfgWS-:1 oiNzx607HAHwNQdQliNW:1]
+2024-01-06T15:21:29.661+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc000218620 1:0xc000218760 2:<nil>]
+2024-01-06T15:21:29.661+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:21:29.661+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000214b80] 0 0xc00022a3f0}
+2024-01-06T15:21:29.661+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is false, servername is 0, server is &{{0 0} map[Raft:0xc000214b80] 0 0xc00022a3f0}
+2024-01-06T15:21:29.671+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000200a80 0xc000200de0 0xc000201080]
+2024-01-06T15:21:29.671+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:21:29.671+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc000218620 1:0xc000218760 2:0xc0002188e0], servername is 2, rs is &{{0 0} map[Raft:0xc000214f80] 0 0xc00022a478}
+2024-01-06T15:21:29.671+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:21:29.671+0800	INFO	raft/config.go:261	cfg.endnames is [[M7rz2yoCyc1ffcF1ZlNa Yr6d0t6Q8yIZnMFfgWS- HO_SucQ5o7OhJXGoSJAt] [JK7EGogYRY9t6B0TwpdF 3rKREBsN20VTC7-P18k- 7jYMhnvkHupvxYAilY4x] [Rl91Z6p4pJivTpyDOJdc oiNzx607HAHwNQdQliNW 8fD84Mu5Stm5pVGQnJjw]]
+2024-01-06T15:21:29.671+0800	INFO	raft/config.go:261	cfg.endnames is [[M7rz2yoCyc1ffcF1ZlNa Yr6d0t6Q8yIZnMFfgWS- HO_SucQ5o7OhJXGoSJAt] [JK7EGogYRY9t6B0TwpdF 3rKREBsN20VTC7-P18k- 7jYMhnvkHupvxYAilY4x] [Rl91Z6p4pJivTpyDOJdc oiNzx607HAHwNQdQliNW 8fD84Mu5Stm5pVGQnJjw]]
+2024-01-06T15:21:29.671+0800	INFO	raft/config.go:261	cfg.endnames is [[M7rz2yoCyc1ffcF1ZlNa Yr6d0t6Q8yIZnMFfgWS- HO_SucQ5o7OhJXGoSJAt] [JK7EGogYRY9t6B0TwpdF 3rKREBsN20VTC7-P18k- 7jYMhnvkHupvxYAilY4x] [Rl91Z6p4pJivTpyDOJdc oiNzx607HAHwNQdQliNW 8fD84Mu5Stm5pVGQnJjw]]
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 186
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:211	endname is JK7EGogYRY9t6B0TwpdF
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[3rKREBsN20VTC7-P18k-:true 7jYMhnvkHupvxYAilY4x:true 8fD84Mu5Stm5pVGQnJjw:true HO_SucQ5o7OhJXGoSJAt:true JK7EGogYRY9t6B0TwpdF:true M7rz2yoCyc1ffcF1ZlNa:true Rl91Z6p4pJivTpyDOJdc:true Yr6d0t6Q8yIZnMFfgWS-:true oiNzx607HAHwNQdQliNW:true]
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[3rKREBsN20VTC7-P18k-:1 7jYMhnvkHupvxYAilY4x:2 8fD84Mu5Stm5pVGQnJjw:2 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Rl91Z6p4pJivTpyDOJdc:0 Yr6d0t6Q8yIZnMFfgWS-:1 oiNzx607HAHwNQdQliNW:1]
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc000218620 1:0xc000218760 2:0xc0002188e0]
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000214b80] 0 0xc00022a3f0}
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000214b80] 0 0xc00022a3f0}
+2024-01-06T15:21:29.731+0800	INFO	labrpc/labrpc.go:445	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000200a80 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc00022a3d8 19} 2}]}
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 344
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:211	endname is Rl91Z6p4pJivTpyDOJdc
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[3rKREBsN20VTC7-P18k-:true 7jYMhnvkHupvxYAilY4x:true 8fD84Mu5Stm5pVGQnJjw:true HO_SucQ5o7OhJXGoSJAt:true JK7EGogYRY9t6B0TwpdF:true M7rz2yoCyc1ffcF1ZlNa:true Rl91Z6p4pJivTpyDOJdc:true Yr6d0t6Q8yIZnMFfgWS-:true oiNzx607HAHwNQdQliNW:true]
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[3rKREBsN20VTC7-P18k-:1 7jYMhnvkHupvxYAilY4x:2 8fD84Mu5Stm5pVGQnJjw:2 HO_SucQ5o7OhJXGoSJAt:2 JK7EGogYRY9t6B0TwpdF:0 M7rz2yoCyc1ffcF1ZlNa:0 Rl91Z6p4pJivTpyDOJdc:0 Yr6d0t6Q8yIZnMFfgWS-:1 oiNzx607HAHwNQdQliNW:1]
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc000218620 1:0xc000218760 2:0xc0002188e0]
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000214b80] 1 0xc00022a3f0}
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000214b80] 1 0xc00022a3f0}
+2024-01-06T15:21:29.817+0800	INFO	labrpc/labrpc.go:445	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000200a80 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc00022a3d8 19} 2}]}
+2024-01-06T15:23:25.119+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:23:25.119+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:23:25.119+0800	INFO	raft/config.go:160	endnames is [[6iJFpr9yUoMAxKEriJue NzzGlzJ6eyfq_tJWPlOC YnlvwH_RHxdkvSRob_hM] [] []]
+2024-01-06T15:23:25.119+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6iJFpr9yUoMAxKEriJue:0]
+2024-01-06T15:23:25.119+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6iJFpr9yUoMAxKEriJue:0 NzzGlzJ6eyfq_tJWPlOC:1]
+2024-01-06T15:23:25.119+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6iJFpr9yUoMAxKEriJue:0 NzzGlzJ6eyfq_tJWPlOC:1 YnlvwH_RHxdkvSRob_hM:2]
+2024-01-06T15:23:25.119+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-06T15:23:25.119+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:23:25.119+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c4e0
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:211	endname is 6iJFpr9yUoMAxKEriJue
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[6iJFpr9yUoMAxKEriJue:false NzzGlzJ6eyfq_tJWPlOC:false YnlvwH_RHxdkvSRob_hM:false]
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[6iJFpr9yUoMAxKEriJue:0 NzzGlzJ6eyfq_tJWPlOC:1 YnlvwH_RHxdkvSRob_hM:2]
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:<nil>]
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:220	server is <nil>
+2024-01-06T15:23:25.320+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is false, servername is 0, server is <nil>
+2024-01-06T15:23:25.904+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 <nil> <nil>]
+2024-01-06T15:23:25.904+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:23:25.904+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3e0], servername is 0, rs is &{{0 0} map[Raft:0xc00019a400] 0 0xc000010720}
+2024-01-06T15:23:25.904+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:23:25.904+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:23:25.904+0800	INFO	raft/config.go:160	endnames is [[6iJFpr9yUoMAxKEriJue NzzGlzJ6eyfq_tJWPlOC YnlvwH_RHxdkvSRob_hM] [jGGZYjiejfvFschcPG_F W1O_E0NK6DdSdn04WLh7 IbExPrHdsA1MMeRLevD2] []]
+2024-01-06T15:23:25.904+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6iJFpr9yUoMAxKEriJue:0 NzzGlzJ6eyfq_tJWPlOC:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0]
+2024-01-06T15:23:25.904+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6iJFpr9yUoMAxKEriJue:0 NzzGlzJ6eyfq_tJWPlOC:1 W1O_E0NK6DdSdn04WLh7:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0]
+2024-01-06T15:23:25.904+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6iJFpr9yUoMAxKEriJue:0 IbExPrHdsA1MMeRLevD2:2 NzzGlzJ6eyfq_tJWPlOC:1 W1O_E0NK6DdSdn04WLh7:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0]
+2024-01-06T15:23:25.904+0800	INFO	raft/config.go:168	ends is [0xc00007e440 0xc00007e460 0xc00007e480]
+2024-01-06T15:23:25.904+0800	INFO	raft/config.go:177	cfg.saved is [0xc00019a080 <nil> <nil>]
+2024-01-06T15:23:25.904+0800	INFO	raft/config.go:224	ends is [0xc00007e440 0xc00007e460 0xc00007e480], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c660
+2024-01-06T15:23:25.959+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc000088cc0 <nil>]
+2024-01-06T15:23:25.959+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:23:25.959+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520], servername is 1, rs is &{{0 0} map[Raft:0xc00019a540] 0 0xc000010760}
+2024-01-06T15:23:25.959+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:23:25.959+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:23:25.959+0800	INFO	raft/config.go:160	endnames is [[6iJFpr9yUoMAxKEriJue NzzGlzJ6eyfq_tJWPlOC YnlvwH_RHxdkvSRob_hM] [jGGZYjiejfvFschcPG_F W1O_E0NK6DdSdn04WLh7 IbExPrHdsA1MMeRLevD2] [yrwls0LHJ-eIffiQDpok 2OGdTmZVK1igSFAbkoJS LWTd8dgQ3v4XLrSOKO4c]]
+2024-01-06T15:23:25.959+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6iJFpr9yUoMAxKEriJue:0 IbExPrHdsA1MMeRLevD2:2 NzzGlzJ6eyfq_tJWPlOC:1 W1O_E0NK6DdSdn04WLh7:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0 yrwls0LHJ-eIffiQDpok:0]
+2024-01-06T15:23:25.959+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[2OGdTmZVK1igSFAbkoJS:1 6iJFpr9yUoMAxKEriJue:0 IbExPrHdsA1MMeRLevD2:2 NzzGlzJ6eyfq_tJWPlOC:1 W1O_E0NK6DdSdn04WLh7:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0 yrwls0LHJ-eIffiQDpok:0]
+2024-01-06T15:23:25.959+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[2OGdTmZVK1igSFAbkoJS:1 6iJFpr9yUoMAxKEriJue:0 IbExPrHdsA1MMeRLevD2:2 LWTd8dgQ3v4XLrSOKO4c:2 NzzGlzJ6eyfq_tJWPlOC:1 W1O_E0NK6DdSdn04WLh7:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0 yrwls0LHJ-eIffiQDpok:0]
+2024-01-06T15:23:25.959+0800	INFO	raft/config.go:168	ends is [0xc00007e580 0xc00007e5a0 0xc00007e5c0]
+2024-01-06T15:23:25.959+0800	INFO	raft/config.go:177	cfg.saved is [0xc00019a080 0xc00019a480 <nil>]
+2024-01-06T15:23:25.959+0800	INFO	raft/config.go:224	ends is [0xc00007e580 0xc00007e5a0 0xc00007e5c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c6c0
+2024-01-06T15:23:26.004+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc000088cc0 0xc000088f60]
+2024-01-06T15:23:26.004+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:23:26.004+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520 2:0xc00007e660], servername is 2, rs is &{{0 0} map[Raft:0xc00019a680] 0 0xc0000107a0}
+2024-01-06T15:23:26.004+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:23:26.004+0800	INFO	raft/config.go:261	cfg.endnames is [[6iJFpr9yUoMAxKEriJue NzzGlzJ6eyfq_tJWPlOC YnlvwH_RHxdkvSRob_hM] [jGGZYjiejfvFschcPG_F W1O_E0NK6DdSdn04WLh7 IbExPrHdsA1MMeRLevD2] [yrwls0LHJ-eIffiQDpok 2OGdTmZVK1igSFAbkoJS LWTd8dgQ3v4XLrSOKO4c]]
+2024-01-06T15:23:26.004+0800	INFO	raft/config.go:261	cfg.endnames is [[6iJFpr9yUoMAxKEriJue NzzGlzJ6eyfq_tJWPlOC YnlvwH_RHxdkvSRob_hM] [jGGZYjiejfvFschcPG_F W1O_E0NK6DdSdn04WLh7 IbExPrHdsA1MMeRLevD2] [yrwls0LHJ-eIffiQDpok 2OGdTmZVK1igSFAbkoJS LWTd8dgQ3v4XLrSOKO4c]]
+2024-01-06T15:23:26.004+0800	INFO	raft/config.go:261	cfg.endnames is [[6iJFpr9yUoMAxKEriJue NzzGlzJ6eyfq_tJWPlOC YnlvwH_RHxdkvSRob_hM] [jGGZYjiejfvFschcPG_F W1O_E0NK6DdSdn04WLh7 IbExPrHdsA1MMeRLevD2] [yrwls0LHJ-eIffiQDpok 2OGdTmZVK1igSFAbkoJS LWTd8dgQ3v4XLrSOKO4c]]
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 186
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:211	endname is jGGZYjiejfvFschcPG_F
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[2OGdTmZVK1igSFAbkoJS:true 6iJFpr9yUoMAxKEriJue:true IbExPrHdsA1MMeRLevD2:true LWTd8dgQ3v4XLrSOKO4c:true NzzGlzJ6eyfq_tJWPlOC:true W1O_E0NK6DdSdn04WLh7:true YnlvwH_RHxdkvSRob_hM:true jGGZYjiejfvFschcPG_F:true yrwls0LHJ-eIffiQDpok:true]
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[2OGdTmZVK1igSFAbkoJS:1 6iJFpr9yUoMAxKEriJue:0 IbExPrHdsA1MMeRLevD2:2 LWTd8dgQ3v4XLrSOKO4c:2 NzzGlzJ6eyfq_tJWPlOC:1 W1O_E0NK6DdSdn04WLh7:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0 yrwls0LHJ-eIffiQDpok:0]
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520 2:0xc00007e660]
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00019a400] 0 0xc000010720}
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00019a400] 0 0xc000010720}
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:445	rs.services is Raft
+2024-01-06T15:23:26.104+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc0000106f0 19} 2}]}
+2024-01-06T15:23:26.160+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 344
+2024-01-06T15:23:26.160+0800	INFO	labrpc/labrpc.go:211	endname is yrwls0LHJ-eIffiQDpok
+2024-01-06T15:23:26.160+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[2OGdTmZVK1igSFAbkoJS:true 6iJFpr9yUoMAxKEriJue:true IbExPrHdsA1MMeRLevD2:true LWTd8dgQ3v4XLrSOKO4c:true NzzGlzJ6eyfq_tJWPlOC:true W1O_E0NK6DdSdn04WLh7:true YnlvwH_RHxdkvSRob_hM:true jGGZYjiejfvFschcPG_F:true yrwls0LHJ-eIffiQDpok:true]
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[2OGdTmZVK1igSFAbkoJS:1 6iJFpr9yUoMAxKEriJue:0 IbExPrHdsA1MMeRLevD2:2 LWTd8dgQ3v4XLrSOKO4c:2 NzzGlzJ6eyfq_tJWPlOC:1 W1O_E0NK6DdSdn04WLh7:1 YnlvwH_RHxdkvSRob_hM:2 jGGZYjiejfvFschcPG_F:0 yrwls0LHJ-eIffiQDpok:0]
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520 2:0xc00007e660]
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00019a400] 1 0xc000010720}
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00019a400] 1 0xc000010720}
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:445	rs.services is Raft
+2024-01-06T15:23:26.161+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc0000106f0 19} 2}]}
+2024-01-06T15:23:30.900+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:23:30.900+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:23:30.900+0800	INFO	raft/config.go:160	endnames is [[5dajNEEkSDRx0AnCitFq wOcUQfKK3aX1TWm-9P6L e1CtGutqB08gvuk0opqX] [] []]
+2024-01-06T15:23:30.900+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0]
+2024-01-06T15:23:30.900+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 wOcUQfKK3aX1TWm-9P6L:1]
+2024-01-06T15:23:30.900+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 e1CtGutqB08gvuk0opqX:2 wOcUQfKK3aX1TWm-9P6L:1]
+2024-01-06T15:23:30.900+0800	INFO	raft/config.go:168	ends is [0xc0001260a0 0xc0001260c0 0xc0001260e0]
+2024-01-06T15:23:30.900+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:23:30.900+0800	INFO	raft/config.go:224	ends is [0xc0001260a0 0xc0001260c0 0xc0001260e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001322a0
+2024-01-06T15:23:30.940+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e300 <nil> <nil>]
+2024-01-06T15:23:30.940+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:23:30.940+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc000126180], servername is 0, rs is &{{0 0} map[Raft:0xc000122240] 0 0xc000138060}
+2024-01-06T15:23:30.940+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:23:30.940+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:23:30.940+0800	INFO	raft/config.go:160	endnames is [[5dajNEEkSDRx0AnCitFq wOcUQfKK3aX1TWm-9P6L e1CtGutqB08gvuk0opqX] [eyzZTQpA6D8v4-WPIoSo g19VqpabPIZASH5vioG2 ntMYsSyry31LZu1nB2LI] []]
+2024-01-06T15:23:30.940+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 wOcUQfKK3aX1TWm-9P6L:1]
+2024-01-06T15:23:30.940+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 wOcUQfKK3aX1TWm-9P6L:1]
+2024-01-06T15:23:30.940+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 ntMYsSyry31LZu1nB2LI:2 wOcUQfKK3aX1TWm-9P6L:1]
+2024-01-06T15:23:30.940+0800	INFO	raft/config.go:168	ends is [0xc0001261e0 0xc000126200 0xc000126220]
+2024-01-06T15:23:30.940+0800	INFO	raft/config.go:177	cfg.saved is [0xc000122180 <nil> <nil>]
+2024-01-06T15:23:30.940+0800	INFO	raft/config.go:224	ends is [0xc0001261e0 0xc000126200 0xc000126220], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000132300
+2024-01-06T15:23:30.996+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e300 0xc00010e660 <nil>]
+2024-01-06T15:23:30.996+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:23:30.996+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc000126180 1:0xc0001262c0], servername is 1, rs is &{{0 0} map[Raft:0xc000122380] 0 0xc0001380a0}
+2024-01-06T15:23:30.996+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:23:30.996+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:23:30.996+0800	INFO	raft/config.go:160	endnames is [[5dajNEEkSDRx0AnCitFq wOcUQfKK3aX1TWm-9P6L e1CtGutqB08gvuk0opqX] [eyzZTQpA6D8v4-WPIoSo g19VqpabPIZASH5vioG2 ntMYsSyry31LZu1nB2LI] [yWR-608Yly0tZdluJrb- 7g-Yd7lIm-sast3XPxoZ d2EI2EKF_lKOFEVbBMit]]
+2024-01-06T15:23:30.996+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 ntMYsSyry31LZu1nB2LI:2 wOcUQfKK3aX1TWm-9P6L:1 yWR-608Yly0tZdluJrb-:0]
+2024-01-06T15:23:30.996+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 7g-Yd7lIm-sast3XPxoZ:1 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 ntMYsSyry31LZu1nB2LI:2 wOcUQfKK3aX1TWm-9P6L:1 yWR-608Yly0tZdluJrb-:0]
+2024-01-06T15:23:30.996+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 7g-Yd7lIm-sast3XPxoZ:1 d2EI2EKF_lKOFEVbBMit:2 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 ntMYsSyry31LZu1nB2LI:2 wOcUQfKK3aX1TWm-9P6L:1 yWR-608Yly0tZdluJrb-:0]
+2024-01-06T15:23:30.996+0800	INFO	raft/config.go:168	ends is [0xc000126320 0xc000126340 0xc000126360]
+2024-01-06T15:23:30.996+0800	INFO	raft/config.go:177	cfg.saved is [0xc000122180 0xc0001222c0 <nil>]
+2024-01-06T15:23:30.996+0800	INFO	raft/config.go:224	ends is [0xc000126320 0xc000126340 0xc000126360], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000132360
+2024-01-06T15:23:31.051+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e300 0xc00010e660 0xc00010e900]
+2024-01-06T15:23:31.051+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:23:31.051+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc000126180 1:0xc0001262c0 2:0xc000126400], servername is 2, rs is &{{0 0} map[Raft:0xc0001224c0] 0 0xc0001380e0}
+2024-01-06T15:23:31.051+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:23:31.051+0800	INFO	raft/config.go:261	cfg.endnames is [[5dajNEEkSDRx0AnCitFq wOcUQfKK3aX1TWm-9P6L e1CtGutqB08gvuk0opqX] [eyzZTQpA6D8v4-WPIoSo g19VqpabPIZASH5vioG2 ntMYsSyry31LZu1nB2LI] [yWR-608Yly0tZdluJrb- 7g-Yd7lIm-sast3XPxoZ d2EI2EKF_lKOFEVbBMit]]
+2024-01-06T15:23:31.051+0800	INFO	raft/config.go:261	cfg.endnames is [[5dajNEEkSDRx0AnCitFq wOcUQfKK3aX1TWm-9P6L e1CtGutqB08gvuk0opqX] [eyzZTQpA6D8v4-WPIoSo g19VqpabPIZASH5vioG2 ntMYsSyry31LZu1nB2LI] [yWR-608Yly0tZdluJrb- 7g-Yd7lIm-sast3XPxoZ d2EI2EKF_lKOFEVbBMit]]
+2024-01-06T15:23:31.051+0800	INFO	raft/config.go:261	cfg.endnames is [[5dajNEEkSDRx0AnCitFq wOcUQfKK3aX1TWm-9P6L e1CtGutqB08gvuk0opqX] [eyzZTQpA6D8v4-WPIoSo g19VqpabPIZASH5vioG2 ntMYsSyry31LZu1nB2LI] [yWR-608Yly0tZdluJrb- 7g-Yd7lIm-sast3XPxoZ d2EI2EKF_lKOFEVbBMit]]
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:211	endname is 5dajNEEkSDRx0AnCitFq
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[5dajNEEkSDRx0AnCitFq:true 7g-Yd7lIm-sast3XPxoZ:true d2EI2EKF_lKOFEVbBMit:true e1CtGutqB08gvuk0opqX:true eyzZTQpA6D8v4-WPIoSo:true g19VqpabPIZASH5vioG2:true ntMYsSyry31LZu1nB2LI:true wOcUQfKK3aX1TWm-9P6L:true yWR-608Yly0tZdluJrb-:true]
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 7g-Yd7lIm-sast3XPxoZ:1 d2EI2EKF_lKOFEVbBMit:2 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 ntMYsSyry31LZu1nB2LI:2 wOcUQfKK3aX1TWm-9P6L:1 yWR-608Yly0tZdluJrb-:0]
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc000126180 1:0xc0001262c0 2:0xc000126400]
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000122240] 0 0xc000138060}
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000122240] 0 0xc000138060}
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:445	rs.services is Raft
+2024-01-06T15:23:31.100+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00010e300 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc000138048 19} 2}]}
+2024-01-06T15:23:31.140+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 250
+2024-01-06T15:23:31.140+0800	INFO	labrpc/labrpc.go:211	endname is eyzZTQpA6D8v4-WPIoSo
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[5dajNEEkSDRx0AnCitFq:true 7g-Yd7lIm-sast3XPxoZ:true d2EI2EKF_lKOFEVbBMit:true e1CtGutqB08gvuk0opqX:true eyzZTQpA6D8v4-WPIoSo:true g19VqpabPIZASH5vioG2:true ntMYsSyry31LZu1nB2LI:true wOcUQfKK3aX1TWm-9P6L:true yWR-608Yly0tZdluJrb-:true]
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 7g-Yd7lIm-sast3XPxoZ:1 d2EI2EKF_lKOFEVbBMit:2 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 ntMYsSyry31LZu1nB2LI:2 wOcUQfKK3aX1TWm-9P6L:1 yWR-608Yly0tZdluJrb-:0]
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc000126180 1:0xc0001262c0 2:0xc000126400]
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000122240] 1 0xc000138060}
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000122240] 1 0xc000138060}
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:445	rs.services is Raft
+2024-01-06T15:23:31.141+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00010e300 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc000138048 19} 2}]}
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 408
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:211	endname is yWR-608Yly0tZdluJrb-
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[5dajNEEkSDRx0AnCitFq:true 7g-Yd7lIm-sast3XPxoZ:true d2EI2EKF_lKOFEVbBMit:true e1CtGutqB08gvuk0opqX:true eyzZTQpA6D8v4-WPIoSo:true g19VqpabPIZASH5vioG2:true ntMYsSyry31LZu1nB2LI:true wOcUQfKK3aX1TWm-9P6L:true yWR-608Yly0tZdluJrb-:true]
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[5dajNEEkSDRx0AnCitFq:0 7g-Yd7lIm-sast3XPxoZ:1 d2EI2EKF_lKOFEVbBMit:2 e1CtGutqB08gvuk0opqX:2 eyzZTQpA6D8v4-WPIoSo:0 g19VqpabPIZASH5vioG2:1 ntMYsSyry31LZu1nB2LI:2 wOcUQfKK3aX1TWm-9P6L:1 yWR-608Yly0tZdluJrb-:0]
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc000126180 1:0xc0001262c0 2:0xc000126400]
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000122240] 2 0xc000138060}
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000122240] 2 0xc000138060}
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:445	rs.services is Raft
+2024-01-06T15:23:31.197+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00010e300 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc000138048 19} 2}]}
+2024-01-06T15:24:54.141+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:24:54.141+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:24:54.141+0800	INFO	raft/config.go:160	endnames is [[du1QHp6Oj31ZyReqeVC- ZhVQV2VebExkyHyeCjQy rkBAgfjf394yuBbF9z7v] [] []]
+2024-01-06T15:24:54.141+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[du1QHp6Oj31ZyReqeVC-:0]
+2024-01-06T15:24:54.141+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[ZhVQV2VebExkyHyeCjQy:1 du1QHp6Oj31ZyReqeVC-:0]
+2024-01-06T15:24:54.141+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[ZhVQV2VebExkyHyeCjQy:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2]
+2024-01-06T15:24:54.141+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-06T15:24:54.141+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:24:54.141+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c4e0
+2024-01-06T15:24:54.341+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:24:54.341+0800	INFO	labrpc/labrpc.go:211	endname is du1QHp6Oj31ZyReqeVC-
+2024-01-06T15:24:54.341+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[ZhVQV2VebExkyHyeCjQy:false du1QHp6Oj31ZyReqeVC-:false rkBAgfjf394yuBbF9z7v:false]
+2024-01-06T15:24:54.341+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[ZhVQV2VebExkyHyeCjQy:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2]
+2024-01-06T15:24:54.341+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:<nil>]
+2024-01-06T15:24:54.342+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:24:54.342+0800	INFO	labrpc/labrpc.go:220	server is <nil>
+2024-01-06T15:24:54.342+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is false, servername is 0, server is <nil>
+2024-01-06T15:24:54.771+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 <nil> <nil>]
+2024-01-06T15:24:54.771+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:24:54.771+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3e0], servername is 0, rs is &{{0 0} map[Raft:0xc000198400] 0 0xc000010720}
+2024-01-06T15:24:54.771+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:24:54.771+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:24:54.771+0800	INFO	raft/config.go:160	endnames is [[du1QHp6Oj31ZyReqeVC- ZhVQV2VebExkyHyeCjQy rkBAgfjf394yuBbF9z7v] [DGerXvwMnpj642vzoy1K VNcsBDk78zg2aj7LMYMk QtNsVrM3LUid9MHct_uT] []]
+2024-01-06T15:24:54.771+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[DGerXvwMnpj642vzoy1K:0 ZhVQV2VebExkyHyeCjQy:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2]
+2024-01-06T15:24:54.771+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[DGerXvwMnpj642vzoy1K:0 VNcsBDk78zg2aj7LMYMk:1 ZhVQV2VebExkyHyeCjQy:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2]
+2024-01-06T15:24:54.771+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[DGerXvwMnpj642vzoy1K:0 QtNsVrM3LUid9MHct_uT:2 VNcsBDk78zg2aj7LMYMk:1 ZhVQV2VebExkyHyeCjQy:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2]
+2024-01-06T15:24:54.771+0800	INFO	raft/config.go:168	ends is [0xc00007e440 0xc00007e460 0xc00007e480]
+2024-01-06T15:24:54.771+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-06T15:24:54.771+0800	INFO	raft/config.go:224	ends is [0xc00007e440 0xc00007e460 0xc00007e480], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c660
+2024-01-06T15:24:54.838+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc000088cc0 <nil>]
+2024-01-06T15:24:54.838+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:24:54.838+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520], servername is 1, rs is &{{0 0} map[Raft:0xc000198540] 0 0xc000010760}
+2024-01-06T15:24:54.838+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:24:54.838+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:24:54.838+0800	INFO	raft/config.go:160	endnames is [[du1QHp6Oj31ZyReqeVC- ZhVQV2VebExkyHyeCjQy rkBAgfjf394yuBbF9z7v] [DGerXvwMnpj642vzoy1K VNcsBDk78zg2aj7LMYMk QtNsVrM3LUid9MHct_uT] [z7_mh1DORQa6LZVCgEXQ aq8CJci1ROjEZZwmkChr EkVyDZv9WkAZB9SgfdWN]]
+2024-01-06T15:24:54.838+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[DGerXvwMnpj642vzoy1K:0 QtNsVrM3LUid9MHct_uT:2 VNcsBDk78zg2aj7LMYMk:1 ZhVQV2VebExkyHyeCjQy:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2 z7_mh1DORQa6LZVCgEXQ:0]
+2024-01-06T15:24:54.838+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[DGerXvwMnpj642vzoy1K:0 QtNsVrM3LUid9MHct_uT:2 VNcsBDk78zg2aj7LMYMk:1 ZhVQV2VebExkyHyeCjQy:1 aq8CJci1ROjEZZwmkChr:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2 z7_mh1DORQa6LZVCgEXQ:0]
+2024-01-06T15:24:54.838+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[DGerXvwMnpj642vzoy1K:0 EkVyDZv9WkAZB9SgfdWN:2 QtNsVrM3LUid9MHct_uT:2 VNcsBDk78zg2aj7LMYMk:1 ZhVQV2VebExkyHyeCjQy:1 aq8CJci1ROjEZZwmkChr:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2 z7_mh1DORQa6LZVCgEXQ:0]
+2024-01-06T15:24:54.838+0800	INFO	raft/config.go:168	ends is [0xc00007e580 0xc00007e5a0 0xc00007e5c0]
+2024-01-06T15:24:54.838+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198480 <nil>]
+2024-01-06T15:24:54.838+0800	INFO	raft/config.go:224	ends is [0xc00007e580 0xc00007e5a0 0xc00007e5c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c6c0
+2024-01-06T15:24:54.883+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc000088cc0 0xc000088f60]
+2024-01-06T15:24:54.883+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:24:54.883+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520 2:0xc00007e660], servername is 2, rs is &{{0 0} map[Raft:0xc000198680] 0 0xc0000107a0}
+2024-01-06T15:24:54.883+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:24:54.883+0800	INFO	raft/config.go:261	cfg.endnames is [[du1QHp6Oj31ZyReqeVC- ZhVQV2VebExkyHyeCjQy rkBAgfjf394yuBbF9z7v] [DGerXvwMnpj642vzoy1K VNcsBDk78zg2aj7LMYMk QtNsVrM3LUid9MHct_uT] [z7_mh1DORQa6LZVCgEXQ aq8CJci1ROjEZZwmkChr EkVyDZv9WkAZB9SgfdWN]]
+2024-01-06T15:24:54.883+0800	INFO	raft/config.go:261	cfg.endnames is [[du1QHp6Oj31ZyReqeVC- ZhVQV2VebExkyHyeCjQy rkBAgfjf394yuBbF9z7v] [DGerXvwMnpj642vzoy1K VNcsBDk78zg2aj7LMYMk QtNsVrM3LUid9MHct_uT] [z7_mh1DORQa6LZVCgEXQ aq8CJci1ROjEZZwmkChr EkVyDZv9WkAZB9SgfdWN]]
+2024-01-06T15:24:54.883+0800	INFO	raft/config.go:261	cfg.endnames is [[du1QHp6Oj31ZyReqeVC- ZhVQV2VebExkyHyeCjQy rkBAgfjf394yuBbF9z7v] [DGerXvwMnpj642vzoy1K VNcsBDk78zg2aj7LMYMk QtNsVrM3LUid9MHct_uT] [z7_mh1DORQa6LZVCgEXQ aq8CJci1ROjEZZwmkChr EkVyDZv9WkAZB9SgfdWN]]
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 186
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:211	endname is DGerXvwMnpj642vzoy1K
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[DGerXvwMnpj642vzoy1K:true EkVyDZv9WkAZB9SgfdWN:true QtNsVrM3LUid9MHct_uT:true VNcsBDk78zg2aj7LMYMk:true ZhVQV2VebExkyHyeCjQy:true aq8CJci1ROjEZZwmkChr:true du1QHp6Oj31ZyReqeVC-:true rkBAgfjf394yuBbF9z7v:true z7_mh1DORQa6LZVCgEXQ:true]
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[DGerXvwMnpj642vzoy1K:0 EkVyDZv9WkAZB9SgfdWN:2 QtNsVrM3LUid9MHct_uT:2 VNcsBDk78zg2aj7LMYMk:1 ZhVQV2VebExkyHyeCjQy:1 aq8CJci1ROjEZZwmkChr:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2 z7_mh1DORQa6LZVCgEXQ:0]
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520 2:0xc00007e660]
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198400] 0 0xc000010720}
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198400] 0 0xc000010720}
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc000198400]
+2024-01-06T15:24:54.972+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc0000106f0 19} 2}]}
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 344
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:211	endname is z7_mh1DORQa6LZVCgEXQ
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[DGerXvwMnpj642vzoy1K:true EkVyDZv9WkAZB9SgfdWN:true QtNsVrM3LUid9MHct_uT:true VNcsBDk78zg2aj7LMYMk:true ZhVQV2VebExkyHyeCjQy:true aq8CJci1ROjEZZwmkChr:true du1QHp6Oj31ZyReqeVC-:true rkBAgfjf394yuBbF9z7v:true z7_mh1DORQa6LZVCgEXQ:true]
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[DGerXvwMnpj642vzoy1K:0 EkVyDZv9WkAZB9SgfdWN:2 QtNsVrM3LUid9MHct_uT:2 VNcsBDk78zg2aj7LMYMk:1 ZhVQV2VebExkyHyeCjQy:1 aq8CJci1ROjEZZwmkChr:1 du1QHp6Oj31ZyReqeVC-:0 rkBAgfjf394yuBbF9z7v:2 z7_mh1DORQa6LZVCgEXQ:0]
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3e0 1:0xc00007e520 2:0xc00007e660]
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000198400] 1 0xc000010720}
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000198400] 1 0xc000010720}
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc000198400]
+2024-01-06T15:24:55.039+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc0000106f0 19} 2}]}
+2024-01-06T15:24:59.793+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:24:59.793+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:24:59.793+0800	INFO	raft/config.go:160	endnames is [[nTzAn9rgxyIMb9MrlX30 WV8DAFJnbMpYrdWN3OZU -WLuQz3EX-Ac3pk2IUmJ] [] []]
+2024-01-06T15:24:59.793+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.793+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[WV8DAFJnbMpYrdWN3OZU:1 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.793+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 WV8DAFJnbMpYrdWN3OZU:1 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.793+0800	INFO	raft/config.go:168	ends is [0xc00011e440 0xc00011e460 0xc00011e480]
+2024-01-06T15:24:59.793+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:24:59.793+0800	INFO	raft/config.go:224	ends is [0xc00011e440 0xc00011e460 0xc00011e480], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00012a420
+2024-01-06T15:24:59.828+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e540 <nil> <nil>]
+2024-01-06T15:24:59.828+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:24:59.828+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00011e520], servername is 0, rs is &{{0 0} map[Raft:0xc00011a700] 0 0xc000130288}
+2024-01-06T15:24:59.828+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:24:59.828+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:24:59.828+0800	INFO	raft/config.go:160	endnames is [[nTzAn9rgxyIMb9MrlX30 WV8DAFJnbMpYrdWN3OZU -WLuQz3EX-Ac3pk2IUmJ] [BCPUyzEz1L_hEt0h3_nk BFYEw17ysZ1mwLex-ilR id9HpMTbuFdd4myVm6Ey] []]
+2024-01-06T15:24:59.828+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 WV8DAFJnbMpYrdWN3OZU:1 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.828+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.828+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 id9HpMTbuFdd4myVm6Ey:2 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.828+0800	INFO	raft/config.go:168	ends is [0xc00011e580 0xc00011e5a0 0xc00011e5c0]
+2024-01-06T15:24:59.828+0800	INFO	raft/config.go:177	cfg.saved is [0xc00011a640 <nil> <nil>]
+2024-01-06T15:24:59.828+0800	INFO	raft/config.go:224	ends is [0xc00011e580 0xc00011e5a0 0xc00011e5c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00012a480
+2024-01-06T15:24:59.872+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e540 0xc00010e8a0 <nil>]
+2024-01-06T15:24:59.872+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:24:59.872+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00011e520 1:0xc00011e660], servername is 1, rs is &{{0 0} map[Raft:0xc00011a840] 0 0xc0001302c8}
+2024-01-06T15:24:59.872+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:24:59.872+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:24:59.872+0800	INFO	raft/config.go:160	endnames is [[nTzAn9rgxyIMb9MrlX30 WV8DAFJnbMpYrdWN3OZU -WLuQz3EX-Ac3pk2IUmJ] [BCPUyzEz1L_hEt0h3_nk BFYEw17ysZ1mwLex-ilR id9HpMTbuFdd4myVm6Ey] [nMUGh4qd7MmyRJt4zqwc WvAF1Apbv1h5qzZL94Ys dXJRVGDJUK2UTS6wzMOK]]
+2024-01-06T15:24:59.872+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 id9HpMTbuFdd4myVm6Ey:2 nMUGh4qd7MmyRJt4zqwc:0 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.872+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 WvAF1Apbv1h5qzZL94Ys:1 id9HpMTbuFdd4myVm6Ey:2 nMUGh4qd7MmyRJt4zqwc:0 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.872+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 WvAF1Apbv1h5qzZL94Ys:1 dXJRVGDJUK2UTS6wzMOK:2 id9HpMTbuFdd4myVm6Ey:2 nMUGh4qd7MmyRJt4zqwc:0 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.872+0800	INFO	raft/config.go:168	ends is [0xc00011e6c0 0xc00011e6e0 0xc00011e700]
+2024-01-06T15:24:59.872+0800	INFO	raft/config.go:177	cfg.saved is [0xc00011a640 0xc00011a780 <nil>]
+2024-01-06T15:24:59.872+0800	INFO	raft/config.go:224	ends is [0xc00011e6c0 0xc00011e6e0 0xc00011e700], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00012a4e0
+2024-01-06T15:24:59.917+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00010e540 0xc00010e8a0 0xc00010eb40]
+2024-01-06T15:24:59.917+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:24:59.917+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00011e520 1:0xc00011e660 2:0xc00011e7a0], servername is 2, rs is &{{0 0} map[Raft:0xc00011a980] 0 0xc000130308}
+2024-01-06T15:24:59.917+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:24:59.917+0800	INFO	raft/config.go:261	cfg.endnames is [[nTzAn9rgxyIMb9MrlX30 WV8DAFJnbMpYrdWN3OZU -WLuQz3EX-Ac3pk2IUmJ] [BCPUyzEz1L_hEt0h3_nk BFYEw17ysZ1mwLex-ilR id9HpMTbuFdd4myVm6Ey] [nMUGh4qd7MmyRJt4zqwc WvAF1Apbv1h5qzZL94Ys dXJRVGDJUK2UTS6wzMOK]]
+2024-01-06T15:24:59.917+0800	INFO	raft/config.go:261	cfg.endnames is [[nTzAn9rgxyIMb9MrlX30 WV8DAFJnbMpYrdWN3OZU -WLuQz3EX-Ac3pk2IUmJ] [BCPUyzEz1L_hEt0h3_nk BFYEw17ysZ1mwLex-ilR id9HpMTbuFdd4myVm6Ey] [nMUGh4qd7MmyRJt4zqwc WvAF1Apbv1h5qzZL94Ys dXJRVGDJUK2UTS6wzMOK]]
+2024-01-06T15:24:59.917+0800	INFO	raft/config.go:261	cfg.endnames is [[nTzAn9rgxyIMb9MrlX30 WV8DAFJnbMpYrdWN3OZU -WLuQz3EX-Ac3pk2IUmJ] [BCPUyzEz1L_hEt0h3_nk BFYEw17ysZ1mwLex-ilR id9HpMTbuFdd4myVm6Ey] [nMUGh4qd7MmyRJt4zqwc WvAF1Apbv1h5qzZL94Ys dXJRVGDJUK2UTS6wzMOK]]
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:211	endname is nTzAn9rgxyIMb9MrlX30
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[-WLuQz3EX-Ac3pk2IUmJ:true BCPUyzEz1L_hEt0h3_nk:true BFYEw17ysZ1mwLex-ilR:true WV8DAFJnbMpYrdWN3OZU:true WvAF1Apbv1h5qzZL94Ys:true dXJRVGDJUK2UTS6wzMOK:true id9HpMTbuFdd4myVm6Ey:true nMUGh4qd7MmyRJt4zqwc:true nTzAn9rgxyIMb9MrlX30:true]
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 WvAF1Apbv1h5qzZL94Ys:1 dXJRVGDJUK2UTS6wzMOK:2 id9HpMTbuFdd4myVm6Ey:2 nMUGh4qd7MmyRJt4zqwc:0 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00011e520 1:0xc00011e660 2:0xc00011e7a0]
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00011a700] 0 0xc000130288}
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00011a700] 0 0xc000130288}
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc00011a700]
+2024-01-06T15:24:59.993+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00010e540 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc000130270 19} 2}]}
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 250
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:211	endname is BCPUyzEz1L_hEt0h3_nk
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[-WLuQz3EX-Ac3pk2IUmJ:true BCPUyzEz1L_hEt0h3_nk:true BFYEw17ysZ1mwLex-ilR:true WV8DAFJnbMpYrdWN3OZU:true WvAF1Apbv1h5qzZL94Ys:true dXJRVGDJUK2UTS6wzMOK:true id9HpMTbuFdd4myVm6Ey:true nMUGh4qd7MmyRJt4zqwc:true nTzAn9rgxyIMb9MrlX30:true]
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 WvAF1Apbv1h5qzZL94Ys:1 dXJRVGDJUK2UTS6wzMOK:2 id9HpMTbuFdd4myVm6Ey:2 nMUGh4qd7MmyRJt4zqwc:0 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00011e520 1:0xc00011e660 2:0xc00011e7a0]
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00011a700] 1 0xc000130288}
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00011a700] 1 0xc000130288}
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc00011a700]
+2024-01-06T15:25:00.029+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00010e540 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc000130270 19} 2}]}
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 408
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:211	endname is nMUGh4qd7MmyRJt4zqwc
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[-WLuQz3EX-Ac3pk2IUmJ:true BCPUyzEz1L_hEt0h3_nk:true BFYEw17ysZ1mwLex-ilR:true WV8DAFJnbMpYrdWN3OZU:true WvAF1Apbv1h5qzZL94Ys:true dXJRVGDJUK2UTS6wzMOK:true id9HpMTbuFdd4myVm6Ey:true nMUGh4qd7MmyRJt4zqwc:true nTzAn9rgxyIMb9MrlX30:true]
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[-WLuQz3EX-Ac3pk2IUmJ:2 BCPUyzEz1L_hEt0h3_nk:0 BFYEw17ysZ1mwLex-ilR:1 WV8DAFJnbMpYrdWN3OZU:1 WvAF1Apbv1h5qzZL94Ys:1 dXJRVGDJUK2UTS6wzMOK:2 id9HpMTbuFdd4myVm6Ey:2 nMUGh4qd7MmyRJt4zqwc:0 nTzAn9rgxyIMb9MrlX30:0]
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00011e520 1:0xc00011e660 2:0xc00011e7a0]
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc00011a700] 2 0xc000130288}
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc00011a700] 2 0xc000130288}
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc00011a700]
+2024-01-06T15:25:00.073+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00010e540 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088b40 {0xc000088b40 0xc000130270 19} 2}]}
+2024-01-06T15:27:47.895+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:27:47.895+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:27:47.895+0800	INFO	raft/config.go:160	endnames is [[CMW16LrcBq1xFUNflrLn hAJ_a25FJFGJdZyPhpe- Vglqe__GFBIVTgIzVBlK] [] []]
+2024-01-06T15:27:47.895+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CMW16LrcBq1xFUNflrLn:0]
+2024-01-06T15:27:47.895+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CMW16LrcBq1xFUNflrLn:0 hAJ_a25FJFGJdZyPhpe-:1]
+2024-01-06T15:27:47.895+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CMW16LrcBq1xFUNflrLn:0 Vglqe__GFBIVTgIzVBlK:2 hAJ_a25FJFGJdZyPhpe-:1]
+2024-01-06T15:27:47.895+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-06T15:27:47.895+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:27:47.895+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c4e0
+2024-01-06T15:27:47.999+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 <nil> <nil>]
+2024-01-06T15:27:48.000+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:27:48.000+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0], servername is 0, rs is &{{0 0} map[Raft:0xc000118140] 0 0xc000010630}
+2024-01-06T15:27:48.000+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:27:48.000+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:27:48.000+0800	INFO	raft/config.go:160	endnames is [[CMW16LrcBq1xFUNflrLn hAJ_a25FJFGJdZyPhpe- Vglqe__GFBIVTgIzVBlK] [Y0UFMYaxkWHWSPA2U_wK kdIpOvuUPZfUsaKRdxB2 CIcUwWTKN4ZCo9iaKxT-] []]
+2024-01-06T15:27:48.000+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CMW16LrcBq1xFUNflrLn:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 hAJ_a25FJFGJdZyPhpe-:1]
+2024-01-06T15:27:48.000+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CMW16LrcBq1xFUNflrLn:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1]
+2024-01-06T15:27:48.000+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CIcUwWTKN4ZCo9iaKxT-:2 CMW16LrcBq1xFUNflrLn:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1]
+2024-01-06T15:27:48.000+0800	INFO	raft/config.go:168	ends is [0xc00007e400 0xc00007e420 0xc00007e440]
+2024-01-06T15:27:48.000+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 <nil> <nil>]
+2024-01-06T15:27:48.000+0800	INFO	raft/config.go:224	ends is [0xc00007e400 0xc00007e420 0xc00007e440], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-06T15:27:48.080+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc0000887e0 <nil>]
+2024-01-06T15:27:48.080+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:27:48.080+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0], servername is 1, rs is &{{0 0} map[Raft:0xc000118280] 0 0xc000010670}
+2024-01-06T15:27:48.080+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:27:48.080+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:27:48.080+0800	INFO	raft/config.go:160	endnames is [[CMW16LrcBq1xFUNflrLn hAJ_a25FJFGJdZyPhpe- Vglqe__GFBIVTgIzVBlK] [Y0UFMYaxkWHWSPA2U_wK kdIpOvuUPZfUsaKRdxB2 CIcUwWTKN4ZCo9iaKxT-] [EjQHsJ-9ACiVknTl8ZBv qstYBUGRcm9vdB_opMG0 dl0mPb2cX6uJUofHEaf7]]
+2024-01-06T15:27:48.080+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CIcUwWTKN4ZCo9iaKxT-:2 CMW16LrcBq1xFUNflrLn:0 EjQHsJ-9ACiVknTl8ZBv:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1]
+2024-01-06T15:27:48.080+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CIcUwWTKN4ZCo9iaKxT-:2 CMW16LrcBq1xFUNflrLn:0 EjQHsJ-9ACiVknTl8ZBv:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1 qstYBUGRcm9vdB_opMG0:1]
+2024-01-06T15:27:48.080+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[CIcUwWTKN4ZCo9iaKxT-:2 CMW16LrcBq1xFUNflrLn:0 EjQHsJ-9ACiVknTl8ZBv:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 dl0mPb2cX6uJUofHEaf7:2 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1 qstYBUGRcm9vdB_opMG0:1]
+2024-01-06T15:27:48.080+0800	INFO	raft/config.go:168	ends is [0xc00007e540 0xc00007e560 0xc00007e580]
+2024-01-06T15:27:48.080+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 0xc0001181c0 <nil>]
+2024-01-06T15:27:48.080+0800	INFO	raft/config.go:224	ends is [0xc00007e540 0xc00007e560 0xc00007e580], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c5a0
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:211	endname is CMW16LrcBq1xFUNflrLn
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[CIcUwWTKN4ZCo9iaKxT-:false CMW16LrcBq1xFUNflrLn:false EjQHsJ-9ACiVknTl8ZBv:false Vglqe__GFBIVTgIzVBlK:false Y0UFMYaxkWHWSPA2U_wK:false dl0mPb2cX6uJUofHEaf7:false hAJ_a25FJFGJdZyPhpe-:false kdIpOvuUPZfUsaKRdxB2:false qstYBUGRcm9vdB_opMG0:false]
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[CIcUwWTKN4ZCo9iaKxT-:2 CMW16LrcBq1xFUNflrLn:0 EjQHsJ-9ACiVknTl8ZBv:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 dl0mPb2cX6uJUofHEaf7:2 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1 qstYBUGRcm9vdB_opMG0:1]
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:<nil>]
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000118140] 0 0xc000010630}
+2024-01-06T15:27:48.096+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is false, servername is 0, server is &{{0 0} map[Raft:0xc000118140] 0 0xc000010630}
+2024-01-06T15:27:48.125+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000088480 0xc0000887e0 0xc000088a80]
+2024-01-06T15:27:48.125+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:27:48.125+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc00007e6a0], servername is 2, rs is &{{0 0} map[Raft:0xc000118680] 0 0xc0000107a0}
+2024-01-06T15:27:48.125+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:27:48.125+0800	INFO	raft/config.go:261	cfg.endnames is [[CMW16LrcBq1xFUNflrLn hAJ_a25FJFGJdZyPhpe- Vglqe__GFBIVTgIzVBlK] [Y0UFMYaxkWHWSPA2U_wK kdIpOvuUPZfUsaKRdxB2 CIcUwWTKN4ZCo9iaKxT-] [EjQHsJ-9ACiVknTl8ZBv qstYBUGRcm9vdB_opMG0 dl0mPb2cX6uJUofHEaf7]]
+2024-01-06T15:27:48.125+0800	INFO	raft/config.go:261	cfg.endnames is [[CMW16LrcBq1xFUNflrLn hAJ_a25FJFGJdZyPhpe- Vglqe__GFBIVTgIzVBlK] [Y0UFMYaxkWHWSPA2U_wK kdIpOvuUPZfUsaKRdxB2 CIcUwWTKN4ZCo9iaKxT-] [EjQHsJ-9ACiVknTl8ZBv qstYBUGRcm9vdB_opMG0 dl0mPb2cX6uJUofHEaf7]]
+2024-01-06T15:27:48.125+0800	INFO	raft/config.go:261	cfg.endnames is [[CMW16LrcBq1xFUNflrLn hAJ_a25FJFGJdZyPhpe- Vglqe__GFBIVTgIzVBlK] [Y0UFMYaxkWHWSPA2U_wK kdIpOvuUPZfUsaKRdxB2 CIcUwWTKN4ZCo9iaKxT-] [EjQHsJ-9ACiVknTl8ZBv qstYBUGRcm9vdB_opMG0 dl0mPb2cX6uJUofHEaf7]]
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 186
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:211	endname is Y0UFMYaxkWHWSPA2U_wK
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[CIcUwWTKN4ZCo9iaKxT-:true CMW16LrcBq1xFUNflrLn:true EjQHsJ-9ACiVknTl8ZBv:true Vglqe__GFBIVTgIzVBlK:true Y0UFMYaxkWHWSPA2U_wK:true dl0mPb2cX6uJUofHEaf7:true hAJ_a25FJFGJdZyPhpe-:true kdIpOvuUPZfUsaKRdxB2:true qstYBUGRcm9vdB_opMG0:true]
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[CIcUwWTKN4ZCo9iaKxT-:2 CMW16LrcBq1xFUNflrLn:0 EjQHsJ-9ACiVknTl8ZBv:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 dl0mPb2cX6uJUofHEaf7:2 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1 qstYBUGRcm9vdB_opMG0:1]
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc00007e6a0]
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000118140] 0 0xc000010630}
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000118140] 0 0xc000010630}
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc000118140]
+2024-01-06T15:27:48.200+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc000010600 19} 2}]}, dispatch.ok is true
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 344
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:211	endname is EjQHsJ-9ACiVknTl8ZBv
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[CIcUwWTKN4ZCo9iaKxT-:true CMW16LrcBq1xFUNflrLn:true EjQHsJ-9ACiVknTl8ZBv:true Vglqe__GFBIVTgIzVBlK:true Y0UFMYaxkWHWSPA2U_wK:true dl0mPb2cX6uJUofHEaf7:true hAJ_a25FJFGJdZyPhpe-:true kdIpOvuUPZfUsaKRdxB2:true qstYBUGRcm9vdB_opMG0:true]
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[CIcUwWTKN4ZCo9iaKxT-:2 CMW16LrcBq1xFUNflrLn:0 EjQHsJ-9ACiVknTl8ZBv:0 Vglqe__GFBIVTgIzVBlK:2 Y0UFMYaxkWHWSPA2U_wK:0 dl0mPb2cX6uJUofHEaf7:2 hAJ_a25FJFGJdZyPhpe-:1 kdIpOvuUPZfUsaKRdxB2:1 qstYBUGRcm9vdB_opMG0:1]
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc00007e3a0 1:0xc00007e4e0 2:0xc00007e6a0]
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc000118140] 1 0xc000010630}
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc000118140] 1 0xc000010630}
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc000118140]
+2024-01-06T15:27:48.281+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc000088480 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc000010600 19} 2}]}, dispatch.ok is true
+2024-01-06T15:27:53.052+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:27:53.052+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:27:53.052+0800	INFO	raft/config.go:160	endnames is [[gPEstELL7d-Kl-eQl6wN 7MnOkez24VNlOQ_Auykw ztJnTtHr86NEx578IWBo] [] []]
+2024-01-06T15:27:53.052+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[gPEstELL7d-Kl-eQl6wN:0]
+2024-01-06T15:27:53.052+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[7MnOkez24VNlOQ_Auykw:1 gPEstELL7d-Kl-eQl6wN:0]
+2024-01-06T15:27:53.052+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[7MnOkez24VNlOQ_Auykw:1 gPEstELL7d-Kl-eQl6wN:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.052+0800	INFO	raft/config.go:168	ends is [0xc0001a60c0 0xc0001a60e0 0xc0001a6100]
+2024-01-06T15:27:53.052+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-06T15:27:53.052+0800	INFO	raft/config.go:224	ends is [0xc0001a60c0 0xc0001a60e0 0xc0001a6100], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001b22a0
+2024-01-06T15:27:53.116+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00018e2a0 <nil> <nil>]
+2024-01-06T15:27:53.116+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:27:53.116+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc0001a61a0], servername is 0, rs is &{{0 0} map[Raft:0xc0001a2240] 0 0xc0001b8060}
+2024-01-06T15:27:53.116+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:27:53.116+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:27:53.116+0800	INFO	raft/config.go:160	endnames is [[gPEstELL7d-Kl-eQl6wN 7MnOkez24VNlOQ_Auykw ztJnTtHr86NEx578IWBo] [zRKY-rdzjTM8fQJHE32C TV54LflNXUqdHdhHSiw2 LbqCBPrDBZX8OKUmknVD] []]
+2024-01-06T15:27:53.116+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[7MnOkez24VNlOQ_Auykw:1 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.116+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[7MnOkez24VNlOQ_Auykw:1 TV54LflNXUqdHdhHSiw2:1 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.116+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[7MnOkez24VNlOQ_Auykw:1 LbqCBPrDBZX8OKUmknVD:2 TV54LflNXUqdHdhHSiw2:1 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.116+0800	INFO	raft/config.go:168	ends is [0xc0001a6200 0xc0001a6220 0xc0001a6240]
+2024-01-06T15:27:53.116+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001a2180 <nil> <nil>]
+2024-01-06T15:27:53.116+0800	INFO	raft/config.go:224	ends is [0xc0001a6200 0xc0001a6220 0xc0001a6240], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001b2300
+2024-01-06T15:27:53.161+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00018e2a0 0xc00018e600 <nil>]
+2024-01-06T15:27:53.161+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:27:53.161+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc0001a61a0 1:0xc0001a62e0], servername is 1, rs is &{{0 0} map[Raft:0xc0001a2380] 0 0xc0001b80a0}
+2024-01-06T15:27:53.161+0800	INFO	raft/config.go:151	
+
+
+2024-01-06T15:27:53.161+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-06T15:27:53.161+0800	INFO	raft/config.go:160	endnames is [[gPEstELL7d-Kl-eQl6wN 7MnOkez24VNlOQ_Auykw ztJnTtHr86NEx578IWBo] [zRKY-rdzjTM8fQJHE32C TV54LflNXUqdHdhHSiw2 LbqCBPrDBZX8OKUmknVD] [Y5-GdVX_mqx0G4hSCPro 6kSQyL5kzudjwpBHUv0L PDf5su5M-v58oV5hlHtJ]]
+2024-01-06T15:27:53.161+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[7MnOkez24VNlOQ_Auykw:1 LbqCBPrDBZX8OKUmknVD:2 TV54LflNXUqdHdhHSiw2:1 Y5-GdVX_mqx0G4hSCPro:0 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.161+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6kSQyL5kzudjwpBHUv0L:1 7MnOkez24VNlOQ_Auykw:1 LbqCBPrDBZX8OKUmknVD:2 TV54LflNXUqdHdhHSiw2:1 Y5-GdVX_mqx0G4hSCPro:0 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.161+0800	INFO	labrpc/labrpc.go:375	rn.connections is map[6kSQyL5kzudjwpBHUv0L:1 7MnOkez24VNlOQ_Auykw:1 LbqCBPrDBZX8OKUmknVD:2 PDf5su5M-v58oV5hlHtJ:2 TV54LflNXUqdHdhHSiw2:1 Y5-GdVX_mqx0G4hSCPro:0 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.161+0800	INFO	raft/config.go:168	ends is [0xc0001a6340 0xc0001a6360 0xc0001a6380]
+2024-01-06T15:27:53.161+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001a2180 0xc0001a22c0 <nil>]
+2024-01-06T15:27:53.161+0800	INFO	raft/config.go:224	ends is [0xc0001a6340 0xc0001a6360 0xc0001a6380], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001b2360
+2024-01-06T15:27:53.205+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00018e2a0 0xc00018e600 0xc00018e960]
+2024-01-06T15:27:53.205+0800	INFO	labrpc/labrpc.go:429	svc.name is Raft
+2024-01-06T15:27:53.205+0800	INFO	labrpc/labrpc.go:357	rn.servers is map[0:0xc0001a61a0 1:0xc0001a62e0 2:0xc0001a6420], servername is 2, rs is &{{0 0} map[Raft:0xc0001a24c0] 0 0xc0001b80e0}
+2024-01-06T15:27:53.205+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-06T15:27:53.205+0800	INFO	raft/config.go:261	cfg.endnames is [[gPEstELL7d-Kl-eQl6wN 7MnOkez24VNlOQ_Auykw ztJnTtHr86NEx578IWBo] [zRKY-rdzjTM8fQJHE32C TV54LflNXUqdHdhHSiw2 LbqCBPrDBZX8OKUmknVD] [Y5-GdVX_mqx0G4hSCPro 6kSQyL5kzudjwpBHUv0L PDf5su5M-v58oV5hlHtJ]]
+2024-01-06T15:27:53.205+0800	INFO	raft/config.go:261	cfg.endnames is [[gPEstELL7d-Kl-eQl6wN 7MnOkez24VNlOQ_Auykw ztJnTtHr86NEx578IWBo] [zRKY-rdzjTM8fQJHE32C TV54LflNXUqdHdhHSiw2 LbqCBPrDBZX8OKUmknVD] [Y5-GdVX_mqx0G4hSCPro 6kSQyL5kzudjwpBHUv0L PDf5su5M-v58oV5hlHtJ]]
+2024-01-06T15:27:53.205+0800	INFO	raft/config.go:261	cfg.endnames is [[gPEstELL7d-Kl-eQl6wN 7MnOkez24VNlOQ_Auykw ztJnTtHr86NEx578IWBo] [zRKY-rdzjTM8fQJHE32C TV54LflNXUqdHdhHSiw2 LbqCBPrDBZX8OKUmknVD] [Y5-GdVX_mqx0G4hSCPro 6kSQyL5kzudjwpBHUv0L PDf5su5M-v58oV5hlHtJ]]
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:169	rn.count is 1, rn.bytes is 92
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:211	endname is gPEstELL7d-Kl-eQl6wN
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[6kSQyL5kzudjwpBHUv0L:true 7MnOkez24VNlOQ_Auykw:true LbqCBPrDBZX8OKUmknVD:true PDf5su5M-v58oV5hlHtJ:true TV54LflNXUqdHdhHSiw2:true Y5-GdVX_mqx0G4hSCPro:true gPEstELL7d-Kl-eQl6wN:true zRKY-rdzjTM8fQJHE32C:true ztJnTtHr86NEx578IWBo:true]
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[6kSQyL5kzudjwpBHUv0L:1 7MnOkez24VNlOQ_Auykw:1 LbqCBPrDBZX8OKUmknVD:2 PDf5su5M-v58oV5hlHtJ:2 TV54LflNXUqdHdhHSiw2:1 Y5-GdVX_mqx0G4hSCPro:0 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc0001a61a0 1:0xc0001a62e0 2:0xc0001a6420]
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc0001a2240] 0 0xc0001b8060}
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc0001a2240] 0 0xc0001b8060}
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc0001a2240]
+2024-01-06T15:27:53.253+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00018e2a0 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc0001b8048 19} 2}]}, dispatch.ok is true
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:169	rn.count is 2, rn.bytes is 250
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:211	endname is zRKY-rdzjTM8fQJHE32C
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[6kSQyL5kzudjwpBHUv0L:true 7MnOkez24VNlOQ_Auykw:true LbqCBPrDBZX8OKUmknVD:true PDf5su5M-v58oV5hlHtJ:true TV54LflNXUqdHdhHSiw2:true Y5-GdVX_mqx0G4hSCPro:true gPEstELL7d-Kl-eQl6wN:true zRKY-rdzjTM8fQJHE32C:true ztJnTtHr86NEx578IWBo:true]
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[6kSQyL5kzudjwpBHUv0L:1 7MnOkez24VNlOQ_Auykw:1 LbqCBPrDBZX8OKUmknVD:2 PDf5su5M-v58oV5hlHtJ:2 TV54LflNXUqdHdhHSiw2:1 Y5-GdVX_mqx0G4hSCPro:0 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc0001a61a0 1:0xc0001a62e0 2:0xc0001a6420]
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc0001a2240] 1 0xc0001b8060}
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc0001a2240] 1 0xc0001b8060}
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc0001a2240]
+2024-01-06T15:27:53.317+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00018e2a0 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc0001b8048 19} 2}]}, dispatch.ok is true
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:169	rn.count is 3, rn.bytes is 408
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:211	endname is Y5-GdVX_mqx0G4hSCPro
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:212	rn.enabled is map[6kSQyL5kzudjwpBHUv0L:true 7MnOkez24VNlOQ_Auykw:true LbqCBPrDBZX8OKUmknVD:true PDf5su5M-v58oV5hlHtJ:true TV54LflNXUqdHdhHSiw2:true Y5-GdVX_mqx0G4hSCPro:true gPEstELL7d-Kl-eQl6wN:true zRKY-rdzjTM8fQJHE32C:true ztJnTtHr86NEx578IWBo:true]
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:213	rn.connections is map[6kSQyL5kzudjwpBHUv0L:1 7MnOkez24VNlOQ_Auykw:1 LbqCBPrDBZX8OKUmknVD:2 PDf5su5M-v58oV5hlHtJ:2 TV54LflNXUqdHdhHSiw2:1 Y5-GdVX_mqx0G4hSCPro:0 gPEstELL7d-Kl-eQl6wN:0 zRKY-rdzjTM8fQJHE32C:0 ztJnTtHr86NEx578IWBo:2]
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:214	rn.servers is map[0:0xc0001a61a0 1:0xc0001a62e0 2:0xc0001a6420]
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:219	servername is 0
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:220	server is &{{0 0} map[Raft:0xc0001a2240] 2 0xc0001b8060}
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:240	excute here, enabled is true, servername is 0, server is &{{0 0} map[Raft:0xc0001a2240] 2 0xc0001b8060}
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:442	req.svcMeth is Raft.RequestVote
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:445	rs.services is map[Raft:0xc0001a2240]
+2024-01-06T15:27:53.361+0800	INFO	labrpc/labrpc.go:447	dispatch.serviceName is Raft, dispatch.methodName is RequestVote, dispatch.service is &{Raft {0x6e4320 0xc00018e2a0 22} 0x6e4320 map[RequestVote:{RequestVote  0xc000088660 {0xc000088660 0xc0001b8048 19} 2}]}, dispatch.ok is true

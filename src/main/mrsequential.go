@@ -7,7 +7,7 @@ package main
 //
 
 import "fmt"
-import "../mr"
+import "6.824/src/mr"
 import "plugin"
 import "os"
 import "log"
@@ -15,7 +15,7 @@ import "io/ioutil"
 import "sort"
 
 // for sorting by key.
-type ByKey []mr.KeyValue
+type ByKey []mr.KeyValue 			// * type: define a new type called ByKey
 
 // for sorting by key.
 func (a ByKey) Len() int           { return len(a) }
@@ -36,7 +36,7 @@ func main() {
 	// accumulate the intermediate Map output.
 	//
 	intermediate := []mr.KeyValue{}
-	for _, filename := range os.Args[2:] {
+	for _, filename := range os.Args[2:] {						// * _ represents a placehoder
 		file, err := os.Open(filename)
 		if err != nil {
 			log.Fatalf("cannot open %v", filename)
@@ -91,11 +91,12 @@ func main() {
 // from a plugin file, e.g. ../mrapps/wc.so
 //
 func loadPlugin(filename string) (func(string, string) []mr.KeyValue, func(string, []string) string) {
-	p, err := plugin.Open(filename)
+	p, err := plugin.Open(filename)					// * open a go plugin
+	fmt.Println(err)
 	if err != nil {
 		log.Fatalf("cannot load plugin %v", filename)
 	}
-	xmapf, err := p.Lookup("Map")
+	xmapf, err := p.Lookup("Map")					// *  searches for a symbol named symName in plugin p
 	if err != nil {
 		log.Fatalf("cannot find Map in %v", filename)
 	}

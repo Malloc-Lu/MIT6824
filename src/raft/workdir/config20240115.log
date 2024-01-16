@@ -1,0 +1,1947 @@
+2024-01-15T09:37:57.355+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:37:57.355+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:37:57.355+0800	INFO	raft/config.go:160	endnames is [[0a1L8qghlFAQb3FT4CgQ qAQ1vI-Z_VYc_SAj5lOo ahxExpv3sLtSibweLxGF] [] []]
+2024-01-15T09:37:57.355+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T09:37:57.355+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T09:37:57.355+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T09:37:57.391+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0e60 <nil> <nil>]
+2024-01-15T09:37:57.391+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:37:57.391+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:37:57.391+0800	INFO	raft/config.go:160	endnames is [[0a1L8qghlFAQb3FT4CgQ qAQ1vI-Z_VYc_SAj5lOo ahxExpv3sLtSibweLxGF] [9jBEAI064rKBeM6cOqLm eDL1l0B6MH1NH0WELa99 q3IyUCD0gSZiteoO1QTP] []]
+2024-01-15T09:37:57.391+0800	INFO	raft/config.go:168	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0]
+2024-01-15T09:37:57.391+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T09:37:57.391+0800	INFO	raft/config.go:224	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T09:37:57.436+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0e60 0xc0000b0f00 <nil>]
+2024-01-15T09:37:57.436+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:37:57.436+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:37:57.436+0800	INFO	raft/config.go:160	endnames is [[0a1L8qghlFAQb3FT4CgQ qAQ1vI-Z_VYc_SAj5lOo ahxExpv3sLtSibweLxGF] [9jBEAI064rKBeM6cOqLm eDL1l0B6MH1NH0WELa99 q3IyUCD0gSZiteoO1QTP] [sOv3Tv7xq1dEVw7vSupi Jz9f7rB8DDM-OYG4Orqt PDMIggjszfHBkJuG1CYc]]
+2024-01-15T09:37:57.436+0800	INFO	raft/config.go:168	ends is [0xc00007e620 0xc00007e640 0xc00007e660]
+2024-01-15T09:37:57.436+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc0001981c0 <nil>]
+2024-01-15T09:37:57.436+0800	INFO	raft/config.go:224	ends is [0xc00007e620 0xc00007e640 0xc00007e660], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T09:37:57.480+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0e60 0xc0000b0f00 0xc0000b0fa0]
+2024-01-15T09:37:57.480+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T09:37:57.480+0800	INFO	raft/config.go:261	cfg.endnames is [[0a1L8qghlFAQb3FT4CgQ qAQ1vI-Z_VYc_SAj5lOo ahxExpv3sLtSibweLxGF] [9jBEAI064rKBeM6cOqLm eDL1l0B6MH1NH0WELa99 q3IyUCD0gSZiteoO1QTP] [sOv3Tv7xq1dEVw7vSupi Jz9f7rB8DDM-OYG4Orqt PDMIggjszfHBkJuG1CYc]]
+2024-01-15T09:37:57.480+0800	INFO	raft/config.go:261	cfg.endnames is [[0a1L8qghlFAQb3FT4CgQ qAQ1vI-Z_VYc_SAj5lOo ahxExpv3sLtSibweLxGF] [9jBEAI064rKBeM6cOqLm eDL1l0B6MH1NH0WELa99 q3IyUCD0gSZiteoO1QTP] [sOv3Tv7xq1dEVw7vSupi Jz9f7rB8DDM-OYG4Orqt PDMIggjszfHBkJuG1CYc]]
+2024-01-15T09:37:57.480+0800	INFO	raft/config.go:261	cfg.endnames is [[0a1L8qghlFAQb3FT4CgQ qAQ1vI-Z_VYc_SAj5lOo ahxExpv3sLtSibweLxGF] [9jBEAI064rKBeM6cOqLm eDL1l0B6MH1NH0WELa99 q3IyUCD0gSZiteoO1QTP] [sOv3Tv7xq1dEVw7vSupi Jz9f7rB8DDM-OYG4Orqt PDMIggjszfHBkJuG1CYc]]
+2024-01-15T09:37:58.010+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[2]]
+2024-01-15T09:38:00.549+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[2]]
+2024-01-15T09:38:00.549+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:38:00.549+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:38:00.549+0800	INFO	raft/config.go:160	endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [] []]
+2024-01-15T09:38:00.549+0800	INFO	raft/config.go:168	ends is [0xc000415d40 0xc000415d60 0xc000415d80]
+2024-01-15T09:38:00.549+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T09:38:00.549+0800	INFO	raft/config.go:224	ends is [0xc000415d40 0xc000415d60 0xc000415d80], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0004fec00
+2024-01-15T09:38:00.584+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0004e8d20 <nil> <nil>]
+2024-01-15T09:38:00.584+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:38:00.584+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:38:00.584+0800	INFO	raft/config.go:160	endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] []]
+2024-01-15T09:38:00.584+0800	INFO	raft/config.go:168	ends is [0xc000414160 0xc000414180 0xc0004141a0]
+2024-01-15T09:38:00.584+0800	INFO	raft/config.go:177	cfg.saved is [0xc00034cec0 <nil> <nil>]
+2024-01-15T09:38:00.584+0800	INFO	raft/config.go:224	ends is [0xc000414160 0xc000414180 0xc0004141a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00057e000
+2024-01-15T09:38:00.627+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0004e8d20 0xc000402000 <nil>]
+2024-01-15T09:38:00.627+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:38:00.627+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:38:00.627+0800	INFO	raft/config.go:160	endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] [bIbDSfSLolC5rnH5Ijqm Pn7b99iHKiaBhqwa5syy z3kwDiHdjzsR-2_y952h]]
+2024-01-15T09:38:00.627+0800	INFO	raft/config.go:168	ends is [0xc000414240 0xc000414260 0xc000414280]
+2024-01-15T09:38:00.627+0800	INFO	raft/config.go:177	cfg.saved is [0xc00034cec0 0xc0005661c0 <nil>]
+2024-01-15T09:38:00.627+0800	INFO	raft/config.go:224	ends is [0xc000414240 0xc000414260 0xc000414280], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0004b4000
+2024-01-15T09:38:00.672+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0004e8d20 0xc000402000 0xc0004c6000]
+2024-01-15T09:38:00.672+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T09:38:00.672+0800	INFO	raft/config.go:261	cfg.endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] [bIbDSfSLolC5rnH5Ijqm Pn7b99iHKiaBhqwa5syy z3kwDiHdjzsR-2_y952h]]
+2024-01-15T09:38:00.672+0800	INFO	raft/config.go:261	cfg.endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] [bIbDSfSLolC5rnH5Ijqm Pn7b99iHKiaBhqwa5syy z3kwDiHdjzsR-2_y952h]]
+2024-01-15T09:38:00.672+0800	INFO	raft/config.go:261	cfg.endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] [bIbDSfSLolC5rnH5Ijqm Pn7b99iHKiaBhqwa5syy z3kwDiHdjzsR-2_y952h]]
+2024-01-15T09:38:01.184+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[2]]
+2024-01-15T09:38:01.664+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1]]
+2024-01-15T09:38:01.664+0800	INFO	raft/config.go:261	cfg.endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] [bIbDSfSLolC5rnH5Ijqm Pn7b99iHKiaBhqwa5syy z3kwDiHdjzsR-2_y952h]]
+2024-01-15T09:38:02.190+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[2] 3:[1]]
+2024-01-15T09:38:04.193+0800	INFO	raft/config.go:261	cfg.endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] [bIbDSfSLolC5rnH5Ijqm Pn7b99iHKiaBhqwa5syy z3kwDiHdjzsR-2_y952h]]
+2024-01-15T09:38:04.647+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[2]]
+2024-01-15T09:38:04.647+0800	INFO	raft/config.go:261	cfg.endnames is [[IHrp21RQVyPRyzlvkmDN 9vrdKoZ6KeaBex2zuNIk XK6c_-uNIh69T1UsK2c6] [BnVEZ3F6UYLlqe1cXkR4 U3pMNYYXQRFSrDBWpIsS 2ENBN1hJLKs5yqJ7nNIV] [bIbDSfSLolC5rnH5Ijqm Pn7b99iHKiaBhqwa5syy z3kwDiHdjzsR-2_y952h]]
+2024-01-15T09:38:05.181+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[2] 3:[1]]
+2024-01-15T09:44:29.587+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:44:29.588+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:44:29.588+0800	INFO	raft/config.go:160	endnames is [[uvima7Grt-Q-4Hrfwz7u FNgUBM1NoVgr1ijyqBnI -gq0SewHD0SGO0MQSlrz] [] []]
+2024-01-15T09:44:29.588+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T09:44:29.588+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T09:44:29.588+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T09:44:29.617+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0f00 <nil> <nil>]
+2024-01-15T09:44:29.617+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:44:29.617+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:44:29.617+0800	INFO	raft/config.go:160	endnames is [[uvima7Grt-Q-4Hrfwz7u FNgUBM1NoVgr1ijyqBnI -gq0SewHD0SGO0MQSlrz] [VIPbVO9Hz2eZNm8jjZWd 1cKHasuS5wymzQfeiyDb IlyUmvPrZuZv2nIdGT_o] []]
+2024-01-15T09:44:29.617+0800	INFO	raft/config.go:168	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0]
+2024-01-15T09:44:29.617+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T09:44:29.617+0800	INFO	raft/config.go:224	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T09:44:29.662+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0f00 0xc0000b0fa0 <nil>]
+2024-01-15T09:44:29.662+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:44:29.662+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:44:29.662+0800	INFO	raft/config.go:160	endnames is [[uvima7Grt-Q-4Hrfwz7u FNgUBM1NoVgr1ijyqBnI -gq0SewHD0SGO0MQSlrz] [VIPbVO9Hz2eZNm8jjZWd 1cKHasuS5wymzQfeiyDb IlyUmvPrZuZv2nIdGT_o] [tQFSCAsbRz0qN7mgiQUG NOzCXknJDrF06XCnqyQ0 Ak2v5g0XvRQTq1jjyj7g]]
+2024-01-15T09:44:29.662+0800	INFO	raft/config.go:168	ends is [0xc00022c120 0xc00022c140 0xc00022c160]
+2024-01-15T09:44:29.662+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc0001981c0 <nil>]
+2024-01-15T09:44:29.662+0800	INFO	raft/config.go:224	ends is [0xc00022c120 0xc00022c140 0xc00022c160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000242000
+2024-01-15T09:44:29.706+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0f00 0xc0000b0fa0 0xc000246000]
+2024-01-15T09:44:29.706+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T09:44:29.706+0800	INFO	raft/config.go:261	cfg.endnames is [[uvima7Grt-Q-4Hrfwz7u FNgUBM1NoVgr1ijyqBnI -gq0SewHD0SGO0MQSlrz] [VIPbVO9Hz2eZNm8jjZWd 1cKHasuS5wymzQfeiyDb IlyUmvPrZuZv2nIdGT_o] [tQFSCAsbRz0qN7mgiQUG NOzCXknJDrF06XCnqyQ0 Ak2v5g0XvRQTq1jjyj7g]]
+2024-01-15T09:44:29.707+0800	INFO	raft/config.go:261	cfg.endnames is [[uvima7Grt-Q-4Hrfwz7u FNgUBM1NoVgr1ijyqBnI -gq0SewHD0SGO0MQSlrz] [VIPbVO9Hz2eZNm8jjZWd 1cKHasuS5wymzQfeiyDb IlyUmvPrZuZv2nIdGT_o] [tQFSCAsbRz0qN7mgiQUG NOzCXknJDrF06XCnqyQ0 Ak2v5g0XvRQTq1jjyj7g]]
+2024-01-15T09:44:29.707+0800	INFO	raft/config.go:261	cfg.endnames is [[uvima7Grt-Q-4Hrfwz7u FNgUBM1NoVgr1ijyqBnI -gq0SewHD0SGO0MQSlrz] [VIPbVO9Hz2eZNm8jjZWd 1cKHasuS5wymzQfeiyDb IlyUmvPrZuZv2nIdGT_o] [tQFSCAsbRz0qN7mgiQUG NOzCXknJDrF06XCnqyQ0 Ak2v5g0XvRQTq1jjyj7g]]
+2024-01-15T09:44:30.250+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T09:44:32.775+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T09:44:32.775+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:44:32.775+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:44:32.775+0800	INFO	raft/config.go:160	endnames is [[sGW6YL2HIj-Sb_GSs09F kGMk6Ll_izNa1TbzpGWw e05ZP23wQn6Cgqa8GLcp] [] []]
+2024-01-15T09:44:32.775+0800	INFO	raft/config.go:168	ends is [0xc0003a60c0 0xc0003a60e0 0xc0003a6100]
+2024-01-15T09:44:32.775+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T09:44:32.775+0800	INFO	raft/config.go:224	ends is [0xc0003a60c0 0xc0003a60e0 0xc0003a6100], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c720
+2024-01-15T09:44:32.821+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000246140 <nil> <nil>]
+2024-01-15T09:44:32.821+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:44:32.821+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:44:32.824+0800	INFO	raft/config.go:160	endnames is [[sGW6YL2HIj-Sb_GSs09F kGMk6Ll_izNa1TbzpGWw e05ZP23wQn6Cgqa8GLcp] [7--yO4FbHb1uRcV5nYn7 zBqWr1ciDOkMD82Xl6di OWYquEt5u0VIPoyKlXdi] []]
+2024-01-15T09:44:32.824+0800	INFO	raft/config.go:168	ends is [0xc0003a6260 0xc0003a6280 0xc0003a62a0]
+2024-01-15T09:44:32.824+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001861c0 <nil> <nil>]
+2024-01-15T09:44:32.824+0800	INFO	raft/config.go:224	ends is [0xc0003a6260 0xc0003a6280 0xc0003a62a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00038a000
+2024-01-15T09:44:32.870+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000246140 0xc00038e000 <nil>]
+2024-01-15T09:44:32.870+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:44:32.870+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:44:32.870+0800	INFO	raft/config.go:160	endnames is [[sGW6YL2HIj-Sb_GSs09F kGMk6Ll_izNa1TbzpGWw e05ZP23wQn6Cgqa8GLcp] [7--yO4FbHb1uRcV5nYn7 zBqWr1ciDOkMD82Xl6di OWYquEt5u0VIPoyKlXdi] [ixu0RA7-5WwQHkt33b4k -x5rKXCMKFgwLhJh7xoG aoHPFr10qfH1tv-oya4d]]
+2024-01-15T09:44:32.870+0800	INFO	raft/config.go:168	ends is [0xc0003a6320 0xc0003a6340 0xc0003a6360]
+2024-01-15T09:44:32.870+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001861c0 0xc000380040 <nil>]
+2024-01-15T09:44:32.870+0800	INFO	raft/config.go:224	ends is [0xc0003a6320 0xc0003a6340 0xc0003a6360], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00038a0c0
+2024-01-15T09:44:32.920+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000246140 0xc00038e000 0xc00038e0a0]
+2024-01-15T09:44:32.920+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T09:44:32.920+0800	INFO	raft/config.go:261	cfg.endnames is [[sGW6YL2HIj-Sb_GSs09F kGMk6Ll_izNa1TbzpGWw e05ZP23wQn6Cgqa8GLcp] [7--yO4FbHb1uRcV5nYn7 zBqWr1ciDOkMD82Xl6di OWYquEt5u0VIPoyKlXdi] [ixu0RA7-5WwQHkt33b4k -x5rKXCMKFgwLhJh7xoG aoHPFr10qfH1tv-oya4d]]
+2024-01-15T09:44:32.920+0800	INFO	raft/config.go:261	cfg.endnames is [[sGW6YL2HIj-Sb_GSs09F kGMk6Ll_izNa1TbzpGWw e05ZP23wQn6Cgqa8GLcp] [7--yO4FbHb1uRcV5nYn7 zBqWr1ciDOkMD82Xl6di OWYquEt5u0VIPoyKlXdi] [ixu0RA7-5WwQHkt33b4k -x5rKXCMKFgwLhJh7xoG aoHPFr10qfH1tv-oya4d]]
+2024-01-15T09:44:32.920+0800	INFO	raft/config.go:261	cfg.endnames is [[sGW6YL2HIj-Sb_GSs09F kGMk6Ll_izNa1TbzpGWw e05ZP23wQn6Cgqa8GLcp] [7--yO4FbHb1uRcV5nYn7 zBqWr1ciDOkMD82Xl6di OWYquEt5u0VIPoyKlXdi] [ixu0RA7-5WwQHkt33b4k -x5rKXCMKFgwLhJh7xoG aoHPFr10qfH1tv-oya4d]]
+2024-01-15T09:44:33.446+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T09:44:33.973+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1 2]]
+2024-01-15T09:51:18.960+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:51:18.960+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:51:18.960+0800	INFO	raft/config.go:160	endnames is [[GXY4ulISaE2QYWkfNOgQ JWT2dqqeDQCQ9bOLdn7G BWrLS9u7ez6gc5FzNWQC] [] []]
+2024-01-15T09:51:18.960+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T09:51:18.960+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T09:51:18.960+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T09:51:19.110+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 <nil> <nil>]
+2024-01-15T09:51:19.111+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:51:19.111+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:51:19.111+0800	INFO	raft/config.go:160	endnames is [[GXY4ulISaE2QYWkfNOgQ JWT2dqqeDQCQ9bOLdn7G BWrLS9u7ez6gc5FzNWQC] [_1CIjiugZMOsTOlalDn5 S3CsXxRjqGqWl9pVCZpW PxWr8ECALjQVsrvhmCUc] []]
+2024-01-15T09:51:19.111+0800	INFO	raft/config.go:168	ends is [0xc000124120 0xc000124140 0xc000124160]
+2024-01-15T09:51:19.111+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T09:51:19.111+0800	INFO	raft/config.go:224	ends is [0xc000124120 0xc000124140 0xc000124160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00013a000
+2024-01-15T09:51:19.155+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc00013e000 <nil>]
+2024-01-15T09:51:19.155+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:51:19.155+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:51:19.155+0800	INFO	raft/config.go:160	endnames is [[GXY4ulISaE2QYWkfNOgQ JWT2dqqeDQCQ9bOLdn7G BWrLS9u7ez6gc5FzNWQC] [_1CIjiugZMOsTOlalDn5 S3CsXxRjqGqWl9pVCZpW PxWr8ECALjQVsrvhmCUc] [f8EuaVYj2bsXcGz2zfpk FWwUkPlpgbaRUt5BH5nh P_IhpCfhfjzo_8n1Pfxe]]
+2024-01-15T09:51:19.155+0800	INFO	raft/config.go:168	ends is [0xc000294120 0xc000294140 0xc000294160]
+2024-01-15T09:51:19.155+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000120180 <nil>]
+2024-01-15T09:51:19.155+0800	INFO	raft/config.go:224	ends is [0xc000294120 0xc000294140 0xc000294160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002b0000
+2024-01-15T09:51:19.199+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc00013e000 0xc0002bc000]
+2024-01-15T09:51:19.199+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T09:51:19.199+0800	INFO	raft/config.go:261	cfg.endnames is [[GXY4ulISaE2QYWkfNOgQ JWT2dqqeDQCQ9bOLdn7G BWrLS9u7ez6gc5FzNWQC] [_1CIjiugZMOsTOlalDn5 S3CsXxRjqGqWl9pVCZpW PxWr8ECALjQVsrvhmCUc] [f8EuaVYj2bsXcGz2zfpk FWwUkPlpgbaRUt5BH5nh P_IhpCfhfjzo_8n1Pfxe]]
+2024-01-15T09:51:19.199+0800	INFO	raft/config.go:261	cfg.endnames is [[GXY4ulISaE2QYWkfNOgQ JWT2dqqeDQCQ9bOLdn7G BWrLS9u7ez6gc5FzNWQC] [_1CIjiugZMOsTOlalDn5 S3CsXxRjqGqWl9pVCZpW PxWr8ECALjQVsrvhmCUc] [f8EuaVYj2bsXcGz2zfpk FWwUkPlpgbaRUt5BH5nh P_IhpCfhfjzo_8n1Pfxe]]
+2024-01-15T09:51:19.199+0800	INFO	raft/config.go:261	cfg.endnames is [[GXY4ulISaE2QYWkfNOgQ JWT2dqqeDQCQ9bOLdn7G BWrLS9u7ez6gc5FzNWQC] [_1CIjiugZMOsTOlalDn5 S3CsXxRjqGqWl9pVCZpW PxWr8ECALjQVsrvhmCUc] [f8EuaVYj2bsXcGz2zfpk FWwUkPlpgbaRUt5BH5nh P_IhpCfhfjzo_8n1Pfxe]]
+2024-01-15T09:51:19.659+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T09:51:22.253+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T09:51:22.253+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:51:22.253+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:51:22.253+0800	INFO	raft/config.go:160	endnames is [[Ob732BmvNor-caJU6nRG Z-lBY3s2TSJnHvcoj3sx OEp1K5gsMoLGTwvjhbJl] [] []]
+2024-01-15T09:51:22.253+0800	INFO	raft/config.go:168	ends is [0xc00018e0e0 0xc00018e100 0xc00018e120]
+2024-01-15T09:51:22.253+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T09:51:22.253+0800	INFO	raft/config.go:224	ends is [0xc00018e0e0 0xc00018e100 0xc00018e120], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00013a240
+2024-01-15T09:51:22.302+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00013e140 <nil> <nil>]
+2024-01-15T09:51:22.302+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:51:22.302+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:51:22.302+0800	INFO	raft/config.go:160	endnames is [[Ob732BmvNor-caJU6nRG Z-lBY3s2TSJnHvcoj3sx OEp1K5gsMoLGTwvjhbJl] [j5yErmjMZW3OUVasq64M -hJS4qwR3kmQCCiKyOVW FV0jLrR4L8x-tr3hXy9y] []]
+2024-01-15T09:51:22.302+0800	INFO	raft/config.go:168	ends is [0xc00018e260 0xc00018e280 0xc00018e2a0]
+2024-01-15T09:51:22.302+0800	INFO	raft/config.go:177	cfg.saved is [0xc00018c1c0 <nil> <nil>]
+2024-01-15T09:51:22.302+0800	INFO	raft/config.go:224	ends is [0xc00018e260 0xc00018e280 0xc00018e2a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000508000
+2024-01-15T09:51:22.349+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00013e140 0xc000430000 <nil>]
+2024-01-15T09:51:22.349+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T09:51:22.349+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T09:51:22.349+0800	INFO	raft/config.go:160	endnames is [[Ob732BmvNor-caJU6nRG Z-lBY3s2TSJnHvcoj3sx OEp1K5gsMoLGTwvjhbJl] [j5yErmjMZW3OUVasq64M -hJS4qwR3kmQCCiKyOVW FV0jLrR4L8x-tr3hXy9y] [GanByRMAq6_Qh-ZiNue_ jwAoa9FqznrIcvEqb6Fu y-KErRa8hciC3-XB5o-g]]
+2024-01-15T09:51:22.349+0800	INFO	raft/config.go:168	ends is [0xc000602180 0xc000294000 0xc000294040]
+2024-01-15T09:51:22.349+0800	INFO	raft/config.go:177	cfg.saved is [0xc00018c1c0 0xc000549740 <nil>]
+2024-01-15T09:51:22.349+0800	INFO	raft/config.go:224	ends is [0xc000602180 0xc000294000 0xc000294040], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000466000
+2024-01-15T09:51:22.416+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00013e140 0xc000430000 0xc000464000]
+2024-01-15T09:51:22.416+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T09:51:22.416+0800	INFO	raft/config.go:261	cfg.endnames is [[Ob732BmvNor-caJU6nRG Z-lBY3s2TSJnHvcoj3sx OEp1K5gsMoLGTwvjhbJl] [j5yErmjMZW3OUVasq64M -hJS4qwR3kmQCCiKyOVW FV0jLrR4L8x-tr3hXy9y] [GanByRMAq6_Qh-ZiNue_ jwAoa9FqznrIcvEqb6Fu y-KErRa8hciC3-XB5o-g]]
+2024-01-15T09:51:22.416+0800	INFO	raft/config.go:261	cfg.endnames is [[Ob732BmvNor-caJU6nRG Z-lBY3s2TSJnHvcoj3sx OEp1K5gsMoLGTwvjhbJl] [j5yErmjMZW3OUVasq64M -hJS4qwR3kmQCCiKyOVW FV0jLrR4L8x-tr3hXy9y] [GanByRMAq6_Qh-ZiNue_ jwAoa9FqznrIcvEqb6Fu y-KErRa8hciC3-XB5o-g]]
+2024-01-15T09:51:22.416+0800	INFO	raft/config.go:261	cfg.endnames is [[Ob732BmvNor-caJU6nRG Z-lBY3s2TSJnHvcoj3sx OEp1K5gsMoLGTwvjhbJl] [j5yErmjMZW3OUVasq64M -hJS4qwR3kmQCCiKyOVW FV0jLrR4L8x-tr3hXy9y] [GanByRMAq6_Qh-ZiNue_ jwAoa9FqznrIcvEqb6Fu y-KErRa8hciC3-XB5o-g]]
+2024-01-15T09:51:22.897+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T09:51:23.368+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1 2]]
+2024-01-15T10:45:12.183+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:45:12.183+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:45:12.183+0800	INFO	raft/config.go:160	endnames is [[icOr68EzrwJS2Oy1EX6b JrfH0fLH6sIuNMKjrwBq aE5deFb18XwoyEflanw1] [] []]
+2024-01-15T10:45:12.183+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T10:45:12.183+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T10:45:12.183+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T10:45:12.231+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0f00 <nil> <nil>]
+2024-01-15T10:45:12.231+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:45:12.231+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:45:12.231+0800	INFO	raft/config.go:160	endnames is [[icOr68EzrwJS2Oy1EX6b JrfH0fLH6sIuNMKjrwBq aE5deFb18XwoyEflanw1] [qLVhTVnZehAQR95veUpw nevq4ZZ7BRjbJQl631HG ZLkjuMpr0IO61hccKaWc] []]
+2024-01-15T10:45:12.231+0800	INFO	raft/config.go:168	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0]
+2024-01-15T10:45:12.231+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T10:45:12.231+0800	INFO	raft/config.go:224	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T10:45:12.276+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0f00 0xc0000b0fa0 <nil>]
+2024-01-15T10:45:12.276+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:45:12.276+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:45:12.276+0800	INFO	raft/config.go:160	endnames is [[icOr68EzrwJS2Oy1EX6b JrfH0fLH6sIuNMKjrwBq aE5deFb18XwoyEflanw1] [qLVhTVnZehAQR95veUpw nevq4ZZ7BRjbJQl631HG ZLkjuMpr0IO61hccKaWc] [BGcJ6UrIl5shDTO1hjKh IPhcVew_65_N5NVbKCju Qn5jXkc2o95uQtEmi0lO]]
+2024-01-15T10:45:12.276+0800	INFO	raft/config.go:168	ends is [0xc00007e620 0xc00007e640 0xc00007e660]
+2024-01-15T10:45:12.276+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc0001981c0 <nil>]
+2024-01-15T10:45:12.276+0800	INFO	raft/config.go:224	ends is [0xc00007e620 0xc00007e640 0xc00007e660], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T10:45:12.320+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0f00 0xc0000b0fa0 0xc0000b1040]
+2024-01-15T10:45:12.320+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T10:45:12.320+0800	INFO	raft/config.go:261	cfg.endnames is [[icOr68EzrwJS2Oy1EX6b JrfH0fLH6sIuNMKjrwBq aE5deFb18XwoyEflanw1] [qLVhTVnZehAQR95veUpw nevq4ZZ7BRjbJQl631HG ZLkjuMpr0IO61hccKaWc] [BGcJ6UrIl5shDTO1hjKh IPhcVew_65_N5NVbKCju Qn5jXkc2o95uQtEmi0lO]]
+2024-01-15T10:45:12.320+0800	INFO	raft/config.go:261	cfg.endnames is [[icOr68EzrwJS2Oy1EX6b JrfH0fLH6sIuNMKjrwBq aE5deFb18XwoyEflanw1] [qLVhTVnZehAQR95veUpw nevq4ZZ7BRjbJQl631HG ZLkjuMpr0IO61hccKaWc] [BGcJ6UrIl5shDTO1hjKh IPhcVew_65_N5NVbKCju Qn5jXkc2o95uQtEmi0lO]]
+2024-01-15T10:45:12.320+0800	INFO	raft/config.go:261	cfg.endnames is [[icOr68EzrwJS2Oy1EX6b JrfH0fLH6sIuNMKjrwBq aE5deFb18XwoyEflanw1] [qLVhTVnZehAQR95veUpw nevq4ZZ7BRjbJQl631HG ZLkjuMpr0IO61hccKaWc] [BGcJ6UrIl5shDTO1hjKh IPhcVew_65_N5NVbKCju Qn5jXkc2o95uQtEmi0lO]]
+2024-01-15T10:45:12.774+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T10:45:15.277+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T10:45:15.277+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:45:15.277+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:45:15.277+0800	INFO	raft/config.go:160	endnames is [[5STDiaEHifCIi4T6_8bM F-oC52ptgPzbELFmxZ9p 3lpVUlX0Lmc4v29phL_U] [] []]
+2024-01-15T10:45:15.277+0800	INFO	raft/config.go:168	ends is [0xc0002a22c0 0xc0002a22e0 0xc0002a2300]
+2024-01-15T10:45:15.277+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T10:45:15.277+0800	INFO	raft/config.go:224	ends is [0xc0002a22c0 0xc0002a22e0 0xc0002a2300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000119a40
+2024-01-15T10:45:15.310+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00011db80 <nil> <nil>]
+2024-01-15T10:45:15.310+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:45:15.310+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:45:15.310+0800	INFO	raft/config.go:160	endnames is [[5STDiaEHifCIi4T6_8bM F-oC52ptgPzbELFmxZ9p 3lpVUlX0Lmc4v29phL_U] [23w_MRKLcLuDNsVq92e2 2jWRz_uPoXKDzv95OCez vzdzHaVJSvR5pj3obu5k] []]
+2024-01-15T10:45:15.310+0800	INFO	raft/config.go:168	ends is [0xc000394120 0xc000394140 0xc000394160]
+2024-01-15T10:45:15.310+0800	INFO	raft/config.go:177	cfg.saved is [0xc000299040 <nil> <nil>]
+2024-01-15T10:45:15.310+0800	INFO	raft/config.go:224	ends is [0xc000394120 0xc000394140 0xc000394160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003aa000
+2024-01-15T10:45:15.354+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00011db80 0xc0003b0000 <nil>]
+2024-01-15T10:45:15.354+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:45:15.354+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:45:15.354+0800	INFO	raft/config.go:160	endnames is [[5STDiaEHifCIi4T6_8bM F-oC52ptgPzbELFmxZ9p 3lpVUlX0Lmc4v29phL_U] [23w_MRKLcLuDNsVq92e2 2jWRz_uPoXKDzv95OCez vzdzHaVJSvR5pj3obu5k] [-V-MuNQbsPxMU2VM1Lh- AOF9_i7ZcRDXSQ4W4Erk 5IxN3QAqFuu1tRyUD-TK]]
+2024-01-15T10:45:15.354+0800	INFO	raft/config.go:168	ends is [0xc0003942e0 0xc000394300 0xc000394320]
+2024-01-15T10:45:15.354+0800	INFO	raft/config.go:177	cfg.saved is [0xc000299040 0xc000390180 <nil>]
+2024-01-15T10:45:15.354+0800	INFO	raft/config.go:224	ends is [0xc0003942e0 0xc000394300 0xc000394320], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003aa0c0
+2024-01-15T10:45:15.399+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00011db80 0xc0003b0000 0xc0003b00a0]
+2024-01-15T10:45:15.399+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T10:45:15.399+0800	INFO	raft/config.go:261	cfg.endnames is [[5STDiaEHifCIi4T6_8bM F-oC52ptgPzbELFmxZ9p 3lpVUlX0Lmc4v29phL_U] [23w_MRKLcLuDNsVq92e2 2jWRz_uPoXKDzv95OCez vzdzHaVJSvR5pj3obu5k] [-V-MuNQbsPxMU2VM1Lh- AOF9_i7ZcRDXSQ4W4Erk 5IxN3QAqFuu1tRyUD-TK]]
+2024-01-15T10:45:15.399+0800	INFO	raft/config.go:261	cfg.endnames is [[5STDiaEHifCIi4T6_8bM F-oC52ptgPzbELFmxZ9p 3lpVUlX0Lmc4v29phL_U] [23w_MRKLcLuDNsVq92e2 2jWRz_uPoXKDzv95OCez vzdzHaVJSvR5pj3obu5k] [-V-MuNQbsPxMU2VM1Lh- AOF9_i7ZcRDXSQ4W4Erk 5IxN3QAqFuu1tRyUD-TK]]
+2024-01-15T10:45:15.399+0800	INFO	raft/config.go:261	cfg.endnames is [[5STDiaEHifCIi4T6_8bM F-oC52ptgPzbELFmxZ9p 3lpVUlX0Lmc4v29phL_U] [23w_MRKLcLuDNsVq92e2 2jWRz_uPoXKDzv95OCez vzdzHaVJSvR5pj3obu5k] [-V-MuNQbsPxMU2VM1Lh- AOF9_i7ZcRDXSQ4W4Erk 5IxN3QAqFuu1tRyUD-TK]]
+2024-01-15T10:45:15.884+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T10:45:16.418+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1 2]]
+2024-01-15T10:54:19.292+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:54:19.292+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:54:19.292+0800	INFO	raft/config.go:160	endnames is [[MeKw-78ljzqHFQYNKhgK Ex8tA5dZePhGewF37OO2 77c8H_c9aJ6BRvBREHKA] [] []]
+2024-01-15T10:54:19.292+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T10:54:19.292+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T10:54:19.292+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T10:54:19.337+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 <nil> <nil>]
+2024-01-15T10:54:19.337+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:54:19.337+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:54:19.337+0800	INFO	raft/config.go:160	endnames is [[MeKw-78ljzqHFQYNKhgK Ex8tA5dZePhGewF37OO2 77c8H_c9aJ6BRvBREHKA] [uOPBNdikULf7yna-Vd6d hP01wEoPGJ9iHx2rpBXi pVYpW4KConKqEVD-pqmb] []]
+2024-01-15T10:54:19.337+0800	INFO	raft/config.go:168	ends is [0xc000224120 0xc000224140 0xc000224160]
+2024-01-15T10:54:19.337+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T10:54:19.337+0800	INFO	raft/config.go:224	ends is [0xc000224120 0xc000224140 0xc000224160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00023a000
+2024-01-15T10:54:19.393+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc00023e000 <nil>]
+2024-01-15T10:54:19.393+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:54:19.393+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:54:19.393+0800	INFO	raft/config.go:160	endnames is [[MeKw-78ljzqHFQYNKhgK Ex8tA5dZePhGewF37OO2 77c8H_c9aJ6BRvBREHKA] [uOPBNdikULf7yna-Vd6d hP01wEoPGJ9iHx2rpBXi pVYpW4KConKqEVD-pqmb] [HLJBFJhfit2oM8TxSov5 07LJTjWCK8PwfuibFdxF Dr6Rgv66wo9fV4CQNyTv]]
+2024-01-15T10:54:19.393+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T10:54:19.393+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000220180 <nil>]
+2024-01-15T10:54:19.393+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T10:54:19.448+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc00023e000 0xc0000b0e60]
+2024-01-15T10:54:19.448+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T10:54:19.448+0800	INFO	raft/config.go:261	cfg.endnames is [[MeKw-78ljzqHFQYNKhgK Ex8tA5dZePhGewF37OO2 77c8H_c9aJ6BRvBREHKA] [uOPBNdikULf7yna-Vd6d hP01wEoPGJ9iHx2rpBXi pVYpW4KConKqEVD-pqmb] [HLJBFJhfit2oM8TxSov5 07LJTjWCK8PwfuibFdxF Dr6Rgv66wo9fV4CQNyTv]]
+2024-01-15T10:54:19.448+0800	INFO	raft/config.go:261	cfg.endnames is [[MeKw-78ljzqHFQYNKhgK Ex8tA5dZePhGewF37OO2 77c8H_c9aJ6BRvBREHKA] [uOPBNdikULf7yna-Vd6d hP01wEoPGJ9iHx2rpBXi pVYpW4KConKqEVD-pqmb] [HLJBFJhfit2oM8TxSov5 07LJTjWCK8PwfuibFdxF Dr6Rgv66wo9fV4CQNyTv]]
+2024-01-15T10:54:19.448+0800	INFO	raft/config.go:261	cfg.endnames is [[MeKw-78ljzqHFQYNKhgK Ex8tA5dZePhGewF37OO2 77c8H_c9aJ6BRvBREHKA] [uOPBNdikULf7yna-Vd6d hP01wEoPGJ9iHx2rpBXi pVYpW4KConKqEVD-pqmb] [HLJBFJhfit2oM8TxSov5 07LJTjWCK8PwfuibFdxF Dr6Rgv66wo9fV4CQNyTv]]
+2024-01-15T10:54:19.932+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T10:54:22.518+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T10:54:22.518+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:54:22.518+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:54:22.518+0800	INFO	raft/config.go:160	endnames is [[cJHqfrdOHtux0q8Gs1YP 1HXHWcJBcYfJCAim7BJe QcChTPwI1sQgofnWD21M] [] []]
+2024-01-15T10:54:22.518+0800	INFO	raft/config.go:168	ends is [0xc000162f80 0xc000162fa0 0xc000162fc0]
+2024-01-15T10:54:22.518+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T10:54:22.518+0800	INFO	raft/config.go:224	ends is [0xc000162f80 0xc000162fa0 0xc000162fc0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001192c0
+2024-01-15T10:54:22.560+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00011d360 <nil> <nil>]
+2024-01-15T10:54:22.560+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:54:22.560+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:54:22.560+0800	INFO	raft/config.go:160	endnames is [[cJHqfrdOHtux0q8Gs1YP 1HXHWcJBcYfJCAim7BJe QcChTPwI1sQgofnWD21M] [0UtAZDwhU_H7-__KWEe9 52Glz7rwUTOtmqyL_Q9r HMtv4uO8VtYeU1_WeIkr] []]
+2024-01-15T10:54:22.560+0800	INFO	raft/config.go:168	ends is [0xc00007ed40 0xc00007ed60 0xc00007ed80]
+2024-01-15T10:54:22.560+0800	INFO	raft/config.go:177	cfg.saved is [0xc000168e00 <nil> <nil>]
+2024-01-15T10:54:22.560+0800	INFO	raft/config.go:224	ends is [0xc00007ed40 0xc00007ed60 0xc00007ed80], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c960
+2024-01-15T10:54:22.605+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00011d360 0xc0000b1220 <nil>]
+2024-01-15T10:54:22.605+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T10:54:22.605+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T10:54:22.605+0800	INFO	raft/config.go:160	endnames is [[cJHqfrdOHtux0q8Gs1YP 1HXHWcJBcYfJCAim7BJe QcChTPwI1sQgofnWD21M] [0UtAZDwhU_H7-__KWEe9 52Glz7rwUTOtmqyL_Q9r HMtv4uO8VtYeU1_WeIkr] [huy2aAl7DypNkvlNbRY5 -gOor9UuYfpmO4F47wq4 416cahXiH78ToO0q9BaK]]
+2024-01-15T10:54:22.605+0800	INFO	raft/config.go:168	ends is [0xc00007eee0 0xc00007ef00 0xc00007ef20]
+2024-01-15T10:54:22.605+0800	INFO	raft/config.go:177	cfg.saved is [0xc000168e00 0xc000198d40 <nil>]
+2024-01-15T10:54:22.605+0800	INFO	raft/config.go:224	ends is [0xc00007eee0 0xc00007ef00 0xc00007ef20], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002ca20
+2024-01-15T10:54:22.649+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00011d360 0xc0000b1220 0xc0000b12c0]
+2024-01-15T10:54:22.649+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T10:54:22.649+0800	INFO	raft/config.go:261	cfg.endnames is [[cJHqfrdOHtux0q8Gs1YP 1HXHWcJBcYfJCAim7BJe QcChTPwI1sQgofnWD21M] [0UtAZDwhU_H7-__KWEe9 52Glz7rwUTOtmqyL_Q9r HMtv4uO8VtYeU1_WeIkr] [huy2aAl7DypNkvlNbRY5 -gOor9UuYfpmO4F47wq4 416cahXiH78ToO0q9BaK]]
+2024-01-15T10:54:22.649+0800	INFO	raft/config.go:261	cfg.endnames is [[cJHqfrdOHtux0q8Gs1YP 1HXHWcJBcYfJCAim7BJe QcChTPwI1sQgofnWD21M] [0UtAZDwhU_H7-__KWEe9 52Glz7rwUTOtmqyL_Q9r HMtv4uO8VtYeU1_WeIkr] [huy2aAl7DypNkvlNbRY5 -gOor9UuYfpmO4F47wq4 416cahXiH78ToO0q9BaK]]
+2024-01-15T10:54:22.649+0800	INFO	raft/config.go:261	cfg.endnames is [[cJHqfrdOHtux0q8Gs1YP 1HXHWcJBcYfJCAim7BJe QcChTPwI1sQgofnWD21M] [0UtAZDwhU_H7-__KWEe9 52Glz7rwUTOtmqyL_Q9r HMtv4uO8VtYeU1_WeIkr] [huy2aAl7DypNkvlNbRY5 -gOor9UuYfpmO4F47wq4 416cahXiH78ToO0q9BaK]]
+2024-01-15T10:54:23.174+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T10:54:23.717+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T10:54:23.717+0800	INFO	raft/config.go:261	cfg.endnames is [[cJHqfrdOHtux0q8Gs1YP 1HXHWcJBcYfJCAim7BJe QcChTPwI1sQgofnWD21M] [0UtAZDwhU_H7-__KWEe9 52Glz7rwUTOtmqyL_Q9r HMtv4uO8VtYeU1_WeIkr] [huy2aAl7DypNkvlNbRY5 -gOor9UuYfpmO4F47wq4 416cahXiH78ToO0q9BaK]]
+2024-01-15T10:54:24.198+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1] 3:[2]]
+2024-01-15T11:18:27.715+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:18:27.715+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:18:27.715+0800	INFO	raft/config.go:160	endnames is [[UducaLFXMHgfHIsmCqE- zG4tJFam6R4B8pt8WkM4 YyyBsIBmvvFoufOTlxR0] [] []]
+2024-01-15T11:18:27.715+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T11:18:27.715+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T11:18:27.715+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T11:18:27.770+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 <nil> <nil>]
+2024-01-15T11:18:27.770+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:18:27.770+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:18:27.770+0800	INFO	raft/config.go:160	endnames is [[UducaLFXMHgfHIsmCqE- zG4tJFam6R4B8pt8WkM4 YyyBsIBmvvFoufOTlxR0] [4HOAL6IwcTbwEhxRsMNI 4K_s-UNVpKUpf4v7La-8 s2UegzheRzAJLzbvcaaS] []]
+2024-01-15T11:18:27.770+0800	INFO	raft/config.go:168	ends is [0xc00021c120 0xc00021c140 0xc00021c160]
+2024-01-15T11:18:27.770+0800	INFO	raft/config.go:177	cfg.saved is [0xc00019a080 <nil> <nil>]
+2024-01-15T11:18:27.770+0800	INFO	raft/config.go:224	ends is [0xc00021c120 0xc00021c140 0xc00021c160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000234000
+2024-01-15T11:18:27.826+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc00023a000 <nil>]
+2024-01-15T11:18:27.826+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:18:27.826+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:18:27.826+0800	INFO	raft/config.go:160	endnames is [[UducaLFXMHgfHIsmCqE- zG4tJFam6R4B8pt8WkM4 YyyBsIBmvvFoufOTlxR0] [4HOAL6IwcTbwEhxRsMNI 4K_s-UNVpKUpf4v7La-8 s2UegzheRzAJLzbvcaaS] [TxMBudcwdpQx9qv_oABk kirl4oJZOWrSt2Az_xo- bnotTAoKc1gOhY6DecKO]]
+2024-01-15T11:18:27.826+0800	INFO	raft/config.go:168	ends is [0xc00021c2c0 0xc00021c2e0 0xc00021c300]
+2024-01-15T11:18:27.826+0800	INFO	raft/config.go:177	cfg.saved is [0xc00019a080 0xc000218180 <nil>]
+2024-01-15T11:18:27.826+0800	INFO	raft/config.go:224	ends is [0xc00021c2c0 0xc00021c2e0 0xc00021c300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002340c0
+2024-01-15T11:18:27.882+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc00023a000 0xc00023a0a0]
+2024-01-15T11:18:27.882+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T11:18:27.882+0800	INFO	raft/config.go:261	cfg.endnames is [[UducaLFXMHgfHIsmCqE- zG4tJFam6R4B8pt8WkM4 YyyBsIBmvvFoufOTlxR0] [4HOAL6IwcTbwEhxRsMNI 4K_s-UNVpKUpf4v7La-8 s2UegzheRzAJLzbvcaaS] [TxMBudcwdpQx9qv_oABk kirl4oJZOWrSt2Az_xo- bnotTAoKc1gOhY6DecKO]]
+2024-01-15T11:18:27.882+0800	INFO	raft/config.go:261	cfg.endnames is [[UducaLFXMHgfHIsmCqE- zG4tJFam6R4B8pt8WkM4 YyyBsIBmvvFoufOTlxR0] [4HOAL6IwcTbwEhxRsMNI 4K_s-UNVpKUpf4v7La-8 s2UegzheRzAJLzbvcaaS] [TxMBudcwdpQx9qv_oABk kirl4oJZOWrSt2Az_xo- bnotTAoKc1gOhY6DecKO]]
+2024-01-15T11:18:27.882+0800	INFO	raft/config.go:261	cfg.endnames is [[UducaLFXMHgfHIsmCqE- zG4tJFam6R4B8pt8WkM4 YyyBsIBmvvFoufOTlxR0] [4HOAL6IwcTbwEhxRsMNI 4K_s-UNVpKUpf4v7La-8 s2UegzheRzAJLzbvcaaS] [TxMBudcwdpQx9qv_oABk kirl4oJZOWrSt2Az_xo- bnotTAoKc1gOhY6DecKO]]
+2024-01-15T11:18:28.336+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T11:18:30.853+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T11:18:30.853+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:18:30.853+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:18:30.853+0800	INFO	raft/config.go:160	endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [] []]
+2024-01-15T11:18:30.853+0800	INFO	raft/config.go:168	ends is [0xc000329b60 0xc000329b80 0xc000329ba0]
+2024-01-15T11:18:30.853+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T11:18:30.853+0800	INFO	raft/config.go:224	ends is [0xc000329b60 0xc000329b80 0xc000329ba0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000346360
+2024-01-15T11:18:30.893+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000342460 <nil> <nil>]
+2024-01-15T11:18:30.893+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:18:30.893+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:18:30.893+0800	INFO	raft/config.go:160	endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [_F0Cm3lIsf1V8rSJQnNE 06kcCOHOxHOcSkYRJjw- 7wzuSlNGOz8Bsw02O-cy] []]
+2024-01-15T11:18:30.893+0800	INFO	raft/config.go:168	ends is [0xc0002878e0 0xc000287900 0xc000287920]
+2024-01-15T11:18:30.893+0800	INFO	raft/config.go:177	cfg.saved is [0xc000341200 <nil> <nil>]
+2024-01-15T11:18:30.893+0800	INFO	raft/config.go:224	ends is [0xc0002878e0 0xc000287900 0xc000287920], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002aca20
+2024-01-15T11:18:30.949+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000342460 0xc0002b0a00 <nil>]
+2024-01-15T11:18:30.949+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:18:30.949+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:18:30.949+0800	INFO	raft/config.go:160	endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [_F0Cm3lIsf1V8rSJQnNE 06kcCOHOxHOcSkYRJjw- 7wzuSlNGOz8Bsw02O-cy] [M8CZXbeIy0PtzmXK5Jyn jOBKxXJTKEFCqjZnHGOE x40dxzJsXHDJhYSilowG]]
+2024-01-15T11:18:30.949+0800	INFO	raft/config.go:168	ends is [0xc000287a80 0xc000287aa0 0xc000287ac0]
+2024-01-15T11:18:30.949+0800	INFO	raft/config.go:177	cfg.saved is [0xc000341200 0xc0002ece40 <nil>]
+2024-01-15T11:18:30.949+0800	INFO	raft/config.go:224	ends is [0xc000287a80 0xc000287aa0 0xc000287ac0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002acae0
+2024-01-15T11:18:31.005+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000342460 0xc0002b0a00 0xc0002b0aa0]
+2024-01-15T11:18:31.005+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T11:18:31.005+0800	INFO	raft/config.go:261	cfg.endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [_F0Cm3lIsf1V8rSJQnNE 06kcCOHOxHOcSkYRJjw- 7wzuSlNGOz8Bsw02O-cy] [M8CZXbeIy0PtzmXK5Jyn jOBKxXJTKEFCqjZnHGOE x40dxzJsXHDJhYSilowG]]
+2024-01-15T11:18:31.005+0800	INFO	raft/config.go:261	cfg.endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [_F0Cm3lIsf1V8rSJQnNE 06kcCOHOxHOcSkYRJjw- 7wzuSlNGOz8Bsw02O-cy] [M8CZXbeIy0PtzmXK5Jyn jOBKxXJTKEFCqjZnHGOE x40dxzJsXHDJhYSilowG]]
+2024-01-15T11:18:31.005+0800	INFO	raft/config.go:261	cfg.endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [_F0Cm3lIsf1V8rSJQnNE 06kcCOHOxHOcSkYRJjw- 7wzuSlNGOz8Bsw02O-cy] [M8CZXbeIy0PtzmXK5Jyn jOBKxXJTKEFCqjZnHGOE x40dxzJsXHDJhYSilowG]]
+2024-01-15T11:18:31.506+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T11:18:32.052+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T11:18:32.052+0800	INFO	raft/config.go:261	cfg.endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [_F0Cm3lIsf1V8rSJQnNE 06kcCOHOxHOcSkYRJjw- 7wzuSlNGOz8Bsw02O-cy] [M8CZXbeIy0PtzmXK5Jyn jOBKxXJTKEFCqjZnHGOE x40dxzJsXHDJhYSilowG]]
+2024-01-15T11:18:32.544+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0] 3:[2]]
+2024-01-15T11:18:34.545+0800	INFO	raft/config.go:261	cfg.endnames is [[eT8vB2S3RPfOUYPPvORJ D1i988bOs2DGjCdd_e-H WpjS8AhrgaT8yngqbsMc] [_F0Cm3lIsf1V8rSJQnNE 06kcCOHOxHOcSkYRJjw- 7wzuSlNGOz8Bsw02O-cy] [M8CZXbeIy0PtzmXK5Jyn jOBKxXJTKEFCqjZnHGOE x40dxzJsXHDJhYSilowG]]
+2024-01-15T11:18:35.076+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:35.565+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:36.113+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:36.653+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:37.190+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:37.679+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:38.153+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:38.605+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:39.095+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:18:39.594+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:02.792+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:23:02.792+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:23:02.792+0800	INFO	raft/config.go:160	endnames is [[YKCbb-7MUarGtdYnMF26 2J-plJ8eEiEpbanqkTc- AT7-EwNErTcnVPrIZ5GY] [] []]
+2024-01-15T11:23:02.792+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T11:23:02.792+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T11:23:02.792+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T11:23:02.848+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 <nil> <nil>]
+2024-01-15T11:23:02.848+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:23:02.848+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:23:02.848+0800	INFO	raft/config.go:160	endnames is [[YKCbb-7MUarGtdYnMF26 2J-plJ8eEiEpbanqkTc- AT7-EwNErTcnVPrIZ5GY] [gV7M0mmAcXhdoUbTov30 PAA8kUIE-cnK-BuawptY J8kLMovGjmEziQtt--3U] []]
+2024-01-15T11:23:02.848+0800	INFO	raft/config.go:168	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0]
+2024-01-15T11:23:02.848+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T11:23:02.848+0800	INFO	raft/config.go:224	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T11:23:02.904+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc0000b0e60 <nil>]
+2024-01-15T11:23:02.904+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:23:02.904+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:23:02.904+0800	INFO	raft/config.go:160	endnames is [[YKCbb-7MUarGtdYnMF26 2J-plJ8eEiEpbanqkTc- AT7-EwNErTcnVPrIZ5GY] [gV7M0mmAcXhdoUbTov30 PAA8kUIE-cnK-BuawptY J8kLMovGjmEziQtt--3U] [PLRv-4t1X5smW_AL7llo nuQy_9JqsKve1DXdL9O1 ZWYSFLK48nFFUkUNzp8a]]
+2024-01-15T11:23:02.904+0800	INFO	raft/config.go:168	ends is [0xc000126120 0xc000126140 0xc000126160]
+2024-01-15T11:23:02.904+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc0001981c0 <nil>]
+2024-01-15T11:23:02.904+0800	INFO	raft/config.go:224	ends is [0xc000126120 0xc000126140 0xc000126160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00013c000
+2024-01-15T11:23:02.959+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc0000b0e60 0xc000140000]
+2024-01-15T11:23:02.960+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T11:23:02.960+0800	INFO	raft/config.go:261	cfg.endnames is [[YKCbb-7MUarGtdYnMF26 2J-plJ8eEiEpbanqkTc- AT7-EwNErTcnVPrIZ5GY] [gV7M0mmAcXhdoUbTov30 PAA8kUIE-cnK-BuawptY J8kLMovGjmEziQtt--3U] [PLRv-4t1X5smW_AL7llo nuQy_9JqsKve1DXdL9O1 ZWYSFLK48nFFUkUNzp8a]]
+2024-01-15T11:23:02.960+0800	INFO	raft/config.go:261	cfg.endnames is [[YKCbb-7MUarGtdYnMF26 2J-plJ8eEiEpbanqkTc- AT7-EwNErTcnVPrIZ5GY] [gV7M0mmAcXhdoUbTov30 PAA8kUIE-cnK-BuawptY J8kLMovGjmEziQtt--3U] [PLRv-4t1X5smW_AL7llo nuQy_9JqsKve1DXdL9O1 ZWYSFLK48nFFUkUNzp8a]]
+2024-01-15T11:23:02.960+0800	INFO	raft/config.go:261	cfg.endnames is [[YKCbb-7MUarGtdYnMF26 2J-plJ8eEiEpbanqkTc- AT7-EwNErTcnVPrIZ5GY] [gV7M0mmAcXhdoUbTov30 PAA8kUIE-cnK-BuawptY J8kLMovGjmEziQtt--3U] [PLRv-4t1X5smW_AL7llo nuQy_9JqsKve1DXdL9O1 ZWYSFLK48nFFUkUNzp8a]]
+2024-01-15T11:23:03.422+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T11:23:05.975+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T11:23:05.975+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:23:05.975+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:23:05.975+0800	INFO	raft/config.go:160	endnames is [[F7BeeGHS6cJXoSIy3IKv S4kzbuQKq3LN_kPxxAq7 euy-cbrE20DTeQnlqeBI] [] []]
+2024-01-15T11:23:05.975+0800	INFO	raft/config.go:168	ends is [0xc000349b60 0xc000349b80 0xc000349ba0]
+2024-01-15T11:23:05.975+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T11:23:05.975+0800	INFO	raft/config.go:224	ends is [0xc000349b60 0xc000349b80 0xc000349ba0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000336f00
+2024-01-15T11:23:06.038+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00032f220 <nil> <nil>]
+2024-01-15T11:23:06.038+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:23:06.038+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:23:06.038+0800	INFO	raft/config.go:160	endnames is [[F7BeeGHS6cJXoSIy3IKv S4kzbuQKq3LN_kPxxAq7 euy-cbrE20DTeQnlqeBI] [laobTXVAJtbLp01q5kRj GKThtOI06dFLE8I--T0d MolTS4cV1pUuoLhjDTsC] []]
+2024-01-15T11:23:06.038+0800	INFO	raft/config.go:168	ends is [0xc000349d00 0xc000349d20 0xc000349d40]
+2024-01-15T11:23:06.038+0800	INFO	raft/config.go:177	cfg.saved is [0xc000360e80 <nil> <nil>]
+2024-01-15T11:23:06.038+0800	INFO	raft/config.go:224	ends is [0xc000349d00 0xc000349d20 0xc000349d40], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000336fc0
+2024-01-15T11:23:06.094+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00032f220 0xc00032f2c0 <nil>]
+2024-01-15T11:23:06.094+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:23:06.094+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:23:06.094+0800	INFO	raft/config.go:160	endnames is [[F7BeeGHS6cJXoSIy3IKv S4kzbuQKq3LN_kPxxAq7 euy-cbrE20DTeQnlqeBI] [laobTXVAJtbLp01q5kRj GKThtOI06dFLE8I--T0d MolTS4cV1pUuoLhjDTsC] [hzdFWIxtbFeC4U4wSwu7 v5arVkB65pN1o2ZTCsyp dbN0EQ-LjSVM1gh2c_-c]]
+2024-01-15T11:23:06.094+0800	INFO	raft/config.go:168	ends is [0xc0001266e0 0xc000126700 0xc000126720]
+2024-01-15T11:23:06.094+0800	INFO	raft/config.go:177	cfg.saved is [0xc000360e80 0xc000360fc0 <nil>]
+2024-01-15T11:23:06.094+0800	INFO	raft/config.go:224	ends is [0xc0001266e0 0xc000126700 0xc000126720], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00013c2a0
+2024-01-15T11:23:06.149+0800	INFO	raft/config.go:229	cfg.rafts is [0xc00032f220 0xc00032f2c0 0xc000140280]
+2024-01-15T11:23:06.149+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T11:23:06.149+0800	INFO	raft/config.go:261	cfg.endnames is [[F7BeeGHS6cJXoSIy3IKv S4kzbuQKq3LN_kPxxAq7 euy-cbrE20DTeQnlqeBI] [laobTXVAJtbLp01q5kRj GKThtOI06dFLE8I--T0d MolTS4cV1pUuoLhjDTsC] [hzdFWIxtbFeC4U4wSwu7 v5arVkB65pN1o2ZTCsyp dbN0EQ-LjSVM1gh2c_-c]]
+2024-01-15T11:23:06.149+0800	INFO	raft/config.go:261	cfg.endnames is [[F7BeeGHS6cJXoSIy3IKv S4kzbuQKq3LN_kPxxAq7 euy-cbrE20DTeQnlqeBI] [laobTXVAJtbLp01q5kRj GKThtOI06dFLE8I--T0d MolTS4cV1pUuoLhjDTsC] [hzdFWIxtbFeC4U4wSwu7 v5arVkB65pN1o2ZTCsyp dbN0EQ-LjSVM1gh2c_-c]]
+2024-01-15T11:23:06.149+0800	INFO	raft/config.go:261	cfg.endnames is [[F7BeeGHS6cJXoSIy3IKv S4kzbuQKq3LN_kPxxAq7 euy-cbrE20DTeQnlqeBI] [laobTXVAJtbLp01q5kRj GKThtOI06dFLE8I--T0d MolTS4cV1pUuoLhjDTsC] [hzdFWIxtbFeC4U4wSwu7 v5arVkB65pN1o2ZTCsyp dbN0EQ-LjSVM1gh2c_-c]]
+2024-01-15T11:23:06.622+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T11:23:07.095+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:07.604+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:08.110+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:08.575+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:09.086+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:09.602+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:10.098+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:10.635+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:11.154+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:23:11.696+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T11:26:42.065+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:26:42.065+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:26:42.065+0800	INFO	raft/config.go:160	endnames is [[DhT_WcH2KmkkVnuhZ9DN MomcC0vNy7H4klDxdlJQ hD4MuffbpRN65tDnxvWj] [] []]
+2024-01-15T11:26:42.065+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T11:26:42.065+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T11:26:42.065+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T11:26:42.105+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 <nil> <nil>]
+2024-01-15T11:26:42.105+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:26:42.105+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:26:42.105+0800	INFO	raft/config.go:160	endnames is [[DhT_WcH2KmkkVnuhZ9DN MomcC0vNy7H4klDxdlJQ hD4MuffbpRN65tDnxvWj] [X2O2ATLwjWUubIfeAy-F hiS3T8WCqK869fRjjaQS Yk7JIYXhki8epyHajkH7] []]
+2024-01-15T11:26:42.105+0800	INFO	raft/config.go:168	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0]
+2024-01-15T11:26:42.105+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 <nil> <nil>]
+2024-01-15T11:26:42.105+0800	INFO	raft/config.go:224	ends is [0xc00007e460 0xc00007e480 0xc00007e4a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T11:26:42.150+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc0000b0e60 <nil>]
+2024-01-15T11:26:42.150+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:26:42.150+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:26:42.150+0800	INFO	raft/config.go:160	endnames is [[DhT_WcH2KmkkVnuhZ9DN MomcC0vNy7H4klDxdlJQ hD4MuffbpRN65tDnxvWj] [X2O2ATLwjWUubIfeAy-F hiS3T8WCqK869fRjjaQS Yk7JIYXhki8epyHajkH7] [TFhX3r9znmqp98OBkUr5 qZs2EU1AfMZPQF3bheAc DZVlxe8-mnh8VULKf-T6]]
+2024-01-15T11:26:42.150+0800	INFO	raft/config.go:168	ends is [0xc00007e620 0xc00007e640 0xc00007e660]
+2024-01-15T11:26:42.150+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 0xc0001181c0 <nil>]
+2024-01-15T11:26:42.150+0800	INFO	raft/config.go:224	ends is [0xc00007e620 0xc00007e640 0xc00007e660], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T11:26:42.194+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000b0dc0 0xc0000b0e60 0xc0000b0f00]
+2024-01-15T11:26:42.194+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T11:26:42.194+0800	INFO	raft/config.go:261	cfg.endnames is [[DhT_WcH2KmkkVnuhZ9DN MomcC0vNy7H4klDxdlJQ hD4MuffbpRN65tDnxvWj] [X2O2ATLwjWUubIfeAy-F hiS3T8WCqK869fRjjaQS Yk7JIYXhki8epyHajkH7] [TFhX3r9znmqp98OBkUr5 qZs2EU1AfMZPQF3bheAc DZVlxe8-mnh8VULKf-T6]]
+2024-01-15T11:26:42.194+0800	INFO	raft/config.go:261	cfg.endnames is [[DhT_WcH2KmkkVnuhZ9DN MomcC0vNy7H4klDxdlJQ hD4MuffbpRN65tDnxvWj] [X2O2ATLwjWUubIfeAy-F hiS3T8WCqK869fRjjaQS Yk7JIYXhki8epyHajkH7] [TFhX3r9znmqp98OBkUr5 qZs2EU1AfMZPQF3bheAc DZVlxe8-mnh8VULKf-T6]]
+2024-01-15T11:26:42.194+0800	INFO	raft/config.go:261	cfg.endnames is [[DhT_WcH2KmkkVnuhZ9DN MomcC0vNy7H4klDxdlJQ hD4MuffbpRN65tDnxvWj] [X2O2ATLwjWUubIfeAy-F hiS3T8WCqK869fRjjaQS Yk7JIYXhki8epyHajkH7] [TFhX3r9znmqp98OBkUr5 qZs2EU1AfMZPQF3bheAc DZVlxe8-mnh8VULKf-T6]]
+2024-01-15T11:26:42.665+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T11:26:45.208+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T11:26:45.208+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:26:45.208+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:26:45.208+0800	INFO	raft/config.go:160	endnames is [[zm9dTXZo5Kth5jl1qGF_ ykZLeQ4ex-05MZiyonfO -NEri20nwwy1n7g3fTpj] [] []]
+2024-01-15T11:26:45.208+0800	INFO	raft/config.go:168	ends is [0xc000340480 0xc0003404a0 0xc0003404c0]
+2024-01-15T11:26:45.208+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T11:26:45.208+0800	INFO	raft/config.go:224	ends is [0xc000340480 0xc0003404a0 0xc0003404c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000330660
+2024-01-15T11:26:45.250+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000328960 <nil> <nil>]
+2024-01-15T11:26:45.250+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:26:45.250+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:26:45.250+0800	INFO	raft/config.go:160	endnames is [[zm9dTXZo5Kth5jl1qGF_ ykZLeQ4ex-05MZiyonfO -NEri20nwwy1n7g3fTpj] [EcotzDNUE10avsHpxYay 5cJ50nsqQ7mSdCHfn648 OdMd7Q2O246DKsRafqaV] []]
+2024-01-15T11:26:45.250+0800	INFO	raft/config.go:168	ends is [0xc000340620 0xc000340640 0xc000340660]
+2024-01-15T11:26:45.250+0800	INFO	raft/config.go:177	cfg.saved is [0xc000342600 <nil> <nil>]
+2024-01-15T11:26:45.250+0800	INFO	raft/config.go:224	ends is [0xc000340620 0xc000340640 0xc000340660], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003307e0
+2024-01-15T11:26:45.295+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000328960 0xc000328b40 <nil>]
+2024-01-15T11:26:45.295+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T11:26:45.295+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T11:26:45.295+0800	INFO	raft/config.go:160	endnames is [[zm9dTXZo5Kth5jl1qGF_ ykZLeQ4ex-05MZiyonfO -NEri20nwwy1n7g3fTpj] [EcotzDNUE10avsHpxYay 5cJ50nsqQ7mSdCHfn648 OdMd7Q2O246DKsRafqaV] [3dDjWdcRfilCZY7DrO4P k_m8Z_7NAudikRqU33hb bO0cYs7pulbM9pGZLihj]]
+2024-01-15T11:26:45.295+0800	INFO	raft/config.go:168	ends is [0xc000392120 0xc000392140 0xc000392160]
+2024-01-15T11:26:45.295+0800	INFO	raft/config.go:177	cfg.saved is [0xc000342600 0xc000342a80 <nil>]
+2024-01-15T11:26:45.295+0800	INFO	raft/config.go:224	ends is [0xc000392120 0xc000392140 0xc000392160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003b0000
+2024-01-15T11:26:45.340+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000328960 0xc000328b40 0xc0003bc000]
+2024-01-15T11:26:45.340+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T11:26:45.340+0800	INFO	raft/config.go:261	cfg.endnames is [[zm9dTXZo5Kth5jl1qGF_ ykZLeQ4ex-05MZiyonfO -NEri20nwwy1n7g3fTpj] [EcotzDNUE10avsHpxYay 5cJ50nsqQ7mSdCHfn648 OdMd7Q2O246DKsRafqaV] [3dDjWdcRfilCZY7DrO4P k_m8Z_7NAudikRqU33hb bO0cYs7pulbM9pGZLihj]]
+2024-01-15T11:26:45.340+0800	INFO	raft/config.go:261	cfg.endnames is [[zm9dTXZo5Kth5jl1qGF_ ykZLeQ4ex-05MZiyonfO -NEri20nwwy1n7g3fTpj] [EcotzDNUE10avsHpxYay 5cJ50nsqQ7mSdCHfn648 OdMd7Q2O246DKsRafqaV] [3dDjWdcRfilCZY7DrO4P k_m8Z_7NAudikRqU33hb bO0cYs7pulbM9pGZLihj]]
+2024-01-15T11:26:45.340+0800	INFO	raft/config.go:261	cfg.endnames is [[zm9dTXZo5Kth5jl1qGF_ ykZLeQ4ex-05MZiyonfO -NEri20nwwy1n7g3fTpj] [EcotzDNUE10avsHpxYay 5cJ50nsqQ7mSdCHfn648 OdMd7Q2O246DKsRafqaV] [3dDjWdcRfilCZY7DrO4P k_m8Z_7NAudikRqU33hb bO0cYs7pulbM9pGZLihj]]
+2024-01-15T11:26:45.846+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T11:26:46.307+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1 2]]
+2024-01-15T15:09:34.844+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:09:34.844+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:09:34.844+0800	INFO	raft/config.go:160	endnames is [[fkC6m83e1OY39to0icPS wJ-u_lPdh__scqXLAEvZ NJqhiiP_yDhEs6ZctNY2] [] []]
+2024-01-15T15:09:34.844+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T15:09:34.844+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:09:34.844+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T15:09:34.892+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be4d0 <nil> <nil>]
+2024-01-15T15:09:34.892+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:09:34.892+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:09:34.892+0800	INFO	raft/config.go:160	endnames is [[fkC6m83e1OY39to0icPS wJ-u_lPdh__scqXLAEvZ NJqhiiP_yDhEs6ZctNY2] [CDOxJrMMVd-_Xiz90yG- QNRdRpbxplD_JYvd7IP6 1A9ioeOhF6A-e1wjuGsP] []]
+2024-01-15T15:09:34.892+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T15:09:34.892+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T15:09:34.892+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T15:09:34.936+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be4d0 0xc0000be580 <nil>]
+2024-01-15T15:09:34.936+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:09:34.936+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:09:34.936+0800	INFO	raft/config.go:160	endnames is [[fkC6m83e1OY39to0icPS wJ-u_lPdh__scqXLAEvZ NJqhiiP_yDhEs6ZctNY2] [CDOxJrMMVd-_Xiz90yG- QNRdRpbxplD_JYvd7IP6 1A9ioeOhF6A-e1wjuGsP] [We_Wdok42cgRAhJyRlkO b9D8RmYA5Qhl4B0JYCfD MT6MEKLvtqepCz0leeJ_]]
+2024-01-15T15:09:34.936+0800	INFO	raft/config.go:168	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0]
+2024-01-15T15:09:34.936+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198200 <nil>]
+2024-01-15T15:09:34.936+0800	INFO	raft/config.go:224	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T15:09:34.981+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be4d0 0xc0000be580 0xc0000be630]
+2024-01-15T15:09:34.981+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:09:34.981+0800	INFO	raft/config.go:261	cfg.endnames is [[fkC6m83e1OY39to0icPS wJ-u_lPdh__scqXLAEvZ NJqhiiP_yDhEs6ZctNY2] [CDOxJrMMVd-_Xiz90yG- QNRdRpbxplD_JYvd7IP6 1A9ioeOhF6A-e1wjuGsP] [We_Wdok42cgRAhJyRlkO b9D8RmYA5Qhl4B0JYCfD MT6MEKLvtqepCz0leeJ_]]
+2024-01-15T15:09:34.981+0800	INFO	raft/config.go:261	cfg.endnames is [[fkC6m83e1OY39to0icPS wJ-u_lPdh__scqXLAEvZ NJqhiiP_yDhEs6ZctNY2] [CDOxJrMMVd-_Xiz90yG- QNRdRpbxplD_JYvd7IP6 1A9ioeOhF6A-e1wjuGsP] [We_Wdok42cgRAhJyRlkO b9D8RmYA5Qhl4B0JYCfD MT6MEKLvtqepCz0leeJ_]]
+2024-01-15T15:09:34.981+0800	INFO	raft/config.go:261	cfg.endnames is [[fkC6m83e1OY39to0icPS wJ-u_lPdh__scqXLAEvZ NJqhiiP_yDhEs6ZctNY2] [CDOxJrMMVd-_Xiz90yG- QNRdRpbxplD_JYvd7IP6 1A9ioeOhF6A-e1wjuGsP] [We_Wdok42cgRAhJyRlkO b9D8RmYA5Qhl4B0JYCfD MT6MEKLvtqepCz0leeJ_]]
+2024-01-15T15:09:35.472+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T15:09:37.986+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T15:09:37.987+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:09:37.987+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:09:37.987+0800	INFO	raft/config.go:160	endnames is [[QBBlRRpSrj0C0gkfgZpC DMZe5vnsi69lQ3NFVgy7 WMmiVSfY19I84Tc61zNJ] [] []]
+2024-01-15T15:09:37.987+0800	INFO	raft/config.go:168	ends is [0xc000287340 0xc000287360 0xc000287380]
+2024-01-15T15:09:37.987+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:09:37.987+0800	INFO	raft/config.go:224	ends is [0xc000287340 0xc000287360 0xc000287380], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00028c840
+2024-01-15T15:09:38.064+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000299970 <nil> <nil>]
+2024-01-15T15:09:38.064+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:09:38.064+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:09:38.064+0800	INFO	raft/config.go:160	endnames is [[QBBlRRpSrj0C0gkfgZpC DMZe5vnsi69lQ3NFVgy7 WMmiVSfY19I84Tc61zNJ] [asIdNQikOQ283eW46nDU MD8wbxA-VXGe_O7TH6K7 JvuHtMgHdQ6ZW8GtgOqm] []]
+2024-01-15T15:09:38.064+0800	INFO	raft/config.go:168	ends is [0xc00038a240 0xc00038a260 0xc00038a280]
+2024-01-15T15:09:38.064+0800	INFO	raft/config.go:177	cfg.saved is [0xc0002d8080 <nil> <nil>]
+2024-01-15T15:09:38.064+0800	INFO	raft/config.go:224	ends is [0xc00038a240 0xc00038a260 0xc00038a280], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000350fc0
+2024-01-15T15:09:38.175+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000299970 0xc000382b00 <nil>]
+2024-01-15T15:09:38.175+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:09:38.175+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:09:38.175+0800	INFO	raft/config.go:160	endnames is [[QBBlRRpSrj0C0gkfgZpC DMZe5vnsi69lQ3NFVgy7 WMmiVSfY19I84Tc61zNJ] [asIdNQikOQ283eW46nDU MD8wbxA-VXGe_O7TH6K7 JvuHtMgHdQ6ZW8GtgOqm] [-MVWzgffED8EwFDMfMeB NQaTmuNgZeSJdGHCTZiY MkWWQjqT1uxWsqknapOi]]
+2024-01-15T15:09:38.175+0800	INFO	raft/config.go:168	ends is [0xc000287500 0xc000287520 0xc000287540]
+2024-01-15T15:09:38.175+0800	INFO	raft/config.go:177	cfg.saved is [0xc0002d8080 0xc0003798c0 <nil>]
+2024-01-15T15:09:38.175+0800	INFO	raft/config.go:224	ends is [0xc000287500 0xc000287520 0xc000287540], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00028c900
+2024-01-15T15:09:38.215+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000299970 0xc000382b00 0xc000299a20]
+2024-01-15T15:09:38.215+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:09:38.215+0800	INFO	raft/config.go:261	cfg.endnames is [[QBBlRRpSrj0C0gkfgZpC DMZe5vnsi69lQ3NFVgy7 WMmiVSfY19I84Tc61zNJ] [asIdNQikOQ283eW46nDU MD8wbxA-VXGe_O7TH6K7 JvuHtMgHdQ6ZW8GtgOqm] [-MVWzgffED8EwFDMfMeB NQaTmuNgZeSJdGHCTZiY MkWWQjqT1uxWsqknapOi]]
+2024-01-15T15:09:38.215+0800	INFO	raft/config.go:261	cfg.endnames is [[QBBlRRpSrj0C0gkfgZpC DMZe5vnsi69lQ3NFVgy7 WMmiVSfY19I84Tc61zNJ] [asIdNQikOQ283eW46nDU MD8wbxA-VXGe_O7TH6K7 JvuHtMgHdQ6ZW8GtgOqm] [-MVWzgffED8EwFDMfMeB NQaTmuNgZeSJdGHCTZiY MkWWQjqT1uxWsqknapOi]]
+2024-01-15T15:09:38.215+0800	INFO	raft/config.go:261	cfg.endnames is [[QBBlRRpSrj0C0gkfgZpC DMZe5vnsi69lQ3NFVgy7 WMmiVSfY19I84Tc61zNJ] [asIdNQikOQ283eW46nDU MD8wbxA-VXGe_O7TH6K7 JvuHtMgHdQ6ZW8GtgOqm] [-MVWzgffED8EwFDMfMeB NQaTmuNgZeSJdGHCTZiY MkWWQjqT1uxWsqknapOi]]
+2024-01-15T15:09:38.705+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T15:09:39.229+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T15:09:39.229+0800	INFO	raft/config.go:261	cfg.endnames is [[QBBlRRpSrj0C0gkfgZpC DMZe5vnsi69lQ3NFVgy7 WMmiVSfY19I84Tc61zNJ] [asIdNQikOQ283eW46nDU MD8wbxA-VXGe_O7TH6K7 JvuHtMgHdQ6ZW8GtgOqm] [-MVWzgffED8EwFDMfMeB NQaTmuNgZeSJdGHCTZiY MkWWQjqT1uxWsqknapOi]]
+2024-01-15T15:09:39.776+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1] 3:[2]]
+2024-01-15T15:41:57.486+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:41:57.486+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:41:57.486+0800	INFO	raft/config.go:160	endnames is [[aPent6eMupYwZHVnYwYx 83O1O__XmDUSCVr4liGi K99cThh1-QGJ8AqgcS4J] [] []]
+2024-01-15T15:41:57.486+0800	INFO	raft/config.go:168	ends is [0xc0001e22a0 0xc0001e22c0 0xc0001e22e0]
+2024-01-15T15:41:57.486+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:41:57.486+0800	INFO	raft/config.go:224	ends is [0xc0001e22a0 0xc0001e22c0 0xc0001e22e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001823c0
+2024-01-15T15:41:57.549+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c4580 <nil> <nil>]
+2024-01-15T15:41:57.549+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:41:57.549+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:41:57.549+0800	INFO	raft/config.go:160	endnames is [[aPent6eMupYwZHVnYwYx 83O1O__XmDUSCVr4liGi K99cThh1-QGJ8AqgcS4J] [fEasqPEqjn3Z5RZtgDiL X6XVmOTdn_TBFl8yuLjr U3xhK7IderVa1LBvHLAv] []]
+2024-01-15T15:41:57.549+0800	INFO	raft/config.go:168	ends is [0xc00007e140 0xc00007e160 0xc00007e180]
+2024-01-15T15:41:57.549+0800	INFO	raft/config.go:177	cfg.saved is [0xc000230000 <nil> <nil>]
+2024-01-15T15:41:57.549+0800	INFO	raft/config.go:224	ends is [0xc00007e140 0xc00007e160 0xc00007e180], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c0c0
+2024-01-15T15:41:57.605+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c4580 0xc0000aa000 <nil>]
+2024-01-15T15:41:57.605+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:41:57.605+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:41:57.605+0800	INFO	raft/config.go:160	endnames is [[aPent6eMupYwZHVnYwYx 83O1O__XmDUSCVr4liGi K99cThh1-QGJ8AqgcS4J] [fEasqPEqjn3Z5RZtgDiL X6XVmOTdn_TBFl8yuLjr U3xhK7IderVa1LBvHLAv] [d17SqkToNyokeUKZekYA HHp5cRiI9mhSeOEk51yq 1GwzMvK9yyq4SzHqd4by]]
+2024-01-15T15:41:57.605+0800	INFO	raft/config.go:168	ends is [0xc0001e2480 0xc0001e24a0 0xc0001e24c0]
+2024-01-15T15:41:57.605+0800	INFO	raft/config.go:177	cfg.saved is [0xc000230000 0xc000012200 <nil>]
+2024-01-15T15:41:57.605+0800	INFO	raft/config.go:224	ends is [0xc0001e2480 0xc0001e24a0 0xc0001e24c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000182480
+2024-01-15T15:41:57.661+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c4580 0xc0000aa000 0xc0001c4630]
+2024-01-15T15:41:57.661+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:41:57.661+0800	INFO	raft/config.go:261	cfg.endnames is [[aPent6eMupYwZHVnYwYx 83O1O__XmDUSCVr4liGi K99cThh1-QGJ8AqgcS4J] [fEasqPEqjn3Z5RZtgDiL X6XVmOTdn_TBFl8yuLjr U3xhK7IderVa1LBvHLAv] [d17SqkToNyokeUKZekYA HHp5cRiI9mhSeOEk51yq 1GwzMvK9yyq4SzHqd4by]]
+2024-01-15T15:41:57.661+0800	INFO	raft/config.go:261	cfg.endnames is [[aPent6eMupYwZHVnYwYx 83O1O__XmDUSCVr4liGi K99cThh1-QGJ8AqgcS4J] [fEasqPEqjn3Z5RZtgDiL X6XVmOTdn_TBFl8yuLjr U3xhK7IderVa1LBvHLAv] [d17SqkToNyokeUKZekYA HHp5cRiI9mhSeOEk51yq 1GwzMvK9yyq4SzHqd4by]]
+2024-01-15T15:41:57.661+0800	INFO	raft/config.go:261	cfg.endnames is [[aPent6eMupYwZHVnYwYx 83O1O__XmDUSCVr4liGi K99cThh1-QGJ8AqgcS4J] [fEasqPEqjn3Z5RZtgDiL X6XVmOTdn_TBFl8yuLjr U3xhK7IderVa1LBvHLAv] [d17SqkToNyokeUKZekYA HHp5cRiI9mhSeOEk51yq 1GwzMvK9yyq4SzHqd4by]]
+2024-01-15T15:41:58.167+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:41:58.652+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:41:59.104+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:41:59.641+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:00.136+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:00.627+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:01.081+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:01.570+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:02.108+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:02.568+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:02.568+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:42:02.568+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:42:02.568+0800	INFO	raft/config.go:160	endnames is [[QnfiPi9Fxghn0K7Crbus 24XppRzoVjwSYkS_qgIe SUEaYeTzpatCirRbK1pn] [] []]
+2024-01-15T15:42:02.568+0800	INFO	raft/config.go:168	ends is [0xc00007f2c0 0xc00007f2e0 0xc00007f300]
+2024-01-15T15:42:02.568+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:42:02.568+0800	INFO	raft/config.go:224	ends is [0xc00007f2c0 0xc00007f2e0 0xc00007f300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000302a20
+2024-01-15T15:42:02.718+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c5d90 <nil> <nil>]
+2024-01-15T15:42:02.718+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:42:02.718+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:42:02.718+0800	INFO	raft/config.go:160	endnames is [[QnfiPi9Fxghn0K7Crbus 24XppRzoVjwSYkS_qgIe SUEaYeTzpatCirRbK1pn] [LPZ9iRHfOcKgnFrndhxC MsUeI-UG4OM8YEwN8KGL KXTEwSGnkWEw4FqEn5-6] []]
+2024-01-15T15:42:02.718+0800	INFO	raft/config.go:168	ends is [0xc00017c640 0xc00017c660 0xc00017c680]
+2024-01-15T15:42:02.718+0800	INFO	raft/config.go:177	cfg.saved is [0xc000361b00 <nil> <nil>]
+2024-01-15T15:42:02.718+0800	INFO	raft/config.go:224	ends is [0xc00017c640 0xc00017c660 0xc00017c680], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0005eae40
+2024-01-15T15:42:02.819+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c5d90 0xc0005fe210 <nil>]
+2024-01-15T15:42:02.819+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:42:02.819+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:42:02.819+0800	INFO	raft/config.go:160	endnames is [[QnfiPi9Fxghn0K7Crbus 24XppRzoVjwSYkS_qgIe SUEaYeTzpatCirRbK1pn] [LPZ9iRHfOcKgnFrndhxC MsUeI-UG4OM8YEwN8KGL KXTEwSGnkWEw4FqEn5-6] [CEZAnrfsGSZbMPOdIQ3f Av0rN9p7iG6Tji95pN0p IUC6hjGcQISbVKipRzNN]]
+2024-01-15T15:42:02.819+0800	INFO	raft/config.go:168	ends is [0xc0002a0fe0 0xc0002a1000 0xc0002a1020]
+2024-01-15T15:42:02.819+0800	INFO	raft/config.go:177	cfg.saved is [0xc000361b00 0xc0005f6fc0 <nil>]
+2024-01-15T15:42:02.819+0800	INFO	raft/config.go:224	ends is [0xc0002a0fe0 0xc0002a1000 0xc0002a1020], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000307a40
+2024-01-15T15:42:02.919+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c5d90 0xc0005fe210 0xc000679ce0]
+2024-01-15T15:42:02.919+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:42:02.919+0800	INFO	raft/config.go:261	cfg.endnames is [[QnfiPi9Fxghn0K7Crbus 24XppRzoVjwSYkS_qgIe SUEaYeTzpatCirRbK1pn] [LPZ9iRHfOcKgnFrndhxC MsUeI-UG4OM8YEwN8KGL KXTEwSGnkWEw4FqEn5-6] [CEZAnrfsGSZbMPOdIQ3f Av0rN9p7iG6Tji95pN0p IUC6hjGcQISbVKipRzNN]]
+2024-01-15T15:42:02.919+0800	INFO	raft/config.go:261	cfg.endnames is [[QnfiPi9Fxghn0K7Crbus 24XppRzoVjwSYkS_qgIe SUEaYeTzpatCirRbK1pn] [LPZ9iRHfOcKgnFrndhxC MsUeI-UG4OM8YEwN8KGL KXTEwSGnkWEw4FqEn5-6] [CEZAnrfsGSZbMPOdIQ3f Av0rN9p7iG6Tji95pN0p IUC6hjGcQISbVKipRzNN]]
+2024-01-15T15:42:02.919+0800	INFO	raft/config.go:261	cfg.endnames is [[QnfiPi9Fxghn0K7Crbus 24XppRzoVjwSYkS_qgIe SUEaYeTzpatCirRbK1pn] [LPZ9iRHfOcKgnFrndhxC MsUeI-UG4OM8YEwN8KGL KXTEwSGnkWEw4FqEn5-6] [CEZAnrfsGSZbMPOdIQ3f Av0rN9p7iG6Tji95pN0p IUC6hjGcQISbVKipRzNN]]
+2024-01-15T15:42:03.467+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:04.011+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:04.477+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:05.013+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:05.530+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:06.007+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:06.554+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:07.018+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:07.537+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:42:07.998+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:50:42.798+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:50:42.798+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:50:42.798+0800	INFO	raft/config.go:160	endnames is [[WOGq_pj0SSapqLVjyk7m QzTaVufuEZKRxofmey1L P5DDYLLI-NPb3W-VBez-] [] []]
+2024-01-15T15:50:42.798+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T15:50:42.798+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:50:42.798+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T15:50:42.845+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be790 <nil> <nil>]
+2024-01-15T15:50:42.845+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:50:42.845+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:50:42.845+0800	INFO	raft/config.go:160	endnames is [[WOGq_pj0SSapqLVjyk7m QzTaVufuEZKRxofmey1L P5DDYLLI-NPb3W-VBez-] [razwkTQxcTF1QgyFZKnO e_6yVaO24iOpnis9WeIH jFj-2weJ7t-KCWcisZs2] []]
+2024-01-15T15:50:42.845+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T15:50:42.845+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T15:50:42.845+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T15:50:42.890+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be790 0xc0000be840 <nil>]
+2024-01-15T15:50:42.890+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:50:42.890+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:50:42.890+0800	INFO	raft/config.go:160	endnames is [[WOGq_pj0SSapqLVjyk7m QzTaVufuEZKRxofmey1L P5DDYLLI-NPb3W-VBez-] [razwkTQxcTF1QgyFZKnO e_6yVaO24iOpnis9WeIH jFj-2weJ7t-KCWcisZs2] [rZETYkx6SGvYG47pyoh6 ogu5SoltWQ6l51WQ6ipF QXbhDtH11Lu9Tfu2nndY]]
+2024-01-15T15:50:42.890+0800	INFO	raft/config.go:168	ends is [0xc000124140 0xc000124160 0xc000124180]
+2024-01-15T15:50:42.890+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198200 <nil>]
+2024-01-15T15:50:42.890+0800	INFO	raft/config.go:224	ends is [0xc000124140 0xc000124160 0xc000124180], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000148000
+2024-01-15T15:50:42.935+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be790 0xc0000be840 0xc00014c000]
+2024-01-15T15:50:42.935+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:50:42.935+0800	INFO	raft/config.go:261	cfg.endnames is [[WOGq_pj0SSapqLVjyk7m QzTaVufuEZKRxofmey1L P5DDYLLI-NPb3W-VBez-] [razwkTQxcTF1QgyFZKnO e_6yVaO24iOpnis9WeIH jFj-2weJ7t-KCWcisZs2] [rZETYkx6SGvYG47pyoh6 ogu5SoltWQ6l51WQ6ipF QXbhDtH11Lu9Tfu2nndY]]
+2024-01-15T15:50:42.935+0800	INFO	raft/config.go:261	cfg.endnames is [[WOGq_pj0SSapqLVjyk7m QzTaVufuEZKRxofmey1L P5DDYLLI-NPb3W-VBez-] [razwkTQxcTF1QgyFZKnO e_6yVaO24iOpnis9WeIH jFj-2weJ7t-KCWcisZs2] [rZETYkx6SGvYG47pyoh6 ogu5SoltWQ6l51WQ6ipF QXbhDtH11Lu9Tfu2nndY]]
+2024-01-15T15:50:42.935+0800	INFO	raft/config.go:261	cfg.endnames is [[WOGq_pj0SSapqLVjyk7m QzTaVufuEZKRxofmey1L P5DDYLLI-NPb3W-VBez-] [razwkTQxcTF1QgyFZKnO e_6yVaO24iOpnis9WeIH jFj-2weJ7t-KCWcisZs2] [rZETYkx6SGvYG47pyoh6 ogu5SoltWQ6l51WQ6ipF QXbhDtH11Lu9Tfu2nndY]]
+2024-01-15T15:50:43.483+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[0]]
+2024-01-15T15:50:46.019+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[0]]
+2024-01-15T15:50:46.019+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:50:46.019+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:50:46.019+0800	INFO	raft/config.go:160	endnames is [[QbPA3wGCmnVIrGthhXSj MM1sgNLvK-xapApD2GfM 7vyrPFT3LNEsIcrFiwIF] [] []]
+2024-01-15T15:50:46.019+0800	INFO	raft/config.go:168	ends is [0xc000365400 0xc000365420 0xc000365440]
+2024-01-15T15:50:46.019+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:50:46.019+0800	INFO	raft/config.go:224	ends is [0xc000365400 0xc000365420 0xc000365440], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00040e060
+2024-01-15T15:50:46.091+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000374dc0 <nil> <nil>]
+2024-01-15T15:50:46.091+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:50:46.091+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:50:46.091+0800	INFO	raft/config.go:160	endnames is [[QbPA3wGCmnVIrGthhXSj MM1sgNLvK-xapApD2GfM 7vyrPFT3LNEsIcrFiwIF] [Tvlm4QEwEUSuy0FaD-9i YLG9iiGnH6GSZGRR3sPQ ZSbFMI6Tw6oX2D-6lb_K] []]
+2024-01-15T15:50:46.091+0800	INFO	raft/config.go:168	ends is [0xc000399500 0xc000399520 0xc000399540]
+2024-01-15T15:50:46.091+0800	INFO	raft/config.go:177	cfg.saved is [0xc0003788c0 <nil> <nil>]
+2024-01-15T15:50:46.091+0800	INFO	raft/config.go:224	ends is [0xc000399500 0xc000399520 0xc000399540], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003aa480
+2024-01-15T15:50:46.136+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000374dc0 0xc0003a9130 <nil>]
+2024-01-15T15:50:46.136+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:50:46.136+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:50:46.136+0800	INFO	raft/config.go:160	endnames is [[QbPA3wGCmnVIrGthhXSj MM1sgNLvK-xapApD2GfM 7vyrPFT3LNEsIcrFiwIF] [Tvlm4QEwEUSuy0FaD-9i YLG9iiGnH6GSZGRR3sPQ ZSbFMI6Tw6oX2D-6lb_K] [MmHyV1PdifgQNOmydGed OjE0VhjcyYXcDCuWcJ5C 91MqJKFi4QHrRexbH7Yn]]
+2024-01-15T15:50:46.136+0800	INFO	raft/config.go:168	ends is [0xc0003996c0 0xc0003996e0 0xc000399700]
+2024-01-15T15:50:46.136+0800	INFO	raft/config.go:177	cfg.saved is [0xc0003788c0 0xc0003b6480 <nil>]
+2024-01-15T15:50:46.136+0800	INFO	raft/config.go:224	ends is [0xc0003996c0 0xc0003996e0 0xc000399700], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003aa540
+2024-01-15T15:50:46.192+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000374dc0 0xc0003a9130 0xc0003a91e0]
+2024-01-15T15:50:46.192+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:50:46.192+0800	INFO	raft/config.go:261	cfg.endnames is [[QbPA3wGCmnVIrGthhXSj MM1sgNLvK-xapApD2GfM 7vyrPFT3LNEsIcrFiwIF] [Tvlm4QEwEUSuy0FaD-9i YLG9iiGnH6GSZGRR3sPQ ZSbFMI6Tw6oX2D-6lb_K] [MmHyV1PdifgQNOmydGed OjE0VhjcyYXcDCuWcJ5C 91MqJKFi4QHrRexbH7Yn]]
+2024-01-15T15:50:46.192+0800	INFO	raft/config.go:261	cfg.endnames is [[QbPA3wGCmnVIrGthhXSj MM1sgNLvK-xapApD2GfM 7vyrPFT3LNEsIcrFiwIF] [Tvlm4QEwEUSuy0FaD-9i YLG9iiGnH6GSZGRR3sPQ ZSbFMI6Tw6oX2D-6lb_K] [MmHyV1PdifgQNOmydGed OjE0VhjcyYXcDCuWcJ5C 91MqJKFi4QHrRexbH7Yn]]
+2024-01-15T15:50:46.192+0800	INFO	raft/config.go:261	cfg.endnames is [[QbPA3wGCmnVIrGthhXSj MM1sgNLvK-xapApD2GfM 7vyrPFT3LNEsIcrFiwIF] [Tvlm4QEwEUSuy0FaD-9i YLG9iiGnH6GSZGRR3sPQ ZSbFMI6Tw6oX2D-6lb_K] [MmHyV1PdifgQNOmydGed OjE0VhjcyYXcDCuWcJ5C 91MqJKFi4QHrRexbH7Yn]]
+2024-01-15T15:50:46.736+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T15:50:47.193+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1 2]]
+2024-01-15T15:57:17.114+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:57:17.114+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:57:17.114+0800	INFO	raft/config.go:160	endnames is [[DyJFiMeT-65cOIK7HSAI Dv9otNXf7ExyMWH96wFq E_tPJltBXdl4eoygxOnx] [] []]
+2024-01-15T15:57:17.114+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T15:57:17.114+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:57:17.114+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T15:57:17.176+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 <nil> <nil>]
+2024-01-15T15:57:17.176+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:57:17.176+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:57:17.176+0800	INFO	raft/config.go:160	endnames is [[DyJFiMeT-65cOIK7HSAI Dv9otNXf7ExyMWH96wFq E_tPJltBXdl4eoygxOnx] [j64zYI_Icebw9b0615X9 ykIfq0PBbgWo4H3nLFhl cnqLBp1WVNbaImswkj-t] []]
+2024-01-15T15:57:17.176+0800	INFO	raft/config.go:168	ends is [0xc000292120 0xc000292140 0xc000292160]
+2024-01-15T15:57:17.176+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T15:57:17.176+0800	INFO	raft/config.go:224	ends is [0xc000292120 0xc000292140 0xc000292160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002ac000
+2024-01-15T15:57:17.216+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 0xc0002b2000 <nil>]
+2024-01-15T15:57:17.216+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:57:17.216+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:57:17.216+0800	INFO	raft/config.go:160	endnames is [[DyJFiMeT-65cOIK7HSAI Dv9otNXf7ExyMWH96wFq E_tPJltBXdl4eoygxOnx] [j64zYI_Icebw9b0615X9 ykIfq0PBbgWo4H3nLFhl cnqLBp1WVNbaImswkj-t] [0cxqOB3h5BBcsAzIhm20 reFGqZQIQtuGxs50xMTC WVMVinKQI0d0mDrRbqLa]]
+2024-01-15T15:57:17.216+0800	INFO	raft/config.go:168	ends is [0xc0002922e0 0xc000292300 0xc000292320]
+2024-01-15T15:57:17.216+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc00028e180 <nil>]
+2024-01-15T15:57:17.216+0800	INFO	raft/config.go:224	ends is [0xc0002922e0 0xc000292300 0xc000292320], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002ac0c0
+2024-01-15T15:57:17.260+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 0xc0002b2000 0xc0002b20b0]
+2024-01-15T15:57:17.260+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:57:17.260+0800	INFO	raft/config.go:261	cfg.endnames is [[DyJFiMeT-65cOIK7HSAI Dv9otNXf7ExyMWH96wFq E_tPJltBXdl4eoygxOnx] [j64zYI_Icebw9b0615X9 ykIfq0PBbgWo4H3nLFhl cnqLBp1WVNbaImswkj-t] [0cxqOB3h5BBcsAzIhm20 reFGqZQIQtuGxs50xMTC WVMVinKQI0d0mDrRbqLa]]
+2024-01-15T15:57:17.260+0800	INFO	raft/config.go:261	cfg.endnames is [[DyJFiMeT-65cOIK7HSAI Dv9otNXf7ExyMWH96wFq E_tPJltBXdl4eoygxOnx] [j64zYI_Icebw9b0615X9 ykIfq0PBbgWo4H3nLFhl cnqLBp1WVNbaImswkj-t] [0cxqOB3h5BBcsAzIhm20 reFGqZQIQtuGxs50xMTC WVMVinKQI0d0mDrRbqLa]]
+2024-01-15T15:57:17.260+0800	INFO	raft/config.go:261	cfg.endnames is [[DyJFiMeT-65cOIK7HSAI Dv9otNXf7ExyMWH96wFq E_tPJltBXdl4eoygxOnx] [j64zYI_Icebw9b0615X9 ykIfq0PBbgWo4H3nLFhl cnqLBp1WVNbaImswkj-t] [0cxqOB3h5BBcsAzIhm20 reFGqZQIQtuGxs50xMTC WVMVinKQI0d0mDrRbqLa]]
+2024-01-15T15:57:17.748+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T15:57:20.290+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T15:57:20.290+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:57:20.290+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:57:20.290+0800	INFO	raft/config.go:160	endnames is [[c8CfKir4FRhxS3_4gDhz zZmSMJes0WRvZfKoJOGy YchjUfKIgwAiKLXkEFmQ] [] []]
+2024-01-15T15:57:20.290+0800	INFO	raft/config.go:168	ends is [0xc000389b00 0xc000389b20 0xc000389b40]
+2024-01-15T15:57:20.290+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T15:57:20.290+0800	INFO	raft/config.go:224	ends is [0xc000389b00 0xc000389b20 0xc000389b40], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00034f9e0
+2024-01-15T15:57:20.343+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003a4d10 <nil> <nil>]
+2024-01-15T15:57:20.343+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:57:20.343+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:57:20.343+0800	INFO	raft/config.go:160	endnames is [[c8CfKir4FRhxS3_4gDhz zZmSMJes0WRvZfKoJOGy YchjUfKIgwAiKLXkEFmQ] [vZzpNIr8gpF0z0juGPhq ZRt9sB6yND-1SvuG9VRF 7F6c5YgYOiMi6FaMCgE2] []]
+2024-01-15T15:57:20.343+0800	INFO	raft/config.go:168	ends is [0xc0002924c0 0xc0002924e0 0xc000292500]
+2024-01-15T15:57:20.343+0800	INFO	raft/config.go:177	cfg.saved is [0xc0003bc040 <nil> <nil>]
+2024-01-15T15:57:20.343+0800	INFO	raft/config.go:224	ends is [0xc0002924c0 0xc0002924e0 0xc000292500], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002ac180
+2024-01-15T15:57:20.378+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003a4d10 0xc0002b2160 <nil>]
+2024-01-15T15:57:20.379+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T15:57:20.379+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T15:57:20.379+0800	INFO	raft/config.go:160	endnames is [[c8CfKir4FRhxS3_4gDhz zZmSMJes0WRvZfKoJOGy YchjUfKIgwAiKLXkEFmQ] [vZzpNIr8gpF0z0juGPhq ZRt9sB6yND-1SvuG9VRF 7F6c5YgYOiMi6FaMCgE2] [n4P3n_C7D6qtM9mg0TYj qvwmDlAFTtX62_8-1tUJ h3k5H3htJwgiyn2GmvLC]]
+2024-01-15T15:57:20.379+0800	INFO	raft/config.go:168	ends is [0xc000292680 0xc0002926a0 0xc0002926c0]
+2024-01-15T15:57:20.379+0800	INFO	raft/config.go:177	cfg.saved is [0xc0003bc040 0xc00028e480 <nil>]
+2024-01-15T15:57:20.379+0800	INFO	raft/config.go:224	ends is [0xc000292680 0xc0002926a0 0xc0002926c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002ac300
+2024-01-15T15:57:20.434+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003a4d10 0xc0002b2160 0xc0002b2370]
+2024-01-15T15:57:20.434+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T15:57:20.434+0800	INFO	raft/config.go:261	cfg.endnames is [[c8CfKir4FRhxS3_4gDhz zZmSMJes0WRvZfKoJOGy YchjUfKIgwAiKLXkEFmQ] [vZzpNIr8gpF0z0juGPhq ZRt9sB6yND-1SvuG9VRF 7F6c5YgYOiMi6FaMCgE2] [n4P3n_C7D6qtM9mg0TYj qvwmDlAFTtX62_8-1tUJ h3k5H3htJwgiyn2GmvLC]]
+2024-01-15T15:57:20.434+0800	INFO	raft/config.go:261	cfg.endnames is [[c8CfKir4FRhxS3_4gDhz zZmSMJes0WRvZfKoJOGy YchjUfKIgwAiKLXkEFmQ] [vZzpNIr8gpF0z0juGPhq ZRt9sB6yND-1SvuG9VRF 7F6c5YgYOiMi6FaMCgE2] [n4P3n_C7D6qtM9mg0TYj qvwmDlAFTtX62_8-1tUJ h3k5H3htJwgiyn2GmvLC]]
+2024-01-15T15:57:20.434+0800	INFO	raft/config.go:261	cfg.endnames is [[c8CfKir4FRhxS3_4gDhz zZmSMJes0WRvZfKoJOGy YchjUfKIgwAiKLXkEFmQ] [vZzpNIr8gpF0z0juGPhq ZRt9sB6yND-1SvuG9VRF 7F6c5YgYOiMi6FaMCgE2] [n4P3n_C7D6qtM9mg0TYj qvwmDlAFTtX62_8-1tUJ h3k5H3htJwgiyn2GmvLC]]
+2024-01-15T15:57:20.983+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T15:57:21.441+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:21.951+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:22.435+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:22.960+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:23.457+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:24.004+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:24.548+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:25.082+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:25.614+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T15:57:26.104+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T19:00:04.859+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:00:04.859+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:00:04.859+0800	INFO	raft/config.go:160	endnames is [[CLx7J7cL7SZIcD_NL6X7 HYobIUI2El6Zu3sy1Ohz sayXqFgmdkeSltzccVAH] [] []]
+2024-01-15T19:00:04.859+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T19:00:04.859+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T19:00:04.859+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T19:00:04.905+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 <nil> <nil>]
+2024-01-15T19:00:04.906+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:00:04.906+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:00:04.906+0800	INFO	raft/config.go:160	endnames is [[CLx7J7cL7SZIcD_NL6X7 HYobIUI2El6Zu3sy1Ohz sayXqFgmdkeSltzccVAH] [4Fdk28CsQLfrCYqzt4-T j109bSmtTjXGhmJXr2yz V89CRkkKpPFlqSe_maJV] []]
+2024-01-15T19:00:04.906+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T19:00:04.906+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 <nil> <nil>]
+2024-01-15T19:00:04.906+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T19:00:04.950+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc0000be630 <nil>]
+2024-01-15T19:00:04.950+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:00:04.950+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:00:04.950+0800	INFO	raft/config.go:160	endnames is [[CLx7J7cL7SZIcD_NL6X7 HYobIUI2El6Zu3sy1Ohz sayXqFgmdkeSltzccVAH] [4Fdk28CsQLfrCYqzt4-T j109bSmtTjXGhmJXr2yz V89CRkkKpPFlqSe_maJV] [CNXyNGa_5DRuzUnTJ30Y UoA6f0qp0hH5XqnBAza4 rzlqYcXrpE-9nAEYndQr]]
+2024-01-15T19:00:04.950+0800	INFO	raft/config.go:168	ends is [0xc00007e640 0xc00007e660 0xc00007e680]
+2024-01-15T19:00:04.950+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 0xc000118200 <nil>]
+2024-01-15T19:00:04.950+0800	INFO	raft/config.go:224	ends is [0xc00007e640 0xc00007e660 0xc00007e680], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T19:00:04.995+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc0000be630 0xc0000be6e0]
+2024-01-15T19:00:04.995+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T19:00:04.995+0800	INFO	raft/config.go:261	cfg.endnames is [[CLx7J7cL7SZIcD_NL6X7 HYobIUI2El6Zu3sy1Ohz sayXqFgmdkeSltzccVAH] [4Fdk28CsQLfrCYqzt4-T j109bSmtTjXGhmJXr2yz V89CRkkKpPFlqSe_maJV] [CNXyNGa_5DRuzUnTJ30Y UoA6f0qp0hH5XqnBAza4 rzlqYcXrpE-9nAEYndQr]]
+2024-01-15T19:00:04.995+0800	INFO	raft/config.go:261	cfg.endnames is [[CLx7J7cL7SZIcD_NL6X7 HYobIUI2El6Zu3sy1Ohz sayXqFgmdkeSltzccVAH] [4Fdk28CsQLfrCYqzt4-T j109bSmtTjXGhmJXr2yz V89CRkkKpPFlqSe_maJV] [CNXyNGa_5DRuzUnTJ30Y UoA6f0qp0hH5XqnBAza4 rzlqYcXrpE-9nAEYndQr]]
+2024-01-15T19:00:04.995+0800	INFO	raft/config.go:261	cfg.endnames is [[CLx7J7cL7SZIcD_NL6X7 HYobIUI2El6Zu3sy1Ohz sayXqFgmdkeSltzccVAH] [4Fdk28CsQLfrCYqzt4-T j109bSmtTjXGhmJXr2yz V89CRkkKpPFlqSe_maJV] [CNXyNGa_5DRuzUnTJ30Y UoA6f0qp0hH5XqnBAza4 rzlqYcXrpE-9nAEYndQr]]
+2024-01-15T19:00:05.465+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T19:00:07.991+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T19:00:07.991+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:00:07.991+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:00:07.991+0800	INFO	raft/config.go:160	endnames is [[-_rhm3NBsjqCSFnqe-Di i5PaWdgiF_zXmz6tBgNe jbm1JCzM45z2mSaNz7lD] [] []]
+2024-01-15T19:00:07.991+0800	INFO	raft/config.go:168	ends is [0xc000286080 0xc0002860a0 0xc0002860c0]
+2024-01-15T19:00:07.991+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T19:00:07.991+0800	INFO	raft/config.go:224	ends is [0xc000286080 0xc0002860a0 0xc0002860c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002ae180
+2024-01-15T19:00:08.084+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0002a00b0 <nil> <nil>]
+2024-01-15T19:00:08.084+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:00:08.084+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:00:08.084+0800	INFO	raft/config.go:160	endnames is [[-_rhm3NBsjqCSFnqe-Di i5PaWdgiF_zXmz6tBgNe jbm1JCzM45z2mSaNz7lD] [nSSA597YicGa4efjiTpw Nlj4iZ1WQZM-VuP1vdsV LjF4vH4h8i1X8iXIachL] []]
+2024-01-15T19:00:08.084+0800	INFO	raft/config.go:168	ends is [0xc00038ce60 0xc00038ce80 0xc00038cea0]
+2024-01-15T19:00:08.084+0800	INFO	raft/config.go:177	cfg.saved is [0xc00029a1c0 <nil> <nil>]
+2024-01-15T19:00:08.084+0800	INFO	raft/config.go:224	ends is [0xc00038ce60 0xc00038ce80 0xc00038cea0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000351380
+2024-01-15T19:00:08.151+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0002a00b0 0xc000381b80 <nil>]
+2024-01-15T19:00:08.151+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:00:08.151+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:00:08.151+0800	INFO	raft/config.go:160	endnames is [[-_rhm3NBsjqCSFnqe-Di i5PaWdgiF_zXmz6tBgNe jbm1JCzM45z2mSaNz7lD] [nSSA597YicGa4efjiTpw Nlj4iZ1WQZM-VuP1vdsV LjF4vH4h8i1X8iXIachL] [e9dfx421ixymCKBgyoax o87mhXESRZWzHVyl_8oy F6VxB1mjxPEdL35pGgUK]]
+2024-01-15T19:00:08.151+0800	INFO	raft/config.go:168	ends is [0xc00038d020 0xc00038d040 0xc00038d060]
+2024-01-15T19:00:08.151+0800	INFO	raft/config.go:177	cfg.saved is [0xc00029a1c0 0xc00039aac0 <nil>]
+2024-01-15T19:00:08.151+0800	INFO	raft/config.go:224	ends is [0xc00038d020 0xc00038d040 0xc00038d060], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000351440
+2024-01-15T19:00:08.218+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0002a00b0 0xc000381b80 0xc000381c30]
+2024-01-15T19:00:08.218+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T19:00:08.218+0800	INFO	raft/config.go:261	cfg.endnames is [[-_rhm3NBsjqCSFnqe-Di i5PaWdgiF_zXmz6tBgNe jbm1JCzM45z2mSaNz7lD] [nSSA597YicGa4efjiTpw Nlj4iZ1WQZM-VuP1vdsV LjF4vH4h8i1X8iXIachL] [e9dfx421ixymCKBgyoax o87mhXESRZWzHVyl_8oy F6VxB1mjxPEdL35pGgUK]]
+2024-01-15T19:00:08.218+0800	INFO	raft/config.go:261	cfg.endnames is [[-_rhm3NBsjqCSFnqe-Di i5PaWdgiF_zXmz6tBgNe jbm1JCzM45z2mSaNz7lD] [nSSA597YicGa4efjiTpw Nlj4iZ1WQZM-VuP1vdsV LjF4vH4h8i1X8iXIachL] [e9dfx421ixymCKBgyoax o87mhXESRZWzHVyl_8oy F6VxB1mjxPEdL35pGgUK]]
+2024-01-15T19:00:08.218+0800	INFO	raft/config.go:261	cfg.endnames is [[-_rhm3NBsjqCSFnqe-Di i5PaWdgiF_zXmz6tBgNe jbm1JCzM45z2mSaNz7lD] [nSSA597YicGa4efjiTpw Nlj4iZ1WQZM-VuP1vdsV LjF4vH4h8i1X8iXIachL] [e9dfx421ixymCKBgyoax o87mhXESRZWzHVyl_8oy F6VxB1mjxPEdL35pGgUK]]
+2024-01-15T19:00:08.740+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T19:00:09.274+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1 2]]
+2024-01-15T19:16:51.560+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:16:51.560+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:16:51.560+0800	INFO	raft/config.go:160	endnames is [[ztD6JeY48cyw1lbsERR_ Jx6LcGJsoaIMrel1R8zp 9gvKDdMPp70duu0rMiqG] [] []]
+2024-01-15T19:16:51.560+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T19:16:51.560+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T19:16:51.560+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T19:16:52.343+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 <nil> <nil>]
+2024-01-15T19:16:52.343+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:16:52.343+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:16:52.343+0800	INFO	raft/config.go:160	endnames is [[ztD6JeY48cyw1lbsERR_ Jx6LcGJsoaIMrel1R8zp 9gvKDdMPp70duu0rMiqG] [Nqn5NqQ0PeSy0toLY9jx YoWbTB7_xypPosyBydh1 FQZd5Az5R7UPOzzPx0qL] []]
+2024-01-15T19:16:52.343+0800	INFO	raft/config.go:168	ends is [0xc00021c120 0xc00021c140 0xc00021c160]
+2024-01-15T19:16:52.343+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T19:16:52.343+0800	INFO	raft/config.go:224	ends is [0xc00021c120 0xc00021c140 0xc00021c160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000234000
+2024-01-15T19:16:52.398+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc00023a000 <nil>]
+2024-01-15T19:16:52.398+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:16:52.398+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:16:52.398+0800	INFO	raft/config.go:160	endnames is [[ztD6JeY48cyw1lbsERR_ Jx6LcGJsoaIMrel1R8zp 9gvKDdMPp70duu0rMiqG] [Nqn5NqQ0PeSy0toLY9jx YoWbTB7_xypPosyBydh1 FQZd5Az5R7UPOzzPx0qL] [84eAiGNrjkw6kLkloPVN 4S43v7IukTA5S_C5h46n 8h70zJfLipE3Q_ofj_AX]]
+2024-01-15T19:16:52.398+0800	INFO	raft/config.go:168	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0]
+2024-01-15T19:16:52.398+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000218180 <nil>]
+2024-01-15T19:16:52.398+0800	INFO	raft/config.go:224	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T19:16:52.454+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc00023a000 0xc0000be6e0]
+2024-01-15T19:16:52.454+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T19:16:52.454+0800	INFO	raft/config.go:261	cfg.endnames is [[ztD6JeY48cyw1lbsERR_ Jx6LcGJsoaIMrel1R8zp 9gvKDdMPp70duu0rMiqG] [Nqn5NqQ0PeSy0toLY9jx YoWbTB7_xypPosyBydh1 FQZd5Az5R7UPOzzPx0qL] [84eAiGNrjkw6kLkloPVN 4S43v7IukTA5S_C5h46n 8h70zJfLipE3Q_ofj_AX]]
+2024-01-15T19:16:52.454+0800	INFO	raft/config.go:261	cfg.endnames is [[ztD6JeY48cyw1lbsERR_ Jx6LcGJsoaIMrel1R8zp 9gvKDdMPp70duu0rMiqG] [Nqn5NqQ0PeSy0toLY9jx YoWbTB7_xypPosyBydh1 FQZd5Az5R7UPOzzPx0qL] [84eAiGNrjkw6kLkloPVN 4S43v7IukTA5S_C5h46n 8h70zJfLipE3Q_ofj_AX]]
+2024-01-15T19:16:52.454+0800	INFO	raft/config.go:261	cfg.endnames is [[ztD6JeY48cyw1lbsERR_ Jx6LcGJsoaIMrel1R8zp 9gvKDdMPp70duu0rMiqG] [Nqn5NqQ0PeSy0toLY9jx YoWbTB7_xypPosyBydh1 FQZd5Az5R7UPOzzPx0qL] [84eAiGNrjkw6kLkloPVN 4S43v7IukTA5S_C5h46n 8h70zJfLipE3Q_ofj_AX]]
+2024-01-15T19:16:52.947+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T19:16:55.457+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T19:16:55.457+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:16:55.457+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:16:55.457+0800	INFO	raft/config.go:160	endnames is [[A-IpO2wH7TTf_vyoi6u4 qpyUf7tHdfIo6M_EgYtc 7Fh5l7tmg72n3iL4BN5e] [] []]
+2024-01-15T19:16:55.457+0800	INFO	raft/config.go:168	ends is [0xc0001d6f00 0xc0001d6f20 0xc0001d6f40]
+2024-01-15T19:16:55.457+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T19:16:55.457+0800	INFO	raft/config.go:224	ends is [0xc0001d6f00 0xc0001d6f20 0xc0001d6f40], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002d860
+2024-01-15T19:16:55.733+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c7d90 <nil> <nil>]
+2024-01-15T19:16:55.733+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:16:55.733+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:16:55.733+0800	INFO	raft/config.go:160	endnames is [[A-IpO2wH7TTf_vyoi6u4 qpyUf7tHdfIo6M_EgYtc 7Fh5l7tmg72n3iL4BN5e] [SqRix_imr7_oRp5E5zAu NOiDeiRZ4iibdCCzBzvi MWbo2lmAO0hTT815uaex] []]
+2024-01-15T19:16:55.733+0800	INFO	raft/config.go:168	ends is [0xc0002ec7e0 0xc0002ec800 0xc0002ec820]
+2024-01-15T19:16:55.733+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001dcb80 <nil> <nil>]
+2024-01-15T19:16:55.733+0800	INFO	raft/config.go:224	ends is [0xc0002ec7e0 0xc0002ec800 0xc0002ec820], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002a8ea0
+2024-01-15T19:16:55.800+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c7d90 0xc0002e3290 <nil>]
+2024-01-15T19:16:55.800+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T19:16:55.800+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T19:16:55.800+0800	INFO	raft/config.go:160	endnames is [[A-IpO2wH7TTf_vyoi6u4 qpyUf7tHdfIo6M_EgYtc 7Fh5l7tmg72n3iL4BN5e] [SqRix_imr7_oRp5E5zAu NOiDeiRZ4iibdCCzBzvi MWbo2lmAO0hTT815uaex] [Ubfk-PJFcLvEGobt3BPJ 5fgkjFwtBD34ibaLM0jR ZfwHMedZESZkCb4Fq5Kw]]
+2024-01-15T19:16:55.800+0800	INFO	raft/config.go:168	ends is [0xc0002ec9a0 0xc0002ec9c0 0xc0002ec9e0]
+2024-01-15T19:16:55.800+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001dcb80 0xc0002f2280 <nil>]
+2024-01-15T19:16:55.800+0800	INFO	raft/config.go:224	ends is [0xc0002ec9a0 0xc0002ec9c0 0xc0002ec9e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002a8f60
+2024-01-15T19:16:55.866+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c7d90 0xc0002e3290 0xc0002e3340]
+2024-01-15T19:16:55.867+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T19:16:55.867+0800	INFO	raft/config.go:261	cfg.endnames is [[A-IpO2wH7TTf_vyoi6u4 qpyUf7tHdfIo6M_EgYtc 7Fh5l7tmg72n3iL4BN5e] [SqRix_imr7_oRp5E5zAu NOiDeiRZ4iibdCCzBzvi MWbo2lmAO0hTT815uaex] [Ubfk-PJFcLvEGobt3BPJ 5fgkjFwtBD34ibaLM0jR ZfwHMedZESZkCb4Fq5Kw]]
+2024-01-15T19:16:55.867+0800	INFO	raft/config.go:261	cfg.endnames is [[A-IpO2wH7TTf_vyoi6u4 qpyUf7tHdfIo6M_EgYtc 7Fh5l7tmg72n3iL4BN5e] [SqRix_imr7_oRp5E5zAu NOiDeiRZ4iibdCCzBzvi MWbo2lmAO0hTT815uaex] [Ubfk-PJFcLvEGobt3BPJ 5fgkjFwtBD34ibaLM0jR ZfwHMedZESZkCb4Fq5Kw]]
+2024-01-15T19:16:55.867+0800	INFO	raft/config.go:261	cfg.endnames is [[A-IpO2wH7TTf_vyoi6u4 qpyUf7tHdfIo6M_EgYtc 7Fh5l7tmg72n3iL4BN5e] [SqRix_imr7_oRp5E5zAu NOiDeiRZ4iibdCCzBzvi MWbo2lmAO0hTT815uaex] [Ubfk-PJFcLvEGobt3BPJ 5fgkjFwtBD34ibaLM0jR ZfwHMedZESZkCb4Fq5Kw]]
+2024-01-15T19:16:56.389+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T19:16:56.910+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1 2]]
+2024-01-15T20:22:10.486+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:22:10.486+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:22:10.486+0800	INFO	raft/config.go:160	endnames is [[oBKdqW4bQX7-YVXVRtWf oG5nxPFna3P2vjhK3wkk ZSSMwCjeOQhYploAgXXK] [] []]
+2024-01-15T20:22:10.486+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T20:22:10.486+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T20:22:10.486+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T20:22:10.522+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 <nil> <nil>]
+2024-01-15T20:22:10.522+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:22:10.522+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:22:10.522+0800	INFO	raft/config.go:160	endnames is [[oBKdqW4bQX7-YVXVRtWf oG5nxPFna3P2vjhK3wkk ZSSMwCjeOQhYploAgXXK] [wPEJ4OGpNwQLvVgF9c0b HNdgtsxH1PSsKXSHe48V zQLU1YsTxk-qvsZE-1W1] []]
+2024-01-15T20:22:10.522+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T20:22:10.522+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T20:22:10.522+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T20:22:10.566+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be6e0 <nil>]
+2024-01-15T20:22:10.566+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:22:10.566+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:22:10.566+0800	INFO	raft/config.go:160	endnames is [[oBKdqW4bQX7-YVXVRtWf oG5nxPFna3P2vjhK3wkk ZSSMwCjeOQhYploAgXXK] [wPEJ4OGpNwQLvVgF9c0b HNdgtsxH1PSsKXSHe48V zQLU1YsTxk-qvsZE-1W1] [5hYD_kdC8pHUqjk01MOr DFLHMWul0RZXcB9zfbDP SsM0K58kKhRzQP3o-eHS]]
+2024-01-15T20:22:10.566+0800	INFO	raft/config.go:168	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0]
+2024-01-15T20:22:10.566+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198200 <nil>]
+2024-01-15T20:22:10.566+0800	INFO	raft/config.go:224	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T20:22:10.611+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be6e0 0xc0000be790]
+2024-01-15T20:22:10.611+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T20:22:10.611+0800	INFO	raft/config.go:261	cfg.endnames is [[oBKdqW4bQX7-YVXVRtWf oG5nxPFna3P2vjhK3wkk ZSSMwCjeOQhYploAgXXK] [wPEJ4OGpNwQLvVgF9c0b HNdgtsxH1PSsKXSHe48V zQLU1YsTxk-qvsZE-1W1] [5hYD_kdC8pHUqjk01MOr DFLHMWul0RZXcB9zfbDP SsM0K58kKhRzQP3o-eHS]]
+2024-01-15T20:22:10.611+0800	INFO	raft/config.go:261	cfg.endnames is [[oBKdqW4bQX7-YVXVRtWf oG5nxPFna3P2vjhK3wkk ZSSMwCjeOQhYploAgXXK] [wPEJ4OGpNwQLvVgF9c0b HNdgtsxH1PSsKXSHe48V zQLU1YsTxk-qvsZE-1W1] [5hYD_kdC8pHUqjk01MOr DFLHMWul0RZXcB9zfbDP SsM0K58kKhRzQP3o-eHS]]
+2024-01-15T20:22:10.611+0800	INFO	raft/config.go:261	cfg.endnames is [[oBKdqW4bQX7-YVXVRtWf oG5nxPFna3P2vjhK3wkk ZSSMwCjeOQhYploAgXXK] [wPEJ4OGpNwQLvVgF9c0b HNdgtsxH1PSsKXSHe48V zQLU1YsTxk-qvsZE-1W1] [5hYD_kdC8pHUqjk01MOr DFLHMWul0RZXcB9zfbDP SsM0K58kKhRzQP3o-eHS]]
+2024-01-15T20:35:59.555+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:35:59.555+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:35:59.555+0800	INFO	raft/config.go:160	endnames is [[-6U7aIcBYR5FYVxKzTHG DIvT2JzwDEGxbYH1L1fP TD9vIlAdL7YR2fA3JDPo] [] []]
+2024-01-15T20:35:59.555+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T20:35:59.555+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T20:35:59.555+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T20:35:59.591+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 <nil> <nil>]
+2024-01-15T20:35:59.591+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:35:59.591+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:35:59.591+0800	INFO	raft/config.go:160	endnames is [[-6U7aIcBYR5FYVxKzTHG DIvT2JzwDEGxbYH1L1fP TD9vIlAdL7YR2fA3JDPo] [1w2Doz0IQEBHLfWG8aei wdlYWq_k7q8IGD_ZB09i IYLHPEOsACm_UyFp8GaS] []]
+2024-01-15T20:35:59.591+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T20:35:59.591+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T20:35:59.591+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T20:35:59.636+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc0000be630 <nil>]
+2024-01-15T20:35:59.636+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:35:59.636+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:35:59.636+0800	INFO	raft/config.go:160	endnames is [[-6U7aIcBYR5FYVxKzTHG DIvT2JzwDEGxbYH1L1fP TD9vIlAdL7YR2fA3JDPo] [1w2Doz0IQEBHLfWG8aei wdlYWq_k7q8IGD_ZB09i IYLHPEOsACm_UyFp8GaS] [DrYCP9WbXVGUnmbwI8WH BLGOI3uLd8kAhQdaA2uq 6PiMZcCzWAwUZ002t7VE]]
+2024-01-15T20:35:59.636+0800	INFO	raft/config.go:168	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0]
+2024-01-15T20:35:59.636+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198200 <nil>]
+2024-01-15T20:35:59.636+0800	INFO	raft/config.go:224	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T20:35:59.680+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc0000be630 0xc0000be6e0]
+2024-01-15T20:35:59.680+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T20:35:59.680+0800	INFO	raft/config.go:261	cfg.endnames is [[-6U7aIcBYR5FYVxKzTHG DIvT2JzwDEGxbYH1L1fP TD9vIlAdL7YR2fA3JDPo] [1w2Doz0IQEBHLfWG8aei wdlYWq_k7q8IGD_ZB09i IYLHPEOsACm_UyFp8GaS] [DrYCP9WbXVGUnmbwI8WH BLGOI3uLd8kAhQdaA2uq 6PiMZcCzWAwUZ002t7VE]]
+2024-01-15T20:35:59.680+0800	INFO	raft/config.go:261	cfg.endnames is [[-6U7aIcBYR5FYVxKzTHG DIvT2JzwDEGxbYH1L1fP TD9vIlAdL7YR2fA3JDPo] [1w2Doz0IQEBHLfWG8aei wdlYWq_k7q8IGD_ZB09i IYLHPEOsACm_UyFp8GaS] [DrYCP9WbXVGUnmbwI8WH BLGOI3uLd8kAhQdaA2uq 6PiMZcCzWAwUZ002t7VE]]
+2024-01-15T20:35:59.680+0800	INFO	raft/config.go:261	cfg.endnames is [[-6U7aIcBYR5FYVxKzTHG DIvT2JzwDEGxbYH1L1fP TD9vIlAdL7YR2fA3JDPo] [1w2Doz0IQEBHLfWG8aei wdlYWq_k7q8IGD_ZB09i IYLHPEOsACm_UyFp8GaS] [DrYCP9WbXVGUnmbwI8WH BLGOI3uLd8kAhQdaA2uq 6PiMZcCzWAwUZ002t7VE]]
+2024-01-15T20:36:00.215+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T20:36:02.723+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T20:36:02.723+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:36:02.723+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:36:02.723+0800	INFO	raft/config.go:160	endnames is [[yjUV83Wc0VfYUmX6QUzC R4V-AxisDd2y2DtAV1Sc H0irz4zZ4xzsJ931xIMq] [] []]
+2024-01-15T20:36:02.723+0800	INFO	raft/config.go:168	ends is [0xc00030ca20 0xc00030ca40 0xc00030ca60]
+2024-01-15T20:36:02.723+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T20:36:02.723+0800	INFO	raft/config.go:224	ends is [0xc00030ca20 0xc00030ca40 0xc00030ca60], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000139200
+2024-01-15T20:36:02.775+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003016b0 <nil> <nil>]
+2024-01-15T20:36:02.775+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:36:02.775+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:36:02.775+0800	INFO	raft/config.go:160	endnames is [[yjUV83Wc0VfYUmX6QUzC R4V-AxisDd2y2DtAV1Sc H0irz4zZ4xzsJ931xIMq] [wknbnGfXzw-YyXyqkVV8 jkDsBgs4BNbOdi_bETkb L7SUJ5gM_nP6ysShLLQB] []]
+2024-01-15T20:36:02.775+0800	INFO	raft/config.go:168	ends is [0xc00030cbe0 0xc00030cc00 0xc00030cc20]
+2024-01-15T20:36:02.775+0800	INFO	raft/config.go:177	cfg.saved is [0xc00030e780 <nil> <nil>]
+2024-01-15T20:36:02.775+0800	INFO	raft/config.go:224	ends is [0xc00030cbe0 0xc00030cc00 0xc00030cc20], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001392c0
+2024-01-15T20:36:02.815+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003016b0 0xc000301760 <nil>]
+2024-01-15T20:36:02.815+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:36:02.815+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:36:02.815+0800	INFO	raft/config.go:160	endnames is [[yjUV83Wc0VfYUmX6QUzC R4V-AxisDd2y2DtAV1Sc H0irz4zZ4xzsJ931xIMq] [wknbnGfXzw-YyXyqkVV8 jkDsBgs4BNbOdi_bETkb L7SUJ5gM_nP6ysShLLQB] [urWTywzf0iC7tmq9OgBY QkRVSbYbYDgGIee1erR9 HQHKuZjNWgbItIDUbtFD]]
+2024-01-15T20:36:02.815+0800	INFO	raft/config.go:168	ends is [0xc00021e8a0 0xc00021e8c0 0xc00021e8e0]
+2024-01-15T20:36:02.815+0800	INFO	raft/config.go:177	cfg.saved is [0xc00030e780 0xc00030e900 <nil>]
+2024-01-15T20:36:02.815+0800	INFO	raft/config.go:224	ends is [0xc00021e8a0 0xc00021e8c0 0xc00021e8e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002463c0
+2024-01-15T20:36:02.860+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003016b0 0xc000301760 0xc0002488f0]
+2024-01-15T20:36:02.860+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T20:36:02.860+0800	INFO	raft/config.go:261	cfg.endnames is [[yjUV83Wc0VfYUmX6QUzC R4V-AxisDd2y2DtAV1Sc H0irz4zZ4xzsJ931xIMq] [wknbnGfXzw-YyXyqkVV8 jkDsBgs4BNbOdi_bETkb L7SUJ5gM_nP6ysShLLQB] [urWTywzf0iC7tmq9OgBY QkRVSbYbYDgGIee1erR9 HQHKuZjNWgbItIDUbtFD]]
+2024-01-15T20:36:02.860+0800	INFO	raft/config.go:261	cfg.endnames is [[yjUV83Wc0VfYUmX6QUzC R4V-AxisDd2y2DtAV1Sc H0irz4zZ4xzsJ931xIMq] [wknbnGfXzw-YyXyqkVV8 jkDsBgs4BNbOdi_bETkb L7SUJ5gM_nP6ysShLLQB] [urWTywzf0iC7tmq9OgBY QkRVSbYbYDgGIee1erR9 HQHKuZjNWgbItIDUbtFD]]
+2024-01-15T20:36:02.860+0800	INFO	raft/config.go:261	cfg.endnames is [[yjUV83Wc0VfYUmX6QUzC R4V-AxisDd2y2DtAV1Sc H0irz4zZ4xzsJ931xIMq] [wknbnGfXzw-YyXyqkVV8 jkDsBgs4BNbOdi_bETkb L7SUJ5gM_nP6ysShLLQB] [urWTywzf0iC7tmq9OgBY QkRVSbYbYDgGIee1erR9 HQHKuZjNWgbItIDUbtFD]]
+2024-01-15T20:36:03.394+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T20:36:03.877+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[4:[2]]
+2024-01-15T20:36:03.877+0800	INFO	raft/config.go:261	cfg.endnames is [[yjUV83Wc0VfYUmX6QUzC R4V-AxisDd2y2DtAV1Sc H0irz4zZ4xzsJ931xIMq] [wknbnGfXzw-YyXyqkVV8 jkDsBgs4BNbOdi_bETkb L7SUJ5gM_nP6ysShLLQB] [urWTywzf0iC7tmq9OgBY QkRVSbYbYDgGIee1erR9 HQHKuZjNWgbItIDUbtFD]]
+2024-01-15T20:36:04.357+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1] 4:[2]]
+2024-01-15T20:39:59.669+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:39:59.669+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:39:59.669+0800	INFO	raft/config.go:160	endnames is [[esRJUUgJu-XE6aSjn68X WDu6vuQ10r6Ed22qrkdd QlBiXnnJ4Yx2ntwjMrTL] [] []]
+2024-01-15T20:39:59.669+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T20:39:59.669+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T20:39:59.669+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T20:39:59.757+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 <nil> <nil>]
+2024-01-15T20:39:59.757+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:39:59.757+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:39:59.757+0800	INFO	raft/config.go:160	endnames is [[esRJUUgJu-XE6aSjn68X WDu6vuQ10r6Ed22qrkdd QlBiXnnJ4Yx2ntwjMrTL] [sQZje4TqlYhcJmJCjpsV lameQrpNTlhrPlQ2vqUB 4X3wCSSkgC6venGr72Ij] []]
+2024-01-15T20:39:59.757+0800	INFO	raft/config.go:168	ends is [0xc00021c120 0xc00021c140 0xc00021c160]
+2024-01-15T20:39:59.757+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T20:39:59.757+0800	INFO	raft/config.go:224	ends is [0xc00021c120 0xc00021c140 0xc00021c160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000234000
+2024-01-15T20:39:59.793+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc00023a000 <nil>]
+2024-01-15T20:39:59.793+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:39:59.793+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:39:59.793+0800	INFO	raft/config.go:160	endnames is [[esRJUUgJu-XE6aSjn68X WDu6vuQ10r6Ed22qrkdd QlBiXnnJ4Yx2ntwjMrTL] [sQZje4TqlYhcJmJCjpsV lameQrpNTlhrPlQ2vqUB 4X3wCSSkgC6venGr72Ij] [S11eCYotTaPP9r5wxP_i 5kz062wjla5GuqNUM5iy 5qFt2uHpPYC1mFakFZqf]]
+2024-01-15T20:39:59.793+0800	INFO	raft/config.go:168	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0]
+2024-01-15T20:39:59.793+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000218180 <nil>]
+2024-01-15T20:39:59.793+0800	INFO	raft/config.go:224	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T20:39:59.838+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc00023a000 0xc0000be6e0]
+2024-01-15T20:39:59.838+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T20:39:59.838+0800	INFO	raft/config.go:261	cfg.endnames is [[esRJUUgJu-XE6aSjn68X WDu6vuQ10r6Ed22qrkdd QlBiXnnJ4Yx2ntwjMrTL] [sQZje4TqlYhcJmJCjpsV lameQrpNTlhrPlQ2vqUB 4X3wCSSkgC6venGr72Ij] [S11eCYotTaPP9r5wxP_i 5kz062wjla5GuqNUM5iy 5qFt2uHpPYC1mFakFZqf]]
+2024-01-15T20:39:59.838+0800	INFO	raft/config.go:261	cfg.endnames is [[esRJUUgJu-XE6aSjn68X WDu6vuQ10r6Ed22qrkdd QlBiXnnJ4Yx2ntwjMrTL] [sQZje4TqlYhcJmJCjpsV lameQrpNTlhrPlQ2vqUB 4X3wCSSkgC6venGr72Ij] [S11eCYotTaPP9r5wxP_i 5kz062wjla5GuqNUM5iy 5qFt2uHpPYC1mFakFZqf]]
+2024-01-15T20:39:59.838+0800	INFO	raft/config.go:261	cfg.endnames is [[esRJUUgJu-XE6aSjn68X WDu6vuQ10r6Ed22qrkdd QlBiXnnJ4Yx2ntwjMrTL] [sQZje4TqlYhcJmJCjpsV lameQrpNTlhrPlQ2vqUB 4X3wCSSkgC6venGr72Ij] [S11eCYotTaPP9r5wxP_i 5kz062wjla5GuqNUM5iy 5qFt2uHpPYC1mFakFZqf]]
+2024-01-15T20:40:00.299+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T20:40:02.846+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T20:40:02.846+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:40:02.847+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:40:02.847+0800	INFO	raft/config.go:160	endnames is [[zlJoGO5bOHpX7sxSekGn wXipodgC6t2nHitGyfmn QBdk2qlUZZrnplKOoAnd] [] []]
+2024-01-15T20:40:02.847+0800	INFO	raft/config.go:168	ends is [0xc0002d32a0 0xc0002d32c0 0xc0002d32e0]
+2024-01-15T20:40:02.847+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T20:40:02.847+0800	INFO	raft/config.go:224	ends is [0xc0002d32a0 0xc0002d32c0 0xc0002d32e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00028d380
+2024-01-15T20:40:02.894+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0002e4370 <nil> <nil>]
+2024-01-15T20:40:02.894+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:40:02.894+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:40:02.894+0800	INFO	raft/config.go:160	endnames is [[zlJoGO5bOHpX7sxSekGn wXipodgC6t2nHitGyfmn QBdk2qlUZZrnplKOoAnd] [aYJEHm1WdbQgUpJEHs-X _1mnU_hPDxA-EHfuwgGy 7MWgtiiGhUs5MjJlB0EN] []]
+2024-01-15T20:40:02.894+0800	INFO	raft/config.go:168	ends is [0xc0003831a0 0xc0003831c0 0xc0003831e0]
+2024-01-15T20:40:02.894+0800	INFO	raft/config.go:177	cfg.saved is [0xc0002d93c0 <nil> <nil>]
+2024-01-15T20:40:02.894+0800	INFO	raft/config.go:224	ends is [0xc0003831a0 0xc0003831c0 0xc0003831e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000143200
+2024-01-15T20:40:02.936+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0002e4370 0xc00017be40 <nil>]
+2024-01-15T20:40:02.936+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:40:02.936+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:40:02.936+0800	INFO	raft/config.go:160	endnames is [[zlJoGO5bOHpX7sxSekGn wXipodgC6t2nHitGyfmn QBdk2qlUZZrnplKOoAnd] [aYJEHm1WdbQgUpJEHs-X _1mnU_hPDxA-EHfuwgGy 7MWgtiiGhUs5MjJlB0EN] [C5PA4TIhf8hxQ9v98kbY SFANmjCDlVDvoAN6nF00 VTa4kyJvrUkXoUz55lzb]]
+2024-01-15T20:40:02.936+0800	INFO	raft/config.go:168	ends is [0xc000383360 0xc000383380 0xc0003833a0]
+2024-01-15T20:40:02.936+0800	INFO	raft/config.go:177	cfg.saved is [0xc0002d93c0 0xc000387100 <nil>]
+2024-01-15T20:40:02.936+0800	INFO	raft/config.go:224	ends is [0xc000383360 0xc000383380 0xc0003833a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001432c0
+2024-01-15T20:40:02.980+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0002e4370 0xc00017be40 0xc00017bef0]
+2024-01-15T20:40:02.981+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T20:40:02.981+0800	INFO	raft/config.go:261	cfg.endnames is [[zlJoGO5bOHpX7sxSekGn wXipodgC6t2nHitGyfmn QBdk2qlUZZrnplKOoAnd] [aYJEHm1WdbQgUpJEHs-X _1mnU_hPDxA-EHfuwgGy 7MWgtiiGhUs5MjJlB0EN] [C5PA4TIhf8hxQ9v98kbY SFANmjCDlVDvoAN6nF00 VTa4kyJvrUkXoUz55lzb]]
+2024-01-15T20:40:02.981+0800	INFO	raft/config.go:261	cfg.endnames is [[zlJoGO5bOHpX7sxSekGn wXipodgC6t2nHitGyfmn QBdk2qlUZZrnplKOoAnd] [aYJEHm1WdbQgUpJEHs-X _1mnU_hPDxA-EHfuwgGy 7MWgtiiGhUs5MjJlB0EN] [C5PA4TIhf8hxQ9v98kbY SFANmjCDlVDvoAN6nF00 VTa4kyJvrUkXoUz55lzb]]
+2024-01-15T20:40:02.981+0800	INFO	raft/config.go:261	cfg.endnames is [[zlJoGO5bOHpX7sxSekGn wXipodgC6t2nHitGyfmn QBdk2qlUZZrnplKOoAnd] [aYJEHm1WdbQgUpJEHs-X _1mnU_hPDxA-EHfuwgGy 7MWgtiiGhUs5MjJlB0EN] [C5PA4TIhf8hxQ9v98kbY SFANmjCDlVDvoAN6nF00 VTa4kyJvrUkXoUz55lzb]]
+2024-01-15T20:40:03.486+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T20:40:03.998+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[4:[2]]
+2024-01-15T20:40:03.998+0800	INFO	raft/config.go:261	cfg.endnames is [[zlJoGO5bOHpX7sxSekGn wXipodgC6t2nHitGyfmn QBdk2qlUZZrnplKOoAnd] [aYJEHm1WdbQgUpJEHs-X _1mnU_hPDxA-EHfuwgGy 7MWgtiiGhUs5MjJlB0EN] [C5PA4TIhf8hxQ9v98kbY SFANmjCDlVDvoAN6nF00 VTa4kyJvrUkXoUz55lzb]]
+2024-01-15T20:40:04.491+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1] 4:[2]]
+2024-01-15T20:48:40.593+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:48:40.593+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:48:40.593+0800	INFO	raft/config.go:160	endnames is [[z3Vwti1LDvFxILTJrHxq agtz9Vgf_GBdylZXkyrx aCQsk_-HHwE7qKiG7Qdt] [] []]
+2024-01-15T20:48:40.593+0800	INFO	raft/config.go:168	ends is [0xc0001e22a0 0xc0001e22c0 0xc0001e22e0]
+2024-01-15T20:48:40.593+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T20:48:40.593+0800	INFO	raft/config.go:224	ends is [0xc0001e22a0 0xc0001e22c0 0xc0001e22e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001823c0
+2024-01-15T20:48:41.342+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c4580 <nil> <nil>]
+2024-01-15T20:48:41.342+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:48:41.342+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:48:41.342+0800	INFO	raft/config.go:160	endnames is [[z3Vwti1LDvFxILTJrHxq agtz9Vgf_GBdylZXkyrx aCQsk_-HHwE7qKiG7Qdt] [0KPd6bm_7hCYQ_i-fUwA Bb3CEXWjFmHNgz3j9M-V VSr9g6_twDSloGiTP3h1] []]
+2024-01-15T20:48:41.342+0800	INFO	raft/config.go:168	ends is [0xc00007e140 0xc00007e160 0xc00007e180]
+2024-01-15T20:48:41.342+0800	INFO	raft/config.go:177	cfg.saved is [0xc000230000 <nil> <nil>]
+2024-01-15T20:48:41.342+0800	INFO	raft/config.go:224	ends is [0xc00007e140 0xc00007e160 0xc00007e180], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c0c0
+2024-01-15T20:48:41.379+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c4580 0xc0000a0000 <nil>]
+2024-01-15T20:48:41.379+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:48:41.379+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:48:41.379+0800	INFO	raft/config.go:160	endnames is [[z3Vwti1LDvFxILTJrHxq agtz9Vgf_GBdylZXkyrx aCQsk_-HHwE7qKiG7Qdt] [0KPd6bm_7hCYQ_i-fUwA Bb3CEXWjFmHNgz3j9M-V VSr9g6_twDSloGiTP3h1] [bqRHGsv3XBX6UHgWf7ZN JyKYseAkyuO3P-7jharx tGVc2aIL60gKz--dwv4M]]
+2024-01-15T20:48:41.379+0800	INFO	raft/config.go:168	ends is [0xc0002a01a0 0xc0002a01c0 0xc0002a01e0]
+2024-01-15T20:48:41.379+0800	INFO	raft/config.go:177	cfg.saved is [0xc000230000 0xc000012200 <nil>]
+2024-01-15T20:48:41.379+0800	INFO	raft/config.go:224	ends is [0xc0002a01a0 0xc0002a01c0 0xc0002a01e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002b0120
+2024-01-15T20:48:41.423+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001c4580 0xc0000a0000 0xc0002ca0b0]
+2024-01-15T20:48:41.423+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T20:48:41.423+0800	INFO	raft/config.go:261	cfg.endnames is [[z3Vwti1LDvFxILTJrHxq agtz9Vgf_GBdylZXkyrx aCQsk_-HHwE7qKiG7Qdt] [0KPd6bm_7hCYQ_i-fUwA Bb3CEXWjFmHNgz3j9M-V VSr9g6_twDSloGiTP3h1] [bqRHGsv3XBX6UHgWf7ZN JyKYseAkyuO3P-7jharx tGVc2aIL60gKz--dwv4M]]
+2024-01-15T20:48:41.423+0800	INFO	raft/config.go:261	cfg.endnames is [[z3Vwti1LDvFxILTJrHxq agtz9Vgf_GBdylZXkyrx aCQsk_-HHwE7qKiG7Qdt] [0KPd6bm_7hCYQ_i-fUwA Bb3CEXWjFmHNgz3j9M-V VSr9g6_twDSloGiTP3h1] [bqRHGsv3XBX6UHgWf7ZN JyKYseAkyuO3P-7jharx tGVc2aIL60gKz--dwv4M]]
+2024-01-15T20:48:41.423+0800	INFO	raft/config.go:261	cfg.endnames is [[z3Vwti1LDvFxILTJrHxq agtz9Vgf_GBdylZXkyrx aCQsk_-HHwE7qKiG7Qdt] [0KPd6bm_7hCYQ_i-fUwA Bb3CEXWjFmHNgz3j9M-V VSr9g6_twDSloGiTP3h1] [bqRHGsv3XBX6UHgWf7ZN JyKYseAkyuO3P-7jharx tGVc2aIL60gKz--dwv4M]]
+2024-01-15T20:48:41.962+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T20:48:44.530+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T20:48:44.530+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:48:44.530+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:48:44.530+0800	INFO	raft/config.go:160	endnames is [[W_nVWD0BCzYegEypJEKY ImEga0K5X9tPeuoDFEqA wff4C0dhaIbLRvgPBm7A] [] []]
+2024-01-15T20:48:44.530+0800	INFO	raft/config.go:168	ends is [0xc0003c07c0 0xc0003c07e0 0xc0003c0800]
+2024-01-15T20:48:44.530+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T20:48:44.530+0800	INFO	raft/config.go:224	ends is [0xc0003c07c0 0xc0003c07e0 0xc0003c0800], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003a2ae0
+2024-01-15T20:48:44.579+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003bcc60 <nil> <nil>]
+2024-01-15T20:48:44.579+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:48:44.579+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:48:44.579+0800	INFO	raft/config.go:160	endnames is [[W_nVWD0BCzYegEypJEKY ImEga0K5X9tPeuoDFEqA wff4C0dhaIbLRvgPBm7A] [HLwp8VdDQ6CZCoWGBibu 1StcXacbxMDIzcLRoa4E Y7tFB8ocr8_gHR49oVCh] []]
+2024-01-15T20:48:44.579+0800	INFO	raft/config.go:168	ends is [0xc000310180 0xc0003101a0 0xc0003101c0]
+2024-01-15T20:48:44.579+0800	INFO	raft/config.go:177	cfg.saved is [0xc0003c6740 <nil> <nil>]
+2024-01-15T20:48:44.579+0800	INFO	raft/config.go:224	ends is [0xc000310180 0xc0003101a0 0xc0003101c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002b0d80
+2024-01-15T20:48:44.621+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003bcc60 0xc00030a6e0 <nil>]
+2024-01-15T20:48:44.621+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T20:48:44.621+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T20:48:44.621+0800	INFO	raft/config.go:160	endnames is [[W_nVWD0BCzYegEypJEKY ImEga0K5X9tPeuoDFEqA wff4C0dhaIbLRvgPBm7A] [HLwp8VdDQ6CZCoWGBibu 1StcXacbxMDIzcLRoa4E Y7tFB8ocr8_gHR49oVCh] [qITc2I3qeaKazIBp7vqI Tw1KCqwWgu32MALDswQ6 GhbCm26TTGrQX-_G39qO]]
+2024-01-15T20:48:44.621+0800	INFO	raft/config.go:168	ends is [0xc0003c0980 0xc0003c09a0 0xc0003c09c0]
+2024-01-15T20:48:44.621+0800	INFO	raft/config.go:177	cfg.saved is [0xc0003c6740 0xc0002fb840 <nil>]
+2024-01-15T20:48:44.621+0800	INFO	raft/config.go:224	ends is [0xc0003c0980 0xc0003c09a0 0xc0003c09c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0003a2d20
+2024-01-15T20:48:44.665+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0003bcc60 0xc00030a6e0 0xc0003bcf20]
+2024-01-15T20:48:44.665+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T20:48:44.665+0800	INFO	raft/config.go:261	cfg.endnames is [[W_nVWD0BCzYegEypJEKY ImEga0K5X9tPeuoDFEqA wff4C0dhaIbLRvgPBm7A] [HLwp8VdDQ6CZCoWGBibu 1StcXacbxMDIzcLRoa4E Y7tFB8ocr8_gHR49oVCh] [qITc2I3qeaKazIBp7vqI Tw1KCqwWgu32MALDswQ6 GhbCm26TTGrQX-_G39qO]]
+2024-01-15T20:48:44.665+0800	INFO	raft/config.go:261	cfg.endnames is [[W_nVWD0BCzYegEypJEKY ImEga0K5X9tPeuoDFEqA wff4C0dhaIbLRvgPBm7A] [HLwp8VdDQ6CZCoWGBibu 1StcXacbxMDIzcLRoa4E Y7tFB8ocr8_gHR49oVCh] [qITc2I3qeaKazIBp7vqI Tw1KCqwWgu32MALDswQ6 GhbCm26TTGrQX-_G39qO]]
+2024-01-15T20:48:44.665+0800	INFO	raft/config.go:261	cfg.endnames is [[W_nVWD0BCzYegEypJEKY ImEga0K5X9tPeuoDFEqA wff4C0dhaIbLRvgPBm7A] [HLwp8VdDQ6CZCoWGBibu 1StcXacbxMDIzcLRoa4E Y7tFB8ocr8_gHR49oVCh] [qITc2I3qeaKazIBp7vqI Tw1KCqwWgu32MALDswQ6 GhbCm26TTGrQX-_G39qO]]
+2024-01-15T20:48:45.185+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T20:48:45.637+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[0]]
+2024-01-15T20:48:45.637+0800	INFO	raft/config.go:261	cfg.endnames is [[W_nVWD0BCzYegEypJEKY ImEga0K5X9tPeuoDFEqA wff4C0dhaIbLRvgPBm7A] [HLwp8VdDQ6CZCoWGBibu 1StcXacbxMDIzcLRoa4E Y7tFB8ocr8_gHR49oVCh] [qITc2I3qeaKazIBp7vqI Tw1KCqwWgu32MALDswQ6 GhbCm26TTGrQX-_G39qO]]
+2024-01-15T20:48:46.132+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2] 5:[0]]
+2024-01-15T21:03:56.479+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:03:56.479+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:03:56.479+0800	INFO	raft/config.go:160	endnames is [[wEuk8XIw3GXPAca3xSxf oAX8RzqXhgA30hyC3_9c FBBCTwtL0tXee0B8bHKM] [] []]
+2024-01-15T21:03:56.479+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T21:03:56.479+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:03:56.479+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T21:03:56.935+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 <nil> <nil>]
+2024-01-15T21:03:56.935+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:03:56.935+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:03:56.935+0800	INFO	raft/config.go:160	endnames is [[wEuk8XIw3GXPAca3xSxf oAX8RzqXhgA30hyC3_9c FBBCTwtL0tXee0B8bHKM] [EabRJZ3Xnw7cmvT_bvUH Keq3sLkmKs0HjfQ8fXFJ GEcs-cvvIVecO4BHUjfD] []]
+2024-01-15T21:03:56.935+0800	INFO	raft/config.go:168	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0]
+2024-01-15T21:03:56.935+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T21:03:56.935+0800	INFO	raft/config.go:224	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T21:03:56.980+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be790 <nil>]
+2024-01-15T21:03:56.980+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:03:56.980+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:03:56.980+0800	INFO	raft/config.go:160	endnames is [[wEuk8XIw3GXPAca3xSxf oAX8RzqXhgA30hyC3_9c FBBCTwtL0tXee0B8bHKM] [EabRJZ3Xnw7cmvT_bvUH Keq3sLkmKs0HjfQ8fXFJ GEcs-cvvIVecO4BHUjfD] [zdlwh1idmhorhhKdZFBJ gnkyV0oSvYXfOquNJeSr kl8-X3Na-0NH9SvehSYx]]
+2024-01-15T21:03:56.980+0800	INFO	raft/config.go:168	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0]
+2024-01-15T21:03:56.980+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198380 <nil>]
+2024-01-15T21:03:56.980+0800	INFO	raft/config.go:224	ends is [0xc00007e660 0xc00007e680 0xc00007e6a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c6c0
+2024-01-15T21:03:57.024+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be790 0xc0000be840]
+2024-01-15T21:03:57.024+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:03:57.024+0800	INFO	raft/config.go:261	cfg.endnames is [[wEuk8XIw3GXPAca3xSxf oAX8RzqXhgA30hyC3_9c FBBCTwtL0tXee0B8bHKM] [EabRJZ3Xnw7cmvT_bvUH Keq3sLkmKs0HjfQ8fXFJ GEcs-cvvIVecO4BHUjfD] [zdlwh1idmhorhhKdZFBJ gnkyV0oSvYXfOquNJeSr kl8-X3Na-0NH9SvehSYx]]
+2024-01-15T21:03:57.024+0800	INFO	raft/config.go:261	cfg.endnames is [[wEuk8XIw3GXPAca3xSxf oAX8RzqXhgA30hyC3_9c FBBCTwtL0tXee0B8bHKM] [EabRJZ3Xnw7cmvT_bvUH Keq3sLkmKs0HjfQ8fXFJ GEcs-cvvIVecO4BHUjfD] [zdlwh1idmhorhhKdZFBJ gnkyV0oSvYXfOquNJeSr kl8-X3Na-0NH9SvehSYx]]
+2024-01-15T21:03:57.024+0800	INFO	raft/config.go:261	cfg.endnames is [[wEuk8XIw3GXPAca3xSxf oAX8RzqXhgA30hyC3_9c FBBCTwtL0tXee0B8bHKM] [EabRJZ3Xnw7cmvT_bvUH Keq3sLkmKs0HjfQ8fXFJ GEcs-cvvIVecO4BHUjfD] [zdlwh1idmhorhhKdZFBJ gnkyV0oSvYXfOquNJeSr kl8-X3Na-0NH9SvehSYx]]
+2024-01-15T21:03:57.547+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:04:00.061+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:04:00.061+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:00.061+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:00.061+0800	INFO	raft/config.go:160	endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [] []]
+2024-01-15T21:04:00.061+0800	INFO	raft/config.go:168	ends is [0xc00011ffc0 0xc00011ffe0 0xc000382000]
+2024-01-15T21:04:00.061+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:04:00.061+0800	INFO	raft/config.go:224	ends is [0xc00011ffc0 0xc00011ffe0 0xc000382000], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000124cc0
+2024-01-15T21:04:00.259+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000160a50 <nil> <nil>]
+2024-01-15T21:04:00.259+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:00.259+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:00.259+0800	INFO	raft/config.go:160	endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] []]
+2024-01-15T21:04:00.259+0800	INFO	raft/config.go:168	ends is [0xc0003250c0 0xc0003250e0 0xc000325100]
+2024-01-15T21:04:00.259+0800	INFO	raft/config.go:177	cfg.saved is [0xc00015b500 <nil> <nil>]
+2024-01-15T21:04:00.259+0800	INFO	raft/config.go:224	ends is [0xc0003250c0 0xc0003250e0 0xc000325100], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002a9ec0
+2024-01-15T21:04:00.314+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000160a50 0xc0003348f0 <nil>]
+2024-01-15T21:04:00.314+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:00.314+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:00.314+0800	INFO	raft/config.go:160	endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] [y-bDepuv82wE0zbNEi0P obZBTTeTI1ZQ3ewlV1-S -Hs4Xr2bAUNM6YAK7jWV]]
+2024-01-15T21:04:00.314+0800	INFO	raft/config.go:168	ends is [0xc000325280 0xc0003252a0 0xc0003252c0]
+2024-01-15T21:04:00.314+0800	INFO	raft/config.go:177	cfg.saved is [0xc00015b500 0xc000336840 <nil>]
+2024-01-15T21:04:00.314+0800	INFO	raft/config.go:224	ends is [0xc000325280 0xc0003252a0 0xc0003252c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002a9f80
+2024-01-15T21:04:00.375+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000160a50 0xc0003348f0 0xc0003349a0]
+2024-01-15T21:04:00.375+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:04:00.375+0800	INFO	raft/config.go:261	cfg.endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] [y-bDepuv82wE0zbNEi0P obZBTTeTI1ZQ3ewlV1-S -Hs4Xr2bAUNM6YAK7jWV]]
+2024-01-15T21:04:00.375+0800	INFO	raft/config.go:261	cfg.endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] [y-bDepuv82wE0zbNEi0P obZBTTeTI1ZQ3ewlV1-S -Hs4Xr2bAUNM6YAK7jWV]]
+2024-01-15T21:04:00.375+0800	INFO	raft/config.go:261	cfg.endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] [y-bDepuv82wE0zbNEi0P obZBTTeTI1ZQ3ewlV1-S -Hs4Xr2bAUNM6YAK7jWV]]
+2024-01-15T21:04:00.894+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:04:01.422+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T21:04:01.422+0800	INFO	raft/config.go:261	cfg.endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] [y-bDepuv82wE0zbNEi0P obZBTTeTI1ZQ3ewlV1-S -Hs4Xr2bAUNM6YAK7jWV]]
+2024-01-15T21:04:01.919+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T21:04:03.920+0800	INFO	raft/config.go:261	cfg.endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] [y-bDepuv82wE0zbNEi0P obZBTTeTI1ZQ3ewlV1-S -Hs4Xr2bAUNM6YAK7jWV]]
+2024-01-15T21:04:04.447+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:04:04.969+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:04:05.500+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[4:[1]]
+2024-01-15T21:04:05.500+0800	INFO	raft/config.go:261	cfg.endnames is [[kQ2qm1ITBLgOUd81A2dP uGpQJsDmaf2y9sr3Gw-l OE1G4F0F6UrlpPxZoega] [xqfNzacPmbQwodmDjz2i fM-PhqYYoqgVWNfWecn_ pAKOPNmZs5-zVqPWlrSw] [y-bDepuv82wE0zbNEi0P obZBTTeTI1ZQ3ewlV1-S -Hs4Xr2bAUNM6YAK7jWV]]
+2024-01-15T21:04:05.956+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[4:[1]]
+2024-01-15T21:04:26.952+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:26.952+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:26.952+0800	INFO	raft/config.go:160	endnames is [[97we-h42BeG5DIzOyzPP Etv7Kq6rU0IhMvJtcnxz GvThkHJucI2QKypobFgS] [] []]
+2024-01-15T21:04:26.952+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T21:04:26.952+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:04:26.952+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T21:04:27.053+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 <nil> <nil>]
+2024-01-15T21:04:27.053+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:27.053+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:27.053+0800	INFO	raft/config.go:160	endnames is [[97we-h42BeG5DIzOyzPP Etv7Kq6rU0IhMvJtcnxz GvThkHJucI2QKypobFgS] [aqWNh54c5IJc6FzOnliv CyxFrDTLdq1m0HdcX21V Munk1iM7dPAo2s63f7EJ] []]
+2024-01-15T21:04:27.053+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T21:04:27.053+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T21:04:27.053+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T21:04:27.129+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be6e0 <nil>]
+2024-01-15T21:04:27.129+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:27.129+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:27.129+0800	INFO	raft/config.go:160	endnames is [[97we-h42BeG5DIzOyzPP Etv7Kq6rU0IhMvJtcnxz GvThkHJucI2QKypobFgS] [aqWNh54c5IJc6FzOnliv CyxFrDTLdq1m0HdcX21V Munk1iM7dPAo2s63f7EJ] [C5gMfurvUg5dEcS-OVM_ AMQJ0cR0A5oaDP8LYEk8 ldqG5Kz4BafUx-FsTLVT]]
+2024-01-15T21:04:27.130+0800	INFO	raft/config.go:168	ends is [0xc000294120 0xc000294140 0xc000294160]
+2024-01-15T21:04:27.130+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198200 <nil>]
+2024-01-15T21:04:27.130+0800	INFO	raft/config.go:224	ends is [0xc000294120 0xc000294140 0xc000294160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002b0000
+2024-01-15T21:04:27.185+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be6e0 0xc0002bc000]
+2024-01-15T21:04:27.185+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:04:27.185+0800	INFO	raft/config.go:261	cfg.endnames is [[97we-h42BeG5DIzOyzPP Etv7Kq6rU0IhMvJtcnxz GvThkHJucI2QKypobFgS] [aqWNh54c5IJc6FzOnliv CyxFrDTLdq1m0HdcX21V Munk1iM7dPAo2s63f7EJ] [C5gMfurvUg5dEcS-OVM_ AMQJ0cR0A5oaDP8LYEk8 ldqG5Kz4BafUx-FsTLVT]]
+2024-01-15T21:04:27.185+0800	INFO	raft/config.go:261	cfg.endnames is [[97we-h42BeG5DIzOyzPP Etv7Kq6rU0IhMvJtcnxz GvThkHJucI2QKypobFgS] [aqWNh54c5IJc6FzOnliv CyxFrDTLdq1m0HdcX21V Munk1iM7dPAo2s63f7EJ] [C5gMfurvUg5dEcS-OVM_ AMQJ0cR0A5oaDP8LYEk8 ldqG5Kz4BafUx-FsTLVT]]
+2024-01-15T21:04:27.185+0800	INFO	raft/config.go:261	cfg.endnames is [[97we-h42BeG5DIzOyzPP Etv7Kq6rU0IhMvJtcnxz GvThkHJucI2QKypobFgS] [aqWNh54c5IJc6FzOnliv CyxFrDTLdq1m0HdcX21V Munk1iM7dPAo2s63f7EJ] [C5gMfurvUg5dEcS-OVM_ AMQJ0cR0A5oaDP8LYEk8 ldqG5Kz4BafUx-FsTLVT]]
+2024-01-15T21:04:27.719+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:04:30.319+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:04:30.320+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:30.320+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:30.320+0800	INFO	raft/config.go:160	endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [] []]
+2024-01-15T21:04:30.320+0800	INFO	raft/config.go:168	ends is [0xc000167280 0xc0001672a0 0xc0001672c0]
+2024-01-15T21:04:30.320+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:04:30.320+0800	INFO	raft/config.go:224	ends is [0xc000167280 0xc0001672a0 0xc0001672c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000125380
+2024-01-15T21:04:30.400+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000178370 <nil> <nil>]
+2024-01-15T21:04:30.400+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:30.400+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:30.401+0800	INFO	raft/config.go:160	endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] []]
+2024-01-15T21:04:30.401+0800	INFO	raft/config.go:168	ends is [0xc000237420 0xc000237440 0xc000237460]
+2024-01-15T21:04:30.401+0800	INFO	raft/config.go:177	cfg.saved is [0xc00016d3c0 <nil> <nil>]
+2024-01-15T21:04:30.401+0800	INFO	raft/config.go:224	ends is [0xc000237420 0xc000237440 0xc000237460], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002148a0
+2024-01-15T21:04:30.445+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000178370 0xc000221ad0 <nil>]
+2024-01-15T21:04:30.445+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:04:30.445+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:04:30.445+0800	INFO	raft/config.go:160	endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] [CG81FcZmt3G1g_HKhLaW e_ffCN1DCv2gubehSOoW sUdfzC-yg_QrY_ioV4Pl]]
+2024-01-15T21:04:30.445+0800	INFO	raft/config.go:168	ends is [0xc00007e980 0xc00007e9a0 0xc00007e9c0]
+2024-01-15T21:04:30.445+0800	INFO	raft/config.go:177	cfg.saved is [0xc00016d3c0 0xc00024e540 <nil>]
+2024-01-15T21:04:30.445+0800	INFO	raft/config.go:224	ends is [0xc00007e980 0xc00007e9a0 0xc00007e9c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c840
+2024-01-15T21:04:30.490+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000178370 0xc000221ad0 0xc0000bec60]
+2024-01-15T21:04:30.490+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:04:30.490+0800	INFO	raft/config.go:261	cfg.endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] [CG81FcZmt3G1g_HKhLaW e_ffCN1DCv2gubehSOoW sUdfzC-yg_QrY_ioV4Pl]]
+2024-01-15T21:04:30.490+0800	INFO	raft/config.go:261	cfg.endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] [CG81FcZmt3G1g_HKhLaW e_ffCN1DCv2gubehSOoW sUdfzC-yg_QrY_ioV4Pl]]
+2024-01-15T21:04:30.490+0800	INFO	raft/config.go:261	cfg.endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] [CG81FcZmt3G1g_HKhLaW e_ffCN1DCv2gubehSOoW sUdfzC-yg_QrY_ioV4Pl]]
+2024-01-15T21:04:30.987+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:04:31.482+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[1]]
+2024-01-15T21:04:31.482+0800	INFO	raft/config.go:261	cfg.endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] [CG81FcZmt3G1g_HKhLaW e_ffCN1DCv2gubehSOoW sUdfzC-yg_QrY_ioV4Pl]]
+2024-01-15T21:04:31.937+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T21:04:33.938+0800	INFO	raft/config.go:261	cfg.endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] [CG81FcZmt3G1g_HKhLaW e_ffCN1DCv2gubehSOoW sUdfzC-yg_QrY_ioV4Pl]]
+2024-01-15T21:04:34.480+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:04:35.004+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:04:35.502+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:04:36.047+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:04:36.511+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[4:[1]]
+2024-01-15T21:04:36.511+0800	INFO	raft/config.go:261	cfg.endnames is [[Z26nN9abKrqbmF3_6RCc d3nAiGIzIZwv5AVuxjGz xCbgBfhLz5ne84D1hm-m] [TtbsWfQ0eiiItv4hArSP 6sCxjgyOe0Hiqw-yLGRX qvb5kTs89WAGFC9f3b_O] [CG81FcZmt3G1g_HKhLaW e_ffCN1DCv2gubehSOoW sUdfzC-yg_QrY_ioV4Pl]]
+2024-01-15T21:04:37.012+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2] 4:[1]]
+2024-01-15T21:05:16.294+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:05:16.294+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:05:16.294+0800	INFO	raft/config.go:160	endnames is [[bTa3V-IsbFLsLnN6bDSI iMFpFa8t7vzN7PMt609D f9jTZfacEvjtJZktpE-s] [] []]
+2024-01-15T21:05:16.294+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T21:05:16.294+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:05:16.294+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T21:05:16.342+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 <nil> <nil>]
+2024-01-15T21:05:16.342+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:05:16.342+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:05:16.342+0800	INFO	raft/config.go:160	endnames is [[bTa3V-IsbFLsLnN6bDSI iMFpFa8t7vzN7PMt609D f9jTZfacEvjtJZktpE-s] [ppHMel9dXy_8cLG8iIYb LNCZJ8zXJf2UfHWzX5If 9XRHodvvK4MlWrnzJO3l] []]
+2024-01-15T21:05:16.342+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T21:05:16.342+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T21:05:16.342+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T21:05:16.398+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc0000be630 <nil>]
+2024-01-15T21:05:16.398+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:05:16.398+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:05:16.398+0800	INFO	raft/config.go:160	endnames is [[bTa3V-IsbFLsLnN6bDSI iMFpFa8t7vzN7PMt609D f9jTZfacEvjtJZktpE-s] [ppHMel9dXy_8cLG8iIYb LNCZJ8zXJf2UfHWzX5If 9XRHodvvK4MlWrnzJO3l] [P8uYcDzg6wQMyzjX7gpd iXwyv3sU4AKOlmONlpvK QHkpfr73AEbBacey12n_]]
+2024-01-15T21:05:16.398+0800	INFO	raft/config.go:168	ends is [0xc000210140 0xc000210160 0xc000210180]
+2024-01-15T21:05:16.398+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198200 <nil>]
+2024-01-15T21:05:16.398+0800	INFO	raft/config.go:224	ends is [0xc000210140 0xc000210160 0xc000210180], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00023a000
+2024-01-15T21:05:16.454+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be580 0xc0000be630 0xc00023e000]
+2024-01-15T21:05:16.454+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:05:16.454+0800	INFO	raft/config.go:261	cfg.endnames is [[bTa3V-IsbFLsLnN6bDSI iMFpFa8t7vzN7PMt609D f9jTZfacEvjtJZktpE-s] [ppHMel9dXy_8cLG8iIYb LNCZJ8zXJf2UfHWzX5If 9XRHodvvK4MlWrnzJO3l] [P8uYcDzg6wQMyzjX7gpd iXwyv3sU4AKOlmONlpvK QHkpfr73AEbBacey12n_]]
+2024-01-15T21:05:16.454+0800	INFO	raft/config.go:261	cfg.endnames is [[bTa3V-IsbFLsLnN6bDSI iMFpFa8t7vzN7PMt609D f9jTZfacEvjtJZktpE-s] [ppHMel9dXy_8cLG8iIYb LNCZJ8zXJf2UfHWzX5If 9XRHodvvK4MlWrnzJO3l] [P8uYcDzg6wQMyzjX7gpd iXwyv3sU4AKOlmONlpvK QHkpfr73AEbBacey12n_]]
+2024-01-15T21:05:16.454+0800	INFO	raft/config.go:261	cfg.endnames is [[bTa3V-IsbFLsLnN6bDSI iMFpFa8t7vzN7PMt609D f9jTZfacEvjtJZktpE-s] [ppHMel9dXy_8cLG8iIYb LNCZJ8zXJf2UfHWzX5If 9XRHodvvK4MlWrnzJO3l] [P8uYcDzg6wQMyzjX7gpd iXwyv3sU4AKOlmONlpvK QHkpfr73AEbBacey12n_]]
+2024-01-15T21:05:16.914+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:05:19.514+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:05:19.514+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:05:19.514+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:05:19.514+0800	INFO	raft/config.go:160	endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [] []]
+2024-01-15T21:05:19.514+0800	INFO	raft/config.go:168	ends is [0xc0001d36c0 0xc0001d36e0 0xc0001d3700]
+2024-01-15T21:05:19.514+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:05:19.514+0800	INFO	raft/config.go:224	ends is [0xc0001d36c0 0xc0001d36e0 0xc0001d3700], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002d9e0
+2024-01-15T21:05:19.559+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001ea580 <nil> <nil>]
+2024-01-15T21:05:19.559+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:05:19.559+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:05:19.559+0800	INFO	raft/config.go:160	endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] []]
+2024-01-15T21:05:19.559+0800	INFO	raft/config.go:168	ends is [0xc000284460 0xc000284480 0xc0002844a0]
+2024-01-15T21:05:19.559+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001dd600 <nil> <nil>]
+2024-01-15T21:05:19.559+0800	INFO	raft/config.go:224	ends is [0xc000284460 0xc000284480 0xc0002844a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000286240
+2024-01-15T21:05:19.599+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001ea580 0xc0002a04d0 <nil>]
+2024-01-15T21:05:19.599+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:05:19.599+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:05:19.599+0800	INFO	raft/config.go:160	endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] [vJIj7PJlJ_sBOJOd9Yyi 8caBJZk88f-KmtHw8Oq3 P10D0MGHmp5JYg4fbMHm]]
+2024-01-15T21:05:19.599+0800	INFO	raft/config.go:168	ends is [0xc000172ce0 0xc000172d00 0xc000172d20]
+2024-01-15T21:05:19.599+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001dd600 0xc00028e780 <nil>]
+2024-01-15T21:05:19.599+0800	INFO	raft/config.go:224	ends is [0xc000172ce0 0xc000172d00 0xc000172d20], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000138fc0
+2024-01-15T21:05:19.644+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001ea580 0xc0002a04d0 0xc000165a20]
+2024-01-15T21:05:19.644+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:05:19.644+0800	INFO	raft/config.go:261	cfg.endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] [vJIj7PJlJ_sBOJOd9Yyi 8caBJZk88f-KmtHw8Oq3 P10D0MGHmp5JYg4fbMHm]]
+2024-01-15T21:05:19.644+0800	INFO	raft/config.go:261	cfg.endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] [vJIj7PJlJ_sBOJOd9Yyi 8caBJZk88f-KmtHw8Oq3 P10D0MGHmp5JYg4fbMHm]]
+2024-01-15T21:05:19.644+0800	INFO	raft/config.go:261	cfg.endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] [vJIj7PJlJ_sBOJOd9Yyi 8caBJZk88f-KmtHw8Oq3 P10D0MGHmp5JYg4fbMHm]]
+2024-01-15T21:05:20.134+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[2]]
+2024-01-15T21:05:20.670+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T21:05:20.670+0800	INFO	raft/config.go:261	cfg.endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] [vJIj7PJlJ_sBOJOd9Yyi 8caBJZk88f-KmtHw8Oq3 P10D0MGHmp5JYg4fbMHm]]
+2024-01-15T21:05:21.195+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1]]
+2024-01-15T21:05:23.195+0800	INFO	raft/config.go:261	cfg.endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] [vJIj7PJlJ_sBOJOd9Yyi 8caBJZk88f-KmtHw8Oq3 P10D0MGHmp5JYg4fbMHm]]
+2024-01-15T21:05:23.714+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:05:24.228+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:05:24.770+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[4:[0]]
+2024-01-15T21:05:24.770+0800	INFO	raft/config.go:261	cfg.endnames is [[DcHer4bNG6gI_fXaOavc iGoLnrnFjvcuFPz8MWO4 7w3Hcpvpxgu7At4JAXHA] [-aXiZJAiIHq6MWLL5TIh FDl6Nq1QtLCPgFj3s3eM 6awsSwknnl_MTD3khTA9] [vJIj7PJlJ_sBOJOd9Yyi 8caBJZk88f-KmtHw8Oq3 P10D0MGHmp5JYg4fbMHm]]
+2024-01-15T21:05:25.297+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[1] 4:[0]]
+2024-01-15T21:07:25.424+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:25.424+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:25.424+0800	INFO	raft/config.go:160	endnames is [[xitUZrv8Lf_AK59udU_t odbeYMZb-AeMRPPwk4O4 h1kStLJ1fHCh9E49aWzR] [] []]
+2024-01-15T21:07:25.424+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T21:07:25.424+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:07:25.424+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T21:07:25.467+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 <nil> <nil>]
+2024-01-15T21:07:25.467+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:25.467+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:25.467+0800	INFO	raft/config.go:160	endnames is [[xitUZrv8Lf_AK59udU_t odbeYMZb-AeMRPPwk4O4 h1kStLJ1fHCh9E49aWzR] [FcuDpVOkrJqzgfn7NoDx kBSgUmqezed5UCx0p5u4 bTSlvCt_2-61pZBz12s_] []]
+2024-01-15T21:07:25.467+0800	INFO	raft/config.go:168	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0]
+2024-01-15T21:07:25.467+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T21:07:25.467+0800	INFO	raft/config.go:224	ends is [0xc00007e480 0xc00007e4a0 0xc00007e4c0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T21:07:25.511+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be6e0 <nil>]
+2024-01-15T21:07:25.512+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:25.512+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:25.512+0800	INFO	raft/config.go:160	endnames is [[xitUZrv8Lf_AK59udU_t odbeYMZb-AeMRPPwk4O4 h1kStLJ1fHCh9E49aWzR] [FcuDpVOkrJqzgfn7NoDx kBSgUmqezed5UCx0p5u4 bTSlvCt_2-61pZBz12s_] [F9DtL4tzdS9aurbi55fP TMf_pUsl6E39LUTfngk0 V2_94L1Y0LfnUGqc82Pz]]
+2024-01-15T21:07:25.512+0800	INFO	raft/config.go:168	ends is [0xc00007e640 0xc00007e660 0xc00007e680]
+2024-01-15T21:07:25.512+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000198200 <nil>]
+2024-01-15T21:07:25.512+0800	INFO	raft/config.go:224	ends is [0xc00007e640 0xc00007e660 0xc00007e680], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c600
+2024-01-15T21:07:25.556+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be630 0xc0000be6e0 0xc0000be790]
+2024-01-15T21:07:25.556+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:07:25.556+0800	INFO	raft/config.go:261	cfg.endnames is [[xitUZrv8Lf_AK59udU_t odbeYMZb-AeMRPPwk4O4 h1kStLJ1fHCh9E49aWzR] [FcuDpVOkrJqzgfn7NoDx kBSgUmqezed5UCx0p5u4 bTSlvCt_2-61pZBz12s_] [F9DtL4tzdS9aurbi55fP TMf_pUsl6E39LUTfngk0 V2_94L1Y0LfnUGqc82Pz]]
+2024-01-15T21:07:25.556+0800	INFO	raft/config.go:261	cfg.endnames is [[xitUZrv8Lf_AK59udU_t odbeYMZb-AeMRPPwk4O4 h1kStLJ1fHCh9E49aWzR] [FcuDpVOkrJqzgfn7NoDx kBSgUmqezed5UCx0p5u4 bTSlvCt_2-61pZBz12s_] [F9DtL4tzdS9aurbi55fP TMf_pUsl6E39LUTfngk0 V2_94L1Y0LfnUGqc82Pz]]
+2024-01-15T21:07:25.556+0800	INFO	raft/config.go:261	cfg.endnames is [[xitUZrv8Lf_AK59udU_t odbeYMZb-AeMRPPwk4O4 h1kStLJ1fHCh9E49aWzR] [FcuDpVOkrJqzgfn7NoDx kBSgUmqezed5UCx0p5u4 bTSlvCt_2-61pZBz12s_] [F9DtL4tzdS9aurbi55fP TMf_pUsl6E39LUTfngk0 V2_94L1Y0LfnUGqc82Pz]]
+2024-01-15T21:07:26.102+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:07:28.686+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:07:28.686+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:28.686+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:28.686+0800	INFO	raft/config.go:160	endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [] []]
+2024-01-15T21:07:28.686+0800	INFO	raft/config.go:168	ends is [0xc0003235a0 0xc0003235c0 0xc0003235e0]
+2024-01-15T21:07:28.686+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:07:28.686+0800	INFO	raft/config.go:224	ends is [0xc0003235a0 0xc0003235c0 0xc0003235e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000350120
+2024-01-15T21:07:28.748+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000333130 <nil> <nil>]
+2024-01-15T21:07:28.748+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:28.748+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:28.748+0800	INFO	raft/config.go:160	endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] []]
+2024-01-15T21:07:28.748+0800	INFO	raft/config.go:168	ends is [0xc0001164a0 0xc0001164c0 0xc0001164e0]
+2024-01-15T21:07:28.748+0800	INFO	raft/config.go:177	cfg.saved is [0xc000336e00 <nil> <nil>]
+2024-01-15T21:07:28.748+0800	INFO	raft/config.go:224	ends is [0xc0001164a0 0xc0001164c0 0xc0001164e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000128240
+2024-01-15T21:07:28.828+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000333130 0xc00012a4d0 <nil>]
+2024-01-15T21:07:28.828+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:28.828+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:28.828+0800	INFO	raft/config.go:160	endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] [EN5xzZBhDVfaDS8bhouo aPJn6iW_Zk8o8g8p47vj QjRA9hskzYh3gjneQ7M-]]
+2024-01-15T21:07:28.828+0800	INFO	raft/config.go:168	ends is [0xc000323760 0xc000323780 0xc0003237a0]
+2024-01-15T21:07:28.828+0800	INFO	raft/config.go:177	cfg.saved is [0xc000336e00 0xc000118700 <nil>]
+2024-01-15T21:07:28.828+0800	INFO	raft/config.go:224	ends is [0xc000323760 0xc000323780 0xc0003237a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000350360
+2024-01-15T21:07:28.882+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000333130 0xc00012a4d0 0xc0003333f0]
+2024-01-15T21:07:28.882+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:07:28.882+0800	INFO	raft/config.go:261	cfg.endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] [EN5xzZBhDVfaDS8bhouo aPJn6iW_Zk8o8g8p47vj QjRA9hskzYh3gjneQ7M-]]
+2024-01-15T21:07:28.882+0800	INFO	raft/config.go:261	cfg.endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] [EN5xzZBhDVfaDS8bhouo aPJn6iW_Zk8o8g8p47vj QjRA9hskzYh3gjneQ7M-]]
+2024-01-15T21:07:28.882+0800	INFO	raft/config.go:261	cfg.endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] [EN5xzZBhDVfaDS8bhouo aPJn6iW_Zk8o8g8p47vj QjRA9hskzYh3gjneQ7M-]]
+2024-01-15T21:07:29.358+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:07:29.867+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T21:07:29.867+0800	INFO	raft/config.go:261	cfg.endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] [EN5xzZBhDVfaDS8bhouo aPJn6iW_Zk8o8g8p47vj QjRA9hskzYh3gjneQ7M-]]
+2024-01-15T21:07:30.383+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T21:07:32.384+0800	INFO	raft/config.go:261	cfg.endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] [EN5xzZBhDVfaDS8bhouo aPJn6iW_Zk8o8g8p47vj QjRA9hskzYh3gjneQ7M-]]
+2024-01-15T21:07:32.891+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:33.410+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:33.930+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:34.396+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:34.862+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[0]]
+2024-01-15T21:07:34.862+0800	INFO	raft/config.go:261	cfg.endnames is [[fqaSIlJknplutlmO96Qk TNm3DYKUB6anU9BnOFPP w7oItPo80rzsd3wMlWso] [7uL63ZK_tY7ZywRP52IH OqGBpZhsSQ-mngDDDS_i DC0vl_Y5cVbcCz2YHWI5] [EN5xzZBhDVfaDS8bhouo aPJn6iW_Zk8o8g8p47vj QjRA9hskzYh3gjneQ7M-]]
+2024-01-15T21:07:35.328+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[0]]
+2024-01-15T21:07:45.258+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:45.258+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:45.258+0800	INFO	raft/config.go:160	endnames is [[Voy5XuAGVbsZxkQFMgEq Fz5kULzrF99dzyj3YsD1 MxGG7bCXpcGdiAwTv7jD] [] []]
+2024-01-15T21:07:45.258+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T21:07:45.258+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:07:45.258+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T21:07:45.296+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 <nil> <nil>]
+2024-01-15T21:07:45.296+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:45.296+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:45.296+0800	INFO	raft/config.go:160	endnames is [[Voy5XuAGVbsZxkQFMgEq Fz5kULzrF99dzyj3YsD1 MxGG7bCXpcGdiAwTv7jD] [gLUhWxtsmXGhKqy1_-aL v5SWLXgdZPmJCWnh8Fxm WU_8Dk8gXnb1bM1DHDFc] []]
+2024-01-15T21:07:45.296+0800	INFO	raft/config.go:168	ends is [0xc000220120 0xc000220140 0xc000220160]
+2024-01-15T21:07:45.296+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 <nil> <nil>]
+2024-01-15T21:07:45.296+0800	INFO	raft/config.go:224	ends is [0xc000220120 0xc000220140 0xc000220160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000236000
+2024-01-15T21:07:45.352+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 0xc00023c000 <nil>]
+2024-01-15T21:07:45.352+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:45.352+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:45.352+0800	INFO	raft/config.go:160	endnames is [[Voy5XuAGVbsZxkQFMgEq Fz5kULzrF99dzyj3YsD1 MxGG7bCXpcGdiAwTv7jD] [gLUhWxtsmXGhKqy1_-aL v5SWLXgdZPmJCWnh8Fxm WU_8Dk8gXnb1bM1DHDFc] [RwcPeQ0mS7wFRWpRWnku 5It74o5fOsVhl_0crb8L ZveaNm2ekBZm0HV-3zVA]]
+2024-01-15T21:07:45.352+0800	INFO	raft/config.go:168	ends is [0xc0001a4120 0xc0001a4140 0xc0001a4160]
+2024-01-15T21:07:45.352+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 0xc00021c180 <nil>]
+2024-01-15T21:07:45.352+0800	INFO	raft/config.go:224	ends is [0xc0001a4120 0xc0001a4140 0xc0001a4160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0001ba000
+2024-01-15T21:07:45.407+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 0xc00023c000 0xc0001be000]
+2024-01-15T21:07:45.407+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:07:45.407+0800	INFO	raft/config.go:261	cfg.endnames is [[Voy5XuAGVbsZxkQFMgEq Fz5kULzrF99dzyj3YsD1 MxGG7bCXpcGdiAwTv7jD] [gLUhWxtsmXGhKqy1_-aL v5SWLXgdZPmJCWnh8Fxm WU_8Dk8gXnb1bM1DHDFc] [RwcPeQ0mS7wFRWpRWnku 5It74o5fOsVhl_0crb8L ZveaNm2ekBZm0HV-3zVA]]
+2024-01-15T21:07:45.407+0800	INFO	raft/config.go:261	cfg.endnames is [[Voy5XuAGVbsZxkQFMgEq Fz5kULzrF99dzyj3YsD1 MxGG7bCXpcGdiAwTv7jD] [gLUhWxtsmXGhKqy1_-aL v5SWLXgdZPmJCWnh8Fxm WU_8Dk8gXnb1bM1DHDFc] [RwcPeQ0mS7wFRWpRWnku 5It74o5fOsVhl_0crb8L ZveaNm2ekBZm0HV-3zVA]]
+2024-01-15T21:07:45.407+0800	INFO	raft/config.go:261	cfg.endnames is [[Voy5XuAGVbsZxkQFMgEq Fz5kULzrF99dzyj3YsD1 MxGG7bCXpcGdiAwTv7jD] [gLUhWxtsmXGhKqy1_-aL v5SWLXgdZPmJCWnh8Fxm WU_8Dk8gXnb1bM1DHDFc] [RwcPeQ0mS7wFRWpRWnku 5It74o5fOsVhl_0crb8L ZveaNm2ekBZm0HV-3zVA]]
+2024-01-15T21:07:45.866+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:07:48.408+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:07:48.408+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:48.408+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:48.408+0800	INFO	raft/config.go:160	endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [] []]
+2024-01-15T21:07:48.408+0800	INFO	raft/config.go:168	ends is [0xc0003317e0 0xc000331800 0xc000331820]
+2024-01-15T21:07:48.408+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:07:48.408+0800	INFO	raft/config.go:224	ends is [0xc0003317e0 0xc000331800 0xc000331820], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000350240
+2024-01-15T21:07:48.465+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000343290 <nil> <nil>]
+2024-01-15T21:07:48.465+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:48.465+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:48.465+0800	INFO	raft/config.go:160	endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] []]
+2024-01-15T21:07:48.465+0800	INFO	raft/config.go:168	ends is [0xc0002dad00 0xc0002dad20 0xc0002dad40]
+2024-01-15T21:07:48.465+0800	INFO	raft/config.go:177	cfg.saved is [0xc000345280 <nil> <nil>]
+2024-01-15T21:07:48.465+0800	INFO	raft/config.go:224	ends is [0xc0002dad00 0xc0002dad20 0xc0002dad40], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00028afc0
+2024-01-15T21:07:48.508+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000343290 0xc0002cda20 <nil>]
+2024-01-15T21:07:48.508+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:07:48.508+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:07:48.508+0800	INFO	raft/config.go:160	endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] [IdOH4IbeYNeQL9kQXRZD Q8Nnz392eLOxyrcRsE_I 3j-uWawQMQoRlSVnTzkG]]
+2024-01-15T21:07:48.508+0800	INFO	raft/config.go:168	ends is [0xc0003319a0 0xc0003319c0 0xc0003319e0]
+2024-01-15T21:07:48.508+0800	INFO	raft/config.go:177	cfg.saved is [0xc000345280 0xc0002e0980 <nil>]
+2024-01-15T21:07:48.508+0800	INFO	raft/config.go:224	ends is [0xc0003319a0 0xc0003319c0 0xc0003319e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000350300
+2024-01-15T21:07:48.564+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000343290 0xc0002cda20 0xc000343340]
+2024-01-15T21:07:48.564+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:07:48.564+0800	INFO	raft/config.go:261	cfg.endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] [IdOH4IbeYNeQL9kQXRZD Q8Nnz392eLOxyrcRsE_I 3j-uWawQMQoRlSVnTzkG]]
+2024-01-15T21:07:48.564+0800	INFO	raft/config.go:261	cfg.endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] [IdOH4IbeYNeQL9kQXRZD Q8Nnz392eLOxyrcRsE_I 3j-uWawQMQoRlSVnTzkG]]
+2024-01-15T21:07:48.564+0800	INFO	raft/config.go:261	cfg.endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] [IdOH4IbeYNeQL9kQXRZD Q8Nnz392eLOxyrcRsE_I 3j-uWawQMQoRlSVnTzkG]]
+2024-01-15T21:07:49.042+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:07:49.507+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[0]]
+2024-01-15T21:07:49.507+0800	INFO	raft/config.go:261	cfg.endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] [IdOH4IbeYNeQL9kQXRZD Q8Nnz392eLOxyrcRsE_I 3j-uWawQMQoRlSVnTzkG]]
+2024-01-15T21:07:50.033+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[2]]
+2024-01-15T21:07:52.034+0800	INFO	raft/config.go:261	cfg.endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] [IdOH4IbeYNeQL9kQXRZD Q8Nnz392eLOxyrcRsE_I 3j-uWawQMQoRlSVnTzkG]]
+2024-01-15T21:07:52.485+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:52.955+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:53.445+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:53.979+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:54.516+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:54.971+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:55.426+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:55.912+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:56.456+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:07:56.999+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[1]]
+2024-01-15T21:07:56.999+0800	INFO	raft/config.go:261	cfg.endnames is [[_Nb08IVzWxh233f3fE8P dqGH9Fc401oOrYaAOocQ YeqblkJPAaNU5R1TkH-v] [BGQ5cYzYL1Q7AM9LbGhd -QEythEVMUQg2FAeF3aa NWaqIkLMglcFYyqmOFuC] [IdOH4IbeYNeQL9kQXRZD Q8Nnz392eLOxyrcRsE_I 3j-uWawQMQoRlSVnTzkG]]
+2024-01-15T21:07:57.453+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[1]]
+2024-01-15T21:11:28.271+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:11:28.271+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:11:28.271+0800	INFO	raft/config.go:160	endnames is [[nGQd15sebJyS4gMe29oO ix_C0rXBga-riPxnDWWU cmKgCmJZgu9OGauROzjV] [] []]
+2024-01-15T21:11:28.271+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T21:11:28.271+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:11:28.271+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T21:11:28.317+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be4d0 <nil> <nil>]
+2024-01-15T21:11:28.317+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:11:28.317+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:11:28.317+0800	INFO	raft/config.go:160	endnames is [[nGQd15sebJyS4gMe29oO ix_C0rXBga-riPxnDWWU cmKgCmJZgu9OGauROzjV] [-DUn3U0IqbBmPIl04Vs7 Fu_J9ZyiQWRUxlgYvpGw lSDn7LAnzwwLEfZyzR5u] []]
+2024-01-15T21:11:28.317+0800	INFO	raft/config.go:168	ends is [0xc00021c120 0xc00021c140 0xc00021c160]
+2024-01-15T21:11:28.317+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 <nil> <nil>]
+2024-01-15T21:11:28.317+0800	INFO	raft/config.go:224	ends is [0xc00021c120 0xc00021c140 0xc00021c160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000234000
+2024-01-15T21:11:28.361+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be4d0 0xc00023a000 <nil>]
+2024-01-15T21:11:28.361+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:11:28.361+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:11:28.361+0800	INFO	raft/config.go:160	endnames is [[nGQd15sebJyS4gMe29oO ix_C0rXBga-riPxnDWWU cmKgCmJZgu9OGauROzjV] [-DUn3U0IqbBmPIl04Vs7 Fu_J9ZyiQWRUxlgYvpGw lSDn7LAnzwwLEfZyzR5u] [m0_Vm2q0LtGiiYME6jSA Pr_bTFCLWjF9lW6ZC7vc L8ELStee37oEgtv2mVt0]]
+2024-01-15T21:11:28.361+0800	INFO	raft/config.go:168	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0]
+2024-01-15T21:11:28.361+0800	INFO	raft/config.go:177	cfg.saved is [0xc000118080 0xc000218180 <nil>]
+2024-01-15T21:11:28.361+0800	INFO	raft/config.go:224	ends is [0xc00007e4a0 0xc00007e4c0 0xc00007e4e0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c540
+2024-01-15T21:11:28.406+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be4d0 0xc00023a000 0xc0000be580]
+2024-01-15T21:11:28.406+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:11:28.406+0800	INFO	raft/config.go:261	cfg.endnames is [[nGQd15sebJyS4gMe29oO ix_C0rXBga-riPxnDWWU cmKgCmJZgu9OGauROzjV] [-DUn3U0IqbBmPIl04Vs7 Fu_J9ZyiQWRUxlgYvpGw lSDn7LAnzwwLEfZyzR5u] [m0_Vm2q0LtGiiYME6jSA Pr_bTFCLWjF9lW6ZC7vc L8ELStee37oEgtv2mVt0]]
+2024-01-15T21:11:28.406+0800	INFO	raft/config.go:261	cfg.endnames is [[nGQd15sebJyS4gMe29oO ix_C0rXBga-riPxnDWWU cmKgCmJZgu9OGauROzjV] [-DUn3U0IqbBmPIl04Vs7 Fu_J9ZyiQWRUxlgYvpGw lSDn7LAnzwwLEfZyzR5u] [m0_Vm2q0LtGiiYME6jSA Pr_bTFCLWjF9lW6ZC7vc L8ELStee37oEgtv2mVt0]]
+2024-01-15T21:11:28.406+0800	INFO	raft/config.go:261	cfg.endnames is [[nGQd15sebJyS4gMe29oO ix_C0rXBga-riPxnDWWU cmKgCmJZgu9OGauROzjV] [-DUn3U0IqbBmPIl04Vs7 Fu_J9ZyiQWRUxlgYvpGw lSDn7LAnzwwLEfZyzR5u] [m0_Vm2q0LtGiiYME6jSA Pr_bTFCLWjF9lW6ZC7vc L8ELStee37oEgtv2mVt0]]
+2024-01-15T21:11:28.934+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:11:31.519+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:11:31.519+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:11:31.519+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:11:31.519+0800	INFO	raft/config.go:160	endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [] []]
+2024-01-15T21:11:31.519+0800	INFO	raft/config.go:168	ends is [0xc00015c3e0 0xc00015c400 0xc00015c420]
+2024-01-15T21:11:31.519+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:11:31.519+0800	INFO	raft/config.go:224	ends is [0xc00015c3e0 0xc00015c400 0xc00015c420], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002d320
+2024-01-15T21:11:31.565+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000156c60 <nil> <nil>]
+2024-01-15T21:11:31.565+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:11:31.565+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:11:31.565+0800	INFO	raft/config.go:160	endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] []]
+2024-01-15T21:11:31.565+0800	INFO	raft/config.go:168	ends is [0xc000287a40 0xc000287a60 0xc000287a80]
+2024-01-15T21:11:31.565+0800	INFO	raft/config.go:177	cfg.saved is [0xc00014b740 <nil> <nil>]
+2024-01-15T21:11:31.565+0800	INFO	raft/config.go:224	ends is [0xc000287a40 0xc000287a60 0xc000287a80], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00028c900
+2024-01-15T21:11:31.607+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000156c60 0xc0002cc160 <nil>]
+2024-01-15T21:11:31.607+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:11:31.607+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:11:31.607+0800	INFO	raft/config.go:160	endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] [visJyRf8XpjIqYynDwJE XddUSCgZI6pN5UiTUfGx r23mVGhbRbiWYvpomsbx]]
+2024-01-15T21:11:31.607+0800	INFO	raft/config.go:168	ends is [0xc00021c360 0xc00021c380 0xc00021c3a0]
+2024-01-15T21:11:31.607+0800	INFO	raft/config.go:177	cfg.saved is [0xc00014b740 0xc0002c6ac0 <nil>]
+2024-01-15T21:11:31.607+0800	INFO	raft/config.go:224	ends is [0xc00021c360 0xc00021c380 0xc00021c3a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000234180
+2024-01-15T21:11:31.651+0800	INFO	raft/config.go:229	cfg.rafts is [0xc000156c60 0xc0002cc160 0xc00023a0b0]
+2024-01-15T21:11:31.651+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:11:31.651+0800	INFO	raft/config.go:261	cfg.endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] [visJyRf8XpjIqYynDwJE XddUSCgZI6pN5UiTUfGx r23mVGhbRbiWYvpomsbx]]
+2024-01-15T21:11:31.651+0800	INFO	raft/config.go:261	cfg.endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] [visJyRf8XpjIqYynDwJE XddUSCgZI6pN5UiTUfGx r23mVGhbRbiWYvpomsbx]]
+2024-01-15T21:11:31.651+0800	INFO	raft/config.go:261	cfg.endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] [visJyRf8XpjIqYynDwJE XddUSCgZI6pN5UiTUfGx r23mVGhbRbiWYvpomsbx]]
+2024-01-15T21:11:32.160+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:11:32.651+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[2]]
+2024-01-15T21:11:32.651+0800	INFO	raft/config.go:261	cfg.endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] [visJyRf8XpjIqYynDwJE XddUSCgZI6pN5UiTUfGx r23mVGhbRbiWYvpomsbx]]
+2024-01-15T21:11:33.118+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[0]]
+2024-01-15T21:11:35.118+0800	INFO	raft/config.go:261	cfg.endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] [visJyRf8XpjIqYynDwJE XddUSCgZI6pN5UiTUfGx r23mVGhbRbiWYvpomsbx]]
+2024-01-15T21:11:35.665+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:11:36.207+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:11:36.681+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:11:37.153+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[1]]
+2024-01-15T21:11:37.153+0800	INFO	raft/config.go:261	cfg.endnames is [[9qyvGhnHAZBhrVFtBXtM 9WPNj1tuMAc7wMepBWJG aO8mQ_S9ypPdOyP5IJ0y] [hNBVsuB_vjEmwYGt1e0w yOlum7jb9fVGee8nXlsy dTM3nZhGC5CkoDalTKDW] [visJyRf8XpjIqYynDwJE XddUSCgZI6pN5UiTUfGx r23mVGhbRbiWYvpomsbx]]
+2024-01-15T21:11:37.690+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[1]]
+2024-01-15T21:20:30.634+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:20:30.634+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:20:30.634+0800	INFO	raft/config.go:160	endnames is [[8OUce64RntH_wAX777Oh yOHtFpmodkiU_HzHnn7n 9_nVjW6gHw8CjZWB4cX2] [] []]
+2024-01-15T21:20:30.634+0800	INFO	raft/config.go:168	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300]
+2024-01-15T21:20:30.634+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:20:30.634+0800	INFO	raft/config.go:224	ends is [0xc00007e2c0 0xc00007e2e0 0xc00007e300], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002c480
+2024-01-15T21:20:30.669+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 <nil> <nil>]
+2024-01-15T21:20:30.669+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:20:30.669+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:20:30.669+0800	INFO	raft/config.go:160	endnames is [[8OUce64RntH_wAX777Oh yOHtFpmodkiU_HzHnn7n 9_nVjW6gHw8CjZWB4cX2] [83BN365EOTjXqgPoJqUy r9VqFzzOWJdFqoHtIkxI kYGsVZglAv0xCz4Mky_b] []]
+2024-01-15T21:20:30.669+0800	INFO	raft/config.go:168	ends is [0xc00021c120 0xc00021c140 0xc00021c160]
+2024-01-15T21:20:30.669+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 <nil> <nil>]
+2024-01-15T21:20:30.669+0800	INFO	raft/config.go:224	ends is [0xc00021c120 0xc00021c140 0xc00021c160], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc000236000
+2024-01-15T21:20:30.713+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 0xc00023c000 <nil>]
+2024-01-15T21:20:30.713+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:20:30.713+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:20:30.713+0800	INFO	raft/config.go:160	endnames is [[8OUce64RntH_wAX777Oh yOHtFpmodkiU_HzHnn7n 9_nVjW6gHw8CjZWB4cX2] [83BN365EOTjXqgPoJqUy r9VqFzzOWJdFqoHtIkxI kYGsVZglAv0xCz4Mky_b] [hDF6U4QOQxWaj781ieL8 3_QBVEsg6BxqElqZWyE1 dRaSsg--NSkM3NuouVy_]]
+2024-01-15T21:20:30.713+0800	INFO	raft/config.go:168	ends is [0xc00021c2e0 0xc00021c300 0xc00021c320]
+2024-01-15T21:20:30.714+0800	INFO	raft/config.go:177	cfg.saved is [0xc000198080 0xc000218180 <nil>]
+2024-01-15T21:20:30.714+0800	INFO	raft/config.go:224	ends is [0xc00021c2e0 0xc00021c300 0xc00021c320], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc0002360c0
+2024-01-15T21:20:30.758+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0000be6e0 0xc00023c000 0xc00023c0b0]
+2024-01-15T21:20:30.758+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:20:30.758+0800	INFO	raft/config.go:261	cfg.endnames is [[8OUce64RntH_wAX777Oh yOHtFpmodkiU_HzHnn7n 9_nVjW6gHw8CjZWB4cX2] [83BN365EOTjXqgPoJqUy r9VqFzzOWJdFqoHtIkxI kYGsVZglAv0xCz4Mky_b] [hDF6U4QOQxWaj781ieL8 3_QBVEsg6BxqElqZWyE1 dRaSsg--NSkM3NuouVy_]]
+2024-01-15T21:20:30.758+0800	INFO	raft/config.go:261	cfg.endnames is [[8OUce64RntH_wAX777Oh yOHtFpmodkiU_HzHnn7n 9_nVjW6gHw8CjZWB4cX2] [83BN365EOTjXqgPoJqUy r9VqFzzOWJdFqoHtIkxI kYGsVZglAv0xCz4Mky_b] [hDF6U4QOQxWaj781ieL8 3_QBVEsg6BxqElqZWyE1 dRaSsg--NSkM3NuouVy_]]
+2024-01-15T21:20:30.758+0800	INFO	raft/config.go:261	cfg.endnames is [[8OUce64RntH_wAX777Oh yOHtFpmodkiU_HzHnn7n 9_nVjW6gHw8CjZWB4cX2] [83BN365EOTjXqgPoJqUy r9VqFzzOWJdFqoHtIkxI kYGsVZglAv0xCz4Mky_b] [hDF6U4QOQxWaj781ieL8 3_QBVEsg6BxqElqZWyE1 dRaSsg--NSkM3NuouVy_]]
+2024-01-15T21:20:31.223+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:20:33.793+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[0]]
+2024-01-15T21:20:33.793+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:20:33.793+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:20:33.793+0800	INFO	raft/config.go:160	endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [] []]
+2024-01-15T21:20:33.793+0800	INFO	raft/config.go:168	ends is [0xc0001fa260 0xc0001fa280 0xc0001fa2a0]
+2024-01-15T21:20:33.793+0800	INFO	raft/config.go:177	cfg.saved is [<nil> <nil> <nil>]
+2024-01-15T21:20:33.793+0800	INFO	raft/config.go:224	ends is [0xc0001fa260 0xc0001fa280 0xc0001fa2a0], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002dd40
+2024-01-15T21:20:33.840+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001e1ad0 <nil> <nil>]
+2024-01-15T21:20:33.840+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:20:33.840+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:20:33.840+0800	INFO	raft/config.go:160	endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] []]
+2024-01-15T21:20:33.840+0800	INFO	raft/config.go:168	ends is [0xc0001fa420 0xc0001fa440 0xc0001fa460]
+2024-01-15T21:20:33.840+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001f28c0 <nil> <nil>]
+2024-01-15T21:20:33.840+0800	INFO	raft/config.go:224	ends is [0xc0001fa420 0xc0001fa440 0xc0001fa460], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002de00
+2024-01-15T21:20:33.881+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001e1ad0 0xc0001e1b80 <nil>]
+2024-01-15T21:20:33.881+0800	INFO	raft/config.go:151	
+
+
+2024-01-15T21:20:33.881+0800	INFO	raft/config.go:152	----------------------------------------------call the start1------------------------------------
+2024-01-15T21:20:33.881+0800	INFO	raft/config.go:160	endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] [yQdQ9YsOUwf2ZDsKRUj7 3FZRorbxtpHMVnOSqDQ2 su3ho8XETTeghKHH-aMa]]
+2024-01-15T21:20:33.881+0800	INFO	raft/config.go:168	ends is [0xc0001fa5e0 0xc0001fa600 0xc0001fa620]
+2024-01-15T21:20:33.881+0800	INFO	raft/config.go:177	cfg.saved is [0xc0001f28c0 0xc0001f2a40 <nil>]
+2024-01-15T21:20:33.881+0800	INFO	raft/config.go:224	ends is [0xc0001fa5e0 0xc0001fa600 0xc0001fa620], cfg.saved[i] is &{{0 0} [] []}, applyCh is 0xc00002dec0
+2024-01-15T21:20:33.926+0800	INFO	raft/config.go:229	cfg.rafts is [0xc0001e1ad0 0xc0001e1b80 0xc0001e1c30]
+2024-01-15T21:20:33.926+0800	INFO	raft/config.go:101	
+
+
+
+
+2024-01-15T21:20:33.926+0800	INFO	raft/config.go:261	cfg.endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] [yQdQ9YsOUwf2ZDsKRUj7 3FZRorbxtpHMVnOSqDQ2 su3ho8XETTeghKHH-aMa]]
+2024-01-15T21:20:33.926+0800	INFO	raft/config.go:261	cfg.endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] [yQdQ9YsOUwf2ZDsKRUj7 3FZRorbxtpHMVnOSqDQ2 su3ho8XETTeghKHH-aMa]]
+2024-01-15T21:20:33.926+0800	INFO	raft/config.go:261	cfg.endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] [yQdQ9YsOUwf2ZDsKRUj7 3FZRorbxtpHMVnOSqDQ2 su3ho8XETTeghKHH-aMa]]
+2024-01-15T21:20:34.401+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[1:[1]]
+2024-01-15T21:20:34.910+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[2:[2]]
+2024-01-15T21:20:34.910+0800	INFO	raft/config.go:261	cfg.endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] [yQdQ9YsOUwf2ZDsKRUj7 3FZRorbxtpHMVnOSqDQ2 su3ho8XETTeghKHH-aMa]]
+2024-01-15T21:20:35.423+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[0]]
+2024-01-15T21:20:37.423+0800	INFO	raft/config.go:261	cfg.endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] [yQdQ9YsOUwf2ZDsKRUj7 3FZRorbxtpHMVnOSqDQ2 su3ho8XETTeghKHH-aMa]]
+2024-01-15T21:20:37.876+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:20:38.408+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:20:38.897+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:20:39.380+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:20:39.888+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:20:40.379+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:20:40.919+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[]
+2024-01-15T21:20:41.443+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[5:[1]]
+2024-01-15T21:20:41.443+0800	INFO	raft/config.go:261	cfg.endnames is [[y6wRQU0DMKD_WOGiJ3Rp GBsysvA4WOnhnnRwVgNH Ub97H209tyvUhMr7Q3jd] [KUJDgOTkQNtJC8GE7gqp livRFwMdsy4hT1smcZin 9Vc2eJGR_TPMjTpEZQF7] [yQdQ9YsOUwf2ZDsKRUj7 3FZRorbxtpHMVnOSqDQ2 su3ho8XETTeghKHH-aMa]]
+2024-01-15T21:20:41.928+0800	INFO	raft/config.go:339	checkOneLeader().leaders is map[3:[0] 5:[1]]

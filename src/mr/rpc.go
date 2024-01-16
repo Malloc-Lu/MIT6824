@@ -13,13 +13,33 @@ import "strconv"
 // example to show how to declare the arguments
 // and reply for an RPC.
 //
-
-type ExampleArgs struct {
-	X int
+type WorkerType int
+const(
+	Map WorkerType = iota
+	Reduce
+	MapToReduce					// * 来过渡
+)
+type Request struct{
+	WorkerNm int
+	TaskStatus Task
+	Type WorkerType 			// * used when update the work status selecting which Task status
+	RawFile string 				// * for debug
 }
 
-type ExampleReply struct {
+type Args struct {
+	X int
+	Str string
+}
+
+type Reply struct {
+	WorkNm int
+	NReduce int
 	Y int
+	Filename string				// * a file that as-yet-unstarted be mapped
+	Type WorkerType
+	// TempFile *os.File			// * for the reduce worker to write
+								// ! rpc: gob error encoding body: gob: type os.File has no exported fields
+	IsEnd bool
 }
 
 // Add your RPC definitions here.

@@ -1,0 +1,42 @@
+2024-01-08T11:29:51.724+0800	INFO	raft/raft.go:320	
+
+--------------------------------------Start a new server init------------------------------------
+2024-01-08T11:29:51.724+0800	INFO	raft/raft.go:358	The electionTimeout is 378
+2024-01-08T11:29:51.812+0800	INFO	raft/raft.go:320	
+
+--------------------------------------Start a new server init------------------------------------
+2024-01-08T11:29:51.812+0800	INFO	raft/raft.go:358	The electionTimeout is 319
+2024-01-08T11:29:51.857+0800	INFO	raft/raft.go:320	
+
+--------------------------------------Start a new server init------------------------------------
+2024-01-08T11:29:51.857+0800	INFO	raft/raft.go:358	The electionTimeout is 309
+2024-01-08T11:29:52.104+0800	INFO	raft/raft.go:343	the distance between now and last time from leader is 380ms
+2024-01-08T11:29:52.104+0800	INFO	raft/raft.go:344	begin to elect
+2024-01-08T11:29:52.104+0800	INFO	raft/raft.go:358	The electionTimeout is 381
+2024-01-08T11:29:52.133+0800	INFO	raft/raft.go:343	the distance between now and last time from leader is 320ms
+2024-01-08T11:29:52.133+0800	INFO	raft/raft.go:344	begin to elect
+2024-01-08T11:29:52.133+0800	INFO	raft/raft.go:358	The electionTimeout is 426
+2024-01-08T11:29:52.169+0800	INFO	raft/raft.go:343	the distance between now and last time from leader is 311ms
+2024-01-08T11:29:52.169+0800	INFO	raft/raft.go:344	begin to elect
+2024-01-08T11:29:52.169+0800	INFO	raft/raft.go:358	The electionTimeout is 387
+2024-01-08T11:29:56.780+0800	INFO	raft/raft.go:320	
+
+--------------------------------------Start a new server init------------------------------------
+2024-01-08T11:29:56.790+0800	INFO	raft/raft.go:358	The electionTimeout is 394
+2024-01-08T11:29:56.814+0800	INFO	raft/raft.go:320	
+
+--------------------------------------Start a new server init------------------------------------
+2024-01-08T11:29:56.824+0800	INFO	raft/raft.go:358	The electionTimeout is 323
+2024-01-08T11:29:56.858+0800	INFO	raft/raft.go:320	
+
+--------------------------------------Start a new server init------------------------------------
+2024-01-08T11:29:56.869+0800	INFO	raft/raft.go:358	The electionTimeout is 376
+2024-01-08T11:29:57.138+0800	INFO	raft/raft.go:343	the distance between now and last time from leader is 324ms
+2024-01-08T11:29:57.138+0800	INFO	raft/raft.go:344	begin to elect
+2024-01-08T11:29:57.138+0800	INFO	raft/raft.go:358	The electionTimeout is 327
+2024-01-08T11:29:57.175+0800	INFO	raft/raft.go:343	the distance between now and last time from leader is 395ms
+2024-01-08T11:29:57.175+0800	INFO	raft/raft.go:344	begin to elect
+2024-01-08T11:29:57.175+0800	INFO	raft/raft.go:358	The electionTimeout is 319
+2024-01-08T11:29:57.246+0800	INFO	raft/raft.go:343	the distance between now and last time from leader is 387ms
+2024-01-08T11:29:57.246+0800	INFO	raft/raft.go:344	begin to elect
+2024-01-08T11:29:57.246+0800	INFO	raft/raft.go:358	The electionTimeout is 338
