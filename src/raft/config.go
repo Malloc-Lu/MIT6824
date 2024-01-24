@@ -149,7 +149,7 @@ func (cfg *config) crash1(i int) {
 func (cfg *config) start1(i int) {
 	cfg.crash1(i)
 	cfg.logger.Infof("\n\n")
-	cfg.logger.Infof("----------------------------------------------call the start1------------------------------------")
+	// cfg.logger.Infof("----------------------------------------------call the start1------------------------------------")
 
 	// a fresh set of outgoing ClientEnd names.
 	// so that old crashed instance's ClientEnds can't send.
@@ -157,7 +157,7 @@ func (cfg *config) start1(i int) {
 	for j := 0; j < cfg.n; j++ {
 		cfg.endnames[i][j] = randstring(20)
 	}
-	cfg.logger.Infof("endnames is %v", cfg.endnames)
+	// cfg.logger.Infof("endnames is %v", cfg.endnames)
 
 	// a fresh set of ClientEnds.
 	ends := make([]*labrpc.ClientEnd, cfg.n)			// * cfg.n = 3, ends 是存放客户端的数组
@@ -165,7 +165,7 @@ func (cfg *config) start1(i int) {
 		ends[j] = cfg.net.MakeEnd(cfg.endnames[i][j])
 		cfg.net.Connect(cfg.endnames[i][j], j)
 	}
-	cfg.logger.Infof("ends is %v", ends)
+	// cfg.logger.Infof("ends is %v", ends)
 
 	cfg.mu.Lock()
 
@@ -174,7 +174,7 @@ func (cfg *config) start1(i int) {
 	// but copy old persister's content so that we always
 	// pass Make() the last persisted state.
 
-	cfg.logger.Infof("cfg.saved is %v", cfg.saved)
+	// cfg.logger.Infof("cfg.saved is %v", cfg.saved)
 	if cfg.saved[i] != nil {
 		cfg.saved[i] = cfg.saved[i].Copy()
 	} else {
@@ -193,22 +193,30 @@ func (cfg *config) start1(i int) {
 			} else {
 				v := m.Command
 				cfg.mu.Lock()
+				str := "receive a log entry form the applyCh\n" + 
+						"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tapplyCh.m is %v\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcfg.logs is %v"
+				cfg.logger.Infof(str, m, cfg.logs)
 				for j := 0; j < len(cfg.logs); j++ {
 					if old, oldok := cfg.logs[j][m.CommandIndex]; oldok && old != v {
 						// some server has already committed a different value for this entry!
 						err_msg = fmt.Sprintf("commit index=%v server=%v %v != server=%v %v",
 							m.CommandIndex, i, m.Command, j, old)
+						cfg.logger.Info(err_msg)
 					}
 				}
 				_, prevok := cfg.logs[i][m.CommandIndex-1]
 				cfg.logs[i][m.CommandIndex] = v
+				cfg.logger.Infof("cfg.logs is %v", cfg.logs)
 				if m.CommandIndex > cfg.maxIndex {
 					cfg.maxIndex = m.CommandIndex
 				}
 				cfg.mu.Unlock()
 
+				// * judge if index increments monotonously
 				if m.CommandIndex > 1 && prevok == false {
 					err_msg = fmt.Sprintf("server %v apply out of order %v", i, m.CommandIndex)
+					cfg.logger.Infof("the err_msg is %v", err_msg)
 				}
 			}
 
@@ -221,12 +229,12 @@ func (cfg *config) start1(i int) {
 		}
 	}()
 
-	cfg.logger.Infof("ends is %v, cfg.saved[i] is %v, applyCh is %v", ends, cfg.saved[i], applyCh)
+	// cfg.logger.Infof("ends is %v, cfg.saved[i] is %v, applyCh is %v", ends, cfg.saved[i], applyCh)
 	rf := Make(ends, i, cfg.saved[i], applyCh)
 
 	cfg.mu.Lock()
 	cfg.rafts[i] = rf
-	cfg.logger.Infof("cfg.rafts is %v", cfg.rafts)
+	// cfg.logger.Infof("cfg.rafts is %v", cfg.rafts)
 	cfg.mu.Unlock()
 
 	svc := labrpc.MakeService(rf)						// * one is `svc`, and the other is `srv`
@@ -258,7 +266,7 @@ func (cfg *config) connect(i int) {
 
 	cfg.connected[i] = true
 
-	cfg.logger.Infof("cfg.endnames is %v", cfg.endnames)
+	// cfg.logger.Infof("cfg.endnames is %v", cfg.endnames)
 	// outgoing ClientEnds
 	for j := 0; j < cfg.n; j++ {
 		if cfg.connected[j] {
@@ -392,11 +400,18 @@ func (cfg *config) nCommitted(index int) (int, interface{}) {
 		}
 
 		cfg.mu.Lock()
-		cmd1, ok := cfg.logs[i][index]
+		cmd1, ok := cfg.logs[i][index]			// * ok is true means it exists
+		str := "in nCommitted()\n" +
+				"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ti is %v, index is %v, cfg.logs is %v\n" +
+				"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcmd1 is %v, ok is %v\n" +
+				"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcount is %v"
+		cfg.logger.Infof(str, i, index, cfg.logs, cmd1, ok, count)
 		cfg.mu.Unlock()
 
 		if ok {
 			if count > 0 && cmd != cmd1 {
+				cfg.logger.Infof("committed values do not match: index %v, %v, %v\n",
+					index, cmd, cmd1)
 				cfg.t.Fatalf("committed values do not match: index %v, %v, %v\n",
 					index, cmd, cmd1)
 			}
@@ -404,6 +419,7 @@ func (cfg *config) nCommitted(index int) (int, interface{}) {
 			cmd = cmd1
 		}
 	}
+	cfg.logger.Infof("nCommitted count is %v", count)
 	return count, cmd
 }
 
@@ -457,9 +473,11 @@ func (cfg *config) one(cmd interface{}, expectedServers int, retry bool) int {
 		// try all the servers, maybe one is the leader.
 		index := -1
 		for si := 0; si < cfg.n; si++ {
+			cfg.logger.Infof("si is %v, cfg.n is %v", si, cfg.n)
 			starts = (starts + 1) % cfg.n
 			var rf *Raft
 			cfg.mu.Lock()
+			cfg.logger.Infof("cfg.connected[] is %v", cfg.connected)
 			if cfg.connected[starts] {
 				rf = cfg.rafts[starts]
 			}
@@ -472,7 +490,7 @@ func (cfg *config) one(cmd interface{}, expectedServers int, retry bool) int {
 				}
 			}
 		}
-
+		cfg.logger.Infof("index is %v", index)
 		if index != -1 {
 			// somebody claimed to be the leader and to have
 			// submitted our command; wait a while for agreement.
@@ -489,12 +507,14 @@ func (cfg *config) one(cmd interface{}, expectedServers int, retry bool) int {
 				time.Sleep(20 * time.Millisecond)
 			}
 			if retry == false {
+				cfg.logger.Infof("one(%v) failed to reach agreement", cmd)
 				cfg.t.Fatalf("one(%v) failed to reach agreement", cmd)
 			}
 		} else {
 			time.Sleep(50 * time.Millisecond)
 		}
 	}
+	cfg.logger.Infof("one(%v) failed to reach agreement", cmd)
 	cfg.t.Fatalf("one(%v) failed to reach agreement", cmd)
 	return -1
 }

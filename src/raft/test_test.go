@@ -95,12 +95,15 @@ func TestBasicAgree2B(t *testing.T) {
 
 	iters := 3
 	for index := 1; index < iters+1; index++ {
+		cfg.logger.Infof("TestBasicAgree2B.index is %v, TestBasicAgree2B.iters is %v", index, iters)
 		nd, _ := cfg.nCommitted(index)
+		cfg.logger.Infof("nd is %v", nd)
 		if nd > 0 {
 			t.Fatalf("some have committed before Start()")
 		}
-
+		cfg.logger.Infof("before excute cfg.one()")
 		xindex := cfg.one(index*100, servers, false)
+		cfg.logger.Infof("xindex is %v", xindex)
 		if xindex != index {
 			t.Fatalf("got index %v but expected %v", xindex, index)
 		}
