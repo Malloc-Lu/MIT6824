@@ -467,6 +467,7 @@ func (cfg *config) wait(index int, n int, startTerm int) interface{} {
 // if retry==false, calls Start() only once, in order
 // to simplify the early Lab 2B tests.
 func (cfg *config) one(cmd interface{}, expectedServers int, retry bool) int {
+	cfg.logger.Infof("get into the one(cmd(%v), expectedServers(%v)), retry(%v)", cmd, expectedServers, retry)
 	t0 := time.Now()
 	starts := 0
 	for time.Since(t0).Seconds() < 10 {
@@ -482,6 +483,7 @@ func (cfg *config) one(cmd interface{}, expectedServers int, retry bool) int {
 				rf = cfg.rafts[starts]
 			}
 			cfg.mu.Unlock()
+			cfg.logger.Info("exectue to here")
 			if rf != nil {
 				index1, _, ok := rf.Start(cmd)
 				if ok {
@@ -496,7 +498,7 @@ func (cfg *config) one(cmd interface{}, expectedServers int, retry bool) int {
 			// submitted our command; wait a while for agreement.
 			t1 := time.Now()
 			for time.Since(t1).Seconds() < 2 {
-				nd, cmd1 := cfg.nCommitted(index)
+				nd, cmd1 := cfg.nCommitted(index)			// * reture number of servers believing the entry is committed 
 				if nd > 0 && nd >= expectedServers {
 					// committed
 					if cmd1 == cmd {
