@@ -276,11 +276,24 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 	rf.mu.Lock()
 	if args.Entries == nil {
 
+		reply.Term = rf.state.currentTerm
+
 		// * reply false if term < currenTerm
 		if args.Term < rf.state.currentTerm {
-			args.Term = rf.state.currentTerm
 			reply.Success = false
 			// ! to Unlock!!!
+			rf.mu.Unlock()
+			return
+		}
+
+		lastElemIndex := len(rf.state.log) - 1
+		if lastElemIndex < args.PrevLogIndex {
+			reply.Success = false
+			rf.mu.Unlock()
+			return
+		}
+		if rf.state.log[args.PrevLogIndex].Term != args.PrevLogTerm {
+			reply.Success = false
 			rf.mu.Unlock()
 			return
 		}
@@ -343,6 +356,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		if args.Term < rf.state.currentTerm {
 			reply.Success = false
 			rf.loggerPrivate.Infof("reply.Success is %v, args.Term is %v, rf.state.currentTerm is %v", reply.Success, args.Term, rf.state.currentTerm)
+			rf.mu.Unlock()
 			return
 		}
 		// * the length of `rf.state.log` is less than `args.PrevLogIndex`, return false
@@ -461,7 +475,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 	rf.mu.Unlock()
 
 	if isLeader {
-		rf.logger.Infof("---------------------start part 2B-------------------")
+		rf.loggerPrivate.Infof("---------------------start part 2B (%v)-------------------", command)
 		// Your code here (2B).
 		// * construct a log entry
 		rf.mu.Lock()
@@ -472,7 +486,6 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 
 		// * read information for `AppendEntriesArgs`
 		me := rf.me
-		rf.logger.Infof("rf.leaderstate.nextIndex[me] is %v, rf.log is %v", rf.leaderstate.nextIndex[me], rf.state.log)
 		rf.loggerPrivate.Infof("rf.leaderstate.nextIndex[me] is %v, rf.log is %v", rf.leaderstate.nextIndex[me], rf.state.log)
 		prevLogIndex := rf.state.log[rf.leaderstate.nextIndex[me] - 1].Index		// * the `prevLogIndex` should be the one immediately preceding the entry be about to send
 		prevLogTerm := rf.state.log[prevLogIndex].Term
@@ -524,6 +537,11 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 								rf.loggerPrivate.Infof("receive from server %v, reply.Term is %v, reply.Success is %v", server, reply.Term, reply.Success)
 								return
 							} else {
+								if args.Term < reply.Term {
+									appendChan <- reply.Success
+									rf.loggerPrivate.Infof("receive from server %v, reply.Success is %v, args.Term is %v, reply.Term is %v", server, reply.Success, args.Term, reply.Term)
+									return
+								}
 								// * reconstruct `AppendEntriesArgs` as logs in server don't match Leader
 								nextIndex--						// * decrement index of next log entry being sent
 								rf.mu.Lock()
@@ -537,7 +555,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 								*args = AppendEntriesArgs{term, me, prevLogIndex, prevLogTerm, sendEntries, leaderCommit}
 								rf.loggerPrivate.Infof("to send server %v, reconstructed log entry is %v", server, *args)
 								*reply = AppendEntriesReply{-1, false}
-							}
+								}
 						} else {
 							// * the server maybe disconnected
 							appendChan <- false
@@ -597,14 +615,13 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 						// * append successfully and update the relavent data
 						rf.mu.Lock()
 						rf.commitIndex++
-						index = rf.state.log[lastElemIndex].Index + 1
-						rf.mu.Unlock()
+						index := rf.state.log[lastElemIndex].Index + 1
+						rf.loggerPrivate.Infof("rf.commitIndex is %v, index is %v", rf.commitIndex, index)
 
 						// * send the entrty to `rf.applyCh`
-						applymsg := ApplyMsg{true, command, index}
+						applymsg := ApplyMsg{true, rf.state.log[rf.commitIndex].Command, rf.state.log[rf.commitIndex].Index}
 						rf.applyCh <- applymsg
 
-						rf.mu.Lock()
 						rf.loggerPrivate.Infof("have sent applymsg %v, rf.commitIndex is %v, rf.isLeader is %v", applymsg, rf.commitIndex, rf.state.isLeader)
 						rf.mu.Unlock()
 
@@ -621,6 +638,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 		}(appendsSucc, lastElemIndex, &isCommitted)
 	}
 
+	rf.loggerPrivate.Infof("-----------------PART 2B (%v) ENDS------------------", command)
 	return index, term, isLeader
 }
 
@@ -828,17 +846,19 @@ func (rf *Raft) Convert2Candidate(me int) bool {
 				if votes > (len(rf.peers) / 2) {
 					rf.state.isLeader = true
 					rf.loggerPrivate.Infof("votes is %v, Conver2Candidate() converts rf.isLeader to true", votes)
-				} else {
-					rf.state.isLeader = false
-					rf.loggerPrivate.Infof("votes is %v, Conver2Candidate() converts rf.isLeader to false", votes)
 				}
+				// else {
+				// 	rf.state.isLeader = false
+				// 	rf.loggerPrivate.Infof("votes is %v, Conver2Candidate() converts rf.isLeader to false", votes)
+				// }
 			} 
 			if totalVotes == (len(rf.peers) - 1) {
 				close(voteChan)
-				if votes <= (len(rf.peers) / 2) {
-					rf.state.isLeader = false
-					rf.loggerPrivate.Infof("votes is %v, Conver2Candidate() converts rf.isLeader to false", votes)
-				}
+				// * for follower, may not need to revise the `isLeader` to false, as its original status is false
+				// if votes <= (len(rf.peers) / 2) {
+				// 	rf.state.isLeader = false
+				// 	rf.loggerPrivate.Infof("votes is %v, Conver2Candidate() converts rf.isLeader to false", votes)
+				// }
 				return
 			}
 		}
