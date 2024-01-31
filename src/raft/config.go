@@ -196,18 +196,19 @@ func (cfg *config) start1(i int) {
 				str := "receive a log entry form the applyCh\n" + 
 						"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tapplyCh.m is %v\n" +
 						"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcfg.logs is %v"
-				cfg.logger.Infof(str, m, cfg.logs)
+				// cfg.logger.Infof(str, m, cfg.logs)
 				for j := 0; j < len(cfg.logs); j++ {
 					if old, oldok := cfg.logs[j][m.CommandIndex]; oldok && old != v {
 						// some server has already committed a different value for this entry!
 						err_msg = fmt.Sprintf("commit index=%v server=%v %v != server=%v %v",
 							m.CommandIndex, i, m.Command, j, old)
+						cfg.logger.Infof(str, m, cfg.logs)
 						cfg.logger.Info(err_msg)
 					}
 				}
 				_, prevok := cfg.logs[i][m.CommandIndex-1]
 				cfg.logs[i][m.CommandIndex] = v
-				cfg.logger.Infof("cfg.logs is %v", cfg.logs)
+				// cfg.logger.Infof("cfg.logs is %v", cfg.logs)
 				if m.CommandIndex > cfg.maxIndex {
 					cfg.maxIndex = m.CommandIndex
 				}
@@ -216,6 +217,7 @@ func (cfg *config) start1(i int) {
 				// * judge if index increments monotonously
 				if m.CommandIndex > 1 && prevok == false {
 					err_msg = fmt.Sprintf("server %v apply out of order %v", i, m.CommandIndex)
+					cfg.logger.Infof("cfg.logs is %v", cfg.logs)
 					cfg.logger.Infof("the err_msg is %v", err_msg)
 				}
 			}

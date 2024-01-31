@@ -256,6 +256,7 @@ loop:
 
 		leader := cfg.checkOneLeader()
 		_, term, ok := cfg.rafts[leader].Start(1)
+		cfg.logger.Infof("term is %v, ok is %v", term, ok)
 		if !ok {
 			// leader moved on really quickly
 			continue
@@ -270,9 +271,11 @@ loop:
 				defer wg.Done()
 				i, term1, ok := cfg.rafts[leader].Start(100 + i)
 				if term1 != term {
+					cfg.logger.Infof("wrong return")
 					return
 				}
 				if ok != true {
+					cfg.logger.Infof("wrong return")
 					return
 				}
 				is <- i
@@ -280,10 +283,12 @@ loop:
 		}
 
 		wg.Wait()
+		cfg.logger.Infof("after wg.Wait()")
 		close(is)
 
 		for j := 0; j < servers; j++ {
 			if t, _ := cfg.rafts[j].GetState(); t != term {
+				cfg.logger.Infof("term changed -- can't expect low RPC couts, j is %v, server is %v, t is %v, term is %v", j, servers, t, term)
 				// term changed -- can't expect low RPC counts
 				continue loop
 			}
@@ -298,10 +303,12 @@ loop:
 					// peers have moved on to later terms
 					// so we can't expect all Start()s to
 					// have succeeded
+					cfg.logger.Infof("peers have moved on to later terms, so we can't expect all Start()s to have succeeded")
 					failed = true
 					break
 				}
 				cmds = append(cmds, ix)
+				cfg.logger.Infof("cmds is %v, ix is %v", cmds, ix)
 			} else {
 				t.Fatalf("value %v is not an int", cmd)
 			}

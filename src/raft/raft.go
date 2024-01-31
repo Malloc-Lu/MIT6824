@@ -281,6 +281,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		// * reply false if term < currenTerm
 		if args.Term < rf.state.currentTerm {
 			reply.Success = false
+			rf.loggerPrivate.Infof("reply.Success is %v, args.Term is %v, rf.state.currentTerm is %v", reply.Success, args.Term, rf.state.currentTerm)
 			// ! to Unlock!!!
 			rf.mu.Unlock()
 			return
@@ -289,11 +290,13 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		lastElemIndex := len(rf.state.log) - 1
 		if lastElemIndex < args.PrevLogIndex {
 			reply.Success = false
+			rf.loggerPrivate.Infof("reply.Success is %v, lastElemIndex is %v, args.PrevLogIndex is %v", reply.Success, lastElemIndex, args.PrevLogIndex)
 			rf.mu.Unlock()
 			return
 		}
 		if rf.state.log[args.PrevLogIndex].Term != args.PrevLogTerm {
 			reply.Success = false
+			rf.loggerPrivate.Infof("reply.Success is %v, rf.state.log[args.PrevLogIndex].Term is %v, args.PrevLogTerm is %v",reply.Success, rf.state.log[args.PrevLogIndex].Term, args.PrevLogTerm)
 			rf.mu.Unlock()
 			return
 		}
@@ -359,6 +362,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 			rf.mu.Unlock()
 			return
 		}
+		appendIndex := 0 			// ! record where to append the `args.entries`
 		// * the length of `rf.state.log` is less than `args.PrevLogIndex`, return false
 		if lastElemIndex < args.PrevLogIndex {
 			reply.Success = false
@@ -379,17 +383,41 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 					rf.loggerPrivate.Infof("reply.Success is %v, localPrevLogTerm is %v, args.PrevLogTerm is %v", reply.Success, localPrevLogTerm, args.PrevLogTerm)
 				}  
 				// * entry at `args.PrevLogIndex` whose term equals to `args.PrevLogTerm`, only delete all that follow it
+				isDele := false
 				if localPrevLogTerm == args.PrevLogTerm {
-					rf.loggerPrivate.Infof("deleted log entries is %v", rf.state.log[args.PrevLogIndex + 1 :])
-					rf.state.log = rf.state.log[:args.PrevLogIndex + 1]
+					for entry_index, entry := range args.Entries {
+						if entry.Index > lastElemIndex {
+							appendIndex = entry_index
+							break
+						}
+						eindex := entry.Index
+						ecommand := entry.Command
+						eterm := entry.Term
+						if eindex != rf.state.log[eindex].Index || ecommand != rf.state.log[eindex].Command || eterm != rf.state.log[eindex].Term {
+							isDele = true
+							rf.loggerPrivate.Infof("isDele is %v, entry is %v, rf.state.log[%v] is %v", isDele, entry, eindex, rf.state.log[eindex])
+							break
+						}
+					}
+					if isDele {
+						rf.loggerPrivate.Infof("deleted log entries is %v", rf.state.log[args.PrevLogIndex + 1 :])
+						rf.state.log = rf.state.log[:args.PrevLogIndex + 1]
+						// * if deleted, append `args.entries` from the beginning
+						appendIndex = 0
+					}
 					// * reply.Success = true 								// * the value of reply.Success is default true
+				}
+				if !isDele && args.Entries[len(args.Entries) - 1].Index <= lastElemIndex {
+					// * do not append any entries
+					appendIndex = -1
 				}
 			}	
 		}
 		// * apend new entry if reply.Success is still true
-		if reply.Success {
+		if reply.Success && appendIndex != -1{
 			rf.logger.Infof("append a new entry, length of rf.log is %v, rf.me is %v", len(rf.state.log), rf.me)
-			rf.state.log = append(rf.state.log, args.Entries...)
+			entriesToAppend := args.Entries[appendIndex : ]
+			rf.state.log = append(rf.state.log, entriesToAppend...)
 
 			// ! remember to send the committed 
 		}
@@ -472,13 +500,13 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 
 	rf.mu.Lock()
 	isLeader = rf.state.isLeader
-	rf.mu.Unlock()
+	// rf.mu.Unlock()
 
 	if isLeader {
 		rf.loggerPrivate.Infof("---------------------start part 2B (%v)-------------------", command)
 		// Your code here (2B).
 		// * construct a log entry
-		rf.mu.Lock()
+		// rf.mu.Lock()
 		lastElemIndex := len(rf.state.log) - 1
 		index = rf.state.log[lastElemIndex].Index + 1			// * the new log entry's index should be 1 greater than `LastElemIndex`
 		term = rf.state.currentTerm
@@ -486,28 +514,18 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 
 		// * read information for `AppendEntriesArgs`
 		me := rf.me
-		rf.loggerPrivate.Infof("rf.leaderstate.nextIndex[me] is %v, rf.log is %v", rf.leaderstate.nextIndex[me], rf.state.log)
 		prevLogIndex := rf.state.log[rf.leaderstate.nextIndex[me] - 1].Index		// * the `prevLogIndex` should be the one immediately preceding the entry be about to send
 		prevLogTerm := rf.state.log[prevLogIndex].Term
 		leaderCommit := rf.commitIndex
-
-		// if isLeader {
-		// 	// * initialize the `rf.NextIndex`
-		// 	// ? may do it as soon as the server win the election
-		// 	rf.leaderstate.nextIndex[rf.me] = lastElemIndex + 1
-		// 	// todo: initilize the `rf.MatchIndex`
-		// }
-		rf.mu.Unlock()
-
-	
-	// * append the entry to `log[]` if the current server is leader
-		logentry := LogEntry{index, command, term}
-		rf.mu.Lock()
-		rf.state.log = append(rf.state.log, logentry)
 		
+		// * append the entry to `log[]` if the current server is leader
+		logentry := LogEntry{index, command, term}
+		rf.state.log = append(rf.state.log, logentry)
+		rf.loggerPrivate.Infof("rf.leaderstate.nextIndex[me] is %v, rf.log is %v", rf.leaderstate.nextIndex[me], rf.state.log)
+			
 		// * update the `rf.leaderstate.nextIndex[me]`
 		rf.leaderstate.nextIndex[me]++
-		rf.mu.Unlock()
+		// rf.mu.Unlock()
 
 		// * construct the AppendEntriesArgs and AppendEntriesReply
 		// ! construct it privately or individually
@@ -518,18 +536,17 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 		appendChan := make(chan bool)
 		for i := 0; i < len(rf.peers); i++ {
 			if i != me {
+				// rf.mu.Lock()
+				nextIndex := rf.leaderstate.nextIndex[rf.me]
+				sendEntries := rf.state.log[prevLogIndex + 1 : ]
+				// rf.mu.Unlock()
+				
+				// * construct `args` and `reply` for each `rf.sendAppendEntries()`
+				args := &AppendEntriesArgs{term, me, prevLogIndex, prevLogTerm, sendEntries, leaderCommit}
+				reply := &AppendEntriesReply{-1, false}
+
 				go func (server int, term int, me int, prevLogIndex int, prevLogTerm int, leaderCommit int) {
 				// go func (server int, args *AppendEntriesArgs, reply *AppendEntriesReply) {
-
-					rf.mu.Lock()
-					nextIndex := rf.leaderstate.nextIndex[rf.me]
-					sendEntries := rf.state.log[prevLogIndex + 1 : ]
-					rf.mu.Unlock()
-					
-					// * construct `args` and `reply` for each `rf.sendAppendEntries()`
-					args := &AppendEntriesArgs{term, me, prevLogIndex, prevLogTerm, sendEntries, leaderCommit}
-					reply := &AppendEntriesReply{-1, false}
-
 					for {
 						if rf.sendAppendEntries(server, args, reply) {
 							if reply.Success {
@@ -544,14 +561,14 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 								}
 								// * reconstruct `AppendEntriesArgs` as logs in server don't match Leader
 								nextIndex--						// * decrement index of next log entry being sent
-								rf.mu.Lock()
+								// rf.mu.Lock()
 								prevLogIndex := rf.state.log[nextIndex - 1].Index
 								prevLogTerm := rf.state.log[prevLogIndex].Term 
 								me := rf.me
 								term := rf.state.currentTerm
 								sendEntries := rf.state.log[prevLogIndex + 1 : ]
 								leaderCommit := rf.commitIndex
-								rf.mu.Unlock()
+								// rf.mu.Unlock()
 								*args = AppendEntriesArgs{term, me, prevLogIndex, prevLogTerm, sendEntries, leaderCommit}
 								rf.loggerPrivate.Infof("to send server %v, reconstructed log entry is %v", server, *args)
 								*reply = AppendEntriesReply{-1, false}
@@ -636,9 +653,10 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 				}
 			}
 		}(appendsSucc, lastElemIndex, &isCommitted)
+	rf.loggerPrivate.Infof("-----------------PART 2B (%v) ENDS------------------", command)
 	}
 
-	rf.loggerPrivate.Infof("-----------------PART 2B (%v) ENDS------------------", command)
+	rf.mu.Unlock()
 	return index, term, isLeader
 }
 
