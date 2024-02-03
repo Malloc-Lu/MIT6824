@@ -265,9 +265,10 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 			"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\trf.me is %v\n" +
 			"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\trf.currentTerm is %v\n" +
 			"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\trf.voteFor is %v\n" +
+			"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\treply.VoteGranted is %v\n" +
 			"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\targs.CandiateId is %v"
 	// rf.logger.Infof(str, rf.me, rf.state.currentTerm, rf.state.votedFor, args.CandidateId)
-	rf.loggerPrivate.Infof(str, rf.me, rf.state.currentTerm, rf.state.votedFor, args.CandidateId)
+	rf.loggerPrivate.Infof(str, rf.me, rf.state.currentTerm, rf.state.votedFor, reply.VoteGranted, args.CandidateId)
 	rf.mu.Unlock()
 }
 
@@ -350,6 +351,10 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		reply.Success = true
 		reply.Term = rf.state.currentTerm
 
+		// ! here also need to update `rf.state.lastTimeFromeLeader`
+		rf.state.electionTimeOut = rf.getElectionTimeOut()
+		rf.state.lastTimeFromLeader = time.Now()	
+
 		lastElemIndex := len(rf.state.log) - 1
 		var localPrevLogTerm int
 		if lastElemIndex >= args.PrevLogIndex {
@@ -415,16 +420,25 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		}
 		// * apend new entry if reply.Success is still true
 		if reply.Success && appendIndex != -1{
+
 			rf.logger.Infof("append a new entry, length of rf.log is %v, rf.me is %v", len(rf.state.log), rf.me)
 			entriesToAppend := args.Entries[appendIndex : ]
 			rf.state.log = append(rf.state.log, entriesToAppend...)
 
-			// ! remember to send the committed 
+			// todo: if `args.LeaderCommit` > `rf.commitIndex`, set `rf.commitIndex` = min
+			// ! here is also need to set `rf.commitIndex`
+			if args.LeaderCommit > rf.commitIndex {
+				oldCommitIndex := rf.commitIndex
+				rf.commitIndex = int(math.Min(float64(args.LeaderCommit), float64(len(rf.state.log) - 1)))
+				// ! remember to send the committed 
+				for _, entry := range rf.state.log[oldCommitIndex + 1 : rf.commitIndex + 1] {
+					applymsg := ApplyMsg{true, entry.Command, entry.Index}
+					rf.applyCh <- applymsg
+					rf.loggerPrivate.Infof("server %v has committed the log entry %v", rf.me, applymsg)
+				}
+			}
+
 		}
-		// todo: if `args.LeaderCommit` > `rf.commitIndex`, set `rf.commitIndex` = min
-		// if args.LeaderCommit > rf.commitIndex {
-		// 	rf.commitIndex = int(math.Min(float64(args.LeaderCommit), float64(len(rf.state.log) + 1)))
-		// }
 
 		str = "after the AppendEntries() handler\n" +
 				"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\treply.Success is %v\n" +
@@ -514,7 +528,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 
 		// * read information for `AppendEntriesArgs`
 		me := rf.me
-		prevLogIndex := rf.state.log[rf.leaderstate.nextIndex[me] - 1].Index		// * the `prevLogIndex` should be the one immediately preceding the entry be about to send
+		prevLogIndex := rf.state.log[lastElemIndex].Index		// * the `prevLogIndex` should be the one immediately preceding the entry be about to send
 		prevLogTerm := rf.state.log[prevLogIndex].Term
 		leaderCommit := rf.commitIndex
 		
@@ -524,7 +538,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 		rf.loggerPrivate.Infof("rf.leaderstate.nextIndex[me] is %v, rf.log is %v", rf.leaderstate.nextIndex[me], rf.state.log)
 			
 		// * update the `rf.leaderstate.nextIndex[me]`
-		rf.leaderstate.nextIndex[me]++
+		rf.leaderstate.nextIndex[me] = rf.state.log[len(rf.state.log) - 1].Index
 		// rf.mu.Unlock()
 
 		// * construct the AppendEntriesArgs and AppendEntriesReply
@@ -791,12 +805,10 @@ func (rf *Raft) Convert2Candidate(me int) bool {
 	rf.state.lastTimeFromLeader = time.Now()
 	// send rpc message
 	lastElemIndex := len(rf.state.log) - 1
-	// rf.logger.Infof("rf.currenTerm is %v, rf.lastLogIndex is %v, rf.lastLogTerm is %v, me is %v", 
-							// rf.state.currentTerm, rf.state.log[lastElemIndex].Index, rf.state.log[lastElemIndex].Term, me)
-	// rf.loggerPrivate.Infof("rf.currenTerm is %v, rf.lastLogIndex is %v, rf.lastLogTerm is %v, me is %v", 
-							// rf.state.currentTerm, rf.state.log[lastElemIndex].Index, rf.state.log[lastElemIndex].Term, me)
-	requestvoteargs := RequestVoteArgs{rf.state.currentTerm, me, rf.state.log[lastElemIndex].Index, rf.state.log[lastElemIndex].Term}
-	requestvotereply := RequestVoteReply{}
+	
+	// ? may should construct individually
+	// requestvoteargs := RequestVoteArgs{rf.state.currentTerm, me, rf.state.log[lastElemIndex].Index, rf.state.log[lastElemIndex].Term}
+	// requestvotereply := RequestVoteReply{}
 	// rf.mu.Unlock()
 	votes := 1
 	
@@ -805,6 +817,8 @@ func (rf *Raft) Convert2Candidate(me int) bool {
 	// * send RequestVote RPCs to all other servers
 	for i := 0; i < len(rf.peers); i++ {
 		if i != me{
+			requestvoteargs := RequestVoteArgs{rf.state.currentTerm, me, rf.state.log[lastElemIndex].Index, rf.state.log[lastElemIndex].Term}
+			requestvotereply := RequestVoteReply{-1, false}
 			go func (server int, args *RequestVoteArgs, reply *RequestVoteReply) {
 				if rf.sendRequestVote(server, args, reply) {
 					voteChan <- reply.VoteGranted
@@ -857,9 +871,11 @@ func (rf *Raft) Convert2Candidate(me int) bool {
 	// * `Conver2Candidate()` will return immediately
 	go func (votes int) {
 		totalVotes := 0
+		// votes := 1
 		for isVote := range voteChan {
 			totalVotes++
 			if isVote {
+				rf.loggerPrivate.Infof("votes is %v", votes)
 				votes++
 				if votes > (len(rf.peers) / 2) {
 					rf.state.isLeader = true
@@ -902,11 +918,11 @@ func (rf *Raft) Conver2Leader(me int) {
 		// sendFaults := 0								// * record times of sending failure
 		rf.loggerPrivate.Infof("rf.state.isLeader is %v, rf.currentTerm is %v", rf.state.isLeader, rf.state.currentTerm)
 		if isLeader {
-			appendEntriesArgs := AppendEntriesArgs{rf.state.currentTerm, me, prevLogIndex, prevLogTerm, nil, leaderCommit}
-			appendEntriesReply := AppendEntriesReply{0, false}
-			rf.loggerPrivate.Infof("appendEntriesArgs is %v", appendEntriesArgs)
 			appendChan := make(chan bool)
 			for i := 0; i < len(rf.peers); i++ {
+				appendEntriesArgs := AppendEntriesArgs{rf.state.currentTerm, me, prevLogIndex, prevLogTerm, nil, leaderCommit}
+				appendEntriesReply := AppendEntriesReply{0, false}
+				rf.loggerPrivate.Infof("appendEntriesArgs is %v", appendEntriesArgs)
 				// ! should call `sendAppendEntries()` parallelly and return immediately, or something will be wrong if some server fails
 				// if i != me {
 				// 	if rf.sendAppendEntries(i, &appendEntriesArgs, &appendEntriesReply) {
@@ -984,11 +1000,13 @@ func (rf *Raft) Conver2Leader(me int) {
 					totalAppends++
 					if append {
 						appendsSucc++
-						if appendsSucc > (len(rf.peers) / 2) {
-							rf.state.isLeader = true
-						} else {
-							rf.state.isLeader = false
-						}
+						// * in `rf.Conver2Leader()`, `rf.state.isLeader` is true premitively
+						// * only to modify it to false conditionally
+						// if appendsSucc > (len(rf.peers) / 2) {
+						// 	rf.state.isLeader = true
+						// } else {
+						// 	rf.state.isLeader = false
+						// }
 					}	
 					if totalAppends == (len(rf.peers) - 1) {
 						close(appendChan)
