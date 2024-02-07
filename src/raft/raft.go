@@ -263,9 +263,6 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 	// rf.logger.Infof(str, rf.me, rf.state.currentTerm, rf.state.votedFor, args.CandidateId)
 	rf.loggerPrivate.Infof(str, rf.me, rf.state.currentTerm, args.Term, rf.state.votedFor, args.CandidateId)
 	
-	// * reset the election timeout
-	rf.state.electionTimeOut = rf.getElectionTimeOut()
-	rf.state.lastTimeFromLeader = time.Now()
 
 	reply.Term = rf.state.currentTerm				// ! don't know the meaning of reply.Term
 	if args.Term < rf.state.currentTerm {
@@ -308,6 +305,12 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 			rf.persist()
 			rf.loggerPrivate.Infof("after rf.persist()")
 		}
+
+	if reply.VoteGranted {
+		// * reset the election timeout if `reply.VoteGranted is true`
+		rf.state.electionTimeOut = rf.getElectionTimeOut()
+		rf.state.lastTimeFromLeader = time.Now()
+	}
 	}
 
 	// * print some information
@@ -354,6 +357,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 
 		reply.Success = true
 		// * reveive AppendEntries RPC from new leader, convert to follower
+		// ! but under condition that reply.Success == true
 		rf.state.isLeader = false
 		rf.loggerPrivate.Infof("AppendEntries() converts rf.isLeader to false")
 		
@@ -405,6 +409,8 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 
 		reply.Success = true
 		reply.Term = rf.state.currentTerm
+		// ! convert `isLeader` to false
+		rf.state.isLeader = false
 
 		// ! here also need to update `rf.state.lastTimeFromeLeader`
 		rf.state.electionTimeOut = rf.getElectionTimeOut()
@@ -640,6 +646,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 								prevLogIndex := rf.state.log[nextIndex - 1].Index
 								prevLogTerm := rf.state.log[prevLogIndex].Term 
 								me := rf.me
+								// ! this term may be changed by 
 								term := rf.state.currentTerm
 								sendEntries := rf.state.log[prevLogIndex + 1 : ]
 								leaderCommit := rf.commitIndex
@@ -664,35 +671,37 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 		}
 
 		// * count the number of servers that successfully append the new log
-		// appendsSucc := 1
-		// totalAppend := 0
-		// for isAppend := range appendChan {
-		// 	totalAppend++
-		// 	if isAppend {
-		// 		appendsSucc++
-		// 	}
-		// 	rf.loggerPrivate.Infof("totalAppend is %v, len(rf.peers) is %v", totalAppend, len(rf.peers)) 		// todo: check if it's dead cycle
-		// 	if totalAppend == (len(rf.peers) - 1) {
-		// 		close(appendChan)
-		// 	}
-		// }
-		// if appendsSucc > (len(rf.peers) / 2) {
-		// 	rf.mu.Lock()
-		// 	rf.commitIndex++									// * included in `AppendEntriesArgs`, make follower know which log entry should commit
-		// 	index = rf.state.log[lastElemIndex].Index + 1		// * the new log entry's index should be 1 greater than `LastElemIndex`
-		// 	rf.loggerPrivate.Infof("the index for return is %v, rf.state.log is %v", index, rf.state.log)
-		// 	rf.mu.Unlock()
+		/*
+		appendsSucc := 1
+		totalAppend := 0
+		for isAppend := range appendChan {
+			totalAppend++
+			if isAppend {
+				appendsSucc++
+			}
+			rf.loggerPrivate.Infof("totalAppend is %v, len(rf.peers) is %v", totalAppend, len(rf.peers)) 		// todo: check if it's dead cycle
+			if totalAppend == (len(rf.peers) - 1) {
+				close(appendChan)
+			}
+		}
+		if appendsSucc > (len(rf.peers) / 2) {
+			rf.mu.Lock()
+			rf.commitIndex++									// * included in `AppendEntriesArgs`, make follower know which log entry should commit
+			index = rf.state.log[lastElemIndex].Index + 1		// * the new log entry's index should be 1 greater than `LastElemIndex`
+			rf.loggerPrivate.Infof("the index for return is %v, rf.state.log is %v", index, rf.state.log)
+			rf.mu.Unlock()
 
-		// 	// ! whenever a commend commit, remember send a `ApplyMsg` to `rf.applyCh`
-		// 	applymsg := ApplyMsg{true, command, index}
-		// 	// * send the committed log entry to `rf.applyCh`
-		// 	rf.applyCh <- applymsg
-		// 	rf.mu.Lock()
-		// 	rf.loggerPrivate.Infof("have sent applymsg %v, rf.commitIndex is %v, rf.isLeader is %v", applymsg, rf.commitIndex, rf.state.isLeader)
-		// 	rf.mu.Unlock()
-		// } else {
-		// 	index = -1
-		// }
+			// ! whenever a commend commit, remember send a `ApplyMsg` to `rf.applyCh`
+			applymsg := ApplyMsg{true, command, index}
+			// * send the committed log entry to `rf.applyCh`
+			rf.applyCh <- applymsg
+			rf.mu.Lock()
+			rf.loggerPrivate.Infof("have sent applymsg %v, rf.commitIndex is %v, rf.isLeader is %v", applymsg, rf.commitIndex, rf.state.isLeader)
+			rf.mu.Unlock()
+		} else {
+			index = -1
+		}
+		*/
 
 		// ! better mechanism handling successful `rf.sendAppendEntries()`
 		appendsSucc := 1
@@ -953,6 +962,32 @@ func (rf *Raft) Convert2Candidate(me int) bool {
 	go func (votes int) {
 		totalVotes := 0
 		// votes := 1
+		var isVote bool
+		for {
+			select{
+			case isVote = <- voteChan:
+				totalVotes++
+				if isVote {
+					rf.loggerPrivate.Infof("votes is %v", votes)
+					votes++
+					if votes > (len(rf.peers) / 2) {
+						rf.state.isLeader = true
+						rf.loggerPrivate.Infof("votes is %v, Conver2Candidate() converts rf.isLeader to true", votes)
+
+						// * initialize `rf.nextIndex`
+						rf.leaderstate.nextIndex[me] = rf.state.log[len(rf.state.log) - 1].Index + 1
+					}	
+				}
+				if totalVotes == len(rf.peers) - 1{
+					return
+				}
+			case <-time.After(10 * time.Millisecond):
+				rf.loggerPrivate.Infof("wait for RPC reply for over 10 ms, votes is %v, len(rf.peers) / 2 is %v", votes, len(rf.peers)/2)
+				return
+			}
+		}
+	}(votes)
+	/*
 		for isVote := range voteChan {
 			totalVotes++
 			if isVote {
@@ -981,6 +1016,7 @@ func (rf *Raft) Convert2Candidate(me int) bool {
 			}
 		}
 	}(votes)
+	*/
 
 	return rf.state.isLeader 
 }
@@ -1000,6 +1036,7 @@ func (rf *Raft) Conver2Leader(me int) {
 		rf.loggerPrivate.Infof("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t-------------------round %v of Convert2Leader BEGINS!----------------", times)
 		isLeader := rf.state.isLeader
 		lastElemIndex := len(rf.state.log) - 1
+		term := rf.state.currentTerm
 		prevLogIndex := rf.state.log[lastElemIndex].Index
 		prevLogTerm := rf.state.log[lastElemIndex].Term
 		leaderCommit := rf.commitIndex
@@ -1009,6 +1046,7 @@ func (rf *Raft) Conver2Leader(me int) {
 		rf.loggerPrivate.Infof("rf.state.isLeader is %v, rf.currentTerm is %v", rf.state.isLeader, rf.state.currentTerm)
 		if isLeader {
 			appendChan := make(chan bool)
+			// * judge RPC if error
 			for i := 0; i < len(rf.peers); i++ {
 				appendEntriesArgs := AppendEntriesArgs{rf.state.currentTerm, me, prevLogIndex, prevLogTerm, nil, leaderCommit}
 				appendEntriesReply := AppendEntriesReply{0, false}
@@ -1041,7 +1079,7 @@ func (rf *Raft) Conver2Leader(me int) {
 				// }
 				if i != me {
 					nextIndex := rf.leaderstate.nextIndex[rf.me]
-					go func (server int, args *AppendEntriesArgs, reply *AppendEntriesReply) {
+					go func (server int, args *AppendEntriesArgs, reply *AppendEntriesReply, term int) {
 						for {
 							if rf.sendAppendEntries(server, args, reply) {
 								rf.loggerPrivate.Infof("receive from server %v, reply.Success is %v", server, reply.Success)
@@ -1050,9 +1088,9 @@ func (rf *Raft) Conver2Leader(me int) {
 									return
 								}
 								if (!reply.Success) {
-									if reply.Term > rf.state.currentTerm {
+									if reply.Term > term {
 										appendChan <- reply.Success
-										rf.loggerPrivate.Infof("reply.Term (%v) > rf.state.currentTerm (%v)", reply.Term, rf.state.currentTerm)
+										rf.loggerPrivate.Infof("reply.Term (%v) > rf.state.currentTerm(Term) (%v)", reply.Term, term)
 										rf.state.currentTerm = reply.Term
 										rf.state.isLeader = false
 										
@@ -1067,7 +1105,8 @@ func (rf *Raft) Conver2Leader(me int) {
 										prevLogIndex := rf.state.log[nextIndex - 1].Index
 										prevLogTerm := rf.state.log[prevLogIndex].Term
 										me := rf.me
-										term := rf.state.currentTerm
+										// ! can't let `term` equals `rf.state.currentTerm` directly, since `rf.state.currentTerm` is dynamic
+										// term := rf.state.currentTerm
 										sendEntries := rf.state.log[prevLogIndex + 1 : ]
 										leaderCommit := rf.commitIndex
 
@@ -1083,7 +1122,7 @@ func (rf *Raft) Conver2Leader(me int) {
 								return
 							}
 						}
-					}(i, &appendEntriesArgs, &appendEntriesReply)
+					}(i, &appendEntriesArgs, &appendEntriesReply, term)
 
 					}
 				}
@@ -1117,28 +1156,55 @@ func (rf *Raft) Conver2Leader(me int) {
 
 			go func (appendsSucc int) {
 				totalAppends := 0
-				for append := range appendChan {
-					totalAppends++
-					if append {
-						appendsSucc++
-						// * in `rf.Conver2Leader()`, `rf.state.isLeader` is true premitively
-						// * only to modify it to false conditionally
-						// if appendsSucc > (len(rf.peers) / 2) {
-						// 	rf.state.isLeader = true
-						// } else {
-						// 	rf.state.isLeader = false
-						// }
-					}	
-					if totalAppends == (len(rf.peers) - 1) {
-						close(appendChan)
-						// ! when the server disconnect, judge if successful times are greater than majority of servers
+				var append bool
+				for {
+					select{
+					case append = <-appendChan:
+						totalAppends++
+						if append {
+							appendsSucc++
+						}
+						if totalAppends == (len(rf.peers) - 1) {
+							// ! when the server disconnect, judge if successful times are greater than majority of servers
+							if appendsSucc <= (len(rf.peers) / 2) {
+								rf.state.isLeader = false
+								rf.loggerPrivate.Infof("appendsSucc is %v, rf.Conver2Leader() converts rf.isLeader to %v", appendsSucc, rf.state.isLeader)
+								}	
+								return
+							}
+					// * judge RPC if error
+					case <-time.After(10 * time.Millisecond):
+						rf.loggerPrivate.Infof("wait for RPC reply for over 10 ms, appendsSucc is %v, len(rf.peers) / 2 is %v", appendsSucc, len(rf.peers)/2)
 						if appendsSucc <= (len(rf.peers) / 2) {
 							rf.state.isLeader = false
-							rf.loggerPrivate.Infof("appendsSucc is %v, rf.Conver2Leader() converts rf.isLeader to %v", appendsSucc, rf.state.isLeader)
+							rf.loggerPrivate.Infof("wait for RPC reply for over 10 ms, appendsSucc is %v, len(rf.peers) / 2 is %v", appendsSucc, len(rf.peers)/2)
 						}
 						return
-					}
+					}	
 				}
+				// for append := range appendChan {
+				// 	totalAppends++
+				// 	err <- "normal"
+				// 	if append {
+				// 		appendsSucc++
+				// 		// * in `rf.Conver2Leader()`, `rf.state.isLeader` is true premitively
+				// 		// * only to modify it to false conditionally
+				// 		// if appendsSucc > (len(rf.peers) / 2) {
+				// 		// 	rf.state.isLeader = true
+				// 		// } else {
+				// 		// 	rf.state.isLeader = false
+				// 		// }
+				// 	}	
+				// 	if totalAppends == (len(rf.peers) - 1) {
+				// 		close(appendChan)
+				// 		// ! when the server disconnect, judge if successful times are greater than majority of servers
+				// 		if appendsSucc <= (len(rf.peers) / 2) {
+				// 			rf.state.isLeader = false
+				// 			rf.loggerPrivate.Infof("appendsSucc is %v, rf.Conver2Leader() converts rf.isLeader to %v", appendsSucc, rf.state.isLeader)
+				// 		}
+				// 		return
+				// 	}
+				// }
 			}(appendsSucc)
 		}
 		// * periodically send heartbeat with setting the period is 120ms
@@ -1148,6 +1214,112 @@ func (rf *Raft) Conver2Leader(me int) {
 		// rf.loggerPrivate.Infof("Conver2Leader() after time.Sleep")
 	}
 }
+
+func (rf *Raft) JudgeIfDisconnect(err chan string) {
+	now := time.Now()
+	// * set time of waiting for RPC reply
+	delay := 10
+	for {
+		time.Sleep(5 * time.Millisecond)
+		if time.Since(now).Milliseconds() > int64(delay) {
+			// * RPC is normal
+			if str := <-err; str == "normal" {
+				return
+			}
+			err <- "RPC may disconnect"
+			return
+		}
+	}
+}
+
+func (rf *Raft) StartOrHeartBeat(isStart bool, command interface{}) {
+	rf.mu.Lock()
+	index := -1
+	term := -1
+
+	if isStart {
+		rf.loggerPrivate.Infof("---------------------start part 2B (%v)-------------------", command)
+	}
+
+	lastElemIndex := len(rf.state.log) - 1
+	index = rf.state.log[lastElemIndex].Index + 1			// * the new log entry's index should be 1 greater than `LastElemIndex`
+	term = rf.state.currentTerm
+	// isLeader := rf.state.isLeader
+
+	// * read information for `AppendEntriesArgs`
+	me := rf.me
+	prevLogIndex := rf.state.log[lastElemIndex].Index		// * the `prevLogIndex` should be the one immediately preceding the entry be about to send
+	prevLogTerm := rf.state.log[prevLogIndex].Term
+	leaderCommit := rf.commitIndex
+
+	if isStart {
+		// * used in `rf.Start()`, need to append new entry
+		logentry := LogEntry{index, command, term}
+		rf.state.log = append(rf.state.log, logentry)
+
+		// * add `rf.persist()`
+		rf.persist()
+		
+		// * update the `rf.leaderstate.nextIndex[me]`
+		rf.leaderstate.nextIndex[me] = rf.state.log[len(rf.state.log) - 1].Index
+		rf.loggerPrivate.Infof("rf.leaderstate.nextIndex[me] is %v, rf.log is %v", rf.leaderstate.nextIndex[me], rf.state.log)
+	}
+
+	// * send `AppendEntries` parallelly to other servers
+	appendChan := make(chan bool)
+	for i := 0; i < len(rf.peers); i++ {
+		if i != me {
+			nextIndex := rf.leaderstate.nextIndex[me]
+			sendEntries := rf.state.log[prevLogIndex + 1 : ]
+			
+			// * certify the sent log entries
+			var args *AppendEntriesArgs
+			if isStart {
+				args = &AppendEntriesArgs{term, me, prevLogIndex, prevLogTerm, sendEntries, leaderCommit}
+			} else {
+				args = &AppendEntriesArgs{term, me, prevLogIndex, prevLogTerm, nil, leaderCommit}
+			}
+			reply := &AppendEntriesReply{-1, false}
+
+			go func (server int, term int, me int, prevLogIndex int, prevLogTerm int, leaderCommit int) {
+				for {
+					if rf.sendAppendEntries(server, args, reply) {
+						if reply.Success {
+							appendChan <- reply.Success
+							rf.loggerPrivate.Infof("receive from server %v, reply.Term is %v, reply.Success is %v", server, reply.Term, reply.Success)
+							return
+						} else {
+							if args.Term < reply.Term {
+								appendChan <- reply.Success
+								rf.loggerPrivate.Infof("receive from server %v, reply.Success is %v, args.Term is %v, reply.Term is %v", server, reply.Success, args.Term, reply.Term)
+								return
+							}
+							// * reconstruct `AppendEntriesArgs` as logs in server don't match Leader
+							nextIndex--						// * decrement index of next log entry being sent
+							// rf.mu.Lock()
+							prevLogIndex := rf.state.log[nextIndex - 1].Index
+							prevLogTerm := rf.state.log[prevLogIndex].Term 
+							me := rf.me
+							// ! this term may be changed by 
+							// term := rf.state.currentTerm
+							sendEntries := rf.state.log[prevLogIndex + 1 : ]
+							leaderCommit := rf.commitIndex
+							// rf.mu.Unlock()
+							*args = AppendEntriesArgs{term, me, prevLogIndex, prevLogTerm, sendEntries, leaderCommit}
+							rf.loggerPrivate.Infof("to send server %v, reconstructed log entry is %v", server, *args)
+							*reply = AppendEntriesReply{-1, false}
+							}
+					} else {
+						// * the server maybe disconnected
+						appendChan <- false
+						return
+					}
+					}
+				}(i, term, me, prevLogIndex, prevLogTerm, leaderCommit)
+			}
+		}
+}
+
 
 func InitLogger(prefix string) *zap.SugaredLogger {
 	// get the current date

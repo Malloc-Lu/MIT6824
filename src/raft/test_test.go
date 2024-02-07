@@ -583,100 +583,107 @@ loop:
 }
 
 func TestPersist12C(t *testing.T) {
-	servers := 3
-	cfg := make_config(t, servers, false)
-	defer cfg.cleanup()
-
-	cfg.begin("Test (2C): basic persistence")
-
-	cfg.one(11, servers, true)
-
-	// crash and re-start all
-	for i := 0; i < servers; i++ {
-		cfg.start1(i)
-	}
-	cfg.logger.Infof("after crash and restart all")
-	for i := 0; i < servers; i++ {
-		cfg.disconnect(i)
-		cfg.connect(i)
-	}
-
-	cfg.one(12, servers, true)
-	cfg.logger.Infof("after cfg.one(12)")
-
-	leader1 := cfg.checkOneLeader()
-	cfg.disconnect(leader1)
-	cfg.start1(leader1)
-	cfg.logger.Infof("reconnect server %v", leader1)
-	cfg.connect(leader1)
-
-	cfg.one(13, servers, true)
-
-	leader2 := cfg.checkOneLeader()
-	cfg.disconnect(leader2)
-	cfg.logger.Infof("disconnect server %v", leader2)
-	cfg.one(14, servers-1, true)
-	cfg.start1(leader2)
-	cfg.logger.Infof("restart server %v", leader2)
-	cfg.connect(leader2)
-
-	cfg.wait(4, servers, -1) // wait for leader2 to join before killing i3
-
-	i3 := (cfg.checkOneLeader() + 1) % servers
-	cfg.disconnect(i3)
-	cfg.one(15, servers-1, true)
-	cfg.start1(i3)
-	cfg.connect(i3)
-
-	cfg.one(16, servers, true)
-
-	cfg.end()
-}
-
-func TestPersist22C(t *testing.T) {
-	// servers := 5
+	// servers := 3
 	// cfg := make_config(t, servers, false)
 	// defer cfg.cleanup()
 
-	// cfg.begin("Test (2C): more persistence")
+	// cfg.begin("Test (2C): basic persistence")
 
-	// index := 1
-	// for iters := 0; iters < 5; iters++ {
-	// 	cfg.one(10+index, servers, true)
-	// 	index++
+	// cfg.one(11, servers, true)
 
-	// 	leader1 := cfg.checkOneLeader()
-
-	// 	cfg.disconnect((leader1 + 1) % servers)
-	// 	cfg.disconnect((leader1 + 2) % servers)
-
-	// 	cfg.one(10+index, servers-2, true)
-	// 	index++
-
-	// 	cfg.disconnect((leader1 + 0) % servers)
-	// 	cfg.disconnect((leader1 + 3) % servers)
-	// 	cfg.disconnect((leader1 + 4) % servers)
-
-	// 	cfg.start1((leader1 + 1) % servers)
-	// 	cfg.start1((leader1 + 2) % servers)
-	// 	cfg.connect((leader1 + 1) % servers)
-	// 	cfg.connect((leader1 + 2) % servers)
-
-	// 	time.Sleep(RaftElectionTimeout)
-
-	// 	cfg.start1((leader1 + 3) % servers)
-	// 	cfg.connect((leader1 + 3) % servers)
-
-	// 	cfg.one(10+index, servers-2, true)
-	// 	index++
-
-	// 	cfg.connect((leader1 + 4) % servers)
-	// 	cfg.connect((leader1 + 0) % servers)
+	// // crash and re-start all
+	// for i := 0; i < servers; i++ {
+	// 	cfg.start1(i)
+	// }
+	// cfg.logger.Infof("after crash and restart all")
+	// for i := 0; i < servers; i++ {
+	// 	cfg.disconnect(i)
+	// 	cfg.connect(i)
 	// }
 
-	// cfg.one(1000, servers, true)
+	// cfg.one(12, servers, true)
+	// cfg.logger.Infof("after cfg.one(12)")
+
+	// leader1 := cfg.checkOneLeader()
+	// cfg.disconnect(leader1)
+	// cfg.start1(leader1)
+	// cfg.logger.Infof("reconnect server %v", leader1)
+	// cfg.connect(leader1)
+
+	// cfg.one(13, servers, true)
+
+	// leader2 := cfg.checkOneLeader()
+	// cfg.disconnect(leader2)
+	// cfg.logger.Infof("disconnect server %v", leader2)
+	// cfg.one(14, servers-1, true)
+	// cfg.start1(leader2)
+	// cfg.logger.Infof("restart server %v", leader2)
+	// cfg.connect(leader2)
+
+	// cfg.wait(4, servers, -1) // wait for leader2 to join before killing i3
+
+	// i3 := (cfg.checkOneLeader() + 1) % servers
+	// cfg.disconnect(i3)
+	// cfg.one(15, servers-1, true)
+	// cfg.start1(i3)
+	// cfg.connect(i3)
+
+	// cfg.one(16, servers, true)
 
 	// cfg.end()
+}
+
+func TestPersist22C(t *testing.T) {
+	servers := 5
+	cfg := make_config(t, servers, false)
+	defer cfg.cleanup()
+
+	cfg.begin("Test (2C): more persistence")
+
+	index := 1
+	for iters := 0; iters < 5; iters++ {
+		cfg.one(10+index, servers, true)
+		index++
+
+		leader1 := cfg.checkOneLeader()
+
+		cfg.disconnect((leader1 + 1) % servers)
+		cfg.disconnect((leader1 + 2) % servers)
+		cfg.logger.Infof("server %v %v disconnect", (leader1 + 1) % servers, (leader1 + 2) % servers)
+
+		cfg.one(10+index, servers-2, true)
+		index++
+
+		cfg.disconnect((leader1 + 0) % servers)
+		cfg.disconnect((leader1 + 3) % servers)
+		cfg.disconnect((leader1 + 4) % servers)
+		cfg.logger.Infof("server %v %v %v disconnect", (leader1 + 0) % servers, (leader1 + 3) % servers, (leader1 + 4) % servers)
+
+		cfg.start1((leader1 + 1) % servers)
+		cfg.start1((leader1 + 2) % servers)
+		cfg.logger.Infof("server %v %v RESTART", (leader1 + 1) % servers, (leader1 + 2) % servers)
+		cfg.connect((leader1 + 1) % servers)
+		cfg.connect((leader1 + 2) % servers)
+		cfg.logger.Infof("server %v %v reconnect", (leader1 + 1) % servers, (leader1 + 2) % servers)
+
+		time.Sleep(RaftElectionTimeout)
+
+		cfg.start1((leader1 + 3) % servers)
+		cfg.logger.Infof("server %v RESTART", (leader1 + 3) % servers)
+		cfg.connect((leader1 + 3) % servers)
+		cfg.logger.Infof("server %v reconnect", (leader1 + 3) % servers)
+
+		cfg.one(10+index, servers-2, true)
+		index++
+
+		cfg.connect((leader1 + 4) % servers)
+		cfg.connect((leader1 + 0) % servers)
+		cfg.logger.Infof("server %v %v reconnect", (leader1 + 4) % servers, (leader1 + 0) % servers)
+	}
+
+	cfg.one(1000, servers, true)
+
+	cfg.end()
 }
 
 func TestPersist32C(t *testing.T) {
