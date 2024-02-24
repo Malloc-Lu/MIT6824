@@ -1,13 +1,23 @@
 package kvraft
 
-import "../labrpc"
-import "crypto/rand"
-import "math/big"
+import (
+	"crypto/rand"
+	"math/big"
+	"sync/atomic"
+	"time"
+
+	"6.824/src/labrpc"
+	"go.uber.org/zap"
+)
 
 
 type Clerk struct {
 	servers []*labrpc.ClientEnd
 	// You will have to modify this struct.
+	logger *zap.SugaredLogger
+
+	identity int32 				// * identify the only operation
+	lastLeader int				// * record index of last leader that Clerk found
 }
 
 func nrand() int64 {
@@ -21,6 +31,8 @@ func MakeClerk(servers []*labrpc.ClientEnd) *Clerk {
 	ck := new(Clerk)
 	ck.servers = servers
 	// You'll have to add code here.
+	ck.logger = InitLogger("./workdir/client")
+	ck.identity = 0
 	return ck
 }
 
@@ -39,6 +51,24 @@ func MakeClerk(servers []*labrpc.ClientEnd) *Clerk {
 func (ck *Clerk) Get(key string) string {
 
 	// You will have to modify this function.
+	// * upgrade `ck.identiy`
+	atomic.AddInt32(&ck.identity, 1)
+	
+	for {
+		for i := 0; i < 5; i++ {
+			// ! remember to use individual `args` and `reply`
+			args := GetArgs{key, int(ck.identity)}
+			reply := GetReply{}
+			if ok := ck.servers[i].Call("KVServer.Get", &args, &reply); ok {
+				if reply.Err == "" {
+					ck.lastLeader = i
+					ck.logger.Infof("i is %v, getReply.Err is %v, getReply.Value is %v, ck.lastLeader is %v", i, reply.Err, reply.Value, ck.lastLeader)
+					return reply.Value
+				}
+			}
+		}
+		time.Sleep(10 * time.Millisecond)
+	}
 	return ""
 }
 

@@ -1,12 +1,21 @@
 package kvraft
 
 import (
-	"../labgob"
-	"../labrpc"
+	// "internal/itoa"
 	"log"
-	"../raft"
 	"sync"
 	"sync/atomic"
+
+	"6.824/src/labgob"
+	"6.824/src/labrpc"
+	"6.824/src/raft"
+
+	"fmt"
+	"os"
+	"time"
+
+	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 )
 
 const Debug = 0
@@ -18,11 +27,22 @@ func DPrintf(format string, a ...interface{}) (n int, err error) {
 	return
 }
 
+type Operation int
+// * enum types of operation
+const (
+	GetOp Operation = iota
+	PutOp
+	AppendOp
+)
 
 type Op struct {
 	// Your definitions here.
 	// Field names must start with capital letters,
 	// otherwise RPC will break.
+	OpType Operation 					// * operation type	
+	Key string
+	Value string
+	Identity int						// * only value to identity operation
 }
 
 type KVServer struct {
@@ -35,11 +55,32 @@ type KVServer struct {
 	maxraftstate int // snapshot if log grows this big
 
 	// Your definitions here.
+	logger *zap.SugaredLogger
+	latestIndex int 					// * record the highest index of command that known to be handled
+	database map[string]string			// * define a key/value database
 }
 
 
 func (kv *KVServer) Get(args *GetArgs, reply *GetReply) {
 	// Your code here.
+	op := Op{GetOp, args.Key, "", args.Identity}
+	_, _, isLeader := kv.rf.Start(op)
+	if !isLeader {
+		reply.Err = "This Server is not Leader"
+		reply.Value = ""
+		return
+	}
+	// * listen Channal `kv.applyCh`
+	if valid, str := kv.ListenAndHandle(op); valid {
+		kv.logger.Infof("valid is %v, str is %v", valid, str)
+		reply.Err = ""
+		reply.Value = str
+		return
+	} else {
+		reply.Err = Err(str)
+		reply.Value = ""
+		return
+	}
 }
 
 func (kv *KVServer) PutAppend(args *PutAppendArgs, reply *PutAppendReply) {
@@ -91,11 +132,73 @@ func StartKVServer(servers []*labrpc.ClientEnd, me int, persister *raft.Persiste
 	kv.maxraftstate = maxraftstate
 
 	// You may need initialization code here.
+	fmt.Printf("servers is %v, me is %v\n", servers, me)
 
 	kv.applyCh = make(chan raft.ApplyMsg)
 	kv.rf = raft.Make(servers, me, persister, kv.applyCh)
 
 	// You may need initialization code here.
+	// * build logger
+	para := fmt.Sprintf("./workdir/server%v", me)
+	kv.logger = InitLogger(para) 
+
+	// * initiate some value
+	kv.latestIndex = 0
+	kv.database = make(map[string]string)
+
+	// * listen Channal `kv.applyCh`
+	// go func ()  {
+	// 	select {
+	// 	case msg := <- kv.applyCh:
+
+	// 	}	
+	// }
 
 	return kv
+}
+
+func (kv *KVServer) ListenAndHandle(op Op) (bool, string) {
+	kv.logger.Infof("kv.applyCh is %v", kv.applyCh)
+	select {
+	case msg := <- kv.applyCh:
+		kv.logger.Infof("msg is %v", msg)
+		if op, ok := msg.Command.(Op); ok {					// * `msg.Command.(Op)` is `type assertion`
+			if op.OpType == GetOp {
+				if value, ok := kv.database[op.Key]; ok {
+					return true, value
+				} else {
+					return true, ""
+				}
+			}
+		}
+		
+	case <- time.After(100 * time.Millisecond):
+		kv.logger.Infof("timeout while listening operation %v", op)
+		err := fmt.Sprintf("timeout while listening operation %v", op)
+		return false, err
+	}
+
+	return false, "unexpected return"
+
+}
+
+func InitLogger(prefix string) *zap.SugaredLogger {
+	// get the current date
+	currentTime := time.Now()
+	date := fmt.Sprintf("%v%v%v", currentTime.Year(), currentTime.Format("01"), currentTime.Format("02"))
+	// logName = fmt.Sprintf("./workdir/raft%v.log", date)
+	file, _ := os.OpenFile(prefix + date + ".log", os.O_RDWR | os.O_CREATE | os.O_APPEND, 0755)
+	writeSyncer := zapcore.AddSync(file)
+	// encoder := zapcore.NewJSONEncoder(zap.NewProductionEncoderConfig())
+	// encoder := zapcore.NewConsoleEncoder(zap.NewProductionEncoderConfig())
+	encoderConfig := zap.NewProductionEncoderConfig()
+	encoderConfig.EncodeTime = zapcore.ISO8601TimeEncoder
+	encoderConfig.EncodeLevel = zapcore.CapitalLevelEncoder
+	encoder := zapcore.NewConsoleEncoder(encoderConfig)
+
+	core := zapcore.NewCore(encoder, writeSyncer, zapcore.DebugLevel)
+
+	logger := zap.New(core, zap.AddCaller())
+	sugarLogger := logger.Sugar()
+	return sugarLogger
 }

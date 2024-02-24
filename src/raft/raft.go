@@ -55,6 +55,13 @@ type ApplyMsg struct {
 	CommandIndex int
 }
 
+// type ApplyMsg struct {
+// 	OpType int
+// 	Key string
+// 	Value string
+// 	Identity int
+// }
+
 type LogEntry struct {
 	Index int						// * first index is 1 
 	Command interface{}
@@ -342,6 +349,7 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply) {
 	// * judge if it is a HeartBeat
 	rf.mu.Lock()
+	rf.loggerPrivate.Infof("++++++++++++++++++++++++++AppendEntries START++++++++++++++++++++++++++")
 	if args.Entries == nil {
 
 		reply.Term = rf.state.currentTerm
@@ -510,7 +518,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		// * apend new entry if reply.Success is still true
 		if reply.Success && appendIndex != -1{
 
-			rf.logger.Infof("append a new entry, length of rf.log is %v, rf.me is %v", len(rf.state.log), rf.me)
+			rf.loggerPrivate.Infof("append a new entry, length of rf.log is %v, rf.me is %v", len(rf.state.log), rf.me)
 			entriesToAppend := args.Entries[appendIndex : ]
 			rf.state.log = append(rf.state.log, entriesToAppend...)
 
@@ -522,6 +530,12 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 				// ! remember to send the committed 
 				for _, entry := range rf.state.log[oldCommitIndex + 1 : rf.commitIndex + 1] {
 					applymsg := ApplyMsg{true, entry.Command, entry.Index}
+					// select {
+					// case rf.applyCh <- applymsg:
+					// 	rf.loggerPrivate.Infof("server %v has committed the log entry %v", rf.me, applymsg)
+					// default:
+					// 	rf.loggerPrivate.Infof("Channal rf.applyCh may have closed")
+					// }
 					rf.applyCh <- applymsg
 					rf.loggerPrivate.Infof("server %v has committed the log entry %v", rf.me, applymsg)
 				}
@@ -538,6 +552,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		rf.logger.Infof(str, reply.Success, rf.state.log, reply.Term)
 		rf.loggerPrivate.Infof(str, reply.Success, rf.state.log, reply.Term)
 	}
+	rf.loggerPrivate.Infof("++++++++++++++++++++++++++AppendEntries ENDS++++++++++++++++++++++++++")
 	rf.mu.Unlock()
 
 }
@@ -844,8 +859,16 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 							for _, entry := range rf.state.log[oldCommitIndex + 1 : newCommitIndex + 1] {
 								// * send the entry to `rf.applyCh`
 								applymsg := ApplyMsg{true, entry.Command, entry.Index}
+								// ! remind: here need sometime to block
+								// select {
+								// case rf.applyCh <- applymsg:
+								// 	rf.loggerPrivate.Infof("server %v has committed the log entry %v", rf.me, applymsg)
+								// default:
+								// 	rf.loggerPrivate.Infof("Channal rf.applyCh may have closed")
+			
+								// }
 								rf.applyCh <- applymsg
-								rf.loggerPrivate.Infof("have sent applymsg %v, rf.commitIndex is %v, rf.isLeader is %v", applymsg, rf.commitIndex, rf.state.isLeader)
+								rf.loggerPrivate.Infof("have sent applymsg %v, rf.commitIndex is %v, rf.isLeader is %v, rf.applyCh is %v", applymsg, rf.commitIndex, rf.state.isLeader, rf.applyCh)
 							}
 
 							// * prevent `rf.commitIndex` being modified incorrectly
@@ -876,7 +899,6 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 		}(appendsSucc, lastElemIndex, &isCommitted, oldCommitIndex, newCommitIndex)
 	rf.loggerPrivate.Infof("-----------------PART 2B (%v) ENDS------------------", command)
 	}
-
 	rf.mu.Unlock()
 	return index, term, isLeader
 }

@@ -1,20 +1,25 @@
 package kvraft
 
-import "../labrpc"
-import "testing"
-import "os"
+import (
+	"os"
+	"testing"
 
-// import "log"
-import crand "crypto/rand"
-import "math/big"
-import "math/rand"
-import "encoding/base64"
-import "sync"
-import "runtime"
-import "../raft"
-import "fmt"
-import "time"
-import "sync/atomic"
+	"6.824/src/labrpc"
+
+	// import "log"
+	crand "crypto/rand"
+	"encoding/base64"
+	"fmt"
+	"math/big"
+	"math/rand"
+	"runtime"
+	"sync"
+	"sync/atomic"
+	"time"
+
+	"6.824/src/raft"
+	"go.uber.org/zap"
+)
 
 func randstring(n int) string {
 	b := make([]byte, 2*n)
@@ -57,6 +62,8 @@ type config struct {
 	t0    time.Time // time at which test_test.go called cfg.begin()
 	rpcs0 int       // rpcTotal() at start of test
 	ops   int32     // number of clerk get/put/append method calls
+
+	logger *zap.SugaredLogger
 }
 
 func (cfg *config) checkTimeout() {
@@ -292,6 +299,7 @@ func (cfg *config) StartServer(i int) {
 	for j := 0; j < cfg.n; j++ {
 		cfg.endnames[i][j] = randstring(20)
 	}
+	cfg.logger.Infof("cfg.endnames is %v", cfg.endnames)
 
 	// a fresh set of ClientEnds.
 	ends := make([]*labrpc.ClientEnd, cfg.n)
@@ -299,6 +307,7 @@ func (cfg *config) StartServer(i int) {
 		ends[j] = cfg.net.MakeEnd(cfg.endnames[i][j])
 		cfg.net.Connect(cfg.endnames[i][j], j)
 	}
+	cfg.logger.Infof("ends is %v", ends)
 
 	// a fresh persister, so old instance doesn't overwrite
 	// new instance's persisted state.
@@ -313,6 +322,7 @@ func (cfg *config) StartServer(i int) {
 	cfg.mu.Unlock()
 
 	cfg.kvservers[i] = StartKVServer(ends, i, cfg.saved[i], cfg.maxraftstate)
+	cfg.logger.Infof("cfg.kvservers[%v] is %v", i, cfg.kvservers[i])
 
 	kvsvc := labrpc.MakeService(cfg.kvservers[i])
 	rfsvc := labrpc.MakeService(cfg.kvservers[i].rf)
@@ -377,8 +387,11 @@ func make_config(t *testing.T, n int, unreliable bool, maxraftstate int) *config
 	cfg.maxraftstate = maxraftstate
 	cfg.start = time.Now()
 
+	cfg.logger = InitLogger("./workdir/config")
+
 	// create a full set of KV servers.
 	for i := 0; i < cfg.n; i++ {
+		cfg.logger.Infof("cfg.n is %v, i is %v", cfg.n, i)
 		cfg.StartServer(i)
 	}
 
@@ -423,3 +436,4 @@ func (cfg *config) end() {
 		fmt.Printf("  %4.1f  %d %5d %4d\n", t, npeers, nrpc, ops)
 	}
 }
+
