@@ -299,7 +299,6 @@ func (cfg *config) StartServer(i int) {
 	for j := 0; j < cfg.n; j++ {
 		cfg.endnames[i][j] = randstring(20)
 	}
-	cfg.logger.Infof("cfg.endnames is %v", cfg.endnames)
 
 	// a fresh set of ClientEnds.
 	ends := make([]*labrpc.ClientEnd, cfg.n)
@@ -307,8 +306,6 @@ func (cfg *config) StartServer(i int) {
 		ends[j] = cfg.net.MakeEnd(cfg.endnames[i][j])
 		cfg.net.Connect(cfg.endnames[i][j], j)
 	}
-	cfg.logger.Infof("ends is %v", ends)
-
 	// a fresh persister, so old instance doesn't overwrite
 	// new instance's persisted state.
 	// give the fresh persister a copy of the old persister's
@@ -322,7 +319,6 @@ func (cfg *config) StartServer(i int) {
 	cfg.mu.Unlock()
 
 	cfg.kvservers[i] = StartKVServer(ends, i, cfg.saved[i], cfg.maxraftstate)
-	cfg.logger.Infof("cfg.kvservers[%v] is %v", i, cfg.kvservers[i])
 
 	kvsvc := labrpc.MakeService(cfg.kvservers[i])
 	rfsvc := labrpc.MakeService(cfg.kvservers[i].rf)

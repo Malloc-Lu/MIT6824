@@ -536,7 +536,9 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 					// default:
 					// 	rf.loggerPrivate.Infof("Channal rf.applyCh may have closed")
 					// }
+					rf.loggerPrivate.Infof("before sending to rf.applyCh")
 					rf.applyCh <- applymsg
+					rf.loggerPrivate.Infof("after sending to rf.applyCh")
 					rf.loggerPrivate.Infof("server %v has committed the log entry %v", rf.me, applymsg)
 				}
 			}
