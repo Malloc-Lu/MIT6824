@@ -65,6 +65,7 @@ type KVServer struct {
 	database map[string]string			// * define a key/value database
 	done chan Done						// * inform complished command, -1 means failure
 	isDoneAlive bool					// * if true, send message to channal; or, don't send
+	executed map[int]bool				// * record identity of excuted command with `true` value
 }
 
 
@@ -73,6 +74,15 @@ func (kv *KVServer) Get(args *GetArgs, reply *GetReply) {
 	kv.mu.Lock()
 	op := Op{"Get", args.Key, "", args.Identity}
 	kv.logger.Infof("\n----------------------Get(%v) handler begins----------------", op)	
+	reply.Me = kv.me
+	// * directly return if command has executed
+	if _, ok := kv.executed[op.Identity]; ok {
+		reply.Value = kv.database[op.Key]
+		reply.Err = ""
+		kv.logger.Infof("\nThe command has executed\n----------------------Get(%v) handler ends----------------\n", op)	
+		kv.mu.Unlock()
+		return
+	}
 	_, _, isLeader := kv.rf.Start(op)
 	if !isLeader {
 		reply.Err = "This KVServer is not Leader"
@@ -99,6 +109,8 @@ func (kv *KVServer) Get(args *GetArgs, reply *GetReply) {
 			kv.logger.Errorf("\nm.identity is %v, op.identity is %v", m.Identity, op.Identity)	
 		}
 	case <-time.After(100 * time.Millisecond):
+		err := fmt.Sprintf("\nIn Get(), timeout while listening kv.done, op is %v, KVServer is %v", op, kv.me)
+		reply.Err = Err(err)
 		kv.logger.Errorf("\nIn Get(), timeout while listening kv.done, op is %v\n", op)
 	}
 	// * make Channal kv.done offline
@@ -124,6 +136,13 @@ func (kv *KVServer) PutAppend(args *PutAppendArgs, reply *PutAppendReply) {
 	kv.mu.Lock()
 	op := Op{args.Op, args.Key, args.Value, args.Identity}
 	kv.logger.Infof("\n----------------------PutAppend(%v) handler begins----------------", op)
+	reply.Me = kv.me
+	if _, ok := kv.executed[op.Identity]; ok {
+		reply.Err = ""
+		kv.logger.Infof("\nThe command has been exected\n----------------------PutAppend(%v) handler ends----------------\n", op)
+		kv.mu.Unlock()
+		return
+	}
 	_, _, isLeader := kv.rf.Start(op)
 	if !isLeader {
 		reply.Err = "This KVServer is not Leader"
@@ -146,6 +165,8 @@ func (kv *KVServer) PutAppend(args *PutAppendArgs, reply *PutAppendReply) {
 			kv.logger.Errorf("\nm.identity is %v, op.identity is %v", m.Identity, op.Identity)
 		}
 	case <-time.After(100 * time.Millisecond):
+		err := fmt.Sprintf("\nIn PutAppend(), timeout while listening kv.done, op is %v\n", op)
+		reply.Err = Err(err)
 		kv.logger.Errorf("\nIn PutAppend(), timeout while listening kv.done, op is %v\n", op)
 	}
 	// * make Channal kv.done offline	
@@ -200,8 +221,6 @@ func StartKVServer(servers []*labrpc.ClientEnd, me int, persister *raft.Persiste
 	kv.maxraftstate = maxraftstate
 
 	// You may need initialization code here.
-	fmt.Printf("servers is %v, me is %v\n", servers, me)
-
 	kv.applyCh = make(chan raft.ApplyMsg)
 	kv.rf = raft.Make(servers, me, persister, kv.applyCh)
 
@@ -214,6 +233,7 @@ func StartKVServer(servers []*labrpc.ClientEnd, me int, persister *raft.Persiste
 	kv.latestIndex = 0
 	kv.isDoneAlive = false
 	kv.database = make(map[string]string)
+	kv.executed = make(map[int]bool)
 
 	// * initiate `Done` channal
 	kv.done = make(chan Done)
@@ -297,41 +317,87 @@ func (kv *KVServer) ListenAndHandle1() (bool, string) {
 
 func (kv *KVServer) get(op Op) {
 	kv.logger.Infof("\nIn get()\nop is %v, op.identity is %v", op, op.Identity)
+	kv.executed[op.Identity] = true
 	if value, ok := kv.database[op.Key]; ok {
+		kv.logger.Infof("\nSuccessfully get\nvalue is %v, op.key is %v, op.identity is %v, kv.database is %v", value, op.Key, op.Identity, kv.database)
 		if kv.isDoneAlive {
-			kv.done <- Done{value, op.Identity}
+			select {
+			case kv.done <- Done{value, op.Identity}:
+				return
+			default:
+				kv.logger.Infof("failed to send to kv.done")
+			}
 		}
 	} else {
+		kv.logger.Infof("\nSuccessfully get\nvalue is %v, op.key is %v, op.identity is %v, kv.database is %v", value, op.Key, op.Identity, kv.database)
 		if kv.isDoneAlive {
-			kv.done <- Done{"", op.Identity}
+			select {
+			case kv.done <- Done{"", op.Identity}:
+				return
+			default:
+				kv.logger.Infof("failed to send to kv.done")
+			}
 		}
 	}
 }
 
 func (kv *KVServer) put(op Op) {
 	// * directly replace value of `op.key`
-	value := kv.database[op.Key]
-	kv.database[op.Key] = op.Value
-	kv.logger.Infof("op.value is %v, op.identity is %v, kv.database is %v", op.Value, op.Identity, kv.database)
-	kv.logger.Infof("\nIn ListenAndHandle()\n have modified kv.database[%v] from %v To %v\n, op is %v\n", op.Key, value, kv.database[op.Key], op)
-	// ! not every KVServer have Channal kv.done
-	if kv.isDoneAlive {
-		kv.done <- Done{"", op.Identity}
+	// * judge whether this command has executed
+	if _, ok := kv.executed[op.Identity]; !ok {
+		value := kv.database[op.Key]
+		kv.database[op.Key] = op.Value
+		kv.logger.Infof("op.value is %v, op.identity is %v, kv.database is %v", op.Value, op.Identity, kv.database)
+		kv.logger.Infof("\nIn ListenAndHandle()\n have modified kv.database[%v] from %v To %v\n, op is %v\n", op.Key, value, kv.database[op.Key], op)
+
+		// * modity `kv.executed[op.identity]` indicating this command has been executed
+		kv.executed[op.Identity] = true
+		
+		// ! not every KVServer have Channal kv.done
+		if kv.isDoneAlive {
+			select {
+			case kv.done <- Done{"", op.Identity}:
+				return
+			default:
+				kv.logger.Infof("failed to send to kv.done")
+			}
+		}
 	}
 }
 
 func (kv *KVServer) append(op Op) {
-	if value, ok := kv.database[op.Key]; !ok {
-		kv.database[op.Key] = op.Value
-		kv.logger.Infof("\nIn ListenAndHandle(), Append\n kv.database has NOT key(%v), make kv.database[%v] = %v\n", op.Key, op.Key, kv.database[op.Key])
-		if kv.isDoneAlive {
-			kv.done <- Done{"", op.Identity}
-		}
-	} else {
-		kv.database[op.Key] = value + op.Value
-		kv.logger.Infof("\nIn ListenAndHandle(), Append\n kv.database has the key(%v), make kv.database[%v] = %v\n", op.Key, op.Key, kv.database[op.Key])
-		if kv.isDoneAlive {
-			kv.done <- Done{"", op.Identity}
+	kv.logger.Infof("\nkv.executed is %v", kv.executed)
+	if _, ok := kv.executed[op.Identity]; !ok {
+		if value, ok := kv.database[op.Key]; !ok {
+			kv.database[op.Key] = op.Value
+			kv.logger.Infof("\nIn ListenAndHandle(), Append\n kv.database has NOT key(%v), make kv.database[%v] = %v\n", op.Key, op.Key, kv.database[op.Key])
+
+			// * modify `kv.executed[op.identity]` indicating this command has been executed
+			kv.executed[op.Identity] = true
+
+			if kv.isDoneAlive {
+				select {
+				case kv.done <- Done{"", op.Identity}:
+					return
+				default:
+					kv.logger.Infof("failed to send to kv.done")
+				}
+			}
+		} else {
+			kv.database[op.Key] = value + op.Value
+			kv.logger.Infof("\nIn ListenAndHandle(), Append\n kv.database has the key(%v), make kv.database[%v] = %v\n", op.Key, op.Key, kv.database[op.Key])
+
+			// * modify `kv.executed[op.identity]` indicating this command has been executed
+			kv.executed[op.Identity] = true
+
+			if kv.isDoneAlive {
+				select {
+				case kv.done <- Done{"", op.Identity}:
+					return
+				default:
+					kv.logger.Infof("failed to send to kv.done")
+				}
+			}
 		}
 	}
 }

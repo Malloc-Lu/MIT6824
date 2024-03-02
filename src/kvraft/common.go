@@ -20,6 +20,7 @@ type PutAppendArgs struct {
 }
 
 type PutAppendReply struct {
+	Me int
 	Err Err
 }
 
@@ -30,6 +31,7 @@ type GetArgs struct {
 }
 
 type GetReply struct {
+	Me int
 	Err   Err
 	Value string
 }

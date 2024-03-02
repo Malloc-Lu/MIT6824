@@ -195,7 +195,7 @@ func (cfg *config) partition(p1 []int, p2 []int) {
 // Create a clerk with clerk specific server names.
 // Give it connections to all of the servers, but for
 // now enable only connections to servers in to[].
-func (cfg *config) makeClient(to []int) *Clerk {
+func (cfg *config) makeClient(me int, to []int) *Clerk {
 	cfg.mu.Lock()
 	defer cfg.mu.Unlock()
 
@@ -208,7 +208,7 @@ func (cfg *config) makeClient(to []int) *Clerk {
 		cfg.net.Connect(endnames[j], j)
 	}
 
-	ck := MakeClerk(random_handles(ends))
+	ck := MakeClerk(me, random_handles(ends))
 	cfg.clerks[ck] = endnames
 	cfg.nextClientId++
 	cfg.ConnectClientUnlocked(ck, to)

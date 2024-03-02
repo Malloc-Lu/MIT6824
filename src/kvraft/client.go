@@ -2,6 +2,7 @@ package kvraft
 
 import (
 	"crypto/rand"
+	"fmt"
 	"math/big"
 	"sync/atomic"
 	"time"
@@ -16,7 +17,7 @@ type Clerk struct {
 	// You will have to modify this struct.
 	logger *zap.SugaredLogger
 
-	identity int32 				// * identify the only operation
+	identity int64 				// * identify the only operation
 	lastLeader int32			// * record index of last leader that Clerk found
 }
 
@@ -27,11 +28,12 @@ func nrand() int64 {
 	return x
 }
 
-func MakeClerk(servers []*labrpc.ClientEnd) *Clerk {
+func MakeClerk(me int, servers []*labrpc.ClientEnd) *Clerk {
 	ck := new(Clerk)
 	ck.servers = servers
 	// You'll have to add code here.
-	ck.logger = InitLogger("./workdir/client")
+	para := fmt.Sprintf("./workdir/client%v", me);
+	ck.logger = InitLogger(para)
 	ck.identity = 0
 	return ck
 }
@@ -52,7 +54,8 @@ func (ck *Clerk) Get(key string) string {
 
 	// You will have to modify this function.
 	// * upgrade `ck.identiy`
-	atomic.AddInt32(&ck.identity, 1)
+	atomic.StoreInt64(&ck.identity, time.Now().UnixNano())
+	// atomic.AddInt32(&ck.identity, 1)
 	times := 0
 	i := atomic.LoadInt32(&ck.lastLeader)
 	
@@ -68,16 +71,19 @@ func (ck *Clerk) Get(key string) string {
 					atomic.StoreInt32(&ck.lastLeader, int32(i))
 					ck.logger.Infof("\n Leader of KVServer may change to %v", i)
 				}
-				ck.logger.Infof("\nSuccessfully Get\ni is %v, GetReply.Err is %v, ck.lastLeader is %v", i, reply.Err, atomic.LoadInt32(&ck.lastLeader))
+				ck.logger.Infof("\nSuccessfully Get\ni is %v, GetReply.Value is %v, GetReply.Err is %v, GetReply.Me is %v, ck.lastLeader is %v", i, reply.Value, reply.Me, reply.Err, atomic.LoadInt32(&ck.lastLeader))
 				ck.logger.Infof("\n----------------round %v Get(%v) ends-----------------\n", times, ck.identity)
 				return reply.Value
 			} else {
-				ck.logger.Errorf("\nWrong Get\ni is %v, GetReply.Err is %v, ck.lastLeader is %v", i, reply.Err, atomic.LoadInt32(&ck.lastLeader))
+				ck.logger.Errorf("\nWrong Get\ni is %v, GetReply.Err is %v, GetReply.Me is %v, ck.lastLeader is %v", i, reply.Err, reply.Me, atomic.LoadInt32(&ck.lastLeader))
 				i = int32((int(i) + 1) % len(ck.servers))
 			}
+		} else {
+			ck.logger.Errorf("\nsomething wrong when sending RPC to KVServer %v", i)	
+			i = int32((int(i) + 1) % len(ck.servers))
 		}
 		if times % len(ck.servers) == 0 {
-			time.Sleep(10 * time.Millisecond)
+			time.Sleep(300 * time.Millisecond)
 		}
 	}
 	return ""
@@ -96,7 +102,8 @@ func (ck *Clerk) Get(key string) string {
 func (ck *Clerk) PutAppend(key string, value string, op string) {
 	// You will have to modify this function.
 	times := 0
-	atomic.AddInt32(&ck.identity, 1)
+	atomic.StoreInt64(&ck.identity, time.Now().UnixNano())
+	// atomic.AddInt32(&ck.identity, 1)
 	i := atomic.LoadInt32(&ck.lastLeader)
 	for {
 		times++
@@ -108,6 +115,7 @@ func (ck *Clerk) PutAppend(key string, value string, op string) {
 		reply := PutAppendReply{}
 
 		// * send RPC to KVServer
+		ck.logger.Infof("\ni is %v", i)
 		if ok := ck.servers[i].Call("KVServer.PutAppend", &args, &reply); ok {
 			if reply.Err == ""{
 				if i != atomic.LoadInt32(&ck.lastLeader) {
@@ -118,12 +126,15 @@ func (ck *Clerk) PutAppend(key string, value string, op string) {
 				ck.logger.Infof("\n==================round %v PutAppend(%v) op(%v) ends==================\n", times, ck.identity, op)
 				return
 			} else {
-				ck.logger.Errorf("\nWrong PutAppend\ni is %v, PutAppendReply.Err is %v, ck.lastLeader is %v", i, reply.Err, atomic.LoadInt32(&ck.lastLeader))
+				ck.logger.Errorf("\nWrong PutAppend\ni is %v, PutAppendReply.Err is %v, PutAppendReply.Me is %v, ck.lastLeader is %v", i, reply.Err, reply.Me, atomic.LoadInt32(&ck.lastLeader))
 				i = int32((int(i) + 1) % len(ck.servers))
 			}
+		} else {
+			ck.logger.Errorf("\nsomething wrong when sending RPC to KVServer %v", i)
+			i = int32((int(i) + 1) % len(ck.servers))
 		}
 		if times % len(ck.servers) == 0 {
-			time.Sleep(10 * time.Millisecond)
+			time.Sleep(300 * time.Millisecond)
 		}
 
 	}
