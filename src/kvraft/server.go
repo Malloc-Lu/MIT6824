@@ -270,26 +270,31 @@ func StartKVServer(servers []*labrpc.ClientEnd, me int, persister *raft.Persiste
 
 func (kv *KVServer) ListenAndHandle1() (bool, string) {
 	times := 0
-	for msg := range kv.applyCh {
-		times++
-		kv.logger.Infof("\n======================round %v ListenAndHandle1() begins=================", times)
-		// * successfully commit the command
-		// kv.mu.Lock()
-		str := "\nIn ListenAndHandle1()\n" + 
-				"receive from kv.applyCh, msg is %v\n"
-		kv.logger.Infof(str, msg)
-		if op, ok := msg.Command.(Op); ok {					// * `msg.Command.(Op)` is `type assertion`
-			if op.OpType == "Get" {
-				kv.get(op)
-				kv.logger.Infof("after calling kv.get(%v)", op)
-			} else if op.OpType == "Put" {
-				kv.put(op)
-			} else if op.OpType == "Append" {
-				kv.append(op)
-			}
-		}	
-		kv.logger.Infof("\n=====================round %v ListenAndHandle1() ends===================\n", times)
-		// kv.mu.Unlock()
+	for {
+		if kv.killed() {
+			return false, "kill"
+		}
+		for msg := range kv.applyCh {
+			times++
+			kv.logger.Infof("\n======================round %v ListenAndHandle1() begins=================", times)
+			// * successfully commit the command
+			// kv.mu.Lock()
+			str := "\nIn ListenAndHandle1()\n" + 
+					"receive from kv.applyCh, msg is %v\n"
+			kv.logger.Infof(str, msg)
+			if op, ok := msg.Command.(Op); ok {					// * `msg.Command.(Op)` is `type assertion`
+				if op.OpType == "Get" {
+					kv.get(op)
+					kv.logger.Infof("after calling kv.get(%v)", op)
+				} else if op.OpType == "Put" {
+					kv.put(op)
+				} else if op.OpType == "Append" {
+					kv.append(op)
+				}
+			}	
+			kv.logger.Infof("\n=====================round %v ListenAndHandle1() ends===================\n", times)
+			// kv.mu.Unlock()
+		}
 	}
 
 	// for {
@@ -416,7 +421,8 @@ func InitLogger(prefix string) *zap.SugaredLogger {
 	encoderConfig.EncodeLevel = zapcore.CapitalLevelEncoder
 	encoder := zapcore.NewConsoleEncoder(encoderConfig)
 
-	core := zapcore.NewCore(encoder, writeSyncer, zapcore.DebugLevel)
+	// core := zapcore.NewCore(encoder, writeSyncer, zapcore.DebugLevel)
+	core := zapcore.NewCore(encoder, writeSyncer, zapcore.WarnLevel)
 
 	logger := zap.New(core, zap.AddCaller())
 	sugarLogger := logger.Sugar()
